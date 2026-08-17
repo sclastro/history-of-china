@@ -1,0 +1,30 @@
+id: qi-jing-gong
+name:
+  zh: 齊景公
+  personal: 杵臼
+  clan: 姜
+  house: 呂
+  posthumous: 景
+  en: Duke Jing of Qi
+state: qi
+role: 君主
+birth: null
+death: -490
+sort_year: -547
+bio: >-
+  在位五十八年，齊之久君。有晏嬰、司馬穰苴而不能復桓公之霸，
+  好治宮室、聚狗馬、厚賦重刑，齊民「屨賤踊貴」。
+  孔子適齊，景公問政，孔子對以「君君、臣臣、父父、子子」；
+  又問，對以「政在節財」。景公欲以尼谿之田封孔子，晏嬰止之。
+  其晚年田氏以大斗出、小斗入而收民心，齊之政柄已在移轉之中——
+  景公一朝的表面繁盛，正是姜齊被架空的過程。
+sources:
+  - source: yanzi-chun-qiu
+    locus: 內篇諫下
+    ctext_urn: ctp:yanzi-chun-qiu/nei-pian/jian-xia
+  - source: shiji
+    locus: 齊太公世家
+    ctext_urn: ctp:shiji/qi-tai-gong-shi-jia
+relations:
+  - target: yan-ying
+    kind: minister

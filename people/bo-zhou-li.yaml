@@ -1,0 +1,19 @@
+id: bo-zhou-li
+name:
+  zh: 伯州犁
+  en: Bo Zhouli
+state: chu
+role: 卿大夫
+birth: null
+death: -541
+sort_year: -547
+bio: >-
+  本晉大夫伯宗之子，伯宗見殺而奔楚，為楚太宰。
+  前 547 年裁公子圍與穿封戌爭俘之訟，以手勢暗示囚人所當附之貴賤，
+  「上下其手」由此得名——這是中國文獻中最早、也最清晰的一次「程序中的偏私」記錄：
+  形式上他問了囚人，實質上他已經給了答案。
+  前 541 年公子圍弒君自立，伯州犁亦為其所殺。
+sources:
+  - source: zuo-zhuan
+    locus: 襄公二十六年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xiang-gong-er-shi-liu-nian

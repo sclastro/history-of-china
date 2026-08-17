@@ -1,0 +1,34 @@
+id: sun-bin
+name:
+  zh: 孫臏
+  house: 孫
+  en: Sun Bin
+state: tian-qi
+role: 將領
+birth: null
+death: null
+sort_year: -353
+bio: >-
+  孫武之後，與龐涓俱學兵法。龐涓仕魏為將，自以能不及孫臏，
+  乃陰召而以法刑斷其兩足、黥之，欲使終身廢而不見。
+  齊使者竊載之入齊，田忌客之。以「批亢擣虛、形格勢禁」之理定圍魏救趙之策，
+  桂陵（前 353）虜龐涓、馬陵（前 341）以減灶誘之而射殺之於馬陵道。
+  銀雀山漢簡出土《孫臏兵法》，證實其書與《孫子》各自別行。
+timeline:
+  - year: -354
+    event: 為龐涓所陷，臏足黥面
+  - year: -353
+    event: 桂陵之戰，圍魏救趙
+  - year: -341
+    event: 馬陵之戰，減灶誘敵，龐涓自剄
+sources:
+  - source: shiji
+    locus: 孫子吳起列傳
+    ctext_urn: ctp:shiji/sun-zi-wu-qi-lie-zhuan
+  - source: yinqueshan
+    locus: 孫臏兵法·擒龐涓
+relations:
+  - target: pang-juan
+    kind: rival
+  - target: tian-ji
+    kind: ally

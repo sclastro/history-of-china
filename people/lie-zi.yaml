@@ -1,0 +1,25 @@
+id: lie-zi
+name:
+  zh: 列子
+  personal: 禦寇
+  house: 列
+  en: Liezi
+state: zheng
+role: 思想家
+birth: null
+death: null
+sort_year: -400
+bio: >-
+  鄭人，先秦道家。《莊子·逍遙遊》稱其「御風而行，泠然善也」，
+  《呂氏春秋》《戰國策》亦及其名，然其人事跡渺不可考。
+  今傳《列子》八篇公認為魏晉人所輯偽託，然所存寓言——
+  愚公移山、杞人憂天、高山流水、歧路亡羊、疑鄰盜斧、兩小兒辯日——
+  多有先秦來源，是研究先秦寓言不可繞過的一部書。
+sources:
+  - source: liezi
+    locus: 湯問
+    ctext_urn: ctp:liezi/tang-wen
+  - source: zhuangzi
+    locus: 逍遙遊
+    ctext_urn: ctp:zhuangzi/enjoyment-in-untroubled-ease
+notes: 今本《列子》為魏晉偽書；凡本站引《列子》而無他書旁證者，reliability 一律標「寓言」。

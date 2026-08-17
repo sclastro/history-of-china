@@ -1,0 +1,27 @@
+id: meng-chang-jun
+name:
+  zh: 孟嘗君
+  personal: 文
+  clan: 媯
+  house: 田
+  en: Lord Mengchang
+state: tian-qi
+role: 卿大夫
+birth: null
+death: -279
+sort_year: -299
+bio: >-
+  齊威王之孫、田嬰之子，名文，封於薛。招致諸侯賓客及亡人有罪者，
+  食客數千人，無貴賤一與己等。
+  入秦為相，昭王囚而欲殺之。孟嘗君使人求解於幸姬，
+  姬求狐白裘——裘已獻昭王矣。客有能為狗盜者，入秦宮藏中取裘以獻姬，
+  姬為言而得釋。夜半至函谷關，關法雞鳴而出客；
+  客有能為雞鳴者，一鳴而群雞盡鳴，遂發傳出。
+  食頃，秦追至關，已後矣。
+  「雞鳴狗盜」向為輕薄之譏，然當日救其命者正是此二人。
+sources:
+  - source: shiji
+    locus: 孟嘗君列傳
+relations:
+  - target: qin-zhao-xiang-wang
+    kind: rival

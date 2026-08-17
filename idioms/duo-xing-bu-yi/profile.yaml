@@ -1,0 +1,56 @@
+id: duo-xing-bu-yi
+idiom:
+  zh: 多行不義必自斃
+  pinyin: duō xíng bù yì bì zì bì
+  jyutping: do1 hang4 bat1 ji6 bit1 zi6 bai6
+  literal: 幹多了不義的事，必定自取滅亡
+  en: He who piles up wrongdoing will bring himself down
+type: historical
+period: chun-qiu-early
+year: -722
+year_note: 魯隱公元年
+states: [zheng]
+meaning: 惡行積累到一定程度，不必外力，自己就會招致覆亡。
+benshi:
+  event: zheng-bo-ke-duan
+  summary: >-
+    鄭莊公之弟共叔段得母姜氏之寵，受封於京，繕甲兵、收貳邑而至於廩延。
+    大夫祭仲屢請早圖之，莊公答以「多行不義必自斃，子姑待之」。
+    段果襲鄭而姜氏內應，莊公一舉克之，段出奔共。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 隱公元年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/yin-gong-yuan-nian
+    quote: >-
+      祭仲曰：「姜氏何厭之有？不如早為之所，無使滋蔓；蔓，難圖也。
+      蔓草猶不可除，況君之寵弟乎？」公曰：「多行不義，必自斃，子姑待之。」
+    translation: >-
+      祭仲說：「姜氏哪有滿足的時候？不如早作安排，別讓他坐大；
+      一旦坐大就難對付了。蔓草尚且除不盡，何況是國君所寵的弟弟？」
+      莊公說：「不義的事做多了，一定會自己倒下，你姑且等著看。」
+crystallisation:
+  note: >-
+    七字連用即出《左傳》原文，語形自始未變，是先秦成語中極少數
+    「典源即定型」的例子。後世多節作四字「多行不義」，然全句更常用。
+  moe_id: 3242
+reliability: 信史
+people: [zheng-zhuang-gong, gong-shu-duan]
+concepts: [宗法, 權謀, 縱惡, 春秋筆法]
+related_idioms:
+  - target: da-yi-mie-qin
+    kind: contrast
+    note: 同樣是宗族內部的清除，一者縱之使自斃，一者先誅以絕禍。
+lessons:
+  historical: >-
+    這句話向來被讀成一條道德律：作惡自有報應。但放回《左傳》的上下文，
+    它其實是一句冷酷的權術判斷。祭仲主張早除，莊公不肯——不是因為仁厚，
+    而是因為太早動手他就是「殺弟」，等到段的反形眾所共見再動手，
+    他就是「討逆」。二十餘年的「不作為」本身就是最高明的作為。
+    《春秋》書「鄭伯克段于鄢」，一個「克」字譏的正是這種處心積慮。
+    這句話的真正涵義因此是：讓對手的不義積累到足以自我摧毀的程度，
+    比自己出手更划算。
+  modern: >-
+    引申為「不必急於制止對手的錯誤，讓其充分暴露反而更有利」——
+    但這是權謀的讀法，與今日通行的道德讀法幾乎相反，援用時宜自覺。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/yin-gong-yuan-nian/zh

@@ -1,0 +1,26 @@
+id: lian-po
+name:
+  zh: 廉頗
+  house: 廉
+  en: Lian Po
+state: zhao
+role: 將領
+birth: null
+death: null
+sort_year: -283
+bio: >-
+  趙之良將，以勇氣聞於諸侯。伐齊破之，拜為上卿。
+  藺相如以口舌之功而位居其上，廉頗不服，宣言必辱之；
+  相如引避，門客諫，相如以「兩虎共鬥、其勢不俱生」曉之。
+  廉頗聞而肉袒負荊，因賓客至門謝罪，遂為刎頸之交。
+  長平之戰初為將，堅壁不出以老秦師——秦行反間，
+  趙王以趙括代之，遂有四十萬之坑。
+  晚年去趙居魏，趙王欲復用之，使者受郭開之賂，
+  還報曰「廉將軍雖老，尚善飯，然與臣坐，頃之三遺矢矣」，遂不召。
+sources:
+  - source: shiji
+    locus: 廉頗藺相如列傳
+    ctext_urn: ctp:shiji/lian-po-lin-xiang-ru-lie-zhuan
+relations:
+  - target: lin-xiang-ru
+    kind: ally

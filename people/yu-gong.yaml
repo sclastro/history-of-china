@@ -1,0 +1,20 @@
+id: yu-gong
+name:
+  zh: 虞公
+  clan: 姬
+  en: Duke of Yu
+state: yu
+role: 君主
+birth: null
+death: null
+sort_year: -655
+bio: >-
+  虞國之君。貪晉之屈產良馬與垂棘美玉，兩度許晉假道以伐虢。
+  宮之奇以唇亡齒寒諫，虞公答以「晉，吾宗也，豈害我哉」，
+  又謂「吾享祀豐絜，神必據我」。宮之奇駁之：「鬼神非人實親，惟德是依。」
+  終不聽。晉滅虢還師，遂執虞公。
+  他是先秦最著名的短視之君，其可悲不在被騙，而在被同一手法騙了兩次。
+sources:
+  - source: zuo-zhuan
+    locus: 僖公五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-wu-nian

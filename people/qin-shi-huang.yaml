@@ -1,0 +1,32 @@
+id: qin-shi-huang
+name:
+  zh: 秦始皇
+  personal: 政
+  clan: 嬴
+  en: Qin Shi Huang
+state: qin
+role: 君主
+birth: -259
+death: -210
+bio: >-
+  莊襄王之子，生於邯鄲。十三歲即位，呂不韋為仲父，
+  二十二歲行冠禮親政，誅嫪毐、免呂不韋。
+  用李斯、尉繚、王翦、王賁，自前 230 年滅韓起，
+  十年之內次第滅趙、魏、楚、燕、齊，前 221 年並天下，
+  自號皇帝，廢封建行郡縣，一法度衡石丈尺、車同軌、書同文。
+  本站以秦統一為下限，其後之事屬秦帝國史，不在收錄範圍。
+timeline:
+  - year: -247
+    event: 即秦王位，年十三
+  - year: -238
+    event: 平嫪毐之亂，次年免呂不韋相
+  - year: -230
+    event: 滅韓，統一之役始
+  - year: -227
+    event: 荊軻獻督亢地圖，圖窮匕見，刺秦不成
+  - year: -221
+    event: 滅齊，並天下，號始皇帝
+sources:
+  - source: shiji
+    locus: 秦始皇本紀
+    ctext_urn: ctp:shiji/qin-shi-huang-ben-ji

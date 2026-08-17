@@ -1,0 +1,33 @@
+id: qin-xiao-gong
+name:
+  zh: 秦孝公
+  personal: 渠梁
+  clan: 嬴
+  posthumous: 孝
+  en: Duke Xiao of Qin
+state: qin
+role: 君主
+birth: -381
+death: -338
+bio: >-
+  即位時秦僻在雍州，諸侯卑之，不與中國之會盟。
+  下求賢令曰：「賓客群臣有能出奇計強秦者，吾且尊官，與之分土。」
+  得商鞅而任之二十餘年，秦由是富強；天子致伯，諸侯畢賀。
+  他與商鞅的組合，是戰國變法中唯一一對真正做到「主不疑、臣不畏」而終其身不變的君臣——
+  也正因如此，孝公一死，反撲隨即而至。
+timeline:
+  - year: -361
+    event: 即位，下求賢令
+  - year: -359
+    event: 用商鞅，議變法於朝，甘龍、杜摯爭之不能奪
+  - year: -350
+    event: 徙都咸陽
+  - year: -338
+    event: 卒
+sources:
+  - source: shiji
+    locus: 秦本紀
+    ctext_urn: ctp:shiji/qin-ben-ji
+relations:
+  - target: shang-yang
+    kind: minister

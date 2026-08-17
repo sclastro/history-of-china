@@ -1,0 +1,59 @@
+id: shang-xia-qi-shou
+idiom:
+  zh: 上下其手
+  pinyin: shàng xià qí shǒu
+  jyutping: soeng6 haa6 kei4 sau2
+  literal: 把手抬高、又把手放低
+  en: Raising and lowering the hand
+type: historical
+period: wu-ba
+year: -547
+year_note: 魯襄公二十六年
+states: [chu, zheng]
+meaning: 玩弄手法、暗中作弊以顛倒是非。
+benshi:
+  event: chu-fu-huang-jie
+  summary: >-
+    楚伐鄭，穿封戌俘鄭將皇頡，楚公子圍與之爭功，訟於太宰伯州犁。
+    州犁曰「請問於囚」，卻在提問時上抬其手以指公子圍、下垂其手以指穿封戌，
+    暗示囚人所當攀附之貴賤。囚會意，答「頡遇王子，弱焉」。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 襄公二十六年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xiang-gong-er-shi-liu-nian
+    quote: >-
+      伯州犁曰：「請問於囚。」乃立囚。伯州犁曰：「所爭，君子也，其何不知？」
+      上其手，曰：「夫子為王子圍，寡君之貴介弟也。」
+      下其手，曰：「此子為穿封戌，方城外之縣尹也。誰獲子？」
+      囚曰：「頡遇王子，弱焉。」
+    translation: >-
+      伯州犁說：「請問問這個俘虜。」於是把俘虜帶上來站好。伯州犁說：
+      「爭執的雙方都是君子，他怎麼會不知道？」
+      把手往上一抬，說：「這一位是王子圍，是我們國君的尊貴的弟弟。」
+      又把手往下一放，說：「這一位是穿封戌，是方城之外的縣尹。
+      到底是誰俘獲了你？」
+      俘虜說：「我皇頡碰上王子，打不過。」
+crystallisation:
+  note: >-
+    《左傳》原文分作「上其手」「下其手」兩處，並非四字連用；
+    「上下其手」的四字語形係後人合併，唐代已見用例。
+    今日多用於指營私舞弊，而原文的核心是「形式公正掩護實質操縱」。
+  moe_id: 1105
+reliability: 信史
+people: [bo-zhou-li, gong-zi-wei, chuan-feng-xu]
+concepts: [程序公正, 偏私, 貴賤之別, 訟]
+lessons:
+  historical: >-
+    這是中國文獻中最早、也最清晰的一次「程序中的偏私」記錄。
+    伯州犁做足了程序——他確實把當事人請上來問了；
+    但他在提問的同時用手勢給出了答案。
+    值得注意的是：正是**形式上的公正**使操縱得以生效。
+    如果他直接判給公子圍，穿封戌可以指控他偏私；
+    但他把裁決權交給了「證人」，於是責任被轉移，而結果早已寫定。
+    穿封戌事後抽戈追殺公子圍而不追伯州犁——連受害者都被這層程序騙過了。
+  modern: >-
+    今用於指營私舞弊。更值得警覺的一層是：
+    當一個程序把裁決責任推給看似中立的第三方時，
+    要問的是誰控制了那個第三方獲得資訊的方式。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-er-shi-liu-nian/zh

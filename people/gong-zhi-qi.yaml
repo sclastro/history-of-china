@@ -1,0 +1,24 @@
+id: gong-zhi-qi
+name:
+  zh: 宮之奇
+  en: Gong Zhiqi
+state: yu
+role: 卿大夫
+birth: null
+death: null
+sort_year: -655
+bio: >-
+  虞國大夫。晉再假道以伐虢，宮之奇諫曰：「虢，虞之表也；虢亡，虞必從之。
+  諺所謂『輔車相依，唇亡齒寒』者，其虞虢之謂也。」
+  虞公恃同宗與神祐而不聽，宮之奇曰「虞不臘矣」，以其族行。
+  是年冬，晉滅虢，還，襲滅虞。
+  他的諫辭把小國在大國博弈中的處境講到了極處——
+  唇亡齒寒不是道德勸告，是幾何學。
+sources:
+  - source: zuo-zhuan
+    locus: 僖公五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-wu-nian
+relations:
+  - target: yu-gong
+    kind: ruler
+    note: 諫而不聽，遂去國

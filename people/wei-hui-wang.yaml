@@ -1,0 +1,47 @@
+id: wei-hui-wang
+name:
+  zh: 魏惠王
+  personal: 罃
+  clan: 姬
+  house: 魏
+  posthumous: 惠
+  en: King Hui of Wei (King Hui of Liang)
+state: wei
+role: 君主
+birth: -400
+death: -319
+bio: >-
+  魏武侯之子，在位五十年。徙都大梁，故亦稱梁惠王；
+  《莊子·養生主》中的「文惠君」一般亦以為即其人。
+  即位之初承文侯、武侯之業，魏為天下最強；然桂陵（前 353）、
+  馬陵（前 341）兩敗於齊，又敗於秦而獻河西之地，霸業遂衰。
+  他自言「東敗於齊，長子死焉；西喪地於秦七百里；南辱於楚」，
+  孟子見之，開口便是「王何必曰利」。
+  他是戰國中期最著名的失敗者——不是因為不努力，
+  而是因為他的努力全在爭霸的舊路上。
+timeline:
+  - year: -369
+    event: 即位
+  - year: -361
+    event: 公叔痤薦商鞅而不用，亦不殺
+  - year: -353
+    event: 桂陵之戰敗於齊（圍魏救趙）
+  - year: -341
+    event: 馬陵之戰大敗於齊，太子申被虜、龐涓死
+  - year: -334
+    event: 徐州相王，與齊威王互尊為王
+  - year: -319
+    event: 卒
+sources:
+  - source: shiji
+    locus: 魏世家
+    ctext_urn: ctp:shiji/wei-shi-jia
+  - source: mengzi
+    locus: 梁惠王上
+    ctext_urn: ctp:mengzi/liang-hui-wang-i
+relations:
+  - target: meng-zi
+    kind: rival
+  - target: pang-juan
+    kind: minister
+notes: 「文惠君」（《莊子·養生主》庖丁解牛之聽者）舊注多以為即梁惠王，然無確證。

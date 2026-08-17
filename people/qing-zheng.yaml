@@ -1,0 +1,22 @@
+id: qing-zheng
+name:
+  zh: 慶鄭
+  en: Qing Zheng
+state: jin
+role: 卿大夫
+birth: null
+death: -645
+sort_year: -645
+bio: >-
+  晉大夫。韓原之戰前諫惠公勿乘鄭所獻之小駟，以「外彊中乾」四字
+  斷其不可用於戎事——外表強壯而內裡已虛，遇懼則亂氣狡憤、血脈僨張，
+  屆時進退皆不由人。惠公不聽，果陷於泥淖而見虜於秦。
+  戰中惠公呼慶鄭救之，慶鄭以「愎諫違卜，固敗是求，又何逃焉」拒而去。
+  惠公歸國，殺之。
+sources:
+  - source: zuo-zhuan
+    locus: 僖公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-shi-wu-nian
+relations:
+  - target: jin-hui-gong
+    kind: ruler

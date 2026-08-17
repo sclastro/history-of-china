@@ -1,0 +1,31 @@
+id: zhou-you-wang
+name:
+  zh: 周幽王
+  personal: 宮涅
+  clan: 姬
+  posthumous: 幽
+  en: King You of Zhou
+state: zhou
+role: 君主
+birth: -795
+death: -771
+bio: >-
+  西周末代天子，在位十一年。廢申后與太子宜臼，改立褒姒之子伯服，
+  申侯遂聯合繒國與西戎攻宗周，幽王死於驪山之下，西周亡。
+  《史記》以「烽火戲諸侯」解釋其覆亡，然清華簡〈繫年〉所記全然不同——
+  幽王先主動伐申，申侯反擊而殺之。「幽」為惡諡，取「壅遏不通」之義，
+  後世對他的敘述始終被這個諡號所框定。
+timeline:
+  - year: -781
+    event: 即位
+  - year: -774
+    event: 廢申后及太子宜臼，立褒姒為后、伯服為太子
+  - year: -771
+    event: 申侯聯繒與西戎攻宗周，幽王死於驪山，西周亡
+sources:
+  - source: shiji
+    locus: 周本紀
+    ctext_urn: ctp:shiji/zhou-ben-ji
+  - source: qinghua-xinian
+    locus: 第二章
+notes: 死年前 771 為傳世文獻與出土材料所共認；生年僅為推算。

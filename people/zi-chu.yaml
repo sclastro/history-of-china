@@ -1,0 +1,25 @@
+id: zi-chu
+name:
+  zh: 秦莊襄王
+  personal: 異人（後改名子楚）
+  clan: 嬴
+  posthumous: 莊襄
+  en: King Zhuangxiang of Qin
+state: qin
+role: 君主
+birth: -281
+death: -247
+bio: >-
+  秦昭王之孫、安國君（孝文王）之中子，母夏姬無寵，
+  質於趙而秦數攻趙，趙待之不甚禮，車乘進用不饒，困不得意。
+  呂不韋見而以為「奇貨可居」，以五百金為其結賓客，
+  復以五百金買奇物玩好西游，說安國君所寵華陽夫人（無子）收為嫡嗣。
+  華陽夫人本楚人，故改名子楚。邯鄲之圍時亡歸秦。
+  孝文王立三日而卒，子楚繼位為莊襄王，在位三年而卒，子政立。
+sources:
+  - source: shiji
+    locus: 呂不韋列傳
+    ctext_urn: ctp:shiji/lv-bu-wei-lie-zhuan
+relations:
+  - target: lv-bu-wei
+    kind: ally

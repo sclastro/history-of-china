@@ -1,0 +1,48 @@
+id: zhao-san-mu-si
+idiom:
+  zh: 朝三暮四
+  pinyin: zhāo sān mù sì
+  jyutping: ziu1 saam1 mou6 sei3
+  literal: 早上三個、晚上四個
+  en: Three in the morning, four in the evening
+type: parable
+period: zhan-guo-early
+year: null
+states: [song]
+meaning: 今義多指反覆無常；原義則指以名目的變換愚弄他人，而實質不變。
+dianyuan:
+  - source: zhuangzi
+    locus: 齊物論
+    ctext_urn: ctp:zhuangzi/adjustment-of-controversies
+    quote: >-
+      狙公賦芧，曰：「朝三而暮四。」眾狙皆怒。曰：「然則朝四而暮三。」眾狙皆悅。
+      名實未虧而喜怒為用，亦因是也。
+    translation: >-
+      養猴人分橡子，說：「早上三個、晚上四個。」猴子們都發怒。
+      改口說：「那麼早上四個、晚上三個。」猴子們都高興了。
+      名目與實質都沒有虧損，而喜怒卻因此被支配——這也是順著成心的緣故。
+crystallisation:
+  note: >-
+    四字語形即出《莊子》原文（「朝三而暮四」），
+    然**今義與原義相反**：原義指實質不變而名目變換，
+    後世因字面易生「反覆」之聯想，遂轉為「反覆無常」之義，
+    唐宋以降此新義已通行。這是本站少數語形不變而語義翻轉的例子。
+  moe_id: 1207
+reliability: 寓言
+people: [zhuang-zi]
+concepts: [名實, 齊物, 成心, 框架效應]
+lessons:
+  historical: >-
+    莊子講這則寓言，是為了說明「名實未虧而喜怒為用」——
+    總量完全相同，只因為分配的先後次序改變，猴子的情緒就翻轉了。
+    他要指出的是「成心」的荒謬：人執著於自己的分別，
+    卻不知道那些分別往往不落在實質上。
+    《列子·黃帝》另載同一故事而加一句「聖人以智籠群愚，亦猶狙公之以智籠眾狙也」——
+    把它讀成了統治術。同一則寓言，莊子用來破執，列子用來論術。
+    此外值得一提的是：這是二十世紀行為經濟學「框架效應」
+    最早的一則文獻記錄。
+  modern: >-
+    今日通行義為反覆無常，與原義相反，使用時宜自覺。
+    若取原義，它提醒的是：先確認總量有沒有變，再判斷方案的優劣。
+references:
+  - https://ctext.org/zhuangzi/qi-wu-lun/zh

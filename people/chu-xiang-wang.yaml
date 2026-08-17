@@ -1,0 +1,25 @@
+id: chu-xiang-wang
+name:
+  zh: 楚頃襄王
+  personal: 橫
+  house: 熊
+  posthumous: 頃襄
+  en: King Qingxiang of Chu
+state: chu
+role: 君主
+birth: null
+death: -263
+sort_year: -298
+bio: >-
+  懷王之子。父見誘留死於秦而不能雪，在位淫逸，
+  前 278 年秦將白起拔郢，燒夷陵，楚遷都於陳。
+  屈原自沉汨羅即在是年前後。既失國都乃召莊辛，
+  用其言收東地兵，復得淮北十餘城——「亡羊補牢」之所本。
+  楚國自此偏安淮上五十餘年，終為秦所滅。
+sources:
+  - source: zhan-guo-ce
+    locus: 楚策四
+    ctext_urn: ctp:zhan-guo-ce/chu-si
+  - source: shiji
+    locus: 楚世家
+    ctext_urn: ctp:shiji/chu-shi-jia

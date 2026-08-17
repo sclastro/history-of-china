@@ -1,0 +1,61 @@
+id: feng-ma-niu-bu-xiang-ji
+idiom:
+  zh: 風馬牛不相及
+  pinyin: fēng mǎ niú bù xiāng jí
+  jyutping: fung1 maa5 ngau4 bat1 soeng1 kap6
+  literal: 就算馬牛走失也到不了對方境內
+  en: Even strayed horses and cattle could not reach each other
+type: historical
+period: wu-ba
+year: -656
+year_note: 魯僖公四年
+states: [qi, chu]
+meaning: 兩事毫不相干、彼此扯不上關係。
+benshi:
+  event: shao-ling-zhi-meng
+  summary: >-
+    齊桓公率八國之師侵蔡，蔡潰，遂伐楚。楚成王使者迎於途，
+    以「君處北海，寡人處南海，唯是風馬牛不相及也」責問齊師何故涉境；
+    管仲乃舉「包茅不入」與「昭王南征而不復」二事為辭，
+    雙方終盟於召陵而罷兵。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 僖公四年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-si-nian
+    quote: >-
+      楚子使與師言曰：「君處北海，寡人處南海，唯是風馬牛不相及也。
+      不虞君之涉吾地也，何故？」
+    translation: >-
+      楚成王派人對齊軍說：「君侯居於北海，寡人居於南海，
+      即使牛馬走失發情也到不了對方境內。沒想到君侯竟踏入我的土地，
+      這是什麼緣故？」
+crystallisation:
+  first_attested: 《左傳·僖公四年》
+  note: >-
+    六字語形即出原文。「風」字歷來有二解：
+    一說「風」為走失（《尚書·費誓》「馬牛其風」），
+    一說「風」為牝牡相誘（服虔注「風，放也，牝牡相誘謂之風」）。
+    二說皆通，而後說更能解釋為何舉「馬牛」為例——
+    連發情期跨物種相追逐的極端情況都不可能碰上，極言其遠。
+  moe_id: 1042
+reliability: 信史
+people: [qi-huan-gong, guan-zhong, chu-cheng-wang]
+concepts: [外交辭令, 霸權, 名分, 攘夷]
+related_idioms:
+  - target: tui-bi-san-she
+    kind: same_source
+    note: 同屬春秋外交辭令中「以禮辭包裹實力對峙」的典型。
+lessons:
+  historical: >-
+    這句話是一次極高明的外交開場：楚國不否認也不示弱，
+    只質疑齊師出現在此地的**正當性依據**——我們遠得連牛馬都碰不上，
+    你憑什麼來？把爭端從實力問題轉為名分問題，正是弱勢一方最有利的框架。
+    管仲的回應同樣精采：他不談楚僭號稱王這件真正的大事，
+    只問「包茅不入」這樣一件祭祀用品的小事，再加一句年代久遠、
+    無從查證的「昭王南征而不復」。雙方各給一個台階，
+    一場八國聯軍的戰爭被壓縮成兩句話的交易。
+  modern: >-
+    今日只取「毫不相干」之義，原句中那層「因此你的介入沒有正當性」
+    的外交鋒芒已經脫落。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xi-gong-si-nian/zh

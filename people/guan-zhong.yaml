@@ -1,0 +1,41 @@
+id: guan-zhong
+name:
+  zh: 管仲
+  personal: 夷吾
+  house: 管
+  en: Guan Zhong
+state: qi
+role: 卿大夫
+birth: null
+death: -645
+sort_year: -685
+bio: >-
+  齊桓霸業的設計者。少貧，與鮑叔牙賈於南陽，分財多自與而鮑叔不以為貪。
+  初事公子糾，射小白中帶鉤；糾敗，鮑叔薦之於桓公，遂相齊四十年。
+  其政以「倉廩實而知禮節，衣食足而知榮辱」為本，
+  行士農工商分居定業之制、國野分治之軍賦、鹽鐵官營之財政，
+  又倡「尊王攘夷」以霸道行王事之名。孔子雖譏其器小、不儉、不知禮，
+  仍稱「微管仲，吾其被髮左衽矣」——保住了華夏的衣冠，這是最高的評價。
+timeline:
+  - year: -685
+    event: 射小白中帶鉤；其後由鮑叔牙薦而相齊
+  - year: -679
+    event: 鄄之會，齊之霸業始成
+  - year: -663
+    event: 從桓公伐山戎救燕，歸途迷道，用老馬以識途
+  - year: -645
+    event: 卒
+sources:
+  - source: shiji
+    locus: 管晏列傳
+    ctext_urn: ctp:shiji/guan-yan-lie-zhuan
+  - source: analects
+    locus: 憲問
+    ctext_urn: ctp:analects/xian-wen
+relations:
+  - target: bao-shu-ya
+    kind: ally
+    note: 「生我者父母，知我者鮑子也」
+  - target: qi-huan-gong
+    kind: ruler
+notes: 今傳《管子》非管仲自著，成書於戰國至漢初，然保存齊法家思想甚多。

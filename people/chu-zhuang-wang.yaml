@@ -1,0 +1,48 @@
+id: chu-zhuang-wang
+name:
+  zh: 楚莊王
+  personal: 侶
+  house: 熊
+  posthumous: 莊
+  en: King Zhuang of Chu
+state: chu
+role: 君主
+birth: null
+death: -591
+sort_year: -613
+bio: >-
+  春秋五霸之一，楚國霸業之極。即位三年不出號令，日夜為樂，
+  令國中曰「有敢諫者死無赦」；伍舉以「三年不蜚，蜚將沖天；
+  三年不鳴，鳴將驚人」隱之，遂罷淫樂而聽政，
+  所誅者數百、所進者數百，國人大悅——「一鳴驚人」之所出。
+  前 606 年伐陸渾之戎，觀兵於周疆，問九鼎之大小輕重，
+  王孫滿以「在德不在鼎」對之。前 597 年邲之戰大敗晉師，
+  遂為霸主。既勝而不築京觀，論「武」字從止從戈，
+  提出「夫武，禁暴、戢兵、保大、定功、安民、和眾、豐財者也」——
+  是先秦最完整的一段戰爭倫理論述，出自一個剛剛贏了大仗的人之口。
+timeline:
+  - year: -613
+    event: 即位，三年不出號令
+  - year: -611
+    event: 罷淫樂而聽政，一鳴驚人
+  - year: -606
+    event: 伐陸渾之戎，觀兵周疆，問鼎之輕重
+  - year: -597
+    event: 邲之戰大敗晉師，霸業成；論止戈為武
+  - year: -594
+    event: 圍宋九月，宋人易子而食；聽申叔時之言而退師
+  - year: -591
+    event: 卒
+sources:
+  - source: zuo-zhuan
+    locus: 宣公三年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-san-nian
+  - source: shiji
+    locus: 楚世家
+    ctext_urn: ctp:shiji/chu-shi-jia
+relations:
+  - target: wang-sun-man
+    kind: rival
+    note: 問鼎而見拒
+  - target: wu-ju
+    kind: minister

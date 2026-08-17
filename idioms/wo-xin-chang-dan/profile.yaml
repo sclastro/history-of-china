@@ -1,0 +1,83 @@
+id: wo-xin-chang-dan
+idiom:
+  zh: 臥薪嘗膽
+  pinyin: wò xīn cháng dǎn
+  jyutping: ngo6 san1 soeng4 daam2
+  literal: 睡在柴草上、嘗苦膽
+  en: Sleeping on brushwood and tasting gall
+type: historical
+period: chun-qiu-late
+year: -490
+year_note: 越王句踐自吳歸國之後
+states: [yue, wu]
+meaning: 刻苦自勵、發憤圖強以雪前恥。
+benshi:
+  event: yue-mie-wu
+  summary: >-
+    前 494 年越王句踐敗於夫椒，入臣於吳三年；歸國後苦身焦思，
+    置苦膽於座，坐臥飲食皆嘗之以自警，行十年生聚、十年教訓之策，
+    前 473 年終滅吳國。
+dianyuan:
+  - source: shiji
+    locus: 越王句踐世家
+    ctext_urn: ctp:shiji/yue-wang-ju-jian-shi-jia
+    quote: >-
+      越王句踐反國，乃苦身焦思，置膽於坐，坐臥即仰膽，飲食亦嘗膽也。
+      曰：「女忘會稽之恥邪？」
+    translation: >-
+      越王句踐返回自己的國家，於是勞苦身體、焦慮思索，
+      把苦膽放在座位上，坐著躺著都抬頭看得見它，吃喝時也要嘗一嘗。
+      對自己說：「你忘了會稽之恥嗎？」
+  - source: zuo-zhuan
+    locus: 哀公元年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/ai-gong-yuan-nian
+    quote: >-
+      越十年生聚，而十年教訓，二十年之外，吳其為沼乎！
+    translation: >-
+      越國用十年繁衍積聚、再用十年教養訓練，二十年之後，
+      吳國的宮室恐怕就要變成一片水沼了吧！
+    note: >-
+      《左傳》《國語》詳記句踐復國之艱苦，然通篇無「臥薪」，亦無「嘗膽」。
+crystallisation:
+  first_attested: 北宋·蘇軾《擬孫權答曹操書》
+  note: >-
+    這是本站語形演變跨度最大的一條，五個沉積層清晰可辨：
+    (1) 本事在前 5 世紀，《左傳》《國語》皆無臥薪嘗膽之說；
+    (2)「嘗膽」二字首見於前 1 世紀的《史記》，且原文作「置膽於坐」，
+    仍無「臥薪」；
+    (3)「臥薪嘗膽」四字連用，現存最早見於北宋蘇軾《擬孫權答曹操書》
+    「僕受遺以來，臥薪嘗膽」——而蘇軾說的是**孫權**，不是句踐；
+    (4) 南宋人（呂祖謙《左氏傳說》、真德秀等）始將此四字繫於句踐；
+    (5) 明代梁辰魚《浣紗記》搬演成戲，遂家喻戶曉。
+    由本事到今日形態，前後跨越兩千年。
+  moe_id: 1064
+reliability: 大體可信
+variants:
+  - claim: >-
+      《左傳》《國語》為春秋段最可靠之敘事源，二書詳記句踐復國之事
+      而全無「臥薪」「嘗膽」——「嘗膽」為《史記》所增，「臥薪」更為宋代所加。
+    source: guo-yu
+    locus: 越語上
+people: [gou-jian, fu-chai, fan-li, wen-zhong]
+concepts: [復仇, 忍辱, 層累造史, 功臣命運]
+related_idioms:
+  - target: niao-jin-gong-cang
+    kind: same_event
+    note: 同出越滅吳一事；一者為復國之始，一者為復國之後。
+lessons:
+  historical: >-
+    這條成語的價值，一半在史事，一半在它自身的形成史。
+    就史事而言，句踐復國是春秋末最確鑿的事件之一；
+    就語形而言，它是「層累造史」最清晰的標本——
+    每一個時代都往這個故事上加了一點自己需要的東西：
+    漢代加了苦膽，宋代加了柴薪，明代加了戲台。
+    而被加上去的部分，恰恰是今天最深入人心的部分。
+    另外值得注意的是《史記》緊接著的那句評語——
+    句踐「可與共患難，不可與共樂」。滅吳之日即是文種之死的開始；
+    這一半的故事，從來沒有被加進成語裡。
+  modern: >-
+    引申為刻苦自勵以圖翻身。使用時宜自覺：
+    這四個字所描述的具體行為（臥薪）是後人追加的文學形象，
+    不是史料所載。
+references:
+  - https://ctext.org/shiji/yue-wang-ju-jian-shi-jia/zh

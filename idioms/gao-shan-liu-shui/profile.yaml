@@ -1,0 +1,67 @@
+id: gao-shan-liu-shui
+idiom:
+  zh: 高山流水
+  pinyin: gāo shān liú shuǐ
+  jyutping: gou1 saan1 lau4 seoi2
+  literal: 高聳的山、流動的水
+  en: Lofty mountains and flowing waters
+type: parable
+period: zhan-guo-early
+year: null
+states: [chu]
+meaning: 知音難得；亦指樂曲之高妙。
+dianyuan:
+  - source: liezi
+    locus: 湯問
+    ctext_urn: ctp:liezi/tang-wen
+    quote: >-
+      伯牙善鼓琴，鍾子期善聽。伯牙鼓琴，志在登高山。鍾子期曰：
+      「善哉！峨峨兮若泰山。」志在流水。鍾子期曰：「善哉！洋洋兮若江河。」
+      伯牙所念，鍾子期必得之……子期死，伯牙謂世再無知音，
+      乃破琴絕弦，終身不復鼓。
+    translation: >-
+      伯牙善於彈琴，鍾子期善於聽琴。伯牙彈琴時心裡想著登上高山，
+      鍾子期就說：「好啊！巍峨得像泰山。」心裡想著流水，
+      鍾子期就說：「好啊！浩蕩得像江河。」伯牙心中所想，鍾子期必定領會得到……
+      子期死後，伯牙認為世上再沒有知音，於是摔碎琴、扯斷弦，終身不再彈琴。
+  - source: lv-shi-chun-qiu
+    locus: 本味
+    quote: >-
+      鍾子期死，伯牙破琴絕絃，終身不復鼓琴，以為世無足復為鼓琴者。
+      非獨琴若此也，賢者亦然。
+    translation: >-
+      鍾子期死了，伯牙摔琴斷弦，終身不再彈琴，認為世上再沒有值得為之彈琴的人。
+      不只彈琴是這樣，賢者也是這樣。
+crystallisation:
+  note: >-
+    《列子》《呂氏春秋》原文皆無「高山流水」四字連用，
+    只作「志在登高山」「志在流水」。四字語形出於後世節取，
+    唐宋詩文中已通行，並轉為琴曲名。
+  moe_id: 1198
+reliability: 寓言
+variants:
+  - claim: >-
+      今傳《列子》為魏晉人所輯偽書；同一故事亦見《呂氏春秋·本味》，
+      文字較簡。伯牙、鍾子期其人其國皆不可考。
+    source: lv-shi-chun-qiu
+    locus: 本味
+people: [bo-ya, zhong-zi-qi]
+concepts: [知音, 理解, 士的焦慮]
+related_idioms:
+  - target: guan-bao-zhi-jiao
+    kind: contrast
+    note: 同是「知」，一者薦之於君而成霸業，一者絕弦而終身不鼓。
+lessons:
+  historical: >-
+    《呂氏春秋·本味》在故事之後補了一句斷語：
+    「非獨琴若此也，賢者亦然。」——它講的其實不是音樂。
+    戰國士人最深的焦慮，是懷才而無人能識：
+    才能只有在被正確理解之後才成為才能，
+    而理解者的存在完全不由自己決定。
+    伯牙絕弦不是傷感的姿態，是對這個處境的承認。
+  modern: >-
+    引申為知音難覓。可留意其原始語境：
+    這是一個關於「被理解」的稀缺性的故事，
+    而非關於友誼的溫情故事。
+references:
+  - https://ctext.org/liezi/tang-wen/zh

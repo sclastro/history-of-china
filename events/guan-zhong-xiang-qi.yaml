@@ -1,0 +1,37 @@
+id: guan-zhong-xiang-qi
+name: 管仲相齊
+year: -685
+year_note: 齊桓公元年
+period: wu-ba
+type: 拜相
+states: [qi]
+people: [qi-huan-gong, guan-zhong, bao-shu-ya]
+narrative: >-
+  齊襄公無道，公子糾奔魯、公子小白奔莒。襄公見弒，二公子爭國。
+  管仲事糾，射小白中帶鉤；小白詐死，兼程先入而立，是為桓公。
+  桓公使魯殺公子糾，而請生得管仲以自快——實則欲用之。
+
+  鮑叔牙辭相位曰：「君將治齊，即高傒與叔牙足也。
+  君且欲霸王，非管夷吾不可。」桓公乃赦射鉤之仇，
+  齋戒三日，郊迎而相之。
+
+  管仲相齊四十年：叁其國而伍其鄙，士農工商分居定業；
+  設輕重九府，通魚鹽之利，以官山海為財政之本；
+  作內政而寄軍令，使軍賦出於鄉里之編組。
+  對外則倡「尊王攘夷」——存邢救衛、伐楚責包茅、召陵之盟、葵丘之會。
+
+  管仲曰：「倉廩實而知禮節，衣食足而知榮辱。」
+  又曰：「生我者父母，知我者鮑子也。」
+sources:
+  - source: shiji
+    locus: 管晏列傳
+    ctext_urn: ctp:shiji/guan-yan-lie-zhuan
+  - source: analects
+    locus: 憲問
+    ctext_urn: ctp:analects/xian-wen
+reliability: 大體可信
+significance: >-
+  霸主政治的制度起點。管仲所做的不是恢復周禮，而是在周禮的名義下
+  建立一套新的動員體系——編戶、軍賦、專賣。此後兩百年的霸業，
+  無論齊晉，其骨架都是這一套。孔子雖譏其「器小」，
+  仍說「微管仲，吾其被髮左衽矣」。

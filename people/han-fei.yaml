@@ -1,0 +1,33 @@
+id: han-fei
+name:
+  zh: 韓非
+  personal: 非
+  clan: 姬
+  house: 韓
+  en: Han Fei
+state: han
+role: 思想家
+birth: -280
+death: -233
+bio: >-
+  韓之諸公子，與李斯同學於荀子。口吃不能道說而善著書，
+  數以書諫韓王安而不見用，退而作〈孤憤〉〈五蠹〉〈說難〉等十餘萬言。
+  秦王政讀之而歎「得見此人與之遊，死不恨矣」；
+  前 233 年韓遣其使秦，李斯、姚賈毀之，下獄，李斯遺藥令自殺。
+  其書寓言之富為先秦之冠——守株待兔、自相矛盾、買櫝還珠、
+  濫竽充數、老馬識途、諱疾忌醫，多出〈說林〉〈儲說〉〈喻老〉諸篇。
+  思想部分見哲學家知識庫，本站只記其史事。
+timeline:
+  - year: -253
+    event: 約於此時與李斯同學於荀子門下
+  - year: -234
+    event: 秦急攻韓，韓王遣非使秦
+  - year: -233
+    event: 下獄，李斯遺藥使自殺
+sources:
+  - source: shiji
+    locus: 老子韓非列傳
+  - source: hanfeizi
+    locus: 五蠹
+    ctext_urn: ctp:hanfeizi/wu-du
+philosophy_ref: han-fei

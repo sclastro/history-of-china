@@ -1,0 +1,21 @@
+id: geng-lei
+name:
+  zh: 更羸
+  en: Geng Lei
+state: wei
+role: 將領
+birth: null
+death: null
+sort_year: -330
+bio: >-
+  魏之善射者。與魏王處京臺之下，仰見飛鳥，
+  謂「臣為王引弓虛發而下鳥」。有間，雁從東方來，
+  更羸虛發而雁墜。王曰「射可至此乎」。
+  更羸曰：「此孽也……其飛徐而鳴悲。飛徐者，故瘡痛也；
+  鳴悲者，久失群也。故瘡未息而驚心未去也，聞弦音，
+  引而高飛，故瘡隕也。」
+  《戰國策》以此喻臨武君之不可為將——敗軍之將，聞戰而懼。
+sources:
+  - source: zhan-guo-ce
+    locus: 楚策四
+    ctext_urn: ctp:zhan-guo-ce/chu-si

@@ -1,0 +1,21 @@
+id: pang-cong
+name:
+  zh: 龐蔥
+  en: Pang Cong
+state: wei
+role: 卿大夫
+birth: null
+death: null
+sort_year: -330
+bio: >-
+  魏大夫。將與太子質於邯鄲，臨行問魏王：「今一人言市有虎，王信之乎？」
+  王曰否。「二人言市有虎，王信之乎？」王曰寡人疑之矣。
+  「三人言市有虎，王信之乎？」王曰寡人信之矣。
+  龐蔥曰：「夫市之無虎明矣，然而三人言而成虎。今邯鄲去大梁也遠於市，
+  而議臣者過於三人矣，願王察之。」王曰「寡人自為知」。
+  及龐蔥自邯鄲反，竟不得見。
+sources:
+  - source: zhan-guo-ce
+    locus: 魏策二
+    ctext_urn: ctp:zhan-guo-ce/wei-er
+notes: 一作「龐恭」；所事之魏王，舊注多以為魏惠王。

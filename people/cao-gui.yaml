@@ -1,0 +1,21 @@
+id: cao-gui
+name:
+  zh: 曹劌
+  en: Cao Gui
+state: lu
+role: 卿大夫
+birth: null
+death: null
+sort_year: -684
+bio: >-
+  魯國平民出身之謀士。齊師伐魯，曹劌請見莊公，鄉人止之曰
+  「肉食者謀之，又何間焉」，劌答「肉食者鄙，未能遠謀」。
+  長勺之戰，他以「一鼓作氣，再而衰，三而竭」候敵氣之竭而後擊，
+  又「視其轍亂、望其旗靡」而後逐——是中國戰史上最早的士氣論與偵察論。
+  戰前更逼問莊公憑何可戰，直至莊公答「小大之獄，必以情」乃曰「忠之屬也，可以一戰」，
+  把勝負的根據放在民心而非甲兵。
+sources:
+  - source: zuo-zhuan
+    locus: 莊公十年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/zhuang-gong-shi-nian
+notes: 《史記·刺客列傳》另有「曹沫」劫齊桓公事，或即一人而異名，然事跡與性格全然不類，本站不併。

@@ -1,0 +1,40 @@
+id: qin-zhao-xiang-wang
+name:
+  zh: 秦昭襄王
+  personal: 稷
+  clan: 嬴
+  posthumous: 昭襄
+  en: King Zhaoxiang of Qin
+state: qin
+role: 君主
+birth: -325
+death: -251
+bio: >-
+  在位五十六年，秦之霸業於其時定型。前期母宣太后與舅魏冉當國，
+  後用范睢行「遠交近攻」，廢太后逐四貴而收君權。
+  澠池之會欲辱趙王而為藺相如所折；索和氏璧而藺相如完璧歸趙。
+  用白起，伊闕斬韓魏二十四萬、鄢郢破楚、長平坑趙卒四十萬——
+  山東六國自此無野戰之力。前 256 年滅西周公，遷九鼎於咸陽。
+timeline:
+  - year: -306
+    event: 即位
+  - year: -283
+    event: 索和氏璧於趙，藺相如完璧歸趙
+  - year: -279
+    event: 澠池之會
+  - year: -260
+    event: 長平之戰，白起坑趙降卒四十萬
+  - year: -257
+    event: 邯鄲之圍，為魏楚聯軍所敗
+  - year: -256
+    event: 滅西周公，周祀絕
+sources:
+  - source: shiji
+    locus: 秦本紀
+    ctext_urn: ctp:shiji/qin-ben-ji
+  - source: shiji
+    locus: 廉頗藺相如列傳
+    ctext_urn: ctp:shiji/lian-po-lin-xiang-ru-lie-zhuan
+relations:
+  - target: bai-qi
+    kind: minister

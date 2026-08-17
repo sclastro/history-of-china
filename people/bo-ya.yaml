@@ -1,0 +1,25 @@
+id: bo-ya
+name:
+  zh: 伯牙
+  en: Bo Ya
+state: chu
+role: 樂師
+birth: null
+death: null
+sort_year: -400
+bio: >-
+  善鼓琴者。志在登高山，鍾子期曰「善哉，峨峨兮若泰山」；
+  志在流水，子期曰「善哉，洋洋兮若江河」——伯牙所念，子期必得之。
+  子期死，伯牙破琴絕弦，終身不復鼓琴，以為世無足復為鼓者。
+  其人其事只見於《列子·湯問》與《呂氏春秋·本味》，
+  年代國屬皆不可確考，本站繫於戰國前期僅為排序之便。
+sources:
+  - source: liezi
+    locus: 湯問
+    ctext_urn: ctp:liezi/tang-wen
+  - source: lv-shi-chun-qiu
+    locus: 本味
+relations:
+  - target: zhong-zi-qi
+    kind: ally
+notes: 生卒與國屬俱不可考；state 欄填 chu 係據後世傳說（一說晉大夫），非史有明文。

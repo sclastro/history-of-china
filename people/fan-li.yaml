@@ -1,0 +1,28 @@
+id: fan-li
+name:
+  zh: 范蠡
+  personal: 蠡
+  house: 范
+  en: Fan Li
+state: yue
+role: 卿大夫
+birth: null
+death: null
+sort_year: -494
+bio: >-
+  楚宛人而事越。句踐棲會稽，范蠡主「卑辭厚禮以遺之」，
+  並隨句踐入質於吳三年。歸而佐之二十餘年，卒以滅吳。
+  功成之日，浮海而去，遺書文種曰：「蜚鳥盡，良弓藏；狡兔死，走狗烹。
+  越王為人長頸鳥喙，可與共患難，不可與共樂。子何不去？」
+  文種不去，果賜死。范蠡則變名易姓，之陶為朱公，「三致千金」而三散之。
+  他是先秦少數對權力的性質有清醒認識、且真正據此行動的人。
+sources:
+  - source: shiji
+    locus: 越王句踐世家
+    ctext_urn: ctp:shiji/yue-wang-ju-jian-shi-jia
+relations:
+  - target: gou-jian
+    kind: ruler
+  - target: wen-zhong
+    kind: ally
+    note: 遺書勸其去，不聽

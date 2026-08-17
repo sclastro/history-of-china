@@ -1,0 +1,28 @@
+id: hu-yan
+name:
+  zh: 狐偃
+  personal: 偃
+  house: 狐
+  en: Hu Yan (Zifan)
+state: jin
+role: 卿大夫
+birth: null
+death: null
+sort_year: -636
+bio: >-
+  字子犯，重耳之舅，故亦稱舅犯。從亡十九年，為謀主。
+  在齊時重耳安於安樂不欲行，狐偃與姜氏謀，醉而載之以去。
+  城濮之戰前，晉侯疑楚之惠，狐偃曰：「戰也。戰而捷，必得諸侯；
+  若其不捷，表裡山河，必無害也。」是「表裡山河」之所出。
+  又主張「退三舍辟之」以踐前諾而收人心——把履約與誘敵合為一策。
+  返國之初，狐偃投璧於河曰「所不與舅氏同心者，有如白水」，
+  以退為進而定君臣之分，是春秋政治術的高手。
+sources:
+  - source: zuo-zhuan
+    locus: 僖公二十八年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-ba-nian
+  - source: guo-yu
+    locus: 晉語四
+relations:
+  - target: jin-wen-gong
+    kind: ruler

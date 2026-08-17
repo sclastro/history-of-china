@@ -1,0 +1,25 @@
+id: zhao-hui-wen-wang
+name:
+  zh: 趙惠文王
+  personal: 何
+  clan: 嬴
+  house: 趙
+  posthumous: 惠文
+  en: King Huiwen of Zhao
+state: zhao
+role: 君主
+birth: null
+death: -266
+sort_year: -298
+bio: >-
+  武靈王少子，因父傳位而立，其後沙丘之亂父死。
+  在位三十三年，用藺相如、廉頗、趙奢、平原君，
+  於秦之壓迫下屢挫其鋒——完璧歸趙、澠池之會、閼與之捷皆在其時。
+  趙國是山東六國中唯一能與秦正面相抗者，其本錢大半積於此朝。
+sources:
+  - source: shiji
+    locus: 廉頗藺相如列傳
+    ctext_urn: ctp:shiji/lian-po-lin-xiang-ru-lie-zhuan
+  - source: shiji
+    locus: 趙世家
+    ctext_urn: ctp:shiji/zhao-shi-jia

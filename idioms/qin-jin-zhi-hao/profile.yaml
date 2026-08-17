@@ -1,0 +1,56 @@
+id: qin-jin-zhi-hao
+idiom:
+  zh: 秦晉之好
+  pinyin: qín jìn zhī hǎo
+  jyutping: ceon4 zeon3 zi1 hou2
+  literal: 秦國與晉國之間的交好
+  en: The Qin-Jin alliance by marriage
+type: historical
+period: wu-ba
+year: -636
+year_note: 魯僖公二十四年
+states: [qin, jin]
+meaning: 兩姓聯姻，締結婚約。
+benshi:
+  event: qin-na-chong-er
+  summary: >-
+    秦晉三世為婚：晉獻公以女穆姬妻秦穆公；晉惠公之子圉質秦，穆公妻以懷嬴；
+    重耳入秦，穆公復納女五人，懷嬴與焉。穆公三置晉君，
+    前 636 年以兵送重耳返國即位，是為晉文公。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 僖公二十三年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-san-nian
+    quote: >-
+      秦伯納女五人，懷嬴與焉。奉匜沃盥，既而揮之。怒曰：
+      「秦、晉匹也，何以卑我？」公子懼，降服而囚。
+    translation: >-
+      秦穆公送了五名女子給重耳，懷嬴也在其中。懷嬴捧著匜為他澆水洗手，
+      洗完他甩手把水濺開。懷嬴怒道：「秦、晉是對等之國，你憑什麼看輕我？」
+      公子重耳害怕，脫去外衣自囚以謝罪。
+crystallisation:
+  note: >-
+    《左傳》《國語》皆無「秦晉之好」四字，只記其世為婚姻之實。
+    四字語形出於後世對這段關係的概括，元代戲曲中已成套語
+    （如《西廂記》「共結秦晉之好」），遂為婚姻之通稱。
+  moe_id: 452
+reliability: 信史
+people: [qin-mu-gong, jin-wen-gong, jin-hui-gong]
+concepts: [聯姻, 外交, 干預繼承, 大國關係]
+related_idioms:
+  - target: wai-qiang-zhong-gan
+    kind: same_event
+    note: 韓原之戰正是這對「之好」翻臉的一戰。
+lessons:
+  historical: >-
+    今日「秦晉之好」是一句喜慶話，原始內容卻是一套持續三代的政治工程：
+    秦以婚姻為手段介入晉的君位繼承（三置晉君），
+    晉則以婚姻換取即位所需的軍事支持。
+    它同時是春秋大國關係中最緊密、也最不穩定的一組——
+    韓原之戰（前 645）秦虜晉惠公、崤之戰（前 627）晉全殲秦師，
+    都發生在這對「之好」之間。婚姻在此不是感情的結果，是實力的暫時均衡。
+  modern: >-
+    引申為締結婚約。若要取其史義，重點反而是：
+    以關係綁定的聯盟並不比以利益綁定的聯盟更穩固。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xi-gong-er-shi-san-nian/zh

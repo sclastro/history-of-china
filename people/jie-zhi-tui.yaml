@@ -1,0 +1,25 @@
+id: jie-zhi-tui
+name:
+  zh: 介之推
+  en: Jie Zhitui
+state: jin
+role: 卿大夫
+birth: null
+death: null
+sort_year: -636
+bio: >-
+  從亡之臣。文公返國行賞，介之推不言祿，祿亦弗及。
+  推曰：「獻公之子九人，唯君在矣……天實置之，而二三子以為己力，不亦誣乎？
+  竊人之財，猶謂之盜，況貪天之功以為己力乎？」遂與母偕隱而死。
+  文公求之不獲，以綿上為之田，曰「以志吾過，且旌善人」。
+  後世附益「割股啖君」「焚山逼出」與寒食之俗，皆不見於《左傳》。
+  他所批評的不是文公的薄，而是同僚的「貪天之功」——
+  把歷史的偶然算作自己的功勞，這是一種認識論上的錯誤。
+sources:
+  - source: zuo-zhuan
+    locus: 僖公二十四年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-si-nian
+relations:
+  - target: jin-wen-gong
+    kind: ruler
+notes: 割股、焚山、寒食諸說均為後世層累，《左傳》只言「隱而死」，本站不採。

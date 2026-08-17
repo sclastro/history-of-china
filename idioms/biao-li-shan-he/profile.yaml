@@ -1,0 +1,52 @@
+id: biao-li-shan-he
+idiom:
+  zh: 表裡山河
+  pinyin: biǎo lǐ shān hé
+  jyutping: biu2 leoi5 saan1 ho4
+  literal: 外有黃河、內有高山
+  en: Mountains within, river without
+type: historical
+period: wu-ba
+year: -632
+year_note: 魯僖公二十八年
+states: [jin]
+meaning: 地勢險固，內外皆有天險可恃。
+benshi:
+  event: cheng-pu-zhi-zhan
+  summary: >-
+    城濮戰前，晉文公因楚成王曾有厚待之惠而猶豫是否應戰。
+    狐偃力主一戰，謂勝則得諸侯、不勝則晉國「表裡山河」，
+    有太行、黃河之險可守，必無大害。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 僖公二十八年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-ba-nian
+    quote: >-
+      子犯曰：「戰也。戰而捷，必得諸侯；若其不捷，表裡山河，必無害也。」
+    translation: >-
+      狐偃說：「打。打贏了，必定得到諸侯的擁戴；就算打不贏，
+      晉國外有黃河、內有高山，也必然不會有大害。」
+crystallisation:
+  note: 四字語形即出《左傳》原文，未經演變。
+  moe_id: 1963
+reliability: 信史
+people: [hu-yan, jin-wen-gong]
+concepts: [地緣, 風險評估, 霸業]
+related_idioms:
+  - target: tui-bi-san-she
+    kind: same_event
+    note: 同出城濮之戰前狐偃的同一段進言。
+lessons:
+  historical: >-
+    這句話的分量在於它的位置：它是一次戰前的**下檔風險評估**。
+    狐偃沒有說晉軍必勝，他說的是——贏了收益極大（得諸侯），
+    輸了損失有限（有天險可守）。決策的根據不是勝率，是賠率。
+    晉國之所以能在春秋反覆爭霸而始終不亡，
+    其地理條件（西有黃河、東有太行、北有恆山）確實是關鍵變數；
+    相形之下鄭、宋、衛諸國處四戰之地，一敗即可能亡國，
+    因而只能「朝晉暮楚」。地形決定了誰有資格下注。
+  modern: >-
+    引申為形勢穩固、進退有據。作為決策原則，它的要點是：
+    在下檔可控的前提下，才值得為高收益冒險。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xi-gong-er-shi-ba-nian/zh

@@ -1,0 +1,29 @@
+id: yan-tai-zi-dan
+name:
+  zh: 燕太子丹
+  personal: 丹
+  clan: 姬
+  en: Prince Dan of Yan
+state: yan
+role: 君主
+birth: null
+death: -226
+sort_year: -232
+bio: >-
+  燕王喜之太子。嘗質於趙，秦王政亦生於趙，少相知；
+  及政立為秦王，丹質於秦而秦王遇之不善，亡歸。
+  時秦已滅韓、破趙，兵臨易水。丹謀於太傅鞠武，
+  武勸連楚趙、結匈奴以圖之，丹以為緩；乃求田光，光薦荊軻。
+  丹尊荊軻為上卿，舍上舍，供太牢異物，車騎美女恣其所欲。
+  既而疑其悔，數請之，遂使未備而行。事敗，秦大發兵攻燕，
+  燕王喜斬丹以獻秦，秦兵不解，五年而燕亡。
+sources:
+  - source: zhan-guo-ce
+    locus: 燕策三
+    ctext_urn: ctp:zhan-guo-ce/yan-san
+  - source: shiji
+    locus: 刺客列傳
+    ctext_urn: ctp:shiji/ci-ke-lie-zhuan
+relations:
+  - target: jing-ke
+    kind: minister

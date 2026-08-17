@@ -1,0 +1,65 @@
+id: xi-mu-li-xin
+idiom:
+  zh: 徙木立信
+  pinyin: xǐ mù lì xìn
+  jyutping: saai2 muk6 laap6 seon3
+  literal: 靠搬一根木頭建立信用
+  en: Moving a pole to establish trust
+type: historical
+period: zhan-guo-early
+year: -356
+year_note: 秦孝公六年
+states: [qin]
+meaning: 以具體而可驗證的小事取信於人，為推行政令作準備。
+benshi:
+  event: shang-yang-bian-fa
+  summary: >-
+    商鞅變法之令已具而未布，恐民不信。乃立三丈之木於國都市南門，
+    募能徙置北門者予十金；民怪而莫敢徙，乃增至五十金。
+    有一人徙之，即予五十金，以明不欺，然後下令。
+dianyuan:
+  - source: shiji
+    locus: 商君列傳
+    ctext_urn: ctp:shiji/shang-jun-lie-zhuan
+    quote: >-
+      令既具，未布，恐民之不信己，乃立三丈之木於國都市南門，
+      募民有能徙置北門者予十金。民怪之，莫敢徙。復曰：「能徙者予五十金。」
+      有一人徙之，輒予五十金，以明不欺。卒下令。
+    translation: >-
+      法令已經擬定，還沒有公布，商鞅怕百姓不信任自己，
+      就在國都市集的南門立了一根三丈長的木頭，
+      招募百姓有能把它搬到北門的，給十金。百姓覺得奇怪，沒有人敢搬。
+      又宣布：「能搬的給五十金。」有一個人搬了，當即給他五十金，
+      以表明絕不欺騙。然後才頒布法令。
+crystallisation:
+  note: >-
+    《史記》原文無「徙木立信」四字，係後世對此事的概括；
+    宋代論商鞅者已用此語（如王安石〈商鞅〉詩「今人未可非商鞅，
+    商鞅能令政必行」即詠此事），明清而通行。
+  moe_id: 2062
+reliability: 大體可信
+people: [shang-yang, qin-xiao-gong]
+concepts: [信用, 變法, 制度可信性, 誘因設計]
+related_idioms:
+  - target: zuo-fa-zi-bi
+    kind: same_event
+    note: 同出商鞅變法；一者立法之始，一者法成之後反噬其身。
+  - target: feng-huo-xi-zhu-hou
+    kind: contrast
+    note: 一者以重賞立信，一者以戲弄毀信。
+lessons:
+  historical: >-
+    這一節揭示了變法真正的難題：不是設計制度，是使人**相信制度會被執行**。
+    商鞅選的道具很有講究——搬木頭是一件毫無意義的事，
+    正因為毫無意義，賞金與勞動之間才不存在任何合理的對價關係；
+    百姓從中唯一能學到的資訊就是：這個政府說到做到。
+    賞金由十金加到五十金也是刻意的：價格越不合理，
+    信號的強度越大。這是一次精心設計的公共承諾實驗。
+    與之對應的是同一次變法中「刑其傅公子虔、黥其師公孫賈」——
+    賞的一面用重賞立信，罰的一面用刑太子之師立威，
+    兩者合起來才是完整的可信性建構。
+  modern: >-
+    引申為以身作則、取信於眾。設計上的要點是：
+    立信的動作最好與利益無關，否則它會被讀成交易而不是承諾。
+references:
+  - https://ctext.org/shiji/shang-jun-lie-zhuan/zh

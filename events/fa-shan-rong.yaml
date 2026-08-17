@@ -1,0 +1,40 @@
+id: fa-shan-rong
+name: 齊桓伐山戎
+year: -663
+year_note: 魯莊公三十一年
+period: wu-ba
+type: 戰役
+states: [qi, yan]
+people: [qi-huan-gong, guan-zhong]
+narrative: >-
+  山戎伐燕，燕告急於齊。桓公救燕，北伐山戎，至於孤竹而還。
+  《韓非子·說林上》記其歸途：「管仲、隰朋從於桓公而伐孤竹，
+  春往冬反，迷惑失道。管仲曰：『老馬之智可用也。』
+  乃放老馬而隨之，遂得道。行山中無水，隰朋曰：
+  『蟻冬居山之陽，夏居山之陰，蟻壤一寸而仞有水。』
+  乃掘地，遂得水。」
+
+  韓非於此下一斷語：「以管仲之聖而隰朋之智，
+  至其所不知，不難師於老馬與蟻。今人不知以其愚心而師聖人之智，
+  不亦過乎？」
+
+  燕莊公送桓公至於齊境，桓公曰「非天子，諸侯相送不出境」，
+  乃割燕君所至之地與燕——諸侯聞之，皆從齊。
+sources:
+  - source: hanfeizi
+    locus: 說林上
+    ctext_urn: ctp:hanfeizi/shuo-lin-shang
+  - source: zuo-zhuan
+    locus: 莊公三十年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/zhuang-gong-san-shi-nian
+reliability: 大體可信
+variants:
+  - claim: 伐山戎救燕之事《左傳》《史記》皆載，然「老馬識途」一節僅見《韓非子》，別無旁證。
+    source: shiji
+    locus: 齊太公世家
+    ctext_urn: ctp:shiji/qi-tai-gong-shi-jia
+significance: >-
+  「攘夷」的實例：齊桓不取燕地而反割地與燕，
+  是用實利換取霸主的道義位置——霸權的成本核算，在這裡看得最清楚。
+  而老馬識途一節的重點在韓非的按語：經驗性的知識不因其來源卑下而失效，
+  這是法家反對「法先王」的認識論基礎。

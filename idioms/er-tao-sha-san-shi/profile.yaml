@@ -1,0 +1,55 @@
+id: er-tao-sha-san-shi
+idiom:
+  zh: 二桃殺三士
+  pinyin: èr táo shā sān shì
+  jyutping: ji6 tou4 saat3 saam1 si6
+  literal: 用兩個桃子殺掉三個勇士
+  en: Two peaches that killed three warriors
+type: historical
+period: chun-qiu-late
+year: -517
+year_note: 齊景公時，年份不可確考
+states: [qi]
+meaning: 用計謀藉他人之手除去對手；亦指以微小的資源挑起爭端。
+benshi:
+  event: er-tao-sha-san-shi
+  summary: >-
+    齊景公之勇士公孫接、田開疆、古冶子恃功而無禮於晏嬰。
+    晏子請景公賜二桃，令三人「計功而食桃」。
+    二人先自陳功而取桃，古冶子後陳其功更大，二人愧而自剄；
+    古冶子恥於獨生，亦自剄。
+dianyuan:
+  - source: yanzi-chun-qiu
+    locus: 內篇諫下
+    ctext_urn: ctp:yanzi-chun-qiu/nei-pian/jian-xia
+    quote: >-
+      因請公使人少饋之二桃，曰：「三子何不計功而食桃？」
+    translation: >-
+      於是請景公派人送去兩個桃子，說：「三位何不各自計算功勞來分食這桃？」
+crystallisation:
+  note: >-
+    《晏子春秋》原文無此五字，係後人對該則故事的概括；
+    諸葛亮〈梁甫吟〉「一朝被讒言，二桃殺三士」為現存最早的定型用例，
+    此語遂由樂府詩而通行。
+  moe_id: 1173
+reliability: 孤證
+variants:
+  - claim: 此事僅見《晏子春秋》，《左傳》《史記》皆無，而《晏子春秋》為戰國時人所輯之故事集，非史。
+    source: shiji
+    locus: 管晏列傳
+    ctext_urn: ctp:shiji/guan-yan-lie-zhuan
+people: [yan-ying, qi-jing-gong]
+concepts: [權術, 榮譽制度, 資源稀缺, 自我毀滅]
+lessons:
+  historical: >-
+    晏子沒有動用任何暴力，也沒有下達任何命令。
+    他只做了兩件事：製造一個資源短缺的情境（三人二桃），
+    再把「計功」定為分配規則。剩下的由三人自己的榮譽感完成。
+    它揭示的是一個相當現代的洞見：當一群人共享同一套價值標準時，
+    操縱那套標準，比操縱那群人有效得多。
+    三勇士之死不是被殺，是被自己的行為準則推著走完了全程。
+  modern: >-
+    引申為挑撥離間。更值得警覺的是它的一般形式——
+    在稀缺資源上疊加一套排名規則，足以讓原本合作的一群人自行瓦解。
+references:
+  - https://ctext.org/yanzi-chun-qiu/nei-pian/jian-xia/zh

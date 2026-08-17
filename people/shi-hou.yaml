@@ -1,0 +1,22 @@
+id: shi-hou
+name:
+  zh: 石厚
+  en: Shi Hou
+state: wey
+role: 卿大夫
+birth: null
+death: null
+sort_year: -719
+bio: >-
+  石碏之子，與公子州吁交遊。父禁之而不聽，卒為州吁之黨，
+  助其弒衛桓公。州吁既立而國人不附，石厚問計於父，
+  石碏教以「朝陳為請」——藉陳桓公之力執之，父子俱不免。
+  他是「大義滅親」中被滅的那一方，其人於史無他事可考。
+sources:
+  - source: zuo-zhuan
+    locus: 隱公四年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/yin-gong-si-nian
+relations:
+  - target: shi-que
+    kind: kin
+    note: 其父

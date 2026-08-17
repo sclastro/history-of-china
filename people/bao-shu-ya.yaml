@@ -1,0 +1,24 @@
+id: bao-shu-ya
+name:
+  zh: 鮑叔牙
+  house: 鮑
+  en: Bao Shuya
+state: qi
+role: 卿大夫
+birth: null
+death: null
+sort_year: -685
+bio: >-
+  齊大夫。少與管仲交，知其賢而每為之解——分財多取不以為貪，
+  謀事不成不以為愚，三仕三見逐不以為不肖，三戰三走不以為怯。
+  事公子小白，小白得國而欲相之，鮑叔辭曰「君且欲霸王，非管夷吾不可」，
+  遂請赦其射鉤之罪而薦之，自居其下。管仲曰：「生我者父母，知我者鮑子也。」
+  《史記》謂天下不多管仲之賢而多鮑叔能知人——舉賢而自退，
+  在講究權位的春秋是罕見的事。
+sources:
+  - source: shiji
+    locus: 管晏列傳
+    ctext_urn: ctp:shiji/guan-yan-lie-zhuan
+relations:
+  - target: guan-zhong
+    kind: ally

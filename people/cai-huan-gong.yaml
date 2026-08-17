@@ -1,0 +1,22 @@
+id: cai-huan-gong
+name:
+  zh: 蔡桓公
+  en: Duke Huan of Cai
+state: cai
+role: 君主
+birth: null
+death: null
+sort_year: -350
+bio: >-
+  《韓非子·喻老》中拒醫而死之君。扁鵲四見而四言其疾之深，
+  桓侯三答「寡人無疾」，並私議「醫之好治不病以為功」。
+  疾在腠理、肌膚、腸胃猶可治，及骨髓則無可奈何。
+  韓非以此喻老子「圖難於其易，為大於其細」——
+  他關心的不是醫學，是君主對小患的輕忽如何釀成不可救的大禍。
+  按蔡桓侯（前 714–695）年代遠早於扁鵲，《史記》另作「齊桓侯」，
+  人物年代皆不可合，此為寓言而非史事。
+sources:
+  - source: hanfeizi
+    locus: 喻老
+    ctext_urn: ctp:hanfeizi/yu-lao
+notes: "年代與扁鵲不相及，《史記》作齊桓侯；本站相關條目標 type: parable。"

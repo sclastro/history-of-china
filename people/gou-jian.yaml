@@ -1,0 +1,51 @@
+id: gou-jian
+name:
+  zh: 越王句踐
+  personal: 句踐
+  clan: 姒
+  en: King Goujian of Yue
+state: yue
+role: 君主
+birth: null
+death: -465
+sort_year: -496
+bio: >-
+  春秋最後一位霸主。前 494 年敗於夫椒，棲於會稽之上，
+  卑辭厚禮以事吳，入臣於吳三年而歸。返國後「苦身焦思，置膽於坐，
+  坐臥即仰膽，飲食亦嘗膽」，行十年生聚、十年教訓之策，
+  用范蠡、文種，前 473 年滅吳，夫差自剄。既滅吳，北渡淮，
+  會齊晉諸侯於徐州，周元王命為伯。
+  然其為人「可與共患難，不可與共樂」，范蠡去而文種死——
+  這句評語與「臥薪嘗膽」同樣出自《史記》，卻遠不如後者流傳。
+timeline:
+  - year: -496
+    event: 即位；檇李之戰敗吳，吳王闔閭傷指而死
+  - year: -494
+    event: 夫椒之戰大敗，棲於會稽，請成於吳
+  - year: -493
+    event: 入臣於吳
+  - year: -490
+    event: 歸國，置膽於坐而嘗之，行十年生聚之策
+  - year: -482
+    event: 乘夫差會諸侯於黃池，襲破吳都
+  - year: -473
+    event: 滅吳，夫差自剄；北會諸侯於徐州，周命為伯
+  - year: -465
+    event: 卒
+sources:
+  - source: shiji
+    locus: 越王句踐世家
+    ctext_urn: ctp:shiji/yue-wang-ju-jian-shi-jia
+  - source: guo-yu
+    locus: 越語上
+  - source: zuo-zhuan
+    locus: 哀公元年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/ai-gong-yuan-nian
+relations:
+  - target: fu-chai
+    kind: rival
+  - target: fan-li
+    kind: minister
+  - target: wen-zhong
+    kind: minister
+    note: 滅吳後賜劍令自裁

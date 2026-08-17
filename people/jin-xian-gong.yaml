@@ -1,0 +1,42 @@
+id: jin-xian-gong
+name:
+  zh: 晉獻公
+  personal: 詭諸
+  clan: 姬
+  posthumous: 獻
+  en: Duke Xian of Jin
+state: jin
+role: 君主
+birth: null
+death: -651
+sort_year: -676
+bio: >-
+  在位二十六年，「并國十七，服國三十八」，奠晉為北方大國之基。
+  盡殺桓莊之族，自此晉無公族——此制使晉免於公室內鬥而強盛，
+  亦種下卿族坐大、六卿分晉的遠因。假道於虞以伐虢，還師滅虞，
+  是中國戰略史上最著名的一次連環詐術。
+  晚年惑於驪姬，殺太子申生，逐重耳、夷吾，晉遂大亂十九年。
+timeline:
+  - year: -676
+    event: 即位
+  - year: -658
+    event: 以屈產之乘、垂棘之璧假道於虞，伐虢取下陽
+  - year: -655
+    event: 再假道於虞滅虢，還師襲滅虞，執虞公
+  - year: -655
+    event: 驪姬之難，太子申生自縊，重耳奔翟、夷吾奔梁
+  - year: -651
+    event: 卒，晉大亂
+sources:
+  - source: zuo-zhuan
+    locus: 僖公五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-wu-nian
+  - source: shiji
+    locus: 晉世家
+    ctext_urn: ctp:shiji/jin-shi-jia
+relations:
+  - target: xun-xi
+    kind: minister
+  - target: jin-wen-gong
+    kind: kin
+    note: 其子重耳

@@ -1,0 +1,41 @@
+id: yan-ying
+name:
+  zh: 晏嬰
+  personal: 嬰
+  house: 晏
+  posthumous: 平
+  en: Yan Ying (Yanzi)
+state: qi
+role: 卿大夫
+birth: null
+death: -500
+sort_year: -556
+bio: >-
+  歷事齊靈公、莊公、景公三世，相齊數十年。以節儉力行、
+  食不重肉、妾不衣帛見稱，「一狐裘三十年」。
+  崔杼弒莊公，晏子枕屍股而哭，起而三踊——不死不亡而不從弒君之盟，
+  在暴力面前守住了一個第三種選擇。使楚而楚人欲辱之，
+  以「橘生淮南則為橘，生于淮北則為枳」對之，遂有「南橘北枳」。
+  又以二桃殺公孫接、田開疆、古冶子三士，是先秦最冷峻的權術記錄之一。
+  孔子稱其「善與人交，久而敬之」；司馬遷則說「假令晏子而在，
+  余雖為之執鞭，所忻慕焉」。
+timeline:
+  - year: -556
+    event: 繼父晏弱為齊卿
+  - year: -548
+    event: 崔杼弒莊公，晏子枕屍而哭，不與其盟
+  - year: -531
+    event: 使楚，以南橘北枳折楚王
+  - year: -500
+    event: 卒
+sources:
+  - source: yanzi-chun-qiu
+    locus: 內篇雜下
+    ctext_urn: ctp:yanzi-chun-qiu/nei-pian/za-xia
+  - source: shiji
+    locus: 管晏列傳
+    ctext_urn: ctp:shiji/guan-yan-lie-zhuan
+relations:
+  - target: qi-jing-gong
+    kind: ruler
+notes: 《晏子春秋》非晏嬰自著，為戰國時人所輯，其中不乏附益之作，繫年多不可確考。

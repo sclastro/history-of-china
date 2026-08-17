@@ -1,0 +1,24 @@
+id: bian-que
+name:
+  zh: 扁鵲
+  personal: 秦越人
+  en: Bian Que
+state: qi
+role: 醫者
+birth: null
+death: null
+sort_year: -350
+bio: >-
+  渤海郡鄭人，先秦名醫之代稱。《韓非子·喻老》記其見蔡桓公，
+  四見而疾自腠理入肌膚、入腸胃、入骨髓，桓侯每曰「寡人無疾」，
+  且謂「醫之好治不病以為功」；及骨髓則司命之所屬，
+  扁鵲望桓侯而還走，居五日桓侯體痛，索之已逃秦矣，遂死。
+  《史記·扁鵲倉公列傳》另記其六不治，首曰「驕恣不論於理」。
+  其人年代橫跨二百餘年，顯係先秦名醫故事的共同託名。
+sources:
+  - source: hanfeizi
+    locus: 喻老
+    ctext_urn: ctp:hanfeizi/yu-lao
+  - source: shiji
+    locus: 扁鵲倉公列傳
+notes: 「扁鵲」為託名，所繫事跡年代相去二百餘年，非一人。

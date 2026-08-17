@@ -1,0 +1,21 @@
+id: wang-sun-man
+name:
+  zh: 王孫滿
+  clan: 姬
+  en: Wangsun Man
+state: zhou
+role: 卿大夫
+birth: null
+death: null
+sort_year: -606
+bio: >-
+  周大夫。楚莊王觀兵於周疆，定王使王孫滿勞楚師，莊王問鼎之大小輕重。
+  王孫滿對曰：「在德不在鼎……桀有昏德，鼎遷于商，載祀六百；
+  商紂暴虐，鼎遷于周。德之休明，雖小重也；其姦回昏亂，雖大輕也。
+  周德雖衰，天命未改。鼎之輕重，未可問也。」
+  以「德」與「命」二字擋住一個剛剛陳兵於王畿的霸主，
+  是春秋外交辭令的最高範例——沒有一句威脅，卻把問題整個換掉了。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公三年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-san-nian

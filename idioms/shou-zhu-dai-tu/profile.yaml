@@ -1,0 +1,56 @@
+id: shou-zhu-dai-tu
+idiom:
+  zh: 守株待兔
+  pinyin: shǒu zhū dài tù
+  jyutping: sau2 zyu1 doi6 tou3
+  literal: 守著樹樁等兔子
+  en: Guarding a stump, waiting for a hare
+type: parable
+period: zhan-guo-mid
+year: null
+states: [song]
+meaning: 把偶然當成規律而坐等其再度發生；亦指墨守成規而不知變通。
+dianyuan:
+  - source: hanfeizi
+    locus: 五蠹
+    ctext_urn: ctp:hanfeizi/wu-du
+    quote: >-
+      宋人有耕者，田中有株，兔走觸株，折頸而死，因釋其耒而守株，冀復得兔。
+      兔不可復得，而身為宋國笑。今欲以先王之政治當世之民，皆守株之類也。
+    translation: >-
+      宋國有個耕田的人，田裡有個樹樁，一隻兔子跑過去撞上樹樁，
+      折斷脖子死了；他於是放下農具守著那個樹樁，希望再撿到兔子。
+      兔子當然沒有再撿到，他自己卻成了宋國的笑柄。
+      如今想用先王的政治來治理當代的百姓，都屬於守樹樁那一類。
+crystallisation:
+  note: >-
+    《韓非子》原文作「釋其耒而守株」，無「守株待兔」四字；
+    四字語形出於後世節縮，唐宋已通行。
+  moe_id: 1240
+reliability: 寓言
+people: [han-fei]
+concepts: [歷史變化觀, 法先王之非, 偶然與規律, 變法]
+related_idioms:
+  - target: dong-shi-xiao-pin
+    kind: contrast
+    note: 莊子與韓非各以一則寓言反對「法先王」，論點相同而歸趨相反。
+  - target: ke-zhou-qiu-jian
+    kind: same_source
+    note: 同為戰國諸子以寓言論「世異則事異」。
+lessons:
+  historical: >-
+    〈五蠹〉開篇是一部極簡的文明史：上古構木鑽燧者王天下，
+    中古鯀禹決瀆，近古湯武征伐——「今有構木鑽燧於夏后氏之世者，
+    必為鯀禹笑矣」。守株待兔的寓言緊接其後，
+    結論是「聖人不期修古，不法常可，論世之事，因為之備」。
+    所以它從來不是一則勸人勤勞的故事。
+    韓非批評的是一種**方法論錯誤**：把一次偶然事件當成可重複的規律，
+    據以放棄原本有效的生產方式。而他要套用的對象，
+    是儒家「法先王」的全部根基——先王之政在先王之世有效，
+    是那個時代條件的產物，不是可以搬運的規律。
+  modern: >-
+    引申為墨守成規、坐享其成。原意更精確：
+    區分「這件事發生過」與「這件事會再發生」，
+    是任何據經驗行動者的第一道關卡。
+references:
+  - https://ctext.org/hanfeizi/wu-du/zh

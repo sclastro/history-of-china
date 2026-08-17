@@ -1,0 +1,21 @@
+id: ji-liang
+name:
+  zh: 季梁
+  en: Ji Liang
+state: wei
+role: 策士
+birth: null
+death: null
+sort_year: -340
+bio: >-
+  魏臣。魏王欲攻邯鄲，季梁中道而返，衣焦不申、頭塵不去，
+  往見王曰：「今者臣來，見人於大行，方北面而持其駕，
+  告臣曰『我欲之楚』。臣曰『君之楚，將奚為北面？』
+  曰『吾馬良』……曰『吾用多』……曰『吾御者善』。
+  此數者愈善，而離楚愈遠耳。」
+  「今王動欲成霸王，舉欲信於天下；恃王國之大、兵之精銳而攻邯鄲，
+  以廣地尊名——王之動愈數而離王愈遠耳，猶至楚而北行也。」
+sources:
+  - source: zhan-guo-ce
+    locus: 魏策四
+    ctext_urn: ctp:zhan-guo-ce/wei-si

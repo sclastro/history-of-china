@@ -1,0 +1,31 @@
+id: chu-fu-huang-jie
+name: 楚俘皇頡爭功
+year: -547
+year_note: 魯襄公二十六年
+period: wu-ba
+type: 戰役
+states: [chu, zheng]
+people: [gong-zi-wei, chuan-feng-xu, bo-zhou-li]
+narrative: >-
+  楚伐鄭，穿封戌俘鄭將皇頡。公子圍（楚康王之弟，後之靈王）與之爭功，
+  訟於伯州犁。
+
+  伯州犁曰：「請問於囚。」乃立囚。伯州犁曰：
+  「所爭，君子也，其何不知？」——**上其手**，曰：
+  「夫子為王子圍，寡君之貴介弟也。」**下其手**，曰：
+  「此子為穿封戌，方城外之縣尹也。誰獲子？」
+
+  囚曰：「頡遇王子，弱焉。」
+
+  穿封戌怒，抽戈逐王子圍，弗及。
+sources:
+  - source: zuo-zhuan
+    locus: 襄公二十六年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xiang-gong-er-shi-liu-nian
+reliability: 信史
+significance: >-
+  中國文獻中最早、也最清晰的一次「程序中的偏私」記錄。
+  伯州犁做足了程序——他確實問了當事人；
+  但他在提問的同時用手勢給出了答案。
+  形式上的公正與實質上的操縱可以並存，
+  而且正是形式上的公正使操縱得以生效——「上下其手」四字所指者即此。

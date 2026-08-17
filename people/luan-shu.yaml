@@ -1,0 +1,22 @@
+id: luan-shu
+name:
+  zh: 欒書
+  house: 欒
+  posthumous: 武
+  en: Luan Shu
+state: jin
+role: 卿大夫
+birth: null
+death: -573
+sort_year: -597
+bio: >-
+  晉之正卿，諡武，故稱欒武子。邲之戰時為下軍佐，
+  力言楚不可伐：「楚自克庸以來，其君無日不討國人而訓之于民生之不易、
+  禍至之無日、戒懼之不可以怠……訓之以若敖、蚡冒篳路藍縷以啟山林。」
+  「篳路藍縷」四字即出此段——他用楚人自述先祖創業之艱來論證楚國的內部凝聚力，
+  是春秋少見的以敵國政治文化為判斷根據的戰略分析。
+  其後為中軍元帥，鄢陵之戰敗楚，晉復霸。晚年弒厲公而立悼公。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公十二年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-er-nian

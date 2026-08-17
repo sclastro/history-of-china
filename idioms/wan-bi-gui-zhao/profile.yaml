@@ -1,0 +1,59 @@
+id: wan-bi-gui-zhao
+idiom:
+  zh: 完璧歸趙
+  pinyin: wán bì guī zhào
+  jyutping: jyun4 bik1 gwai1 ziu6
+  literal: 把完整的璧送回趙國
+  en: Returning the jade intact to Zhao
+type: historical
+period: zhan-guo-late
+year: -283
+states: [zhao, qin]
+meaning: 把物品完好無損地歸還原主。
+benshi:
+  event: wan-bi-gui-zhao
+  summary: >-
+    秦昭王請以十五城易趙之和氏璧，趙王患之。藺相如奉璧使秦，
+    見秦王無償城之意，以「璧有瑕」紿回，倚柱怒斥，
+    復請齋戒設九賓以拖延，同時使從者懷璧間道歸趙。秦王終不能強奪，
+    畢禮而歸之。
+dianyuan:
+  - source: shiji
+    locus: 廉頗藺相如列傳
+    ctext_urn: ctp:shiji/lian-po-lin-xiang-ru-lie-zhuan
+    quote: >-
+      相如曰：「秦以城求璧而趙不許，曲在趙；趙予璧而秦不予趙城，曲在秦。
+      均之二策，寧許以負秦曲。」……「城入趙而璧留秦；城不入，臣請完璧歸趙。」
+    translation: >-
+      藺相如說：「秦國拿城來換璧而趙國不答應，理虧的是趙；
+      趙國給了璧而秦國不給城，理虧的是秦。權衡這兩種策略，
+      寧可答應下來，讓秦國背上理虧。」……
+      「城池歸入趙國，璧就留在秦國；城池不歸趙國，臣請求把完整的璧送回趙國。」
+crystallisation:
+  note: >-
+    「完璧歸趙」四字即出《史記》相如本人之語，語形自始即定，
+    是本站少數典源即定型的例子。
+  moe_id: 1080
+reliability: 大體可信
+people: [lin-xiang-ru, zhao-hui-wen-wang, qin-zhao-xiang-wang]
+concepts: [外交, 不對稱博弈, 名分即籌碼, 拖延]
+related_idioms:
+  - target: zhi-shang-tan-bing
+    kind: same_source
+    note: 同出《史記·廉頗藺相如列傳》；一者趙之全盛，一者趙之傾覆。
+lessons:
+  historical: >-
+    藺相如整套操作建立在一個判斷上：秦王要「不背信之名」
+    多於要「一塊玉」。所以他的每一步都在調整「曲」在哪一邊——
+    「寧許以負秦曲」五個字是全篇的樞紐：先答應下來，
+    把違約的責任預先轉移到對方身上，之後所有的強硬才有依託。
+    他賭的不是秦王的善意，是秦王的成本核算。
+    最後秦王的內心獨白印證了這一點：「今殺相如，終不能得璧也，
+    而絕秦趙之驩」——不划算。
+    這是先秦外交思想中對「道義即籌碼」最清晰的一次表述。
+  modern: >-
+    引申為原物歸還。談判上可取的是那個順序：
+    先取得對方的承諾，再在對方違約時發動——
+    而不是一開始就拒絕。
+references:
+  - https://ctext.org/shiji/lian-po-lin-xiang-ru-lie-zhuan/zh

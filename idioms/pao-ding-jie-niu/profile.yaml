@@ -1,0 +1,53 @@
+id: pao-ding-jie-niu
+idiom:
+  zh: 庖丁解牛
+  pinyin: páo dīng jiě niú
+  jyutping: paau4 ding1 gaai2 ngau4
+  literal: 廚子分解牛體
+  en: Cook Ding cutting up an ox
+type: parable
+period: zhan-guo-early
+year: null
+states: [wei]
+meaning: 技藝精熟到能循事物本然的紋理而行，因此毫不費力。
+dianyuan:
+  - source: zhuangzi
+    locus: 養生主
+    ctext_urn: ctp:zhuangzi/nourishing-the-lord-of-life
+    quote: >-
+      臣之所好者道也，進乎技矣。始臣之解牛之時，所見無非牛者；
+      三年之後，未嘗見全牛也。方今之時，臣以神遇而不以目視，官知止而神欲行。
+      依乎天理，批大郤，導大窾，因其固然……彼節者有間，而刀刃者無厚；
+      以無厚入有間，恢恢乎其於遊刃必有餘地矣。
+    translation: >-
+      臣所愛好的是道，已經超過技術了。剛開始解牛的時候，所見無非是整頭牛；
+      三年之後，就再也看不見完整的牛了。到了現在，臣是用心神去接觸而不用眼睛看，
+      感官的作用停下來而心神在運行。依循牛體天然的紋理，
+      劈開大的縫隙、順著大的空腔，順著它本來的樣子……
+      那些骨節之間有空隙，而刀刃薄得沒有厚度；
+      用沒有厚度的刀刃進入有空隙的地方，寬綽得很，運轉刀刃必定有餘地。
+crystallisation:
+  note: >-
+    《莊子》原文無「庖丁解牛」四字，係後世對該則寓言的命名；
+    同段另衍生「遊刃有餘」「目無全牛」「批郤導窾」三條成語，
+    皆較「庖丁解牛」四字更早見於文獻。
+  moe_id: 1235
+reliability: 寓言
+people: [pao-ding, zhuang-zi]
+concepts: [技與道, 天理, 養生, 無為]
+lessons:
+  historical: >-
+    〈養生主〉的主題是如何在充滿危險的世界裡保全自己，
+    庖丁的刀就是人的比喻：十九年而刃若新發於硎，
+    因為它從不與骨頭硬碰。莊子的關鍵詞是「因其固然」——
+    順著對象本來的結構走，而不是把自己的意圖強加上去。
+    值得注意的是那三個階段：所見無非全牛 → 未嘗見全牛 → 以神遇而不以目視。
+    這是先秦少有的一段關於「熟練如何改變知覺」的描述——
+    高手看見的不是同一個對象，而是對象的**結構**。
+    末段「每至於族，吾見其難為，怵然為戒」則說明：
+    再熟的人遇到糾結處仍要提起戒慎，這不是無為的懈怠。
+  modern: >-
+    引申為技藝純熟、得心應手。原意更著重於方法：
+    費力往往意味著走錯了路徑，而不是不夠努力。
+references:
+  - https://ctext.org/zhuangzi/yang-sheng-zhu/zh

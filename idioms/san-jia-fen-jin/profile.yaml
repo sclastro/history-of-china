@@ -1,0 +1,60 @@
+id: san-jia-fen-jin
+idiom:
+  zh: 三家分晉
+  pinyin: sān jiā fēn jìn
+  jyutping: saam1 gaa1 fan1 zeon3
+  literal: 三個卿族瓜分晉國
+  en: The partition of Jin by three houses
+type: historical
+period: zhan-guo-early
+year: -403
+year_note: 周威烈王二十三年（實際權力轉移在前 453 年）
+states: [jin, zhao, wei, han]
+meaning: 臣下瓜分君主之國；泛指內部勢力分裂共有的整體。
+benshi:
+  event: san-jia-fen-jin
+  summary: >-
+    前 453 年趙、韓、魏三家滅智伯而分其地，晉侯已無實土；
+    前 403 年周威烈王正式命三家為諸侯，篡奪取得名分；
+    前 376 年三家廢晉靜公為庶人，晉絕祀。
+dianyuan:
+  - source: shiji
+    locus: 六國年表
+    ctext_urn: ctp:shiji/liu-guo-nian-biao
+    quote: >-
+      （周威烈王二十三年）九鼎震。命韓、魏、趙為諸侯。
+    translation: >-
+      （周威烈王二十三年）九鼎震動。冊命韓、魏、趙三家為諸侯。
+  - source: shiji
+    locus: 趙世家
+    ctext_urn: ctp:shiji/zhao-shi-jia
+    quote: >-
+      三國反滅智伯，共分其地。
+    translation: >-
+      韓、魏、趙三家反過來消滅了智伯，共同瓜分了他的封地。
+crystallisation:
+  note: >-
+    四字語形為後世史家對這一系列事件的概括，
+    《史記》原文只作「共分其地」「命韓魏趙為諸侯」。
+    宋代以降論戰國之始者必稱「三家分晉」，遂成定語。
+reliability: 信史
+people: [zhao-xiang-zi, zhi-bo]
+concepts: [封建解體, 名分, 陪臣執國命, 分期]
+related_idioms:
+  - target: chun-wang-chi-han
+    kind: derived
+    note: 晉陽城下張孟談說反韓魏，用的正是「唇亡齒寒」之理。
+lessons:
+  historical: >-
+    這是春秋與戰國的分界線，而它的兩個日期同樣重要：
+    權力在前 453 年就已轉移，名分卻要等到前 403 年才追認。
+    司馬光把《資治通鑑》的開端定在後者，理由是
+    「天子之職莫大於禮，禮莫大於分」——周室僅存的資本是名分，
+    而它親手把這最後的資本花掉了。
+    就此後的格局而言，晉的分裂解除了秦東出的最大屏障：
+    一個統一的晉，秦打不過；三個分開的晉，秦逐一擊破。
+  modern: >-
+    引申為內部勢力瓜分整體。可留意的一層是：
+    實質的分裂往往遠早於形式的承認，而承認一旦作出便不可逆。
+references:
+  - https://ctext.org/shiji/liu-guo-nian-biao/zh

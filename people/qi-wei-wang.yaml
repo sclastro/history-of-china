@@ -1,0 +1,28 @@
+id: qi-wei-wang
+name:
+  zh: 齊威王
+  personal: 因齊
+  clan: 媯
+  house: 田
+  posthumous: 威
+  en: King Wei of Qi
+state: tian-qi
+role: 君主
+birth: null
+death: -320
+sort_year: -356
+bio: >-
+  田齊中興之主。即位九年不治，淳于髡以隱語進之（「國中有大鳥，
+  止王之庭，三年不蜚又不鳴」），王曰「此鳥不飛則已，
+  一飛沖天；不鳴則已，一鳴驚人」，遂親政——
+  烹阿大夫、封即墨大夫，齊國大治。
+  用田忌、孫臏破魏於桂陵、馬陵，齊遂代魏而強；設稷下學宮以聚天下之士。
+sources:
+  - source: shiji
+    locus: 滑稽列傳
+  - source: shiji
+    locus: 田敬仲完世家
+    ctext_urn: ctp:shiji/tian-jing-zhong-wan-shi-jia
+notes: >-
+  「一鳴驚人」有楚莊王（《韓非子·喻老》《史記·楚世家》）與齊威王
+  （《史記·滑稽列傳》）兩個版本，本站以楚莊王為典源、齊威王為異說。

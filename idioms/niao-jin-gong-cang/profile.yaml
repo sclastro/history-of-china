@@ -1,0 +1,56 @@
+id: niao-jin-gong-cang
+idiom:
+  zh: 鳥盡弓藏
+  pinyin: niǎo jìn gōng cáng
+  jyutping: niu5 zeon6 gung1 cong4
+  literal: 飛鳥打盡了，良弓就收起來
+  en: When the birds are gone, the good bow is put away
+type: historical
+period: chun-qiu-late
+year: -473
+year_note: 越滅吳之後
+states: [yue]
+meaning: 事成之後，出過力的人反被拋棄或除掉。
+benshi:
+  event: yue-mie-wu
+  summary: >-
+    句踐滅吳，范蠡功成而去，浮海適齊，遺書大夫文種以「蜚鳥盡，良弓藏」
+    相勸，並斷句踐「可與共患難，不可與共樂」。文種不去，
+    句踐賜劍令其自裁。
+dianyuan:
+  - source: shiji
+    locus: 越王句踐世家
+    ctext_urn: ctp:shiji/yue-wang-ju-jian-shi-jia
+    quote: >-
+      蜚鳥盡，良弓藏；狡兔死，走狗烹。越王為人長頸鳥喙，可與共患難，
+      不可與共樂。子何不去？
+    translation: >-
+      飛鳥打盡了，好弓就被收藏起來；狡兔死光了，獵狗就被烹煮。
+      越王這個人長頸鳥嘴，可以和他共患難，不可以和他共安樂。
+      你為什麼不走呢？
+crystallisation:
+  note: >-
+    《史記》原文作「蜚鳥盡，良弓藏」（蜚即飛），六字一句；
+    後世節縮為「鳥盡弓藏」四字，並常與同段的「兔死狗烹」連用。
+  moe_id: 2137
+reliability: 大體可信
+people: [fan-li, wen-zhong, gou-jian]
+concepts: [功臣命運, 君臣關係, 知進退]
+related_idioms:
+  - target: wo-xin-chang-dan
+    kind: same_event
+    note: 同出越滅吳一事，前者為復國之始，後者為復國之後。
+lessons:
+  historical: >-
+    范蠡的判斷不是道德批評，是對君臣關係結構的分析。
+    共患難時，君與臣的利益完全一致——不合作雙方俱亡；
+    功成之後，那個一致性消失了，而功臣手上的資源（威望、部屬、
+    對君主弱點的知情）從資產變成負債。
+    句踐並沒有變壞，是他的處境變了。
+    范蠡看懂了這一層而及時退出，文種看懂了卻捨不得，
+    這是先秦關於「知止」最著名的一組對照。
+  modern: >-
+    引申為過河拆橋。要點在於它未必出於忘恩負義：
+    當合作的結構性基礎消失，關係的性質就會改變，不必等到有人變心。
+references:
+  - https://ctext.org/shiji/yue-wang-ju-jian-shi-jia/zh

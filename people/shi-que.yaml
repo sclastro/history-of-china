@@ -1,0 +1,28 @@
+id: shi-que
+name:
+  zh: 石碏
+  en: Shi Que
+state: wey
+role: 卿大夫
+birth: null
+death: null
+sort_year: -719
+bio: >-
+  衛國大夫。衛莊公寵州吁而不禁其驕，石碏諫「將立州吁，乃定之矣；
+  若猶未也，階之為禍」，不聽。其子石厚與州吁交遊，石碏禁之不可。
+  州吁弒桓公自立，石碏設計誘二人至陳而執之——使人殺州吁於濮，
+  又使其家宰獳羊肩殺石厚於陳。《左傳》君子曰：「石碏，純臣也，
+  惡州吁而厚與焉。『大義滅親』，其是之謂乎！」
+timeline:
+  - year: -722
+    event: 諫衛莊公勿寵州吁，不聽，遂告老
+  - year: -719
+    event: 州吁弒桓公自立；石碏借陳國之力執州吁與石厚而誅之
+sources:
+  - source: zuo-zhuan
+    locus: 隱公四年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/yin-gong-si-nian
+relations:
+  - target: shi-hou
+    kind: kin
+    note: 其子，坐州吁之黨而見誅

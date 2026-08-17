@@ -1,0 +1,30 @@
+id: zhao-kuo
+name:
+  zh: 趙括
+  house: 趙
+  en: Zhao Kuo
+state: zhao
+role: 將領
+birth: null
+death: -260
+sort_year: -260
+bio: >-
+  趙奢之子。自少學兵法、言兵事，以天下莫能當——嘗與其父論兵，
+  奢不能難，然不謂善。母問其故，奢曰：「兵，死地也，而括易言之。
+  使趙不將括即已，若必將之，破趙軍者必括也。」
+  長平之戰，秦行反間曰「秦之所惡，獨畏馬服子趙括將耳」，
+  趙孝成王以代廉頗。括至，悉更約束、易置軍吏，出擊秦師。
+  白起佯敗而絕其糧道，圍之四十六日，士卒相食；
+  括自出銳卒搏戰，射殺之，四十萬眾降而盡坑。
+  其母先已上書言「括不可使將」，且請「即如有不稱，妾得無隨坐乎」——
+  故獨得不誅。
+sources:
+  - source: shiji
+    locus: 廉頗藺相如列傳
+    ctext_urn: ctp:shiji/lian-po-lin-xiang-ru-lie-zhuan
+relations:
+  - target: zhao-she
+    kind: kin
+    note: 其父，早斷其必敗
+  - target: bai-qi
+    kind: rival

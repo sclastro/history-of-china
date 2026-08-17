@@ -1,0 +1,29 @@
+id: lv-bu-wei
+name:
+  zh: 呂不韋
+  house: 呂
+  en: Lü Buwei
+state: qin
+role: 商人
+birth: null
+death: -235
+sort_year: -257
+bio: >-
+  陽翟大賈，往來販賤賣貴，家累千金。在邯鄲見秦質子異人，
+  歸而問其父：「耕田之利幾倍？」曰十倍。「珠玉之贏幾倍？」曰百倍。
+  「立國家之主贏幾倍？」曰無數。乃曰：「此奇貨可居。」
+  遂以千金為異人西游，說華陽夫人立為嫡嗣，改名子楚。
+  子楚立為莊襄王，以呂不韋為丞相，封文信侯。
+  莊襄王卒，秦王政年十三而立，號不韋為仲父。
+  招致士人著《呂氏春秋》二十餘萬言，布咸陽市門，
+  懸千金其上，延諸侯游士賓客有能增損一字者予千金——
+  「一字千金」之所出。後坐嫪毐事免相，徙蜀，飲鴆而死。
+sources:
+  - source: shiji
+    locus: 呂不韋列傳
+    ctext_urn: ctp:shiji/lv-bu-wei-lie-zhuan
+relations:
+  - target: zi-chu
+    kind: ally
+  - target: qin-shi-huang
+    kind: minister

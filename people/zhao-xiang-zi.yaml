@@ -1,0 +1,37 @@
+id: zhao-xiang-zi
+name:
+  zh: 趙襄子
+  personal: 無恤
+  clan: 嬴
+  house: 趙
+  posthumous: 襄
+  en: Viscount Xiang of Zhao
+state: zhao
+role: 卿大夫
+birth: null
+death: -425
+sort_year: -453
+bio: >-
+  晉六卿之趙氏宗主。智伯索地，韓魏與之而趙不與，
+  智伯遂率韓魏圍晉陽，決汾水以灌之，城不浸者三版，
+  「懸釜而炊，易子而食」。襄子使張孟談潛出說韓魏，
+  三家反攻，前 453 年殺智伯於晉陽城下而三分其地——
+  這一年才是戰國的實際起點，比周威烈王命三晉為諸侯（前 403）早半世紀。
+  襄子漆智伯之頭以為飲器，豫讓為之報仇者再，襄子義之而終殺之。
+timeline:
+  - year: -455
+    event: 智伯率韓魏圍晉陽，決水灌城
+  - year: -453
+    event: 說反韓魏，滅智伯而三分其地
+  - year: -425
+    event: 卒
+sources:
+  - source: shiji
+    locus: 趙世家
+    ctext_urn: ctp:shiji/zhao-shi-jia
+  - source: zhan-guo-ce
+    locus: 趙策一
+    ctext_urn: ctp:zhan-guo-ce/zhao-yi
+relations:
+  - target: zhi-bo
+    kind: rival

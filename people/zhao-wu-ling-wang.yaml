@@ -1,0 +1,38 @@
+id: zhao-wu-ling-wang
+name:
+  zh: 趙武靈王
+  personal: 雍
+  clan: 嬴
+  house: 趙
+  posthumous: 武靈
+  en: King Wuling of Zhao
+state: zhao
+role: 君主
+birth: null
+death: -295
+sort_year: -325
+bio: >-
+  戰國最富改革膽識的君主。前 307 年下令胡服騎射——
+  易寬袍大袖為胡人短衣革帶，改車戰為騎射。
+  公子成、趙文、趙造等以「變古之教、易古之道」相爭，
+  武靈王答曰「循法之功，不足以高世；法古之學，不足以制今」，
+  「聖人利身之謂服，便事之謂教」，遂行之。
+  自此趙有騎兵之利，北破林胡、樓煩，築長城，滅中山。
+  然晚年傳位少子何而封長子章於代，兄弟爭立，
+  武靈王被圍於沙丘宮三月餘，探雀鷇而食之，終餓死。
+timeline:
+  - year: -325
+    event: 即位
+  - year: -307
+    event: 下令胡服騎射，排眾議而行之
+  - year: -296
+    event: 滅中山
+  - year: -295
+    event: 沙丘之亂，圍於行宮，餓死
+sources:
+  - source: shiji
+    locus: 趙世家
+    ctext_urn: ctp:shiji/zhao-shi-jia
+  - source: zhan-guo-ce
+    locus: 趙策二
+    ctext_urn: ctp:zhan-guo-ce/zhao-er

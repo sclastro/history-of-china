@@ -1,0 +1,58 @@
+id: tan-tian-zhi-gong
+idiom:
+  zh: 貪天之功
+  pinyin: tān tiān zhī gōng
+  jyutping: taam1 tin1 zi1 gung1
+  literal: 貪取上天的功勞
+  en: Claiming Heaven's achievement as one's own
+type: historical
+period: wu-ba
+year: -636
+year_note: 魯僖公二十四年
+states: [jin]
+meaning: 把不屬於自己的功勞據為己有。
+benshi:
+  event: jin-wen-xing-shang
+  summary: >-
+    晉文公返國行賞從亡之臣，介之推不言祿，祿亦弗及。
+    推謂晉之得主乃「天實置之」，而從亡諸臣「以為己力」是誣；
+    竊人之財猶謂之盜，何況貪天之功。遂與母偕隱而死。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 僖公二十四年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-si-nian
+    quote: >-
+      獻公之子九人，唯君在矣。惠、懷無親，外內棄之；天未絕晉，必將有主。
+      主晉祀者，非君而誰？天實置之，而二三子以為己力，不亦誣乎？
+      竊人之財，猶謂之盜，況貪天之功以為己力乎？
+    translation: >-
+      獻公的九個兒子，如今只剩國君一人在世。惠公、懷公沒有親信，
+      內外都拋棄了他們；上天既未斷絕晉國，就必定會有新的君主。
+      主持晉國宗祀的，不是國君還會是誰？這實在是上天安排的，
+      而那幾位卻當作自己的功勞，不是欺騙嗎？
+      偷別人的財物尚且叫做盜，何況把上天的功勞據為己有？
+crystallisation:
+  note: >-
+    四字語形即出《左傳》原文（「貪天之功以為己力」），
+    後世節取前四字而通行。
+  moe_id: 1631
+reliability: 信史
+people: [jie-zhi-tui, jin-wen-gong]
+concepts: [功勞歸屬, 天命, 歸因, 隱逸]
+lessons:
+  historical: >-
+    介之推批評的不是文公的薄待，而是同僚的一種**歸因錯誤**：
+    把歷史的偶然（獻公九子唯君在、惠懷失人心、天未絕晉）
+    算作自己的努力。這在先秦是相當清醒的一種認識——
+    它區分了「參與了成功」與「造成了成功」。
+    值得注意的是文公的回應：不追不逼，只把綿上之田封為介推之田，
+    說「以志吾過，且旌善人」。承認自己看漏了人，
+    在春秋君主中極為罕見。
+  modern: >-
+    引申為冒領功勞。更有價值的一層是介之推的方法：
+    在論功之前，先問這件事有多少成分不是任何人做出來的。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xi-gong-er-shi-si-nian/zh
+notes: >-
+  「割股啖君」「文公焚山逼其出」「寒食之俗由此而起」諸說皆不見於《左傳》，
+  為漢代以後層累而成，本站不採。

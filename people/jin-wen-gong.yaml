@@ -1,0 +1,58 @@
+id: jin-wen-gong
+name:
+  zh: 晉文公
+  personal: 重耳
+  clan: 姬
+  posthumous: 文
+  en: Duke Wen of Jin
+state: jin
+role: 君主
+birth: -697
+death: -628
+bio: >-
+  春秋第二霸。驪姬之難出奔，流亡十九年，歷翟、衛、齊、曹、宋、鄭、楚、秦八國，
+  備嘗困厄——過衛乞食於野人而得塊土，過曹遭觀其駢脅之辱，
+  在齊安於安樂而幾不欲行。楚成王以諸侯之禮待之，問何以報，
+  重耳許以他日交兵「退避三舍」。前 636 年賴秦穆公之力返國即位，時年六十二。
+  用狐偃、趙衰、先軫、賈佗、魏犫之屬，作三軍、行三賞、勤王納周襄王，
+  前 632 年城濮敗楚、踐土之盟而霸業成——由即位到稱霸，只用了五年。
+timeline:
+  - year: -655
+    event: 避驪姬之難，出奔翟
+  - year: -644
+    event: 去齊，歷曹、宋、鄭
+  - year: -637
+    event: 至楚，楚成王厚待之，許以退避三舍
+  - year: -636
+    event: 秦穆公納之，返國即位
+  - year: -635
+    event: 勤王，納周襄王於成周，受陽樊、溫、原、欑茅之田
+  - year: -632
+    event: 城濮之戰大敗楚軍；踐土之盟，周襄王策命為侯伯
+  - year: -628
+    event: 卒
+sources:
+  - source: zuo-zhuan
+    locus: 僖公二十三年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-san-nian
+  - source: guo-yu
+    locus: 晉語四
+  - source: shiji
+    locus: 晉世家
+    ctext_urn: ctp:shiji/jin-shi-jia
+relations:
+  - target: hu-yan
+    kind: minister
+    note: 舅氏，流亡十九年之首謀
+  - target: xian-zhen
+    kind: minister
+    note: 城濮之戰中軍元帥
+  - target: jie-zhi-tui
+    kind: minister
+    note: 從亡而不言祿，隱綿山以終
+  - target: chu-cheng-wang
+    kind: rival
+    note: 受其厚待，而城濮敗其師
+  - target: qin-mu-gong
+    kind: ally
+    note: 賴其力返國，秦晉之好所繫

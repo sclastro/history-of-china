@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cc-chunqiu.vercel.app/sitemap.xml

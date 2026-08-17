@@ -1,0 +1,58 @@
+id: yu-gong-yi-shan
+idiom:
+  zh: 愚公移山
+  pinyin: yú gōng yí shān
+  jyutping: jyu4 gung1 ji4 saan1
+  literal: 愚公把山搬走
+  en: The Foolish Old Man who moved the mountains
+type: parable
+period: zhan-guo-early
+year: null
+states: [zheng]
+meaning: 以世代相繼的持續努力克服看似不可能的困難。
+dianyuan:
+  - source: liezi
+    locus: 湯問
+    ctext_urn: ctp:liezi/tang-wen
+    quote: >-
+      河曲智叟笑而止之曰：「甚矣，汝之不惠！以殘年餘力，曾不能毀山之一毛，
+      其如土石何？」北山愚公長息曰：「汝心之固，固不可徹，曾不若孀妻弱子。
+      雖我之死，有子存焉；子又生孫，孫又生子；子又有子，子又有孫；
+      子子孫孫無窮匱也，而山不加增，何苦而不平？」河曲智叟亡以應。
+    translation: >-
+      河曲的智叟笑著阻止他說：「你太不聰明了！憑你殘餘的歲月與力氣，
+      連山上的一根草都撼動不了，能拿那些土石怎麼辦？」
+      北山愚公長歎道：「你的心頑固得無法開通，連寡婦和小孩都比不上。
+      即使我死了，還有兒子在；兒子又生孫子，孫子又生兒子；
+      兒子又有兒子，兒子又有孫子——子子孫孫沒有窮盡，
+      而山不會再長高，何愁挖不平？」河曲智叟無話可答。
+crystallisation:
+  note: >-
+    《列子》原文無「愚公移山」四字，係後世對該則寓言的命名；
+    今日之通行度極大程度上得力於二十世紀的政治引用，
+    使它由一則道家寓言變成一句勵志口號。
+  moe_id: 1074
+reliability: 寓言
+people: [lie-zi]
+concepts: [持續, 有限與無限, 名的反諷, 天助]
+related_idioms:
+  - target: qi-ren-you-tian
+    kind: same_source
+    note: 同出《列子》，同以誇張情境探問人與天地的關係。
+lessons:
+  historical: >-
+    《列子》給兩個角色的命名本身就是論點：主張移山的叫「愚公」，
+    嘲笑他的叫「智叟」。愚公的論證其實極為嚴密——
+    人力可以世代相繼而無窮，山的體積則是有限且不再增加；
+    無限對有限，結論是必然的。智叟的錯誤不在算術，
+    在他只算了愚公一個人的餘年。
+    值得注意的是結局：山最後不是被挖走的，是「帝感其誠」，
+    命夸娥氏二子背走了。在道家的框架裡，
+    人的持續努力最終仍要交給天——這與二十世紀把它讀成
+    純粹的人定勝天，方向並不相同。
+  modern: >-
+    引申為堅持不懈。原文的論證核心值得留意：
+    它不是講意志，是講**時間尺度的選擇**——
+    把單位由「一個人的一生」換成「世代」，問題的性質就變了。
+references:
+  - https://ctext.org/liezi/tang-wen/zh

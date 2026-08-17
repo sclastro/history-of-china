@@ -1,0 +1,26 @@
+id: bao-si
+name:
+  zh: 褒姒
+  clan: 姒
+  en: Bao Si
+state: zhou
+role: 君主
+birth: null
+death: null
+sort_year: -774
+bio: >-
+  褒國所獻之女，幽王寵之而廢申后立為王后。《史記》謂其「不好笑」，
+  幽王為博一笑而舉烽火戲諸侯，遂致亡國。此說於清華簡〈繫年〉全無蹤影，
+  且與西周無烽燧之制相牴——其人存在無可疑，「女禍亡國」的敘事框架則是
+  戰國至漢代史觀的產物。她是中國史上被此一框架塑造得最徹底的人物之一。
+sources:
+  - source: shiji
+    locus: 周本紀
+    ctext_urn: ctp:shiji/zhou-ben-ji
+relations:
+  - target: zhou-you-wang
+    kind: kin
+    note: 幽王之后
+notes: >-
+  role 欄填「君主」係就其王后身分而言，本站 role 分類未設后妃一項，
+  日後條目增多可再細分。

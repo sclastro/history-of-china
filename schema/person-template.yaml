@@ -1,0 +1,41 @@
+# 人物節點 template（people/<id>.yaml）
+# 人物係「節點」而唔係「主條目」——小傳寫喺 bio 欄，唔另開 .md 檔。
+# 凡先秦思想家（孔子、老子、墨子、孟子、莊子、荀子、韓非等），
+# 請填 philosophy_ref 欄連去哲學家知識庫，本站唔重複撰寫其思想。
+
+id: example-person              # （必填）檔名（不含 .yaml）
+name:
+  zh: 示例                       # （必填）通行稱謂，例：晉文公、藺相如
+  personal: 重耳                 # （選填）名
+  clan: 姬                       # （選填）姓
+  house: 晉                      # （選填）氏
+  posthumous: 文                 # （選填）諡號
+  en: Duke Wen of Jin           # （必填）英文通行名
+state: jin                      # （必填）所屬國，對應 data/states.yaml；跨國事人以主要事功之國為準
+role: 君主                       # （必填）君主／卿大夫／策士／將領／思想家／刺客／工匠／隱士
+birth: -697                     # （必填）不可考填 null
+death: -628                     # （必填）不可考填 null
+sort_year: -636                 # （選填）birth 為 null 時用作排序
+
+bio: >-                         # （必填）二百至五百字小傳
+  示例小傳……
+
+timeline:                       # （選填）生平大事，按年份升序排列
+  - year: -655
+    event: 避驪姬之難出奔翟
+
+sources:                        # （必填）至少一條
+  - source: shiji
+    locus: 晉世家
+    ctext_urn: ctp:shiji/jin-shi-jia   # （選填）
+
+relations:                      # （選填）與本站其他人物嘅關聯；網站自動生成反向關聯
+  - target: hu-yan
+    kind: minister              # ruler 其君／minister 其臣／kin 親屬／teacher 師從／
+                                # rival 政敵／ally 盟友
+    note: 一句說明。
+
+philosophy_ref: han-fei         # （選填）對應 sclastro/philosophy 知識庫嘅哲學家 id，
+                                #        網站會生成外連而唔重複撰寫其思想
+
+notes: 其他說明（生卒年爭議、名號問題等）。   # （選填）

@@ -1,0 +1,56 @@
+id: ke-zhou-qiu-jian
+idiom:
+  zh: 刻舟求劍
+  pinyin: kè zhōu qiú jiàn
+  jyutping: hak1 zau1 kau4 gim3
+  literal: 在船身上刻記號來找掉落的劍
+  en: Notching the boat to find a sunken sword
+type: parable
+period: zhan-guo-mid
+year: null
+states: [chu]
+meaning: 拘泥於固定的參照而不知情勢已變。
+dianyuan:
+  - source: lv-shi-chun-qiu
+    locus: 慎大覽·察今
+    ctext_urn: ctp:lv-shi-chun-qiu/shen-da-lan/cha-jin
+    quote: >-
+      楚人有涉江者，其劍自舟中墜於水，遽契其舟曰：「是吾劍之所從墜。」
+      舟止，從其所契者入水求之。舟已行矣，而劍不行，求劍若此，不亦惑乎？
+      以此故法為其國，與此同。時已徙矣，而法不徙，以此為治，豈不難哉！
+    translation: >-
+      楚國有個渡江的人，他的劍從船上掉進水裡，
+      他急忙在船身上刻了個記號說：「這裡是我的劍掉下去的地方。」
+      船停了，他從所刻記號的地方下水去找。
+      船已經走了，而劍沒有走；這樣找劍，不是很糊塗嗎？
+      用舊有的法度來治理他的國家，正是同一回事。
+      時代已經變了，而法度沒有變，用這種方式治國，豈不是很難嗎！
+crystallisation:
+  note: >-
+    《呂氏春秋》原文作「遽契其舟」，無「刻舟求劍」四字；
+    四字語形出於後世節縮，唐宋已通行。
+  moe_id: 1230
+reliability: 寓言
+people: [lv-bu-wei]
+concepts: [變法, 參照系, 時勢, 法後王]
+related_idioms:
+  - target: shou-zhu-dai-tu
+    kind: same_source
+    note: 同為戰國諸子以寓言論「世異則事異」，一出韓非、一出呂覽。
+lessons:
+  historical: >-
+    〈察今〉全篇的主旨在篇名——考察當下。
+    這則寓言之後緊接著另一則（引嬰投江），
+    再往下是「世易時移，變法宜矣」的結論。
+    值得注意的是它的精確性：那個楚人並沒有做錯記號，
+    他的記號在船的座標系裡完全準確；
+    錯的是他把一個**移動中的參照系**當成了固定的。
+    這比「不知變通」要深一層——問題不在他不肯改，
+    在他不知道自己站在什麼上面。
+    《呂氏春秋》成書於秦統一前夕，由呂不韋門客集體編纂，
+    這一篇正是為即將到來的新秩序作論證。
+  modern: >-
+    引申為墨守成規。更精確的一層是：
+    要定期檢查自己的判斷所依據的座標系有沒有在移動。
+references:
+  - https://ctext.org/lv-shi-chun-qiu/shen-da-lan/cha-jin/zh

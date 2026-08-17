@@ -1,0 +1,25 @@
+id: mao-sui
+name:
+  zh: 毛遂
+  en: Mao Sui
+state: zhao
+role: 策士
+birth: null
+death: null
+sort_year: -257
+bio: >-
+  平原君門下客，居三年而無所稱。楚趙合縱之行少一人，
+  毛遂自薦。平原君曰：「夫賢士之處世也，譬若錐之處囊中，
+  其末立見。今先生處勝之門下三年於此矣，左右未有所稱誦，
+  勝未有所聞，是先生無所有也。」毛遂曰：
+  「臣乃今日請處囊中耳。使遂蚤得處囊中，乃穎脫而出，非特其末見而已。」
+  至楚，按劍而前曰：「今十步之內，王不得恃楚國之眾也，王之命懸於遂手。」
+  復以湯武之事、白起三戰而辱楚之恥激之，楚王乃定從於殿上。
+  平原君曰：「毛先生一至楚而使趙重於九鼎大呂。」
+sources:
+  - source: shiji
+    locus: 平原君虞卿列傳
+    ctext_urn: ctp:shiji/ping-yuan-jun-yu-qing-lie-zhuan
+relations:
+  - target: ping-yuan-jun
+    kind: ruler

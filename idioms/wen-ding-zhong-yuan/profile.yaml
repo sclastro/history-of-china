@@ -1,0 +1,58 @@
+id: wen-ding-zhong-yuan
+idiom:
+  zh: 問鼎中原
+  pinyin: wèn dǐng zhōng yuán
+  jyutping: man6 ding2 zung1 jyun4
+  literal: 探問（周室）九鼎的輕重
+  en: Inquiring after the weight of the tripods
+type: historical
+period: wu-ba
+year: -606
+year_note: 魯宣公三年
+states: [chu, zhou]
+meaning: 覬覦最高權位、圖謀奪取政權。
+benshi:
+  event: wen-ding-zhou-jiang
+  summary: >-
+    楚莊王伐陸渾之戎，陳兵於周王畿境上。周定王使王孫滿犒勞，
+    莊王當面探問九鼎之大小輕重——九鼎為王權象徵，問其輕重即試探取而代之。
+    王孫滿以「在德不在鼎」對之，莊王乃還師。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 宣公三年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-san-nian
+    quote: >-
+      楚子伐陸渾之戎，遂至于雒，觀兵于周疆。定王使王孫滿勞楚子。楚子問鼎之大小輕重焉。
+      對曰：「在德不在鼎……德之休明，雖小，重也；其姦回昏亂，雖大，輕也。
+      天祚明德，有所厎止……周德雖衰，天命未改。鼎之輕重，未可問也。」
+    translation: >-
+      楚莊王討伐陸渾之戎，順勢抵達雒水，在周室邊境上陳兵示威。
+      周定王派王孫滿去慰勞楚王。楚王問起九鼎的大小輕重。
+      王孫滿答：「在於德而不在於鼎……德行美好清明，鼎雖小也是重的；
+      若姦邪昏亂，鼎雖大也是輕的。上天賜福給有德者，是有期限的……
+      周室的德行雖已衰微，天命卻還沒有改變。鼎的輕重，是不可以問的。」
+crystallisation:
+  first_attested: 《左傳·宣公三年》（「問鼎」）；「問鼎中原」四字為後世所綴
+  note: >-
+    《左傳》只有「問鼎之大小輕重」，「問鼎」二字早已成語；
+    「問鼎中原」四字係後人合「問鼎」與「逐鹿中原」而成，通行甚晚。
+    今日另有「問鼎」單用而指「奪冠」者，是二十世紀體育報導的新義。
+  moe_id: 2295
+reliability: 信史
+people: [chu-zhuang-wang, wang-sun-man]
+concepts: [王權象徵, 名分, 天命, 德]
+lessons:
+  historical: >-
+    九鼎是實物，也是符號。楚莊王問其輕重，形式上是好奇，
+    實質上是試探——鼎若可移，王位便可易。
+    王孫滿的回答之所以有效，在於他把問題整個換掉了：
+    鼎的重量不在金屬，在持有者的德；
+    有德則小鼎亦重，無德則大鼎亦輕。
+    這既是拒絕，也是一套關於正當性的完整理論。
+    周王室此時已無一兵可恃，靠的正是這套理論又多存續了三百五十年——
+    符號權力在硬實力歸零之後仍能運作，這是春秋政治最值得注意的現象之一。
+  modern: >-
+    今多用於「圖謀最高地位」。王孫滿的答法則提供另一種思路：
+    面對無法正面拒絕的挑戰，改變衡量的標準比爭辯結論更有效。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xuan-gong-san-nian/zh

@@ -1,0 +1,32 @@
+id: xin-ling-jun
+name:
+  zh: 信陵君
+  personal: 無忌
+  clan: 姬
+  house: 魏
+  en: Lord Xinling
+state: wei
+role: 卿大夫
+birth: null
+death: -243
+sort_year: -257
+bio: >-
+  魏昭王少子、安釐王異母弟，名無忌。仁而下士，食客三千，
+  諸侯以其賢、多客，不敢加兵謀魏十餘年。
+  秦圍邯鄲，魏王使晉鄙將十萬眾救趙，畏秦而壁鄴不進。
+  平原君數遺書責讓，公子乃用侯嬴之謀——
+  請如姬竊兵符於王臥內（如姬報公子為父報仇之德），
+  復使朱亥袖四十斤鐵椎椎殺晉鄙，奪其軍，
+  簡選八萬進兵擊秦，遂解邯鄲之圍。
+  魏王怒其竊符矯殺，公子留趙十年不歸。
+  後歸魏為上將軍，率五國之兵敗秦於河外；
+  秦行反間，魏王疑而奪其兵權，公子謝病不朝，飲醇酒近婦女，四歲而卒。
+sources:
+  - source: shiji
+    locus: 魏公子列傳
+    ctext_urn: ctp:shiji/wei-gong-zi-lie-zhuan
+relations:
+  - target: hou-ying
+    kind: minister
+  - target: ping-yuan-jun
+    kind: kin

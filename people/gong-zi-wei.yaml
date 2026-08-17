@@ -1,0 +1,28 @@
+id: gong-zi-wei
+name:
+  zh: 公子圍
+  personal: 圍
+  house: 熊
+  en: Prince Wei of Chu (later King Ling)
+state: chu
+role: 君主
+birth: null
+death: -529
+sort_year: -547
+bio: >-
+  楚共王之子，康王之弟，即後之楚靈王。
+  前 547 年楚伐鄭，公子圍與穿封戌爭俘皇頡之功，
+  請伯州犁裁之——州犁「上其手」以指公子圍、「下其手」以指穿封戌，
+  暗示囚人所當認之貴賤，遂成「上下其手」之典。
+  前 541 年弒郟敖自立，好細腰、築章華臺、遷陳蔡之民，
+  終以眾叛而縊於乾谿。
+sources:
+  - source: zuo-zhuan
+    locus: 襄公二十六年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xiang-gong-er-shi-liu-nian
+relations:
+  - target: bo-zhou-li
+    kind: ally
+    note: 伯州犁上其手以偏袒之
+  - target: chuan-feng-xu
+    kind: rival

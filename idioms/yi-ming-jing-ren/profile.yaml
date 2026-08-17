@@ -1,0 +1,79 @@
+id: yi-ming-jing-ren
+idiom:
+  zh: 一鳴驚人
+  pinyin: yī míng jīng rén
+  jyutping: jat1 ming4 ging1 jan4
+  literal: 一叫就使人震驚
+  en: One cry that startles all
+type: historical
+period: wu-ba
+year: -611
+year_note: 楚莊王三年
+states: [chu]
+meaning: 平時默默無聞，一旦行動就有驚人的表現。
+benshi:
+  event: chu-zhuang-ting-zheng
+  summary: >-
+    楚莊王即位三年不出號令，日夜為樂，並下令有敢諫者死。
+    伍舉以「三年不蜚不鳴」之鳥隱喻進諫，莊王答以「三年不蜚，蜚將沖天；
+    三年不鳴，鳴將驚人」。數月後罷淫樂而聽政，誅數百人、進數百人，國人大悅。
+dianyuan:
+  - source: hanfeizi
+    locus: 喻老
+    ctext_urn: ctp:hanfeizi/yu-lao
+    quote: >-
+      楚莊王蒞政三年，無令發，無政為也。右司馬御座而與王隱曰：
+      「有鳥止南方之阜，三年不翅，不飛不鳴，嘿然無聲，此為何名？」
+      王曰：「三年不翅，將以長羽翼；不飛不鳴，將以觀民則。
+      雖無飛，飛必沖天；雖無鳴，鳴必驚人。子釋之，不穀知之矣。」
+    translation: >-
+      楚莊王執政三年，沒有發過命令，也沒有推行過政事。
+      右司馬在旁陪坐，用隱語對莊王說：「有隻鳥停在南方的山丘上，
+      三年不展翅、不飛不叫，靜默無聲——這叫什麼鳥？」
+      莊王說：「三年不展翅，是為了長成羽翼；不飛不叫，是為了觀察民情法度。
+      牠雖然還沒飛，一飛必定沖天；雖然還沒叫，一叫必定驚人。
+      你放心，我明白了。」
+  - source: shiji
+    locus: 楚世家
+    ctext_urn: ctp:shiji/chu-shi-jia
+    quote: >-
+      伍舉曰：「願有進隱。」曰：「有鳥在於阜，三年不蜚不鳴，是何鳥也？」
+      莊王曰：「三年不蜚，蜚將沖天；三年不鳴，鳴將驚人。舉退矣，吾知之矣。」
+    translation: >-
+      伍舉說：「我想進獻一個隱語。」說：「有隻鳥停在土山上，
+      三年不飛不叫，這是什麼鳥？」莊王說：「三年不飛，一飛就要沖天；
+      三年不叫，一叫就要驚人。伍舉你退下吧，我明白了。」
+crystallisation:
+  note: >-
+    《韓非子》作「鳴必驚人」，《史記·楚世家》作「鳴將驚人」，
+    皆非「一鳴驚人」四字。四字語形出於後世節縮，唐宋以降通行。
+  moe_id: 25
+reliability: 大體可信
+variants:
+  - claim: >-
+      《史記·滑稽列傳》記同型故事於齊威王與淳于髡，文句幾乎全同
+      （「此鳥不飛則已，一飛沖天；不鳴則已，一鳴驚人」）。
+      同一母題繫於兩君，其一必為移植；一般以楚莊王為原型。
+    source: shiji
+    locus: 滑稽列傳
+  - claim: 《韓非子·喻老》不著諫者之名而作「右司馬」，《史記·楚世家》則作伍舉。
+    source: hanfeizi
+    locus: 喻老
+    ctext_urn: ctp:hanfeizi/yu-lao
+people: [chu-zhuang-wang, wu-ju, qi-wei-wang]
+concepts: [韜晦, 隱語進諫, 人事清洗, 無為]
+lessons:
+  historical: >-
+    這則故事通行的讀法是勵志——厚積薄發。但《史記》緊接著記的是：
+    莊王親政後「所誅者數百人，所進者數百人」。
+    三年的沉默不是積累，是觀察：新君即位而權柄在舊臣，
+    貿然發令只會暴露自己的意圖與班底。
+    韜晦是為了在動手之前把敵我看清楚，
+    而「一鳴」的內容是一次徹底的人事清洗。
+    韓非把這則故事收進〈喻老〉來注老子「大器晚成，大音希聲」，
+    看中的正是這一層：無為是手段，不是目的。
+  modern: >-
+    引申為平時不顯山露水而一舉成名。若取其史義，
+    重點在「三年不鳴」期間做了什麼——觀察，而非等待。
+references:
+  - https://ctext.org/hanfeizi/yu-lao/zh

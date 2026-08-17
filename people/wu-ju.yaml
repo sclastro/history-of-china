@@ -1,0 +1,26 @@
+id: wu-ju
+name:
+  zh: 伍舉
+  house: 伍
+  en: Wu Ju
+state: chu
+role: 卿大夫
+birth: null
+death: null
+sort_year: -611
+bio: >-
+  楚大夫，伍子胥之祖。楚莊王即位三年不理政事而下令拒諫，
+  伍舉入見，以隱語問之：「有鳥在於阜，三年不蜚不鳴，是何鳥也？」
+  王曰：「三年不蜚，蜚將沖天；三年不鳴，鳴將驚人。」
+  數月後莊王罷淫樂而聽政。此事《韓非子·喻老》繫於楚莊王而不著諫者之名，
+  《史記·楚世家》以為伍舉，《史記·滑稽列傳》則另有齊威王與淳于髡的同型故事。
+sources:
+  - source: shiji
+    locus: 楚世家
+    ctext_urn: ctp:shiji/chu-shi-jia
+  - source: hanfeizi
+    locus: 喻老
+    ctext_urn: ctp:hanfeizi/yu-lao
+relations:
+  - target: chu-zhuang-wang
+    kind: ruler

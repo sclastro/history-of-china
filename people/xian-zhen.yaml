@@ -1,0 +1,31 @@
+id: xian-zhen
+name:
+  zh: 先軫
+  house: 先
+  en: Xian Zhen
+state: jin
+role: 將領
+birth: null
+death: -627
+sort_year: -632
+bio: >-
+  晉之名將，城濮之戰為中軍元帥（時稱原軫）。
+  戰前定「執曹伯、分曹衛之田以賜宋人」之策，使楚不得不戰而曲在楚。
+  前 627 年崤之戰，力主邀擊秦師，「一日縱敵，數世之患也」，
+  遂於崤山全殲秦軍，虜三帥。其後文嬴請歸三帥而襄公許之，
+  先軫怒而不顧唾於朝——事後自愧失禮於君，於箕之役免冑入狄師而死。
+  他是春秋將帥中戰術最凌厲、而自我要求最嚴苛的一個。
+timeline:
+  - year: -632
+    event: 城濮之戰為中軍元帥，大敗楚軍
+  - year: -627
+    event: 崤之戰全殲秦師，虜孟明視等三帥
+  - year: -627
+    event: 箕之役，免冑入狄師而死
+sources:
+  - source: zuo-zhuan
+    locus: 僖公二十八年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-ba-nian
+relations:
+  - target: jin-wen-gong
+    kind: ruler

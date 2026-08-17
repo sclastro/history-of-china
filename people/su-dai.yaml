@@ -1,0 +1,22 @@
+id: su-dai
+name:
+  zh: 蘇代
+  house: 蘇
+  en: Su Dai
+state: yan
+role: 策士
+birth: null
+death: null
+sort_year: -290
+bio: >-
+  蘇秦之弟，戰國縱橫策士。趙且伐燕，蘇代為燕謂趙惠王曰：
+  「今者臣來，過易水，蚌方出曝而鷸啄其肉，蚌合而箝其喙。
+  鷸曰『今日不雨，明日不雨，即有死蚌』；
+  蚌亦謂鷸曰『今日不出，明日不出，即有死鷸』。
+  兩者不肯相舍，漁者得而并禽之。今趙且伐燕，燕趙久相支以敝大眾，
+  臣恐強秦之為漁父也。」惠王曰「善」，乃止。
+  這是戰國外交中「第三方得利」邏輯最精煉的一次表述。
+sources:
+  - source: zhan-guo-ce
+    locus: 燕策二
+    ctext_urn: ctp:zhan-guo-ce/yan-er

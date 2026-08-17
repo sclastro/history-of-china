@@ -1,0 +1,281 @@
+# 列國譜系
+# lane: true 者於 timeline.html 佔一條泳道；false 者只作標籤，唔佔泳道
+# lane_order 由北而南、由中原而邊緣排列，令晉→趙魏韓、齊→田齊嘅承接喺視覺上相鄰
+# 年份規範：公元前用負整數
+
+- id: zhou
+  name: 周
+  full_name: 東周王室
+  surname: 姬
+  founder: 周平王宜臼（東遷）
+  capitals: [洛邑]
+  founded: -770
+  ended: -256
+  ended_by: 秦昭襄王滅西周公，周赧王卒，周祀絕
+  lane: true
+  lane_order: 1
+  note: 東遷後王畿僅方六百里，其後再分裂為西周公、東周公兩小國。名義上的天下共主，實際上的二等諸侯。
+
+- id: lu
+  name: 魯
+  surname: 姬
+  founder: 周公旦（子伯禽就封）
+  capitals: [曲阜]
+  founded: -1043
+  ended: -256
+  ended_by: 楚考烈王滅魯
+  lane: true
+  lane_order: 2
+  note: 周禮所存最備之國，《春秋》即魯史。春秋後期政在三桓（季孫、叔孫、孟孫），公室徒擁虛名。
+
+- id: qi
+  name: 齊
+  full_name: 姜齊
+  surname: 姜
+  house: 呂
+  founder: 太公望呂尚
+  capitals: [營丘, 臨淄]
+  founded: -1046
+  ended: -379
+  ended_by: 齊康公卒，姜齊絕祀（前 386 年田和已列為諸侯）
+  succeeded_by: tian-qi
+  lane: true
+  lane_order: 3
+  note: 首霸之國。桓公用管仲，通魚鹽之利、行「叁其國而伍其鄙」，開霸主政治之端。
+
+- id: tian-qi
+  name: 田齊
+  full_name: 田齊
+  surname: 媯
+  house: 田（陳）
+  founder: 田和（陳完之後）
+  capitals: [臨淄]
+  founded: -386
+  ended: -221
+  ended_by: 秦王政滅齊，六國盡
+  successor_of: qi
+  lane: true
+  lane_order: 4
+  note: 陳完（敬仲）奔齊為田氏，歷十世而代姜。稷下學宮聚天下之士，為戰國思想重鎮。
+
+- id: jin
+  name: 晉
+  surname: 姬
+  founder: 唐叔虞
+  capitals: [翼, 絳, 新田]
+  founded: -1033
+  ended: -376
+  ended_by: 韓趙魏廢晉靜公為庶人，晉絕祀
+  succeeded_by: [zhao, wei, han]
+  lane: true
+  lane_order: 5
+  note: >-
+    春秋第一強國，與楚爭霸百年。曲沃代翼後盡殺公族，改用異姓卿族——
+    此制使晉無公室之亂而強，亦使卿族坐大而終於六卿分晉。
+
+- id: zhao
+  name: 趙
+  surname: 嬴
+  house: 趙
+  founder: 趙籍（烈侯）
+  capitals: [晉陽, 中牟, 邯鄲]
+  founded: -403
+  ended: -222
+  ended_by: 秦滅代（前 228 年秦已破邯鄲、虜趙王遷，公子嘉走代稱王）
+  successor_of: jin
+  lane: true
+  lane_order: 6
+  note: 三晉中唯一長期擁有騎兵優勢者，武靈王胡服騎射。長平一役盡失精銳。
+
+- id: wei
+  name: 魏
+  surname: 姬
+  house: 魏
+  founder: 魏斯（文侯）
+  capitals: [安邑, 大梁]
+  founded: -403
+  ended: -225
+  ended_by: 秦將王賁引河溝灌大梁，魏王假降
+  successor_of: jin
+  lane: true
+  lane_order: 7
+  note: 戰國首強。文侯用李悝變法、吳起練武卒、西門豹治鄴，先發而早衰；桂陵、馬陵兩敗於齊而霸業終。
+
+- id: han
+  name: 韓
+  surname: 姬
+  house: 韓
+  founder: 韓虔（景侯）
+  capitals: [平陽, 陽翟, 新鄭]
+  founded: -403
+  ended: -230
+  ended_by: 秦內史騰滅韓，六國之中最先亡
+  successor_of: jin
+  lane: true
+  lane_order: 8
+  note: 七雄中最弱，處四戰之地。申不害相韓行「術」治，強於一時；以勁弩利劍聞名。
+
+- id: qin
+  name: 秦
+  surname: 嬴
+  house: 趙
+  founder: 秦襄公（前 770 年護送平王東遷，始列為諸侯）
+  capitals: [西垂, 雍, 櫟陽, 咸陽]
+  founded: -770
+  ended: -221
+  ended_by: 並天下，改號皇帝（非亡國，為統一）
+  lane: true
+  lane_order: 9
+  note: 春秋時穆公霸西戎而不得東出；戰國時商鞅變法奠郡縣軍功之制，遂為統一之基。
+
+- id: zheng
+  name: 鄭
+  surname: 姬
+  founder: 鄭桓公友（周宣王庶弟）
+  capitals: [新鄭]
+  founded: -806
+  ended: -375
+  ended_by: 韓哀侯滅鄭，韓徙都新鄭
+  lane: true
+  lane_order: 10
+  note: 春秋初期最先崛起（鄭莊小霸），其後夾於晉楚之間，「朝晉暮楚」為其國策之寫照。子產相鄭鑄刑書，為成文法之始。
+
+- id: song
+  name: 宋
+  surname: 子
+  founder: 微子啟（商紂庶兄）
+  capitals: [商丘]
+  founded: -1040
+  ended: -286
+  ended_by: 齊湣王與魏楚共滅宋而分其地
+  lane: true
+  lane_order: 11
+  note: 殷商遺民之國，行客禮於周。襄公泓水之敗常被視為舊軍禮的終結。宋人在諸子寓言中屢為愚者之典型（守株待兔、揠苗助長）。
+
+- id: wey
+  name: 衛
+  surname: 姬
+  founder: 康叔封（周武王弟）
+  capitals: [朝歌, 楚丘, 帝丘, 野王]
+  founded: -1040
+  ended: -209
+  ended_by: 秦二世廢衛君角為庶人
+  lane: true
+  lane_order: 12
+  note: 周初大國而春秋以降屢遭滅國之厄，賴齊桓存亡繼絕。存續最久之姬姓諸侯——比秦統一還晚十二年才絕祀。商鞅、吳起、呂不韋皆衛人。
+
+- id: chu
+  name: 楚
+  surname: 芈
+  house: 熊
+  founder: 熊繹（周成王封以子男之田）
+  capitals: [丹陽, 郢, 陳, 壽春]
+  founded: -1030
+  ended: -223
+  ended_by: 秦將王翦破楚，虜楚王負芻
+  lane: true
+  lane_order: 13
+  note: 自稱蠻夷而僭號稱王，是最早挑戰周室名分的大國。地最廣、兵最眾，而貴族封君之制始終未能徹底改造——吳起變法人亡政息。
+
+- id: wu
+  name: 吳
+  surname: 姬
+  founder: 太伯、仲雍（周太王之子，奔荊蠻）
+  capitals: [姑蘇]
+  founded: null
+  ended: -473
+  ended_by: 越王句踐滅吳，夫差自剄
+  lane: true
+  lane_order: 14
+  note: 晉為制楚而扶吳，吳因得中原兵法戰車之利。闔閭用伍子胥、孫武破郢，夫差敗齊而爭霸黃池，旋為越所滅——崛起與覆亡皆不過半世紀。
+
+- id: yue
+  name: 越
+  surname: 姒
+  founder: 無余（夏少康庶子）
+  capitals: [會稽, 琅琊]
+  founded: null
+  ended: -306
+  ended_by: 楚滅越（前 333 年楚威王已大敗越王無彊，其後越分裂，約前 306 年為楚所並）
+  lane: true
+  lane_order: 15
+  note: 楚為制吳而扶越，與晉扶吳恰成對稱。句踐滅吳後北會諸侯而稱霸，然戰國時迅速邊緣化。
+
+- id: yan
+  name: 燕
+  surname: 姬
+  founder: 召公奭
+  capitals: [薊]
+  founded: -1044
+  ended: -222
+  ended_by: 秦將王賁虜燕王喜於遼東
+  lane: true
+  lane_order: 16
+  note: 七雄中最偏遠、國史最闇。昭王築黃金臺招賢，用樂毅下齊七十餘城，為其唯一盛時。太子丹遣荊軻刺秦，是六國最後的抵抗。
+
+# ── 以下為不佔泳道的中小國，只作標籤 ──
+
+- id: chen
+  name: 陳
+  surname: 媯
+  founder: 胡公滿（舜之後）
+  capitals: [宛丘]
+  ended: -478
+  ended_by: 楚惠王滅陳
+  lane: false
+  note: 田齊之祖陳完即出於此。
+
+- id: cai
+  name: 蔡
+  surname: 姬
+  founder: 蔡叔度
+  ended: -447
+  ended_by: 楚惠王滅蔡
+  lane: false
+
+- id: yu
+  name: 虞
+  surname: 姬
+  founder: 虞仲（太伯之後）
+  ended: -655
+  ended_by: 晉獻公假道伐虢，還師襲滅之
+  lane: false
+  note: 「唇亡齒寒」「假道伐虢」之所繫。
+
+- id: guo
+  name: 虢
+  full_name: 北虢
+  surname: 姬
+  founder: 虢仲（周文王弟）
+  ended: -655
+  ended_by: 晉獻公滅之
+  lane: false
+
+- id: zhongshan
+  name: 中山
+  surname: 姬（一說白狄鮮虞）
+  ended: -296
+  ended_by: 趙武靈王滅中山
+  lane: false
+  note: 白狄所建，屢滅屢復，介於趙燕之間。
+
+- id: ju
+  name: 莒
+  surname: 己
+  ended: -431
+  ended_by: 楚滅莒（一說後屬齊）
+  lane: false
+  note: 齊桓公未立時嘗奔莒，「毋忘在莒」所本。
+
+- id: xu
+  name: 許
+  surname: 姜
+  ended: -375
+  ended_by: 楚滅許
+  lane: false
+
+- id: sui
+  name: 隨
+  surname: 姬
+  lane: false
+  note: 漢東大國，楚之附庸。「隨侯之珠」所出。

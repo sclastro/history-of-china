@@ -1,0 +1,26 @@
+id: bai-qi
+name:
+  zh: 白起
+  house: 白
+  en: Bai Qi
+state: qin
+role: 將領
+birth: null
+death: -257
+sort_year: -293
+bio: >-
+  秦之名將，號武安君。伊闕斬韓魏聯軍二十四萬，
+  鄢郢之役引水灌鄢、拔郢燒夷陵，華陽斬魏趙十五萬，
+  長平坑趙降卒四十萬——一生所殲山東兵力逾百萬，未嘗一敗。
+  長平之後欲乘勝取邯鄲，范睢忌其功而請罷兵，失其機。
+  其後昭王復欲攻邯鄲，白起以「秦雖破長平軍，而秦卒死者過半，
+  國內空」而稱病不行；秦軍果敗。王怒，遷之，
+  行至杜郵賜劍自裁。白起引劍將自剄曰：
+  「我固當死。長平之戰，趙卒降者數十萬人，我詐而盡阬之，是足以死。」
+sources:
+  - source: shiji
+    locus: 白起王翦列傳
+    ctext_urn: ctp:shiji/bai-qi-wang-jian-lie-zhuan
+relations:
+  - target: qin-zhao-xiang-wang
+    kind: ruler

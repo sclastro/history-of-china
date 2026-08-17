@@ -1,0 +1,31 @@
+id: jing-ke
+name:
+  zh: 荊軻
+  en: Jing Ke
+state: yan
+role: 刺客
+birth: null
+death: -227
+sort_year: -227
+bio: >-
+  衛人而游於燕，好讀書擊劍，與狗屠及善擊筑者高漸離為友，
+  日與飲於燕市，酒酣而歌，已而相泣，旁若無人。
+  田光薦之於太子丹，自剄以明不言。
+  丹欲刺秦王，荊軻請樊於期之首與燕督亢之地圖以為信；
+  樊於期自刎獻首。既發，太子及賓客白衣冠送於易水之上，
+  高漸離擊筑，荊軻和而歌：「風蕭蕭兮易水寒，壯士一去兮不復還。」
+  入秦，奉圖以進，圖窮而匕首見——把秦王之袖，袖絕；
+  逐之，環柱而走，群臣愕然而無兵，卒為侍醫夏無且以藥囊提之，
+  王負劍斷其股，荊軻箕踞而罵，被八創而死。
+sources:
+  - source: zhan-guo-ce
+    locus: 燕策三
+    ctext_urn: ctp:zhan-guo-ce/yan-san
+  - source: shiji
+    locus: 刺客列傳
+    ctext_urn: ctp:shiji/ci-ke-lie-zhuan
+relations:
+  - target: yan-tai-zi-dan
+    kind: ruler
+  - target: fan-wu-ji
+    kind: ally

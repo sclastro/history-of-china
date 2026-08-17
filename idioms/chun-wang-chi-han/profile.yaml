@@ -1,0 +1,71 @@
+id: chun-wang-chi-han
+idiom:
+  zh: 唇亡齒寒
+  pinyin: chún wáng chǐ hán
+  jyutping: seon4 mong4 ci2 hon4
+  literal: 嘴唇沒了，牙齒就會冷
+  en: When the lips are gone, the teeth feel cold
+type: historical
+period: wu-ba
+year: -655
+year_note: 魯僖公五年
+states: [yu, guo, jin]
+meaning: 兩者利害相關，一方覆滅另一方必受其害。
+benshi:
+  event: jin-mie-guo-yu
+  summary: >-
+    晉二度向虞借道以伐虢，虞大夫宮之奇力諫，以「輔車相依，唇亡齒寒」
+    說明虢亡則虞必從之；虞公恃同宗與神祐而不聽。
+    是年冬晉滅虢，還師襲滅虞。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 僖公五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-wu-nian
+    quote: >-
+      宮之奇諫曰：「虢，虞之表也。虢亡，虞必從之。晉不可啟，寇不可翫，
+      一之謂甚，其可再乎？諺所謂『輔車相依，唇亡齒寒』者，其虞、虢之謂也。」
+    translation: >-
+      宮之奇進諫說：「虢國是虞國的屏障。虢國一亡，虞國必然跟著完。
+      晉國的野心不可助長，外寇不可輕忽——一次已經太過分了，怎麼可以有第二次？
+      俗話所說『頰骨與牙床相互依靠，嘴唇沒了牙齒就冷』，
+      講的正是虞、虢的關係。」
+  - source: zuo-zhuan
+    locus: 僖公五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-wu-nian
+    quote: >-
+      公曰：「吾享祀豐絜，神必據我。」對曰：「臣聞之，鬼神非人實親，惟德是依……
+      如是，則非德民不和，神不享矣。神所馮依，將在德矣。」
+    translation: >-
+      虞公說：「我的祭祀豐盛潔淨，神明必定保佑我。」宮之奇答：
+      「臣聽說，鬼神並不真的親近某個人，只依附有德者……
+      如此說來，沒有德行則人民不和睦，神明也不會來享用祭品。
+      神明所依附的，終究是德。」
+crystallisation:
+  note: >-
+    《左傳》原文已明言此為「諺」——即當時已經流傳的俗語，
+    宮之奇是引用而非首創。四字語形自始即定，是本站少數
+    「典源之時語形已成」的例子。
+  moe_id: 231
+reliability: 信史
+people: [gong-zhi-qi, yu-gong, jin-xian-gong]
+concepts: [小國處境, 結構依存, 德與神, 地緣]
+related_idioms:
+  - target: jia-dao-fa-guo
+    kind: same_event
+    note: 同出晉滅虢虞一事，一從施術者之角度，一從受術者之角度。
+lessons:
+  historical: >-
+    宮之奇這番話不是道德勸告，是幾何學。虞的存亡不繫於它自己的德行或忠誠，
+    而繫於它與虢之間的相對位置——虢是虞的「表」（屏障），
+    屏障一去，虞就直接暴露在晉的兵鋒之下。
+    更值得注意的是後半段。虞公搬出兩道護身符：同宗（晉是我本家）
+    與神祐（我祭祀豐潔）。宮之奇把兩道都拆了：
+    論同宗，桓莊之族比虞更親，晉照樣殺；
+    論神祐，「鬼神非人實親，惟德是依」。
+    這是春秋思想史上的關鍵一步——把神意重新定義為德的函數，
+    等於取消了祭祀作為政治保險的功能。
+  modern: >-
+    今用以說明利害共同體不可坐視盟友被各個擊破。
+    要點在於：判斷是否「唇齒」，看的是結構位置，不是感情或宣示。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xi-gong-wu-nian/zh

@@ -1,0 +1,47 @@
+id: qi-huan-gong
+name:
+  zh: 齊桓公
+  personal: 小白
+  clan: 姜
+  house: 呂
+  posthumous: 桓
+  en: Duke Huan of Qi
+state: qi
+role: 君主
+birth: null
+death: -643
+sort_year: -685
+bio: >-
+  春秋首霸。襄公死後與兄公子糾爭國，管仲射其帶鉤而不死，
+  先入臨淄而立。既立，不記射鉤之仇而用管仲為相，
+  行「叁其國而伍其鄙」之制，通魚鹽之利，以「尊王攘夷」為號召——
+  存邢救衛、伐楚責包茅之不入、召陵之盟、葵丘之會，
+  《論語》稱其「九合諸侯，一匡天下」。管仲既死，用易牙、豎刁、開方，
+  桓公病，五公子爭立，屍在床上六十七日而蟲流出戶。
+  霸業之興與其敗，同樣說明一件事：春秋的霸權高度依賴人，而非制度。
+timeline:
+  - year: -685
+    event: 自莒返國即位，鮑叔牙薦管仲，赦射鉤之仇而相之
+  - year: -681
+    event: 北杏之會，始主諸侯之盟
+  - year: -656
+    event: 率八國之師伐楚，責楚不貢包茅，召陵之盟
+  - year: -651
+    event: 葵丘之會，周襄王使宰孔賜胙，霸業之極
+  - year: -645
+    event: 管仲卒，遺言勿用易牙、豎刁、開方，不聽
+  - year: -643
+    event: 卒；五公子爭立，屍不得殮者六十七日
+sources:
+  - source: zuo-zhuan
+    locus: 僖公四年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-si-nian
+  - source: shiji
+    locus: 齊太公世家
+    ctext_urn: ctp:shiji/qi-tai-gong-shi-jia
+relations:
+  - target: guan-zhong
+    kind: minister
+    note: 用其為相四十年，霸業所繫
+  - target: bao-shu-ya
+    kind: minister

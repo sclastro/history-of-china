@@ -1,0 +1,52 @@
+id: san-ren-cheng-hu
+idiom:
+  zh: 三人成虎
+  pinyin: sān rén chéng hǔ
+  jyutping: saam1 jan4 sing4 fu2
+  literal: 三個人說有老虎，就真有老虎了
+  en: Three men make a tiger
+type: parable
+period: zhan-guo-mid
+year: null
+states: [wei, zhao]
+meaning: 謠言重複多次就會被當成事實。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 魏策二
+    ctext_urn: ctp:zhan-guo-ce/wei-er
+    quote: >-
+      「今一人言市有虎，王信之乎？」王曰：「否。」「二人言市有虎，王信之乎？」
+      王曰：「寡人疑之矣。」「三人言市有虎，王信之乎？」王曰：「寡人信之矣。」
+      龐蔥曰：「夫市之無虎明矣，然而三人言而成虎。今邯鄲去大梁也遠於市，
+      而議臣者過於三人矣，願王察之。」
+    translation: >-
+      「如果一個人說市集上有老虎，大王相信嗎？」王說：「不信。」
+      「兩個人說市集上有老虎，大王相信嗎？」王說：「我就有些懷疑了。」
+      「三個人說市集上有老虎，大王相信嗎？」王說：「我就相信了。」
+      龐蔥說：「市集上沒有老虎是很明白的事，然而三個人一說就成了真有老虎。
+      如今邯鄲離大梁比市集遠得多，而議論臣的人會超過三個，
+      希望大王明察。」
+crystallisation:
+  note: >-
+    《戰國策》原文作「三人言而成虎」，四字語形「三人成虎」出於後世節縮。
+    《韓非子·內儲說上》另載龐恭同事而文字略異。
+  moe_id: 30
+reliability: 寓言
+people: [pang-cong, wei-hui-wang]
+concepts: [謠言, 信念形成, 距離與驗證, 讒]
+lessons:
+  historical: >-
+    龐蔥的論證有兩段，第二段常被漏掉而它才是要害。
+    第一段是重複次數（一人、二人、三人）；
+    第二段是**驗證成本**——「今邯鄲去大梁也遠於市」。
+    市集就在城裡，走過去看一眼即可證偽，而三人言尚且能成虎；
+    邯鄲遠在他國，根本無從查證，讒言的效力只會更強。
+    決定一個說法能否被接受的，不只是重複的次數，
+    更是驗證它需要多大代價。
+    故事的結局是：龐蔥從邯鄲回來，「竟不得見」——
+    他預告了自己的下場，並且無法阻止它。
+  modern: >-
+    引申為謠言止於智者之難。要點在龐蔥的第二段：
+    對抗不實資訊，降低驗證成本比提高警覺更有效。
+references:
+  - https://ctext.org/zhan-guo-ce/wei-er/zh

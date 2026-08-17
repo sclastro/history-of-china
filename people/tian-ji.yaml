@@ -1,0 +1,22 @@
+id: tian-ji
+name:
+  zh: 田忌
+  house: 田
+  en: Tian Ji
+state: tian-qi
+role: 將領
+birth: null
+death: null
+sort_year: -353
+bio: >-
+  齊之將。以孫臏為客，用其賽馬之策——以下駟對上駟、
+  上駟對中駟、中駟對下駟，一負而再勝——遂薦之於威王。
+  桂陵、馬陵二役皆為主將而以孫臏為軍師。
+  後為鄒忌所讒，奔楚；宣王立乃召還。
+sources:
+  - source: shiji
+    locus: 孫子吳起列傳
+    ctext_urn: ctp:shiji/sun-zi-wu-qi-lie-zhuan
+relations:
+  - target: sun-bin
+    kind: ally

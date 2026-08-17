@@ -1,0 +1,21 @@
+id: chu-xuan-wang
+name:
+  zh: 楚宣王
+  personal: 良夫
+  house: 熊
+  posthumous: 宣
+  en: King Xuan of Chu
+state: chu
+role: 君主
+birth: null
+death: -340
+sort_year: -369
+bio: >-
+  在位三十年，楚國承平之世，與其子威王之時號稱「宣威盛世」。
+  任昭奚恤為令尹而威震北方，遂有江乙「狐假虎威」之對。
+  這則對話的真正主題是君主與權臣的關係——
+  江乙要宣王明白：臣的威望是借來的，而債主是君。
+sources:
+  - source: zhan-guo-ce
+    locus: 楚策一
+    ctext_urn: ctp:zhan-guo-ce/chu-yi

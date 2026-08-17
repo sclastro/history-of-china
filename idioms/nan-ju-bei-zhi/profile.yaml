@@ -1,0 +1,58 @@
+id: nan-ju-bei-zhi
+idiom:
+  zh: 南橘北枳
+  pinyin: nán jú běi zhǐ
+  jyutping: naam4 gwat1 bak1 zi2
+  literal: 淮南的橘到了淮北就成了枳
+  en: The orange of the south becomes a bitter trifoliate in the north
+type: historical
+period: chun-qiu-late
+year: -531
+year_note: 楚靈王時，年份不可確考
+states: [qi, chu]
+meaning: 同樣的人事因環境不同而性質改變。
+benshi:
+  event: yan-zi-shi-chu
+  summary: >-
+    晏嬰使楚，楚王預先安排武士押一「齊人坐盜」者過堂前，
+    當面問「齊人固善盜乎」以辱之。晏子以橘枳之喻反問：
+    是否楚國的水土使人善盜。楚王自認「反取病焉」。
+dianyuan:
+  - source: yanzi-chun-qiu
+    locus: 內篇雜下
+    ctext_urn: ctp:yanzi-chun-qiu/nei-pian/za-xia
+    quote: >-
+      嬰聞之，橘生淮南則為橘，生于淮北則為枳，葉徒相似，其實味不同。
+      所以然者何？水土異也。今民生長於齊不盜，入楚則盜，
+      得無楚之水土使民善盜耶？
+    translation: >-
+      我聽說，橘樹生在淮南就是橘，生在淮北就成了枳；
+      葉子只是看起來相似，果實的味道完全不同。為什麼會這樣？水土不同罷了。
+      如今百姓生長在齊國不偷盜，一進了楚國就偷盜，
+      莫非是楚國的水土使百姓善於偷盜吧？
+crystallisation:
+  note: >-
+    《晏子春秋》原文作「橘生淮南則為橘，生于淮北則為枳」，
+    「南橘北枳」四字為後人節縮；另有「橘化為枳」一形並行。
+  moe_id: 1362
+reliability: 孤證
+people: [yan-ying]
+concepts: [環境決定, 外交辭令, 歸因]
+related_idioms:
+  - target: er-tao-sha-san-shi
+    kind: same_source
+    note: 同出《晏子春秋》，同為晏嬰以言辭制勝的記錄。
+lessons:
+  historical: >-
+    晏子的回答之所以有效，在於他**接受了對方的事實前提**——
+    此人確是齊人、確是盜。他只更換了因果解釋：
+    把個人品性換成環境條件。
+    這是外交辭令中極高明的一手：正面否認事實會陷入舉證的泥沼，
+    而重新解釋事實則可以把攻勢原封不動地送回去。
+    就思想史而言，這也是先秦少見的一次「環境決定論」表述——
+    行為的差異不必歸因於族群本性，可以歸因於制度與環境。
+  modern: >-
+    今多用以說明環境對人的塑造。援用時可留意其原始語境是外交反擊，
+    而非人類學觀察。
+references:
+  - https://ctext.org/yanzi-chun-qiu/nei-pian/za-xia/zh

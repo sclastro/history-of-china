@@ -1,0 +1,24 @@
+id: zhuang-zi
+name:
+  zh: 莊子
+  personal: 周
+  house: 莊
+  en: Zhuangzi
+state: song
+role: 思想家
+birth: -369
+death: -286
+bio: >-
+  宋國蒙人，嘗為漆園吏。楚威王聞其賢，使厚幣迎之許以為相，
+  莊周笑謂使者：「千金重利，卿相尊位也；子獨不見郊祭之犧牛乎？……
+  我寧游戲污瀆之中自快，無為有國者所羈。」終身不仕。
+  其書十餘萬言，「寓言十九」——庖丁解牛、朝三暮四、井底之蛙、
+  螳臂當車、邯鄲學步、望洋興嘆、涸轍之鮒，皆入漢語日用而不覺其所自。
+  他所設之人物言行一概不可作史料，然其寓言本身正是戰國思想的一手材料。
+sources:
+  - source: zhuangzi
+    locus: 養生主
+    ctext_urn: ctp:zhuangzi/nourishing-the-lord-of-life
+  - source: shiji
+    locus: 老子韓非列傳
+philosophy_ref: zhuangzi

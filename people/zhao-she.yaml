@@ -1,0 +1,27 @@
+id: zhao-she
+name:
+  zh: 趙奢
+  house: 趙
+  posthumous: 馬服君
+  en: Zhao She
+state: zhao
+role: 將領
+birth: null
+death: null
+sort_year: -270
+bio: >-
+  趙之名將。初為田部吏，收租而平原君家不肯出，
+  奢以法治之，殺其用事者九人；平原君怒欲殺之，
+  奢曰「君於趙為貴公子，今縱君家而不奉公則法削，
+  法削則國弱……君安得有此富乎」，平原君以為賢而薦之於王。
+  前 269 年救閼與，以「其道遠險狹，譬之猶兩鼠鬥於穴中，
+  將勇者勝」而大破秦軍，賜號馬服君。
+  論其子趙括曰：「兵，死地也，而括易言之。」——
+  他是唯一一個在長平之前就準確預言了長平的人。
+sources:
+  - source: shiji
+    locus: 廉頗藺相如列傳
+    ctext_urn: ctp:shiji/lian-po-lin-xiang-ru-lie-zhuan
+relations:
+  - target: zhao-kuo
+    kind: kin

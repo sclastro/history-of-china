@@ -1,0 +1,26 @@
+id: qi-min-wang
+name:
+  zh: 齊湣王
+  personal: 地
+  clan: 媯
+  house: 田
+  posthumous: 湣
+  en: King Min of Qi
+state: tian-qi
+role: 君主
+birth: null
+death: -284
+sort_year: -300
+bio: >-
+  宣王之子。滅宋（前 286）而諸侯側目，一度與秦昭王並稱東西帝。
+  其後燕昭王使樂毅合五國之兵伐齊，下七十餘城，湣王出奔，
+  為楚將淖齒所殺。齊幾亡，賴田單以即墨復國。
+  《韓非子》記其「好一一聽之」——宣王時吹竽必三百人，
+  南郭處士得以充數；湣王一改為逐一獨奏，處士遂逃。
+  同一個制度細節的改動，就篩掉了一個混跡其中的人。
+sources:
+  - source: hanfeizi
+    locus: 內儲說上
+  - source: shiji
+    locus: 田敬仲完世家
+    ctext_urn: ctp:shiji/tian-jing-zhong-wan-shi-jia

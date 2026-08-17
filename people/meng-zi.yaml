@@ -1,0 +1,30 @@
+id: meng-zi
+name:
+  zh: 孟子
+  personal: 軻
+  house: 孟
+  en: Mencius
+state: lu
+role: 思想家
+birth: -372
+death: -289
+bio: >-
+  鄒人，受業於子思之門人。歷游齊、宋、滕、魏，倡仁政、民本、性善之說，
+  以「民為貴，社稷次之，君為輕」立論。所至皆見禮而不見用——
+  當世方務合縱連橫、以攻伐為賢，而孟子言必稱堯舜，「見以為迂遠而闊於事情」。
+  退而與萬章之徒序《詩》《書》、述仲尼之意，作《孟子》七篇。
+  其書善用譬喻以折人主：揠苗助長之於養氣、五十步笑百步之於梁惠王、
+  緣木求魚之於齊宣王——寓言在他手裡不是修辭，是論證。
+sources:
+  - source: mengzi
+    locus: 公孫丑上
+    ctext_urn: ctp:mengzi/gong-sun-chou-i
+  - source: shiji
+    locus: 孟子荀卿列傳
+philosophy_ref: mencius
+relations:
+  - target: wei-hui-wang
+    kind: rival
+    note: 見梁惠王而諫其好戰
+  - target: qi-xuan-wang
+    kind: rival

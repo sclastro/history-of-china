@@ -1,0 +1,32 @@
+# 事件節點 template（events/<id>.yaml）
+# 事件係「節點」而唔係「主條目」——敘事寫喺 narrative 欄，唔另開 .md 檔。
+# 一個事件可以繫多條成語（例：城濮之戰 → 退避三舍、表裡山河、貪天之功）。
+
+id: example-event               # （必填）檔名（不含 .yaml），小寫拼音以連字號分隔
+name: 示例之戰                    # （必填）事件通行名稱
+year: -632                      # （必填）事件之年（跨年者填起始年）
+year_end: -631                  # （選填）跨年事件嘅結束年
+year_note: 魯僖公二十八年四月        # （選填）古曆紀年
+period: wu-ba                   # （必填）對應 data/periods.yaml
+type: 戰役                       # （必填）戰役／會盟／變法／弒君篡位／遷都／外交／滅國／內亂
+states: [jin, chu]              # （必填）涉事列國，發動方在前
+people: [jin-wen-gong]          # （必填）主要人物，對應 people/<id>.yaml
+
+narrative: >-                   # （必填）三百至八百字敘事，交代前因、經過、後果
+  示例敘事……
+
+sources:                        # （必填）至少一條
+  - source: zuo-zhuan           # （必填）對應 data/sources.yaml
+    locus: 僖公二十八年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-ba-nian   # （選填）
+
+reliability: 信史                # （必填）同成語條目嘅五級標準
+variants:                       # （選填）異說
+  - claim: 異說內容。
+    source: shiji
+    locus: 晉世家
+
+significance: >-                # （必填）一至三句講清呢件事喺結構上嘅意義
+  示例：此戰確立晉之霸業，亦令楚北進受阻四十年……
+
+notes: 其他說明。                 # （選填）

@@ -1,0 +1,36 @@
+id: zheng-zhuang-gong
+name:
+  zh: 鄭莊公
+  personal: 寤生
+  clan: 姬
+  posthumous: 莊
+  en: Duke Zhuang of Zheng
+state: zheng
+role: 君主
+birth: -757
+death: -701
+bio: >-
+  春秋初期第一個以諸侯之力壓倒周王的君主，史稱「鄭莊小霸」。
+  生時難產（寤生）而不見愛於母姜氏，母欲立弟共叔段。莊公縱段以驕之，
+  待其反形已具乃一舉克之，遂有「多行不義必自斃」之語。
+  其後以王朝卿士之位而抗周桓王，繻葛之戰射傷桓王之肩——
+  天子之師敗於諸侯而天子受創，周室僅存的威權自此蕩然。
+timeline:
+  - year: -743
+    event: 即位
+  - year: -722
+    event: 克段於鄢；其後掘地見母，母子如初
+  - year: -707
+    event: 繻葛之戰敗周桓王，祝聃射王中肩
+  - year: -701
+    event: 卒；此後鄭國陷於四公子爭位之亂
+sources:
+  - source: zuo-zhuan
+    locus: 隱公元年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/yin-gong-yuan-nian
+  - source: shiji
+    locus: 鄭世家
+relations:
+  - target: gong-shu-duan
+    kind: kin
+    note: 同母弟，敗於鄢

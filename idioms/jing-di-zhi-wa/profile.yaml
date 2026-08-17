@@ -1,0 +1,57 @@
+id: jing-di-zhi-wa
+idiom:
+  zh: 井底之蛙
+  pinyin: jǐng dǐ zhī wā
+  jyutping: zeng2 dai2 zi1 waa1
+  literal: 井底下的青蛙
+  en: The frog at the bottom of the well
+type: parable
+period: zhan-guo-early
+year: null
+states: [song]
+meaning: 見識狹隘、囿於自身經驗而不自知的人。
+dianyuan:
+  - source: zhuangzi
+    locus: 秋水
+    ctext_urn: ctp:zhuangzi/floods-of-autumn
+    quote: >-
+      井蛙不可以語於海者，拘於虛也；夏蟲不可以語於冰者，篤於時也；
+      曲士不可以語於道者，束於教也。
+    translation: >-
+      不能跟井裡的青蛙談論大海，因為牠被自己所居的處所局限；
+      不能跟夏天的蟲子談論冰，因為牠被自己所處的時節局限；
+      不能跟見識偏狹的人談論大道，因為他被自己所受的教養局限。
+  - source: zhuangzi
+    locus: 秋水
+    ctext_urn: ctp:zhuangzi/floods-of-autumn
+    quote: >-
+      埳井之鼃謂東海之鱉曰：「吾樂與！出跳梁乎井幹之上，入休乎缺甃之崖……
+      且夫擅一壑之水，而跨跱埳井之樂，此亦至矣。夫子奚不時來入觀乎？」
+    translation: >-
+      淺井裡的青蛙對東海的鱉說：「我快樂啊！出去就在井欄上跳躍，
+      回來就在破磚的邊上歇息……況且獨佔一坑之水、盤據一口淺井的快樂，
+      也算到頂了。您何不常來看看呢？」
+crystallisation:
+  note: >-
+    《莊子》原文作「井蛙」「埳井之鼃」，無「井底之蛙」四字；
+    四字語形出於後世，另有「井蛙之見」「坐井觀天」（出韓愈）等並行說法。
+  moe_id: 1236
+reliability: 寓言
+people: [zhuang-zi]
+concepts: [認識的限度, 齊物, 相對, 教養的束縛]
+lessons:
+  historical: >-
+    這則寓言常被用來嘲笑他人，而《莊子》原文的重心其實在三個並列的限制：
+    「拘於虛」（空間）、「篤於時」（時間）、「束於教」（教養）。
+    前兩者是青蛙與夏蟲的處境，第三者才是說給人聽的——
+    而「教」正是人自以為勝過蛙與蟲的東西。
+    莊子的意思因此相當尖銳：知識本身也是一口井，
+    而且是最不容易察覺的那一口。
+    〈秋水〉全篇由河伯見海若而自愧開場，講的都是同一件事：
+    任何認識都有一個它看不見的邊界，而那個邊界正是由認識本身劃出來的。
+  modern: >-
+    引申為見識狹隘。使用時值得記住原文的第三項：
+    「束於教」——受過的訓練同樣是一種局限，
+    這一條通常不會被用來說自己。
+references:
+  - https://ctext.org/zhuangzi/qiu-shui/zh

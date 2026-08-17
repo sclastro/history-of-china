@@ -1,0 +1,30 @@
+id: lin-xiang-ru
+name:
+  zh: 藺相如
+  house: 藺
+  en: Lin Xiangru
+state: zhao
+role: 卿大夫
+birth: null
+death: null
+sort_year: -283
+bio: >-
+  本趙宦者令繆賢舍人。秦昭王請以十五城易和氏璧，
+  趙王患之，繆賢薦相如。相如奉璧入秦，見秦王無意償城，
+  乃紿曰「璧有瑕，請指示王」，取璧卻立倚柱，怒髮上衝冠，
+  言「臣頭今與璧俱碎於柱矣」，卒使從者懷璧間行歸趙。
+  澠池之會，秦王令趙王鼓瑟，相如進缻請秦王擊之，
+  秦王不肯，相如曰「五步之內，臣請得以頸血濺大王矣」，秦王為一擊缻。
+  歸而拜為上卿，位在廉頗之右。廉頗怒而欲辱之，相如引車避匿，
+  曰「吾所以為此者，以先國家之急而後私讎也」；
+  廉頗聞之，肉袒負荊至門謝罪，卒相與為刎頸之交。
+sources:
+  - source: shiji
+    locus: 廉頗藺相如列傳
+    ctext_urn: ctp:shiji/lian-po-lin-xiang-ru-lie-zhuan
+relations:
+  - target: lian-po
+    kind: ally
+    note: 先為所忌，終為刎頸之交
+  - target: zhao-hui-wen-wang
+    kind: ruler

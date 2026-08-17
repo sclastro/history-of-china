@@ -1,0 +1,53 @@
+id: bi-lu-lan-lv
+idiom:
+  zh: 篳路藍縷
+  pinyin: bì lù lán lǚ
+  jyutping: bat1 lou6 laam4 leoi5
+  literal: 駕柴車、穿破衣
+  en: Brushwood carts and ragged clothes
+type: historical
+period: wu-ba
+year: -597
+year_note: 魯宣公十二年
+states: [chu, jin]
+meaning: 形容創業之艱苦。
+benshi:
+  event: bi-zhi-zhan
+  summary: >-
+    邲之戰前，晉下軍佐欒書力言楚不可伐。他所舉的理由是楚國的內部訓誡傳統：
+    楚君無日不以民生之艱、禍至無日訓誡國人，並以先君若敖、蚡冒
+    「篳路藍縷以啟山林」的創業故事教育他們。此語遂成楚人自述立國之艱的定式。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 宣公十二年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-er-nian
+    quote: >-
+      楚自克庸以來，其君無日不討國人而訓之于民生之不易、禍至之無日、戒懼之不可以怠……
+      訓之以若敖、蚡冒篳路藍縷以啟山林。箴之曰：「民生在勤，勤則不匱。」不可謂驕。
+    translation: >-
+      楚國自從攻克庸國以來，它的國君沒有一天不召集國人加以訓誡：
+      民生的不易、禍患隨時可能到來、戒懼不可以鬆懈……
+      並用先君若敖、蚡冒駕著柴車、穿著破衣去開闢山林的事跡教育他們。
+      告誡說：「民生在於勤勞，勤勞就不會匱乏。」——這不能說是驕縱。
+crystallisation:
+  note: >-
+    四字語形即出《左傳》原文。「篳路」為柴車（一說荊竹編成之車），
+    「藍縷」為破敝衣衫（一作「襤褸」）。後世「篳路藍縷」與「櫛風沐雨」
+    常連用以言創業，而原文的重點其實在後一句「民生在勤」的訓誡制度。
+  moe_id: 1176
+reliability: 信史
+people: [luan-shu, chu-zhuang-wang]
+concepts: [創業, 政治文化, 戰略判斷, 楚國]
+lessons:
+  historical: >-
+    這句話最初不是楚人的自我讚頌，而是**敵國的戰略評估**。
+    欒書反對伐楚，理由不是楚國兵多，而是楚國君臣有一套持續的自我訓誡機制——
+    每天都在提醒國人生存不易、禍患將至。他的結論是「不可謂驕」，
+    而驕是可以擊敗的、警惕不可以。
+    以敵國的政治文化作為戰略判斷的根據，這在春秋是罕見的思路；
+    它比計算車乘甲士的數目要深一層。
+  modern: >-
+    今多用以稱頌創業之艱。若取其史義，更值得注意的是欒書的判斷方法：
+    評估一個組織的韌性，看它如何講述自己的過去。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xuan-gong-shi-er-nian/zh

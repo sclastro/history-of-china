@@ -1,0 +1,57 @@
+id: yi-gu-zuo-qi
+idiom:
+  zh: 一鼓作氣
+  pinyin: yī gǔ zuò qì
+  jyutping: jat1 gu2 zok3 hei3
+  literal: 第一次擊鼓時士氣最盛
+  en: Rousing spirit with the first drumbeat
+type: historical
+period: wu-ba
+year: -684
+year_note: 魯莊公十年
+states: [lu, qi]
+meaning: 趁著勁頭最足的時候一舉把事情做完，不可拖延遲疑。
+benshi:
+  event: chang-shao-zhi-zhan
+  summary: >-
+    齊桓公即位次年伐魯，戰於長勺。平民曹劌請見魯莊公，先問憑何可戰，
+    至莊公答以「小大之獄，必以情」乃許之。戰時待齊人三鼓而後擊，
+    齊師敗績；又察轍亂旗靡而後追，遂大勝。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 莊公十年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/zhuang-gong-shi-nian
+    quote: >-
+      既克，公問其故。對曰：「夫戰，勇氣也。一鼓作氣，再而衰，三而竭。
+      彼竭我盈，故克之。夫大國，難測也，懼有伏焉。吾視其轍亂，望其旗靡，故逐之。」
+    translation: >-
+      戰勝之後，莊公問其緣故。曹劌答：「作戰靠的是勇氣。第一次擊鼓振起士氣，
+      第二次就衰減了，第三次便耗盡了。他們氣盡而我們氣滿，所以能勝。
+      大國的虛實難以測度，我怕有埋伏。我看到他們的車轍雜亂、
+      望見他們的旗幟倒伏，所以才追。」
+crystallisation:
+  note: >-
+    四字語形即出《左傳》原文，未經演變。
+    「再衰三竭」則是後人由同一段話另行截出的成語，二者同源。
+  moe_id: 3
+reliability: 信史
+people: [cao-gui, lu-zhuang-gong, qi-huan-gong]
+concepts: [士氣, 民本, 偵察, 時機]
+related_idioms:
+  - target: tui-bi-san-she
+    kind: same_source
+    note: 同屬《左傳》以「氣」與「直」論勝負的戰爭觀。
+lessons:
+  historical: >-
+    這是中國戰史上最早的士氣論與戰場偵察論。但《左傳》真正的重心
+    在戰前那段常被略過的對答：曹劌連問憑何可戰，
+    莊公答「衣食所安，必以分人」，曹劌駁「小惠未徧」；
+    答「犧牲玉帛，必以信」，駁「小信未孚」；
+    直到答「小大之獄，雖不能察，必以情」，曹劌才說「忠之屬也，可以一戰」。
+    勝負的根據被放在司法的公平能否換得民之效死——
+    這是先秦「民本」思想最早的實戰版本，比孟子早三百年。
+  modern: >-
+    引申為做事要趁勢頭正盛時一舉完成。須注意曹劌的「一鼓作氣」
+    是**等敵方氣竭**而非自己搶先——他真正主張的是節奏控制，不是速度。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/zhuang-gong-shi-nian/zh

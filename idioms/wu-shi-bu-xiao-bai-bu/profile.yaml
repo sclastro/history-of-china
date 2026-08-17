@@ -1,0 +1,53 @@
+id: wu-shi-bu-xiao-bai-bu
+idiom:
+  zh: 五十步笑百步
+  pinyin: wǔ shí bù xiào bǎi bù
+  jyutping: ng5 sap6 bou6 siu3 baak3 bou6
+  literal: 逃了五十步的人譏笑逃了一百步的人
+  en: He who fled fifty paces mocks him who fled a hundred
+type: parable
+period: zhan-guo-early
+year: null
+states: [wei]
+meaning: 自己的缺點與別人相同，只是程度較輕，卻反過來譏笑別人。
+dianyuan:
+  - source: mengzi
+    locus: 梁惠王上
+    ctext_urn: ctp:mengzi/liang-hui-wang-i
+    quote: >-
+      填然鼓之，兵刃既接，棄甲曳兵而走。或百步而後止，或五十步而後止。
+      以五十步笑百步，則何如？曰：「不可。直不百步耳，是亦走也。」
+      曰：「王如知此，則無望民之多於鄰國也。」
+    translation: >-
+      戰鼓咚咚地敲響，兵刃已經交接，士卒丟盔棄甲拖著兵器逃跑。
+      有的跑了一百步才停，有的跑了五十步才停。
+      用跑五十步的去譏笑跑一百步的，怎麼樣？
+      （惠王）說：「不行。他只是沒跑到一百步罷了，那也是逃跑。」
+      （孟子）說：「大王如果明白這個道理，就不要指望自己的百姓比鄰國多了。」
+crystallisation:
+  note: >-
+    《孟子》原文即作「以五十步笑百步」，語形自始未變，
+    後世只是省去「以」字。
+  moe_id: 32
+reliability: 寓言
+people: [meng-zi, wei-hui-wang]
+concepts: [仁政, 民本, 類比論證, 程度與性質]
+related_idioms:
+  - target: ya-miao-zhu-zhang
+    kind: same_source
+    note: 同為孟子以譬喻折服人主的手法。
+lessons:
+  historical: >-
+    梁惠王先誇自己「盡心焉耳矣」——河內饑荒就移民移粟，
+    鄰國之君都不如他上心，何以人民不見增多？
+    孟子沒有直接反駁，他先設一個問題讓惠王自己回答，
+    等惠王說出「是亦走也」，再回頭把這個判準套到他身上。
+    這是先秦論辯中最漂亮的一種結構：**讓對手先在一個
+    與自己無關的案例上確立原則，然後才揭示他就是那個案例。**
+    就內容而言，孟子指出的是量與質的分別：
+    移民移粟與鄰國的無為，同屬「不行仁政」這一質，差別只在量。
+  modern: >-
+    引申為以小過譏大過。論辯上更值得學的是它的結構——
+    先取得對原則的共識，再進行歸類。
+references:
+  - https://ctext.org/mengzi/liang-hui-wang-i/zh

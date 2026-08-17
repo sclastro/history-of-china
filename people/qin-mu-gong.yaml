@@ -1,0 +1,48 @@
+id: qin-mu-gong
+name:
+  zh: 秦穆公
+  personal: 任好
+  clan: 嬴
+  posthumous: 穆
+  en: Duke Mu of Qin
+state: qin
+role: 君主
+birth: null
+death: -621
+sort_year: -659
+bio: >-
+  在位三十九年。以五羖羊皮贖百里奚，又用蹇叔、由余，
+  三置晉君（惠公、懷公、文公），秦晉世為婚姻而有「秦晉之好」之語。
+  韓原之戰虜晉惠公，泛舟之役輸粟於晉——恩威並用以控制東鄰。
+  文公死後急欲東出，不聽蹇叔之諫而襲鄭，敗於崤，三帥被虜；
+  穆公素服郊迎，曰「孤之罪也」，是先秦君主罪己的著名一例。
+  東出之路既為晉所塞，乃轉而「益國十二，開地千里，遂霸西戎」。
+  死而以子車氏三子殉葬，《詩·黃鳥》哀之——秦人殉葬之俗，自此為東方所非。
+timeline:
+  - year: -659
+    event: 即位
+  - year: -655
+    event: 以五羖羊皮贖百里奚於楚
+  - year: -645
+    event: 韓原之戰虜晉惠公；後歸之而取河西之地
+  - year: -636
+    event: 以兵納重耳於晉
+  - year: -627
+    event: 襲鄭不果，還師敗於崤，孟明視等三帥被虜
+  - year: -624
+    event: 濟河焚舟伐晉，封崤尸而還
+  - year: -621
+    event: 卒，以子車氏三子殉
+sources:
+  - source: zuo-zhuan
+    locus: 僖公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-shi-wu-nian
+  - source: shiji
+    locus: 秦本紀
+    ctext_urn: ctp:shiji/qin-ben-ji
+relations:
+  - target: jin-wen-gong
+    kind: ally
+  - target: jin-hui-gong
+    kind: rival
+    note: 三置晉君而見負，韓原虜之

@@ -1,0 +1,64 @@
+id: guan-bao-zhi-jiao
+idiom:
+  zh: 管鮑之交
+  pinyin: guǎn bào zhī jiāo
+  jyutping: gun2 baau6 zi1 gaau1
+  literal: 管仲與鮑叔牙那樣的交誼
+  en: The friendship of Guan Zhong and Bao Shuya
+type: historical
+period: wu-ba
+year: -685
+year_note: 齊桓公元年
+states: [qi]
+meaning: 彼此深知、互相信任而不計利害的friendship。
+benshi:
+  event: guan-zhong-xiang-qi
+  summary: >-
+    管仲與鮑叔牙少時同賈，管仲每分財自與其多，鮑叔不以為貪。
+    後二人分事公子糾與公子小白，小白得國（齊桓公），
+    鮑叔辭相位而力薦管仲，桓公赦其射鉤之仇而用之為相四十年。
+dianyuan:
+  - source: shiji
+    locus: 管晏列傳
+    ctext_urn: ctp:shiji/guan-yan-lie-zhuan
+    quote: >-
+      管仲曰：「吾始困時，嘗與鮑叔賈，分財利多自與，鮑叔不以我為貪，知我貧也。
+      吾嘗為鮑叔謀事而更窮困，鮑叔不以我為愚，知時有利不利也。
+      吾嘗三仕三見逐於君，鮑叔不以我為不肖，知我不遭時也。
+      吾嘗三戰三走，鮑叔不以我為怯，知我有老母也……
+      生我者父母，知我者鮑子也。」
+    translation: >-
+      管仲說：「我當初窮困時，曾與鮑叔一同做買賣，分利時多分給自己，
+      鮑叔不認為我貪，他知道我窮。我曾替鮑叔謀事而使他更困窘，
+      鮑叔不認為我愚，他知道時運有順有逆。我曾三次出仕三次被國君斥退，
+      鮑叔不認為我沒本事，他知道我沒遇上時機。我曾三次作戰三次逃走，
+      鮑叔不認為我怯懦，他知道我有老母……生我的是父母，
+      真正了解我的是鮑叔。」
+crystallisation:
+  note: >-
+    《史記》只有「知我者鮑子也」之語而無「管鮑之交」四字；
+    四字語形見於漢以後之文，至唐宋而通行。
+    《列子·力命》另存同一段自述，文字互有出入。
+  moe_id: 1150
+reliability: 大體可信
+people: [guan-zhong, bao-shu-ya, qi-huan-gong]
+concepts: [知人, 舉賢, 霸業, 士的倫理]
+related_idioms:
+  - target: gao-shan-liu-shui
+    kind: contrast
+    note: 一者知其才而薦之於君，一者知其志而終身不復鼓琴；同是「知」，去向全異。
+lessons:
+  historical: >-
+    這段友誼之所以被記住，重點不在管仲的窘態，而在鮑叔的每一次判斷
+    都是把「行為」還原為「處境」——多分錢是因為窮，謀事失敗是因為時運，
+    逃兵是因為有老母。他拒絕用單一行為去定義一個人。
+    而真正的關鍵在最後一步：桓公欲相鮑叔，鮑叔辭曰
+    「君且欲霸王，非管夷吾不可」，自居其下。
+    《史記》說天下不多管仲之賢而多鮑叔能知人——
+    在講究權位的春秋，舉賢而自退是罕見的事，
+    齊桓四十年的霸業，起點正是這一次讓位。
+  modern: >-
+    引申為知己之交。實務上更值得取的是鮑叔的方法：
+    評價一個人之前，先問清楚他當時的約束條件是什麼。
+references:
+  - https://ctext.org/shiji/guan-yan-lie-zhuan/zh

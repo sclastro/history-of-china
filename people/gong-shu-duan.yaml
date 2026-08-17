@@ -1,0 +1,25 @@
+id: gong-shu-duan
+name:
+  zh: 共叔段
+  personal: 段
+  clan: 姬
+  en: Duan, Lord of Gong
+state: zheng
+role: 卿大夫
+birth: null
+death: null
+sort_year: -722
+bio: >-
+  鄭莊公同母弟，得母姜氏之寵。受封於京，繕甲兵、聚卒乘，
+  收西鄙北鄙以為己邑而至於廩延。莊公坐視其擴張二十餘年而不動，
+  待其襲鄭之日乃出兵，段敗奔共，故稱共叔段。
+  《春秋》書「鄭伯克段于鄢」，一「克」字譏莊公之處心積慮，
+  一「段」字（不稱弟）譏段之不弟——一句六字而兩面俱誅，是春秋筆法的範本。
+sources:
+  - source: zuo-zhuan
+    locus: 隱公元年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/yin-gong-yuan-nian
+relations:
+  - target: zheng-zhuang-gong
+    kind: kin
+    note: 兄

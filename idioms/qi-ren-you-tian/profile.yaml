@@ -1,0 +1,53 @@
+id: qi-ren-you-tian
+idiom:
+  zh: 杞人憂天
+  pinyin: qǐ rén yōu tiān
+  jyutping: gei2 jan4 jau1 tin1
+  literal: 杞國人擔心天會塌下來
+  en: The man of Qi who feared the sky would fall
+type: parable
+period: zhan-guo-early
+year: null
+states: [zheng]
+meaning: 為不可能發生的事情作無謂的憂慮。
+dianyuan:
+  - source: liezi
+    locus: 天瑞
+    ctext_urn: ctp:liezi/tian-rui
+    quote: >-
+      杞國有人憂天地崩墜，身亡所寄，廢寢食者。又有憂彼之所憂者，因往曉之，
+      曰：「天，積氣耳，亡處亡氣。若屈伸呼吸，終日在天中行止，奈何憂崩墜乎？」
+    translation: >-
+      杞國有個人擔憂天地會崩塌墜落、自己無處安身，
+      憂慮到廢寢忘食。又有一個人為他的憂慮而憂慮，就去開導他，說：
+      「天不過是積聚的氣罷了，沒有一處沒有氣。你一屈一伸、一呼一吸，
+      整天都在天裡頭活動，怎麼會擔心它崩塌墜落呢？」
+crystallisation:
+  note: >-
+    《列子》原文作「杞國有人憂天地崩墜」，無「杞人憂天」四字；
+    四字語形出於後世節縮，唐宋已通行。
+  moe_id: 1178
+reliability: 寓言
+people: [lie-zi]
+concepts: [憂慮, 宇宙論, 齊物, 曉喻]
+related_idioms:
+  - target: yu-gong-yi-shan
+    kind: same_source
+    note: 同出《列子》，一者憂天之崩、一者移山之堅，皆探問人與天地的尺度。
+lessons:
+  historical: >-
+    這則寓言常被當成嘲笑，但《列子》的處理遠比嘲笑複雜。
+    去開導的人用的是一套宇宙論（天是積氣、地是積塊），
+    杞人聽了「舍然大喜」，開導者也「舍然大喜」。
+    然而原文接著記長廬子的評論：積氣積塊終究會壞，
+    「壞與不壞，吾何容心哉」——他認為兩人都執著了。
+    最後列子出場作結：「言天地壞者亦謬，言天地不壞者亦謬……
+    故生不知死，死不知生……吾何容心哉？」
+    真正的立場不是「不必憂」，而是「壞不壞都不在我們的認識範圍之內」。
+    把它讀成純粹的嘲笑，等於只讀了三分之一。
+  modern: >-
+    引申為無謂的憂慮。若取原文全篇，它更接近一種對
+    「不可知之事應如何安置」的討論——
+    答案既不是恐慌，也不是虛假的安心。
+references:
+  - https://ctext.org/liezi/tian-rui/zh

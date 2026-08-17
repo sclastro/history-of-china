@@ -1,0 +1,24 @@
+id: jiang-yi
+name:
+  zh: 江乙
+  en: Jiang Yi
+state: chu
+role: 策士
+birth: null
+death: null
+sort_year: -350
+bio: >-
+  本魏人而事楚宣王。宣王問群臣「吾聞北方之畏昭奚恤也，果誠何如」，
+  群臣莫對。江乙以虎與狐之喻對之：虎得狐，狐曰「子無敢食我也，
+  天帝使我長百獸，子隨我後觀百獸之見我而敢不走乎」，
+  虎隨之而百獸皆走，虎不知獸畏己也，以為畏狐。
+  「今王之地方五千里，帶甲百萬，而專屬之昭奚恤；
+  故北方之畏奚恤也，其實畏王之甲兵也，猶百獸之畏虎也。」
+  他不是在講寓言，是在拆一位政敵的權力基礎。
+sources:
+  - source: zhan-guo-ce
+    locus: 楚策一
+    ctext_urn: ctp:zhan-guo-ce/chu-yi
+relations:
+  - target: chu-xuan-wang
+    kind: ruler

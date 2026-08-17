@@ -1,0 +1,30 @@
+id: su-qin
+name:
+  zh: 蘇秦
+  house: 蘇
+  en: Su Qin
+state: zhou
+role: 策士
+birth: null
+death: -284
+sort_year: -333
+bio: >-
+  東周洛陽人。初以連橫說秦惠王，書十上而說不行，
+  黑貂之裘敝、黃金百斤盡，形容枯槁而歸；
+  妻不下紝、嫂不為炊、父母不與言。乃夜發書、陳篋數十，
+  得太公《陰符》之謀，伏而誦之，讀書欲睡則引錐自刺其股。
+  期年而揣摩成，遂以合縱說六國，佩六國相印。
+  路過洛陽，父母郊迎三十里，妻側目而視、嫂蛇行匍伏，
+  蘇秦問嫂「何前倨而後恭也」，嫂曰「以季子之位尊而多金」。
+  蘇秦喟然歎曰：「此一人之身，富貴則親戚畏懼之，貧賤則輕易之，
+  況眾人乎！」——「前倨後恭」之所出。
+sources:
+  - source: zhan-guo-ce
+    locus: 秦策一
+    ctext_urn: ctp:zhan-guo-ce/qin-yi
+  - source: shiji
+    locus: 蘇秦列傳
+    ctext_urn: ctp:shiji/su-qin-lie-zhuan
+notes: >-
+  馬王堆帛書《戰國縱橫家書》出土後可證：蘇秦活動年代晚於張儀，
+  合縱佩六國相印之事多為戰國末縱橫家所增飾，非史實。

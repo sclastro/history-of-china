@@ -1,0 +1,89 @@
+# 成語條目 template（idioms/<id>/profile.yaml）
+# 欄位說明以註解標明；（必填）／（選填）
+# 年份規範：公元後用正整數，公元前用負整數（-632 = 公元前 632 年）
+#           約數用字串 "c. -632"；不可考填 null 並於 notes 說明
+#
+# 本站嘅核心方法係「四層考據」——本事、典源、語形定型、可信度四者分開處理。
+# 詳見 docs/design.md。切勿將四者混為一談：
+#   本事 = 歷史上實際發生咗咩
+#   典源 = 呢個講法最早見於邊本書、邊一段
+#   定型 = 「四字成語」呢個固定語形幾時先確立
+#   可信 = 本事有幾可信
+
+id: example-idiom               # （必填）目錄名，小寫拼音，以連字號分隔，例：tui-bi-san-she
+
+idiom:
+  zh: 示例成語                   # （必填）四字成語本身
+  pinyin: shì lì chéng yǔ       # （必填）漢語拼音，帶調號
+  jyutping: si6 lai6 sing4 jyu5 # （選填）粵拼
+  literal: 字面直解一句            # （必填）唔講引申義，只講字面
+  en: Literal English rendering  # （必填）英譯，取字面而非意譯
+
+type: historical                # （必填）historical 史事型／parable 寓言型
+                                #   historical：有具體年份、人物、可繫於史事
+                                #   parable   ：諸子所設之譬喻，無史實本事，但反映當世思想
+period: wu-ba                   # （必填）對應 data/periods.yaml 嘅 id
+year: -632                      # （必填；type: parable 可填 null）本事之年
+year_note: 魯僖公二十八年          # （選填）古曆紀年或年份考訂說明
+states: [jin, chu]              # （必填）關聯列國，對應 data/states.yaml 嘅 id
+meaning: 以一句話講清今義。        # （必填）現代通行義
+
+# ── 第一層：本事 ──────────────────────────────
+# type: historical 者必填；type: parable 者省略
+benshi:
+  event: example-event          # （必填）對應 events/<id>.yaml
+  summary: >-                   # （必填）三至五句敘明事件經過，須交代前因後果
+    示例：晉公子重耳流亡至楚，楚成王以諸侯之禮待之……
+
+# ── 第二層：典源 ──────────────────────────────
+dianyuan:                       # （必填）至少一條；多條時按時代先後排列，第一條即最早出處
+  - source: zuo-zhuan           # （必填）對應 data/sources.yaml 嘅 id
+    locus: 僖公二十三年            # （必填）篇章定位，格式見該書 locus_format
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-san-nian   # （選填）ctext 無收者留空
+    quote: >-                   # （必填）原文，只引與成語直接相關嘅一段
+      示例原文……
+    translation: >-             # （必填）自譯白話；不得抄錄他人譯本
+      示例白話……
+    note: 版本異文或斷句問題        # （選填）
+
+# ── 第三層：語形定型 ──────────────────────────
+crystallisation:                # （選填；凡典源原文與今日語形不一致者必填）
+  first_attested: 元·馬致遠《漢宮秋》第三折   # 四字語形最早可考之出處
+  note: >-
+    說明典源原文作何字樣、四字連用始於何時、中間有無異形。
+    此欄係本站與一般成語列表嘅分別所在，有爭議者務必填寫。
+  moe_id: 12345                 # （選填）教育部《成語典》ID，供交叉核對；只作核對，不抄錄其文字
+
+# ── 第四層：可信度與異說 ──────────────────────
+reliability: 信史                # （必填）五者取一：
+                                #   信史     ——同期或近期文獻互證，可繫年繫人
+                                #   大體可信  ——主源可信，細節有增飾
+                                #   孤證     ——僅一書所載，無旁證
+                                #   後世附會  ——晚出，或與早期文獻／出土材料相牴
+                                #   寓言     ——諸子所設，本無其事（須配 type: parable）
+variants:                       # （選填）異說；凡有出土文獻或他書相牴者必填
+  - claim: 異說內容一句。
+    source: guo-yu              # 對應 data/sources.yaml
+    locus: 晉語四
+    ctext_urn: ctp:guo-yu/jin-yu-si   # （選填）
+
+# ── 關聯 ────────────────────────────────────
+people: [jin-wen-gong, chu-cheng-wang]   # （必填）對應 people/<id>.yaml
+concepts: [信義, 軍禮, 霸權]               # （必填）自由標籤，至少一個；供概念索引分組
+related_idioms:                 # （選填）網站會自動生成反向關聯，故只需單邊填寫
+  - target: biao-li-shan-he     # （必填）必須係已收錄嘅成語 id，且唔可以指向自己
+    kind: same_event            # （必填）same_event 同一事件／same_source 同一典源／
+                                #        contrast 意義相對／derived 由此衍生
+    note: 一句說明呢層關係。        # （選填）
+
+# ── 啟示（雙欄）──────────────────────────────
+lessons:
+  historical: >-                # （必填）史觀分析：呢件事揭示咗咩結構
+    示例：春秋前期軍禮仍有實質約束力……
+  modern: >-                    # （選填）現代引申；網站會標示「引申義，非史料本身所有」
+    示例：談判中主動讓步以佔據道義位置……
+
+references:                     # （必填）撰寫時依據嘅資源，至少一條
+  - https://ctext.org/chun-qiu-zuo-zhuan/xi-gong-er-shi-san-nian/zh
+
+notes: 其他須說明嘅事項。          # （選填）

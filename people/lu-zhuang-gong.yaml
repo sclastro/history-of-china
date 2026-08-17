@@ -1,0 +1,29 @@
+id: lu-zhuang-gong
+name:
+  zh: 魯莊公
+  personal: 同
+  clan: 姬
+  posthumous: 莊
+  en: Duke Zhuang of Lu
+state: lu
+role: 君主
+birth: -706
+death: -662
+bio: >-
+  在位三十二年。長勺之戰用曹劌而敗齊師，是春秋前期弱國勝強國的著名戰例。
+  其後齊桓稱霸，魯終為齊之從屬。晚年不能決繼嗣之事，卒後慶父作亂，
+  「慶父不死，魯難未已」即指此。
+timeline:
+  - year: -693
+    event: 即位
+  - year: -684
+    event: 長勺之戰，用曹劌之謀敗齊師
+  - year: -662
+    event: 卒，慶父之亂起
+sources:
+  - source: zuo-zhuan
+    locus: 莊公十年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/zhuang-gong-shi-nian
+relations:
+  - target: cao-gui
+    kind: minister

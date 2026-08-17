@@ -1,0 +1,76 @@
+id: tui-bi-san-she
+idiom:
+  zh: 退避三舍
+  pinyin: tuì bì sān shè
+  jyutping: teoi3 bei6 saam1 se3
+  literal: 後退九十里（一舍三十里）
+  en: Withdrawing three day-marches
+type: historical
+period: wu-ba
+year: -632
+year_note: 魯僖公二十八年四月
+states: [jin, chu]
+meaning: 主動退讓、避免正面衝突。
+benshi:
+  event: cheng-pu-zhi-zhan
+  summary: >-
+    重耳流亡至楚，楚成王以諸侯之禮待之。成王問他日何以為報，
+    重耳許以晉楚交兵中原則「退避三舍」。十九年後城濮之戰，
+    晉師果退九十里而後止；既踐前諾，又使楚師深入、我直彼曲，遂大破之。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 僖公二十三年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-san-nian
+    quote: >-
+      若以君之靈，得反晉國，晉、楚治兵，遇於中原，其辟君三舍。
+      若不獲命，其左執鞭弭、右屬櫜鞬，以與君周旋。
+    translation: >-
+      若托君侯之福，我能返回晉國；他日晉楚交兵、相遇於中原，
+      我當為君退避三舍。若這樣仍得不到君侯的諒解，
+      那我就左手執鞭與弓、右邊掛著箭袋弓套，與君侯周旋到底。
+  - source: zuo-zhuan
+    locus: 僖公二十八年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-ba-nian
+    quote: >-
+      退三舍。楚眾欲止，子玉不可。
+      子犯曰：「師直為壯，曲為老，豈在久乎？微楚之惠不及此，退三舍辟之，所以報也。
+      背惠食言，以亢其讎，我曲楚直……我退而楚還，我將何求？
+      若其不還，君退臣犯，曲在彼矣。」
+    translation: >-
+      晉師退了三舍。楚軍將士想就此停止，子玉不肯。
+      子犯說：「軍隊理直就士氣壯，理曲就士氣衰，哪裡在於出兵久暫？
+      沒有楚國的恩惠我們到不了今天，退三舍避開他，是為了報恩。
+      背棄恩惠、說話不算，反而抵擋自己的恩人，那是我曲楚直……
+      我們退了而楚軍也回去，我們還求什麼？
+      若他們不肯回去，就是國君退讓而臣子進逼，理曲的就在他們那邊了。」
+crystallisation:
+  first_attested: 元·馬致遠《漢宮秋》第三折
+  note: >-
+    《左傳》原文作「其辟君三舍」「退三舍辟之」，並無「退避三舍」四字連用。
+    「辟」為避之古字。四字定型見於元曲，明清小說沿用而成今語。
+  moe_id: 1043
+reliability: 信史
+people: [jin-wen-gong, hu-yan, chu-cheng-wang, xian-zhen]
+concepts: [信義, 軍禮, 霸權, 士氣, 名分]
+related_idioms:
+  - target: biao-li-shan-he
+    kind: same_event
+    note: 同出城濮之戰前晉臣狐偃進言。
+  - target: yi-gu-zuo-qi
+    kind: same_source
+    note: 同屬《左傳》以「氣」與「直」論勝負的戰爭觀。
+lessons:
+  historical: >-
+    退避三舍向來被當成守信的美談，但《左傳》把它的雙重性質寫得很清楚。
+    狐偃的那段話裡，「報恩」與「取直」是同一件事的兩面：
+    退是履約，同時是把「曲」的位置讓給對方——
+    我退了你還追，理虧的就是你，而理虧在春秋是會直接折損士氣的
+    （「師直為壯，曲為老」）。
+    此外，退九十里也拉長了楚軍的補給線、選定了對晉有利的戰場。
+    道義、士氣、地形三者在這一步棋上完全重合，
+    這正是春秋霸業運作的典型形態：正當性不是戰爭的裝飾，是戰鬥力的變數。
+  modern: >-
+    談判中主動讓步以佔據道義位置，並藉此誘使對方冒進——
+    引申義，非史料本身所有。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xi-gong-er-shi-ba-nian/zh
