@@ -54,6 +54,31 @@ data/{states,sources,periods}.yaml   列國譜系、文獻譜系、分期定義
 - [docs/framework.md](docs/framework.md) — 分期架構、列國泳道、成語候選名單與分期收錄計劃
 - [schema/](schema/) — 三種條目的欄位 template
 
+## 部署
+
+網站由 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) 部署到 GitHub Pages。
+每次 push 到本分支，CI 會先跑 `validate.py`，再跑 `build_site.py` 重新生成，
+然後把靜態檔案上傳部署——所以線上版本必定同 `idioms/` `events/` `people/` 的 YAML 一致。
+
+**首次須手動開啟 Pages 一次**（之後全自動）：
+
+> Settings → Pages → Build and deployment → **Source** 揀 **GitHub Actions**
+>
+> <https://github.com/sclastro/history-of-china/settings/pages>
+
+開啟後，去 Actions 頁把最近一次 workflow **Re-run**，或者再 push 一次即會部署。
+
+網址：**<https://sclastro.github.io/history-of-china/>**
+
+> 為什麼要手動一次：workflow 原本用 `actions/configure-pages` 的 `enablement: true`
+> 想自動開啟，但這個 repo 是經 GitHub App 存取的，它的 `GITHUB_TOKEN`
+> 沒有建立 Pages site 的權限，會回 `Resource not accessible by integration`。
+> 建立 Pages site 這一步只能由 repo 擁有者做。
+
+改網址（自訂域名或改用 Vercel）：改 `scripts/build_site.py` 的 `SITE_URL`，
+再跑一次 `build_site.py`。它只影響 canonical、Open Graph、`sitemap.xml`、`robots.txt`，
+站內連結全部是相對路徑，換域名或放到子路徑都不用改。
+
 ## 維護流程
 
 新增或修改條目後：
