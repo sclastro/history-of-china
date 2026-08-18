@@ -23,7 +23,9 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_URL = "https://cc-chunqiu.vercel.app"
+SITE_URL = "https://sclastro.github.io/history-of-china"
+REPO_URL = "https://github.com/sclastro/history-of-china"
+REPO_BRANCH = "claude/spring-autumn-history-site-f4tzkd"
 SITE_NAME = "春秋戰國成語知識庫"
 SITE_DESC = "以四字成語為主軸，重新組織春秋戰國五百五十年的歷史事件、人物與概念；每條成語分本事、典源、語形定型、史料可信度四層考據。"
 
@@ -269,9 +271,10 @@ def page(title, body, *, current="", depth=0, desc=None, canonical=""):
 
 <footer class="site-footer"><div class="inner">
   <span>共 @@N_IDIOMS@@ 條成語・@@N_EVENTS@@ 個事件・@@N_PEOPLE@@ 個人物</span>
-  <a href="{up}docs/design.md">四層考據原則</a>
-  <a href="{up}docs/sources.md">引用規範</a>
-  <a href="{up}docs/framework.md">收錄骨架</a>
+  <a href="{REPO_URL}/blob/{REPO_BRANCH}/docs/design.md" target="_blank" rel="noopener">四層考據原則</a>
+  <a href="{REPO_URL}/blob/{REPO_BRANCH}/docs/sources.md" target="_blank" rel="noopener">引用規範</a>
+  <a href="{REPO_URL}/blob/{REPO_BRANCH}/docs/framework.md" target="_blank" rel="noopener">收錄骨架</a>
+  <a href="{REPO_URL}" target="_blank" rel="noopener">原始碼與資料</a>
   <span>原文引自公有領域典籍，白話為自譯</span>
 </div></footer>
 

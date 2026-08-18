@@ -1,0 +1,65 @@
+name: 部署到 GitHub Pages
+
+# 網站係靜態檔案，但仍然喺 CI 重新生成一次：
+# 咁樣可以順便跑驗證，亦確保線上版本同 YAML 數據一致（唔會出現漏 build 嘅情況）。
+
+on:
+  push:
+    branches: [claude/spring-autumn-history-site-f4tzkd]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安裝相依
+        run: pip install pyyaml
+
+      - name: 驗證條目（schema 同四層 id 空間交叉引用）
+        run: python scripts/validate.py
+
+      - name: 重新生成網站
+        run: python scripts/build_site.py
+
+      - name: 收集要部署嘅靜態檔案
+        run: |
+          mkdir -p _site
+          cp -r index.html timeline.html idioms.html events.html people.html \
+                sources.html 404.html robots.txt sitemap.xml .nojekyll \
+                assets idioms _site/
+          echo "── _site 內容 ──"
+          du -sh _site && find _site -name '*.html' | wc -l
+
+      # enablement: true 會喺 Pages 未開啟時自動開啟（需要上面 pages: write 權限）
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
