@@ -54,8 +54,15 @@ EVENT_REQUIRED = ["id", "name", "year", "period", "type", "states",
 PERSON_REQUIRED = ["id", "name", "state", "role", "bio", "sources"]
 
 YEAR_RE = re.compile(r"^c\. -?\d+$")
+# 文言引語（含文言虛詞、長度 ≥16）之後應緊接「（白話：…）」今譯
+QUOTE_RE = re.compile(r"「[^「」]*(?:『[^』]*』[^「」]*)*」")
+GLOSS_RE = re.compile(r"\s*（\s*白\s*話\s*：")
+FUNCTION_WORDS = re.compile(r"[之乎者也矣焉曰其於弗勿毋豈奚胡寡臣]")
 # 篇章可以有多層（例：呂氏春秋 shen-da-lan/cha-jin、晏子春秋 nei-pian/za-xia）
 URN_RE = re.compile(r"^ctp:([a-z0-9-]+)/([a-z0-9-]+(?:/[a-z0-9-]+)*)$")
+
+
+warnings: list[str] = []          # 白話今譯之類嘅提示，唔阻擋建置
 
 
 def load(path: Path):
@@ -77,6 +84,19 @@ def year_value(value):
     if isinstance(value, str) and YEAR_RE.match(value):
         return int(value.split()[-1])
     return None
+
+
+def missing_gloss(text, label):
+    """文言引語冇今譯者，回傳警告（唔算錯誤，只提示）。"""
+    warns = []
+    for m in QUOTE_RE.finditer(text or ""):
+        q = m.group()
+        if len(q) < 16 or not FUNCTION_WORDS.search(q):
+            continue
+        if GLOSS_RE.match((text or "")[m.end():m.end() + 8]):
+            continue
+        warns.append(f"{label} 有文言引語未附白話：{q[:24]}…")
+    return warns
 
 
 def check_required(data: dict, fields: list[str]) -> list[str]:
@@ -185,7 +205,7 @@ def check_idiom(path: Path, ids) -> list[str]:
     check_citations(data["dianyuan"], "dianyuan", ids["sources"], errors)
     check_citations(data.get("variants"), "variants", ids["sources"], errors)
 
-    cryst = data.get("crystallisation")
+    cry = cryst = data.get("crystallisation")
     if cryst and not cryst.get("note"):
         errors.append("crystallisation 有欄但缺 note（須說明語形演變）")
 
@@ -212,6 +232,11 @@ def check_idiom(path: Path, ids) -> list[str]:
     if not md_path.exists():
         errors.append(f"缺少論述文章 {md_path.name}")
 
+    warnings.extend(missing_gloss(benshi.get("summary"), "benshi.summary"))
+    warnings.extend(missing_gloss((cry or {}).get("note"), "crystallisation.note"))
+    warnings.extend(missing_gloss(lessons.get("historical"), "lessons.historical"))
+    for i, v in enumerate(data.get("variants") or []):
+        warnings.extend(missing_gloss(v.get("claim"), f"variants[{i}].claim"))
     return errors
 
 
@@ -256,6 +281,7 @@ def check_event(path: Path, ids) -> list[str]:
 
     check_citations(data["sources"], "sources", ids["sources"], errors)
     check_citations(data.get("variants"), "variants", ids["sources"], errors)
+    warnings.extend(missing_gloss(data.get("narrative"), "narrative"))
     return errors
 
 
@@ -313,6 +339,7 @@ def check_person(path: Path, ids) -> list[str]:
         if rel.get("kind") not in PERSON_REL_KINDS:
             errors.append(f"relations[{i}] kind 值無效: {rel.get('kind')}")
 
+    warnings.extend(missing_gloss(data.get("bio"), "bio"))
     return errors
 
 
@@ -350,6 +377,7 @@ def main() -> int:
             continue
         print(f"── {label}（{len(paths)}）──")
         for p in paths:
+            before = len(warnings)
             try:
                 errors = checker(p, ids)
             except Exception as exc:                      # YAML 語法錯之類
@@ -362,9 +390,13 @@ def main() -> int:
                     print(f"    - {e}")
             else:
                 print(f"✓ {rel}")
+            for w in warnings[before:]:
+                print(f"    ! {rel}：{w}")
         print()
 
     total = len(idiom_paths) + len(event_paths) + len(person_paths)
+    if warnings:
+        print(f"※ {len(warnings)} 項提示（文言引語未附白話今譯），唔阻擋建置。\n")
     print(f"共 {len(idiom_paths)} 條成語、{len(event_paths)} 個事件、"
           f"{len(person_paths)} 個人物（合計 {total}），"
           f"{'有錯誤，請修正。' if failed else '全部通過。'}")

@@ -1,6 +1,8 @@
 # 事件節點 template（events/<id>.yaml）
 # 事件係「節點」而唔係「主條目」——敘事寫喺 narrative 欄，唔另開 .md 檔。
 # 一個事件可以繫多條成語（例：城濮之戰 → 退避三舍、表裡山河、貪天之功）。
+# 白話規範：凡文中出現文言引語（「……」），須緊接寫「（白話：今譯）」；
+#           dianyuan[].quote 則另有 translation 欄。詳見 docs/design.md。
 
 id: example-event               # （必填）檔名（不含 .yaml），小寫拼音以連字號分隔
 name: 示例之戰                    # （必填）事件通行名稱

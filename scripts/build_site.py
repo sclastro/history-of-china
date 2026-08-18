@@ -57,21 +57,53 @@ def load_all():
         d = load(p)
         data["people"][d["id"]] = d
     data["period_by_id"] = {p["id"]: p for p in data["periods"]}
-    return data
+    return tidy_all(data)
 
 
 # ────────────────────────── 小工具 ──────────────────────────
 
 BOLD = re.compile(r"\*\*([^*]+)\*\*")
 
+# YAML 折疊純量同 Markdown 段落換行都會摺成空格；中文之間唔應該有空格，
+# 故一律把「中日韓字元之間嘅空白」刪走（拉丁字母、數字之間嘅空格保留）。
+CJK = r"\u2e80-\u9fff\uf900-\ufaff\uff01-\uff60\u3000-\u303f"
+CJK_SPACE = re.compile(rf"(?<=[{CJK}])[ \t]+(?=[{CJK}])")
+
+
+# 粗體標記 ** 夾喺中間時，空白亦要一併清走
+CJK_SPACE_BOLD = re.compile(rf"(?<=[{CJK}])[ \t]+(?=\*\*[{CJK}])")
+CJK_SPACE_BOLD2 = re.compile(rf"(?<=[{CJK}])\*\*[ \t]+(?=[{CJK}])")
+
+
+def cjk_tidy(text):
+    text = CJK_SPACE.sub("", text)
+    text = CJK_SPACE_BOLD.sub("", text)
+    return CJK_SPACE_BOLD2.sub("**", text)
+
+
+def tidy_all(node):
+    """遞迴清走資料中所有字串嘅中文字間空白。"""
+    if isinstance(node, str):
+        return cjk_tidy(node)
+    if isinstance(node, list):
+        return [tidy_all(x) for x in node]
+    if isinstance(node, dict):
+        return {k: tidy_all(v) for k, v in node.items()}
+    return node
+
 
 def e(text):
     return html.escape(str(text if text is not None else ""))
 
 
+# 敘事、小傳中緊隨文言引語嘅行內白話，寫作「（白話：……）」
+GLOSS = re.compile(r"（白話：([^）]+)）")
+
+
 def rich(text):
-    """條目欄位容許用 **粗體** 強調；先跳脫再轉換，避免注入。"""
-    return BOLD.sub(r"<strong>\1</strong>", e(text))
+    """條目欄位容許用 **粗體** 強調同「（白話：…）」行內今譯；先跳脫再轉換。"""
+    out = BOLD.sub(r"<strong>\1</strong>", e(text))
+    return GLOSS.sub(r'<span class="gloss">（\1）</span>', out)
 
 
 def year_num(v):
@@ -131,18 +163,24 @@ def markdown(src):
     def flush():
         nonlocal para, quote, ul, ol
         if para:
-            out.append(f"<p>{inline(' '.join(para))}</p>")
+            text = cjk_tidy(" ".join(para))
+            # 緊接文言引文之後嘅白話段，寫作「白話：……」
+            if text.startswith("白話："):
+                out.append('<p class="vernacular"><span class="vlabel">白話</span>'
+                           f'{inline(text[3:].strip())}</p>')
+            else:
+                out.append(f"<p>{inline(text)}</p>")
             para = []
         if quote:
-            body = "".join(f"<p>{inline(q)}</p>" for q in quote)
+            body = f"<p>{inline(cjk_tidy(' '.join(quote)))}</p>"
             out.append(f"<blockquote>{body}</blockquote>")
             quote = []
         if ul:
-            body = "".join(f"<li>{inline(x)}</li>" for x in ul)
+            body = "".join(f"<li>{inline(cjk_tidy(x))}</li>" for x in ul)
             out.append(f"<ul>{body}</ul>")
             ul = []
         if ol:
-            body = "".join(f"<li>{inline(x)}</li>" for x in ol)
+            body = "".join(f"<li>{inline(cjk_tidy(x))}</li>" for x in ol)
             out.append(f"<ol>{body}</ol>")
             ol = []
 
@@ -153,7 +191,7 @@ def markdown(src):
         elif ln.startswith("#"):
             flush()
             level = len(ln) - len(ln.lstrip("#"))
-            out.append(f"<h{level}>{inline(ln[level:].strip())}</h{level}>")
+            out.append(f"<h{level}>{inline(cjk_tidy(ln[level:].strip()))}</h{level}>")
         elif ln.strip() in ("---", "***"):
             flush()
             out.append("<hr>")
@@ -948,7 +986,7 @@ def build_idiom_page(d, data, prev_d, next_d):
 </main>"""
     return page(d["idiom"]["zh"], body, current="idioms.html", depth=2,
                 canonical=f"idioms/{d['id']}/",
-                desc=f"{d['idiom']['zh']}——{d.get('meaning')} 本事、典源、語形定型與史料可信度四層考據。")
+                desc=f"{d['idiom']['zh']}——{d.get('meaning')}本事、典源、語形定型與史料可信度四層考據。")
 
 
 # ────────────────────────── 搜尋索引 ──────────────────────────

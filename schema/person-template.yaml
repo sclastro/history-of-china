@@ -2,6 +2,8 @@
 # 人物係「節點」而唔係「主條目」——小傳寫喺 bio 欄，唔另開 .md 檔。
 # 凡先秦思想家（孔子、老子、墨子、孟子、莊子、荀子、韓非等），
 # 請填 philosophy_ref 欄連去哲學家知識庫，本站唔重複撰寫其思想。
+# 白話規範：凡文中出現文言引語（「……」），須緊接寫「（白話：今譯）」；
+#           dianyuan[].quote 則另有 translation 欄。詳見 docs/design.md。
 
 id: example-person              # （必填）檔名（不含 .yaml）
 name:
