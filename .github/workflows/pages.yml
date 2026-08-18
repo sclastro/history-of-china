@@ -45,10 +45,11 @@ jobs:
           echo "── _site 內容 ──"
           du -sh _site && find _site -name '*.html' | wc -l
 
-      # enablement: true 會喺 Pages 未開啟時自動開啟（需要上面 pages: write 權限）
+      # 注意：本 workflow 要求 Pages 已經開啟，且 Source 設為「GitHub Actions」。
+      # （試過 enablement: true 自動開啟，但 GitHub App 嘅 token 冇權建立 Pages site，
+      #   會報 Resource not accessible by integration，所以要人手開一次。）
+      # 開啟位置：Settings → Pages → Build and deployment → Source → GitHub Actions
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
