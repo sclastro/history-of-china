@@ -312,14 +312,10 @@ main.narrow { max-width: 800px; }
 }
 .quote-block .cite .book { color: var(--bronze-deep); font-weight: 500; }
 .quote-block .original {
-  font-family: var(--serif); font-size: 19.5px; line-height: 2.15;
-  color: var(--ink-strong); background: var(--surface-sunk);
-  padding: 16px 19px; border-left: 3px solid var(--bronze); border-radius: 0 6px 6px 0;
-  letter-spacing: .03em;
+  /* 由下方「白話為主」區塊接手 */
 }
 .quote-block .translation {
-  font-size: 16.5px; color: var(--ink); line-height: 1.95;
-  padding: 10px 19px 0; border-left: 3px solid var(--jade); margin-top: 7px;
+  /* 由下方「白話為主」區塊接手 */
 }
 .quote-block .note { font-size: 14px; color: var(--muted); padding: 7px 19px 0; line-height: 1.85; }
 
@@ -411,6 +407,87 @@ main.narrow { max-width: 800px; }
 }
 .gloss::before { content: "白話"; }
 
+/* ---------- 白話為主、文言為輔 ---------- */
+/* 讀者主要睇白話：白話用正文色與正文字級，文言縮細、轉灰、用襯線體做參考。 */
+
+/* 敘事、小傳中嘅行內今譯 */
+.vern { color: var(--ink); }
+.orig {
+  font-family: var(--serif); font-size: .84em; color: var(--muted);
+  letter-spacing: .02em;
+}
+
+/* 典源：白話在上，原文摺疊在下 */
+.quote-block .translation {
+  font-size: 19px; line-height: 2.0; color: var(--ink);
+  background: var(--jade-tint); border-left: 3px solid var(--jade);
+  border-radius: 0 6px 6px 0; padding: 14px 19px; margin-top: 0;
+}
+.orig-wrap { margin-top: 8px; }
+.orig-wrap > summary {
+  font-family: var(--sans); font-size: 13px; color: var(--muted);
+  cursor: pointer; list-style: none; padding: 3px 0;
+  letter-spacing: .1em;
+}
+.orig-wrap > summary::-webkit-details-marker { display: none; }
+.orig-wrap > summary::before { content: "▾ "; }
+.orig-wrap:not([open]) > summary::before { content: "▸ "; }
+.orig-wrap > summary:hover { color: var(--bronze-deep); }
+.quote-block .original {
+  font-family: var(--serif); font-size: 17px; line-height: 2.05;
+  color: var(--muted); background: var(--surface-sunk);
+  padding: 13px 17px; border-left: 3px solid var(--line-strong);
+  border-radius: 0 6px 6px 0; letter-spacing: .03em;
+}
+
+/* 論述文章：白話段在上，原文引文摺疊在下 */
+.passage { margin-bottom: 18px; }
+.passage-vern {
+  font-size: 18.5px; line-height: 2.0; color: var(--ink);
+  background: var(--jade-tint); border-left: 3px solid var(--jade);
+  border-radius: 0 6px 6px 0; padding: 13px 19px; margin: 0;
+}
+.passage-orig { margin-top: 7px; }
+.passage-orig > summary {
+  font-family: var(--sans); font-size: 13px; color: var(--muted);
+  cursor: pointer; list-style: none; padding: 3px 0; letter-spacing: .1em;
+}
+.passage-orig > summary::-webkit-details-marker { display: none; }
+.passage-orig > summary::before { content: "▾ "; }
+.passage-orig:not([open]) > summary::before { content: "▸ "; }
+.passage-orig > summary:hover { color: var(--bronze-deep); }
+.passage-orig blockquote,
+.passage-orig blockquote p {
+  font-size: 17px; line-height: 2.05; color: var(--muted);
+  border-left-color: var(--line-strong); margin-bottom: 0;
+}
+
+/* ---------- 成語詳頁各段（原本寫死 inline，現改為 class） ---------- */
+
+.sub-label {
+  font-size: 13px; color: var(--muted); margin-bottom: 6px;
+  letter-spacing: .08em;
+}
+.ev-name { font-family: var(--serif); font-size: 20px; color: var(--ink-strong); }
+.ev-year { font-family: var(--sans); font-size: 14px; color: var(--muted); }
+.narrative { font-size: 18px; line-height: 2.0; margin-top: 8px; }
+.significance {
+  font-size: 16px; line-height: 1.95; color: var(--muted); margin-top: 11px;
+}
+.significance b { color: var(--ink-strong); font-weight: 500; }
+.benshi-summary { font-size: 18px; line-height: 2.0; }
+.parable-note { font-size: 17px; line-height: 1.95; color: var(--muted); }
+.cryst-first { font-size: 14.5px; color: var(--muted); margin-bottom: 8px; }
+.cryst-note { font-size: 17.5px; line-height: 1.95; }
+.moe-link { font-size: 13.5px; color: var(--muted); margin-top: 10px; }
+.rel-hint { font-size: 15px; color: var(--muted); }
+.no-variant { font-size: 16px; color: var(--muted); }
+.notes-body { font-size: 16px; line-height: 1.95; }
+.refs { margin-left: 1.3em; font-size: 14.5px; line-height: 1.9; }
+.p-en { font-size: 14px; color: var(--muted); font-weight: 400; }
+.src-meta { font-size: 13.5px; color: var(--muted); }
+.src-link { font-size: 13.5px; }
+
 /* ---------- ⌘K 搜尋 ---------- */
 
 .cmdk-backdrop {
@@ -470,16 +547,26 @@ main.narrow { max-width: 800px; }
   .layer { padding: 18px 18px; }
   .layer > h2 { font-size: 21px; }
   .layer > h2 .hint { display: none; }
-  .quote-block .original { font-size: 20.5px; padding: 15px 16px; }
-  .quote-block .translation { font-size: 17.5px; padding: 10px 16px 0; }
   .lessons .box p { font-size: 17.5px; }
-  .essay { padding: 22px 18px; font-size: 18.5px; }
-  .essay p { font-size: 18.5px; }
-  .essay li { font-size: 18.5px; }
+  .essay { padding: 22px 16px; font-size: 19.5px; }
+  .essay p { font-size: 19.5px; }
+  .essay li { font-size: 19.5px; }
+  .passage-vern { font-size: 19.5px; padding: 13px 16px; }
+  .passage-orig blockquote,
+  .passage-orig blockquote p { font-size: 18px; }
+  .narrative { font-size: 19.5px; }
+  .benshi-summary { font-size: 19.5px; }
+  .significance { font-size: 17.5px; }
+  .cryst-note { font-size: 19px; }
+  .parable-note { font-size: 18.5px; }
+  .notes-body, .no-variant { font-size: 17.5px; }
+  .ev-name { font-size: 21px; }
+  .quote-block .translation { font-size: 20px; padding: 14px 16px; }
+  .quote-block .original { font-size: 18px; padding: 13px 15px; }
+  .refs { font-size: 16px; }
   .essay h2 { font-size: 24.5px; }
   .essay h3 { font-size: 20.5px; }
   .essay blockquote, .essay blockquote p { font-size: 20px; padding-left: 16px; padding-right: 16px; }
-  .essay p.vernacular { font-size: 17.5px; padding: 11px 16px; }
   .page-head h1 { font-size: 29px; }
   .page-head .lede { font-size: 17px; }
   .card .zh { font-size: 25px; }

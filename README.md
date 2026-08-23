@@ -56,28 +56,19 @@ data/{states,sources,periods}.yaml   列國譜系、文獻譜系、分期定義
 
 ## 部署
 
-網站由 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) 部署到 GitHub Pages。
-每次 push 到本分支，CI 會先跑 `validate.py`，再跑 `build_site.py` 重新生成，
-然後把靜態檔案上傳部署——所以線上版本必定同 `idioms/` `events/` `people/` 的 YAML 一致。
+網站由 **Vercel** 部署，網址：**<https://history-of-china-hazel.vercel.app/>**
 
-**首次須手動開啟 Pages 一次**（之後全自動）：
+生成好的 HTML 已經連同資料一起 commit，所以 Vercel 不需要任何 build step：
+Framework Preset 選 **Other**、Root Directory 用 `./`、Build Command 留空即可。
+推送到本分支後 Vercel 會自動重新部署。
 
-> Settings → Pages → Build and deployment → **Source** 揀 **GitHub Actions**
->
-> <https://github.com/sclastro/history-of-china/settings/pages>
+> **注意**：Vercel 直接發佈 repo 裡已 commit 的 HTML，並不會替你跑 `build_site.py`。
+> 所以改完 `idioms/` `events/` `people/` 的 YAML 之後，**一定要在本機重跑一次
+> `build_site.py` 並把生成的 HTML 一起 commit**，否則線上看到的仍是舊版。
 
-開啟後，去 Actions 頁把最近一次 workflow **Re-run**，或者再 push 一次即會部署。
-
-網址：**<https://sclastro.github.io/history-of-china/>**
-
-> 為什麼要手動一次：workflow 原本用 `actions/configure-pages` 的 `enablement: true`
-> 想自動開啟，但這個 repo 是經 GitHub App 存取的，它的 `GITHUB_TOKEN`
-> 沒有建立 Pages site 的權限，會回 `Resource not accessible by integration`。
-> 建立 Pages site 這一步只能由 repo 擁有者做。
-
-改網址（自訂域名或改用 Vercel）：改 `scripts/build_site.py` 的 `SITE_URL`，
-再跑一次 `build_site.py`。它只影響 canonical、Open Graph、`sitemap.xml`、`robots.txt`，
-站內連結全部是相對路徑，換域名或放到子路徑都不用改。
+改網址（自訂域名）：改 `scripts/build_site.py` 的 `SITE_URL`，再跑一次 `build_site.py`。
+它只影響 canonical、Open Graph、`sitemap.xml`、`robots.txt`——站內連結全部是相對路徑，
+換域名或放到子路徑都不用改。
 
 ## 維護流程
 

@@ -23,7 +23,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_URL = "https://sclastro.github.io/history-of-china"
+SITE_URL = "https://history-of-china-hazel.vercel.app"
 REPO_URL = "https://github.com/sclastro/history-of-china"
 REPO_BRANCH = "claude/spring-autumn-history-site-f4tzkd"
 SITE_NAME = "春秋戰國成語知識庫"
@@ -98,14 +98,21 @@ def e(text):
     return html.escape(str(text if text is not None else ""))
 
 
-# 敘事、小傳中緊隨文言引語嘅行內白話，寫作「（白話：……）」
+# 敘事、小傳中緊隨文言引語嘅行內白話，寫作：「文言」（白話：……）
+# 呈現時**倒轉主次**——白話入正文，文言縮細做參考。讀者主要睇白話。
+QUOTE_GLOSS = re.compile(
+    r"(「[^「」]*(?:『[^』]*』[^「」]*)*」)\s*（白話：([^）]+)）")
 GLOSS = re.compile(r"（白話：([^）]+)）")
 
 
 def rich(text):
-    """條目欄位容許用 **粗體** 強調同「（白話：…）」行內今譯；先跳脫再轉換。"""
+    """容許 **粗體** 同「文言」（白話：…）；後者渲染為白話在前、原文在後。"""
     out = BOLD.sub(r"<strong>\1</strong>", e(text))
-    return GLOSS.sub(r'<span class="gloss">（\1）</span>', out)
+    out = QUOTE_GLOSS.sub(
+        r'<span class="vern">\2</span>'
+        r'<span class="orig">（原文：\1）</span>', out)
+    # 未緊接引語嘅白話（罕見）仍照舊呈現
+    return GLOSS.sub(r'<span class="vern">\1</span>', out)
 
 
 def year_num(v):
@@ -215,6 +222,29 @@ def markdown(src):
             para.append(ln.strip())
         i += 1
     flush()
+    return pair_quote_vernacular(out)
+
+
+BQ_RE = re.compile(r"^<blockquote>(.*)</blockquote>$", re.S)
+VERN_RE = re.compile(
+    r'^<p class="vernacular"><span class="vlabel">白話</span>(.*)</p>$', re.S)
+
+
+def pair_quote_vernacular(blocks):
+    """把「文言引文 + 緊隨嘅白話段」重排為白話在前、原文在後（可摺疊）。"""
+    out, i = [], 0
+    while i < len(blocks):
+        bq = BQ_RE.match(blocks[i])
+        vn = VERN_RE.match(blocks[i + 1]) if bq and i + 1 < len(blocks) else None
+        if bq and vn:
+            out.append(
+                f'<div class="passage"><p class="passage-vern">{vn.group(1)}</p>'
+                f'<details class="passage-orig" open><summary>原文</summary>'
+                f'<blockquote>{bq.group(1)}</blockquote></details></div>')
+            i += 2
+        else:
+            out.append(blocks[i])
+            i += 1
     return "\n".join(out)
 
 
@@ -376,10 +406,12 @@ def cite_line(c, data):
 
 
 def quote_block(c, data):
+    """白話在上（主），文言原文在下（參考，可摺疊）。"""
     parts = [f'<div class="cite">{cite_line(c, data)}</div>']
-    parts.append(f'<div class="original">{e(c.get("quote", ""))}</div>')
     if c.get("translation"):
         parts.append(f'<div class="translation">{e(c["translation"])}</div>')
+    parts.append('<details class="orig-wrap" open><summary>原文</summary>'
+                 f'<div class="original">{e(c.get("quote", ""))}</div></details>')
     if c.get("note"):
         parts.append(f'<div class="note">{e(c["note"])}</div>')
     return f'<div class="quote-block">{"".join(parts)}</div>'
@@ -730,7 +762,7 @@ def build_people(data):
         return f"""<div class="row">
   <span class="yr">{e(yrs)}</span>
   <span class="main">
-    <h3>{e(pr['name']['zh'])} <span style="font-size:13px;color:var(--muted);font-weight:400">{e(pr['name'].get('en',''))}</span></h3>
+    <h3>{e(pr['name']['zh'])} <span class="p-en">{e(pr['name'].get('en',''))}</span></h3>
     <span class="sub">{e((pr.get('bio') or '')[:150])}…</span>
     <span class="tags"><span class="tag">{e(pr['role'])}</span>{ids}{phil}</span>
   </span>
@@ -796,7 +828,7 @@ def build_sources(data):
             link = ""
             if s.get("ctext"):
                 link = (f'<a href="https://ctext.org/{e(s["ctext"])}/zh" target="_blank" '
-                        f'rel="noopener" style="font-size:12.5px">ctext ↗</a>')
+                        f'rel="noopener" class="src-link">ctext ↗</a>')
             meta = []
             if s.get("compiled") is not None:
                 meta.append(f'成書約{year_label(s["compiled"])}')
@@ -808,7 +840,7 @@ def build_sources(data):
                       if s.get("caveat") else "")
             cards += f"""<div class="src-card">
   <div class="top"><h3>《{e(s['name'])}》</h3>
-    <span style="font-size:12.5px;color:var(--muted)">{e("・".join(meta))}</span>{link}{badge}</div>
+    <span class="src-meta">{e("・".join(meta))}</span>{link}{badge}</div>
   {f'<div class="nature">{e(s["nature"])}</div>' if s.get('nature') else ''}
   {caveat}
 </div>"""
@@ -849,21 +881,21 @@ def build_idiom_page(d, data, prev_d, next_d):
             if ev.get("year_end"):
                 yl += f" – {year_label(ev['year_end'])}"
             ev_html = f"""<div style="margin-top:13px;padding-top:13px;border-top:1px solid var(--line)">
-  <div style="font-size:12.5px;color:var(--muted);margin-bottom:5px">所繫事件</div>
-  <div style="font-family:var(--serif);font-size:17px;color:var(--ink-strong)">{e(ev['name'])}
-    <span style="font-family:var(--sans);font-size:13px;color:var(--muted)">（{e(yl)}）</span></div>
-  <div style="font-size:14px;line-height:1.85;margin-top:6px">{rich(ev.get('narrative', ''))}</div>
-  <div style="font-size:13.5px;color:var(--muted);margin-top:9px"><b>意義：</b>{rich(ev.get('significance', ''))}</div>
+  <div class="sub-label">所繫事件</div>
+  <div class="ev-name">{e(ev['name'])}
+    <span class="ev-year">（{e(yl)}）</span></div>
+  <div class="narrative">{rich(ev.get('narrative', ''))}</div>
+  <div class="significance"><b>意義：</b>{rich(ev.get('significance', ''))}</div>
 </div>"""
         layers.append(f"""<section class="layer">
   <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了什麼</span></h2>
-  <p style="font-size:15px;line-height:1.9">{rich(benshi.get('summary'))}</p>
+  <p class="benshi-summary">{rich(benshi.get('summary'))}</p>
   {ev_html}
 </section>""")
     else:
         layers.append(f"""<section class="layer">
   <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了什麼</span></h2>
-  <p style="font-size:15px;line-height:1.9;color:var(--muted)">
+  <p class="parable-note">
   本條為<b>寓言型</b>（<code>type: parable</code>）——諸子所設之譬喻，並無史實本事。
   其史料價值不在記錄了什麼事，而在它顯示了那個時代的人如何論理。</p>
 </section>""")
@@ -878,18 +910,18 @@ def build_idiom_page(d, data, prev_d, next_d):
     # 第三層：語形定型
     cry = d.get("crystallisation")
     if cry:
-        fa = (f'<div style="font-size:13px;color:var(--muted);margin-bottom:7px">'
+        fa = (f'<div class="cryst-first">'
               f'四字語形最早可考：<b style="color:var(--bronze-deep)">{e(cry["first_attested"])}</b></div>'
               if cry.get("first_attested") else "")
         moe = ""
         if cry.get("moe_id"):
-            moe = (f'<div style="font-size:12.5px;color:var(--muted);margin-top:9px">'
+            moe = (f'<div class="moe-link">'
                    f'交叉核對：<a href="https://dict.idioms.moe.edu.tw/idiomView.jsp?ID={e(cry["moe_id"])}'
                    f'&webMd=1&la=0" target="_blank" rel="noopener">教育部《成語典》 ↗</a></div>')
         layers.append(f"""<section class="layer">
   <h2><span class="num">第三層</span>語形定型<span class="hint">「四字成語」這個形式何時確立</span></h2>
   {fa}
-  <p style="font-size:15px;line-height:1.9">{rich(cry.get('note'))}</p>
+  <p class="cryst-note">{rich(cry.get('note'))}</p>
   {moe}
 </section>""")
 
@@ -912,9 +944,9 @@ def build_idiom_page(d, data, prev_d, next_d):
     layers.append(f"""<section class="layer">
   <h2><span class="num">第四層</span>可信度與異說<span class="hint">本事有多可信、有沒有相牴的記載</span></h2>
   <div style="display:flex;align-items:center;gap:11px;margin-bottom:11px">
-    {rel_tag(d['reliability'])}<span style="font-size:13.5px;color:var(--muted)">{e(rel_hint)}</span>
+    {rel_tag(d['reliability'])}<span class="rel-hint">{e(rel_hint)}</span>
   </div>
-  {variants or '<p style="font-size:14px;color:var(--muted)">未見相牴之記載。</p>'}
+  {variants or '<p class="no-variant">未見相牴之記載。</p>'}
 </section>""")
 
     # 啟示
@@ -947,15 +979,15 @@ def build_idiom_page(d, data, prev_d, next_d):
     )
     layers.append(f"""<section class="layer">
   <h2>關聯</h2>
-  {f'<div style="font-size:12.5px;color:var(--muted);margin-bottom:6px">相關成語</div><div class="rel-links" style="margin-bottom:14px">{rel_html}</div>' if rel_html else ''}
-  <div style="font-size:12.5px;color:var(--muted);margin-bottom:6px">相關人物</div>
+  {f'<div class="sub-label">相關成語</div><div class="rel-links" style="margin-bottom:14px">{rel_html}</div>' if rel_html else ''}
+  <div class="sub-label">相關人物</div>
   <div class="rel-links">{ppl_html}</div>
 </section>""")
 
     refs = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(u)}</a></li>'
                    for u in d.get("references") or [])
     notes = (f'<section class="layer"><h2>附註</h2>'
-             f'<p style="font-size:14px;line-height:1.85">{rich(d.get("notes"))}</p></section>'
+             f'<p class="notes-body">{rich(d.get("notes"))}</p></section>'
              if d.get("notes") else "")
 
     essay = markdown(d["_md"])
@@ -984,7 +1016,7 @@ def build_idiom_page(d, data, prev_d, next_d):
 {''.join(layers)}
 <section class="layer"><h2>論述</h2><div class="essay">{essay}</div></section>
 {notes}
-<section class="layer"><h2>撰寫依據</h2><ul style="margin-left:1.3em;font-size:13.5px">{refs}</ul></section>
+<section class="layer"><h2>撰寫依據</h2><ul class="refs">{refs}</ul></section>
 {prevnext}
 </main>"""
     return page(d["idiom"]["zh"], body, current="idioms.html", depth=2,
