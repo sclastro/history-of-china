@@ -10,13 +10,11 @@ period: wu-ba
 year: -632
 year_note: 魯僖公二十八年
 states: [jin]
-meaning: 地勢險固，內外皆有天險可恃。
+meaning: 地勢險固，內外都有天險可以憑藉。
 benshi:
   event: cheng-pu-zhi-zhan
   summary: >-
-    城濮戰前，晉文公因楚成王曾有厚待之惠而猶豫是否應戰。
-    狐偃力主一戰，謂勝則得諸侯、不勝則晉國「表裡山河」，
-    有太行、黃河之險可守，必無大害。
+    城濮戰前，晉文公因楚成王曾厚待他而猶豫是否應戰。狐偃力主一戰，說打贏了就能得到諸侯擁戴；就算打輸了，晉國「表裡山河」，有太行、黃河的險要可以固守，必不會有大害。
 dianyuan:
   - source: zuo-zhuan
     locus: 僖公二十八年
@@ -27,7 +25,7 @@ dianyuan:
       狐偃說：「打。打贏了，必定得到諸侯的擁戴；就算打不贏，
       晉國外有黃河、內有高山，也必然不會有大害。」
 crystallisation:
-  note: 四字語形即出《左傳》原文，未經演變。
+  note: 這個四字語形直接出自《左傳》原文，未經演變。
   moe_id: 1963
 reliability: 信史
 people: [hu-yan, jin-wen-gong]
