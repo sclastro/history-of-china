@@ -769,7 +769,7 @@ def build_people(data):
   <span class="yr">{e(yrs)}</span>
   <span class="main">
     <h3>{e(pr['name']['zh'])} <span class="p-en">{e(pr['name'].get('en',''))}</span></h3>
-    <span class="sub">{e((pr.get('bio') or '')[:150])}…</span>
+    <span class="sub bio">{rich(pr.get('bio') or '')}</span>
     <span class="tags"><span class="tag">{e(pr['role'])}</span>{ids}{phil}</span>
   </span>
 </div>"""

@@ -634,3 +634,15 @@ main.narrow { max-width: 800px; }
 @media (max-width: 860px) {
   .ev-story > summary { font-size: 15.5px; padding: 6px 16px; }
 }
+
+/* ── 人物小傳：全文顯示，白話為主 ── */
+.rows .sub.bio {
+  display: block;
+  margin: 8px 0 4px;
+  font-size: 16.5px;
+  line-height: 2.0;
+  color: var(--ink);
+}
+@media (max-width: 860px) {
+  .rows .sub.bio { font-size: 17.5px; line-height: 2.05; }
+}
