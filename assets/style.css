@@ -581,3 +581,56 @@ main.narrow { max-width: 800px; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ── 考據分隔線：白話讀完之後先入文獻 ── */
+.kaoju-divider {
+  margin: 44px 0 22px;
+  padding-top: 26px;
+  border-top: 2px solid var(--line);
+  text-align: center;
+}
+.kaoju-divider .kd-label {
+  display: inline-block;
+  padding: 5px 20px;
+  background: var(--bronze);
+  color: #fff;
+  border-radius: 3px;
+  font-size: 15px;
+  letter-spacing: 0.32em;
+  text-indent: 0.32em;
+  font-weight: 600;
+}
+.kaoju-divider .kd-hint {
+  margin: 12px auto 0;
+  max-width: 30em;
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: var(--muted);
+}
+@media (max-width: 860px) {
+  .kaoju-divider { margin: 34px 0 18px; }
+  .kaoju-divider .kd-hint { font-size: 15.5px; }
+}
+
+/* ── 大事表：展開讀故事 ── */
+.ev-story { margin-top: 12px; }
+.ev-story > summary {
+  display: inline-block;
+  cursor: pointer;
+  padding: 4px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 14.5px;
+  color: var(--bronze);
+  background: var(--bg);
+  list-style: none;
+  user-select: none;
+}
+.ev-story > summary::-webkit-details-marker { display: none; }
+.ev-story > summary::before { content: "▸ "; }
+.ev-story[open] > summary::before { content: "▾ "; }
+.ev-story > summary:hover { border-color: var(--bronze); }
+.ev-story .narrative { margin-top: 12px; }
+@media (max-width: 860px) {
+  .ev-story > summary { font-size: 15.5px; padding: 6px 16px; }
+}

@@ -714,12 +714,18 @@ def build_events(data):
                              for s in ev.get("states", []) if s in data["states"])
             ids = "".join(f'<a class="tag tag-type" href="idioms/{e(d["id"])}/">{e(d["idiom"]["zh"])}</a>'
                           for d in sorted(ev_idioms.get(ev["id"], []), key=sort_key_idiom))
+            story = ""
+            if ev.get("narrative"):
+                story = (f'<details class="ev-story" id="{e(ev["id"])}">'
+                         f'<summary>讀故事</summary>'
+                         f'<div class="narrative">{rich(ev["narrative"])}</div></details>')
             rows += f"""<div class="row">
   <span class="yr">{e(yl)}</span>
   <span class="main">
     <h3>{e(ev['name'])}</h3>
     <span class="sub">{rich(ev.get('significance', ''))}</span>
     <span class="tags"><span class="tag">{e(ev['type'])}</span>{rel_tag(ev['reliability'])}{states}{ids}</span>
+    {story}
   </span>
 </div>"""
         out += (f'<h2 class="section-title">{e(p["name"])}'
@@ -869,7 +875,8 @@ def build_idiom_page(d, data, prev_d, next_d):
                      for s in d.get("states", []) if s in data["states"])
     concepts = "".join(f'<span class="tag">{e(c)}</span>' for c in d.get("concepts") or [])
 
-    layers = []
+    layers = []      # 可讀部分：本事（白話故事）
+    kaoju = []       # 考據部分：典源、語形定型、可信度——供查證，唔係主線閱讀
 
     # 第一層：本事
     benshi = d.get("benshi")
@@ -902,7 +909,7 @@ def build_idiom_page(d, data, prev_d, next_d):
 
     # 第二層：典源
     quotes = "".join(quote_block(c, data) for c in d.get("dianyuan") or [])
-    layers.append(f"""<section class="layer">
+    kaoju.append(f"""<section class="layer">
   <h2><span class="num">第二層</span>典源<span class="hint">最早見於哪本書、哪一段</span></h2>
   {quotes}
 </section>""")
@@ -918,7 +925,7 @@ def build_idiom_page(d, data, prev_d, next_d):
             moe = (f'<div class="moe-link">'
                    f'交叉核對：<a href="https://dict.idioms.moe.edu.tw/idiomView.jsp?ID={e(cry["moe_id"])}'
                    f'&webMd=1&la=0" target="_blank" rel="noopener">教育部《成語典》 ↗</a></div>')
-        layers.append(f"""<section class="layer">
+        kaoju.append(f"""<section class="layer">
   <h2><span class="num">第三層</span>語形定型<span class="hint">「四字成語」這個形式何時確立</span></h2>
   {fa}
   <p class="cryst-note">{rich(cry.get('note'))}</p>
@@ -941,7 +948,7 @@ def build_idiom_page(d, data, prev_d, next_d):
         "後世附會": "晚出，或與早期文獻、出土材料相牴。",
         "寓言": "諸子所設之譬喻，本無其事——但這不等於沒有價值：它是理解那個時代思想的一手材料。",
     }[d["reliability"]]
-    layers.append(f"""<section class="layer">
+    kaoju.append(f"""<section class="layer">
   <h2><span class="num">第四層</span>可信度與異說<span class="hint">本事有多可信、有沒有相牴的記載</span></h2>
   <div style="display:flex;align-items:center;gap:11px;margin-bottom:11px">
     {rel_tag(d['reliability'])}<span class="rel-hint">{e(rel_hint)}</span>
@@ -957,13 +964,13 @@ def build_idiom_page(d, data, prev_d, next_d):
   <h3>現代引申</h3><p>{rich(les['modern'])}</p>
   <div class="caveat">※ 引申義，非史料本身所有。</div>
 </div>"""
-    layers.append(f"""<section class="layer">
+    lessons_html = f"""<section class="layer">
   <h2>啟示<span class="hint">史觀分析與現代引申分開處理</span></h2>
   <div class="lessons">
     <div class="box"><h3>史觀</h3><p>{rich(les.get('historical'))}</p></div>
     {modern}
   </div>
-</section>""")
+</section>"""
 
     # 關聯
     kind_label = {"same_event": "同一事件", "same_source": "同一典源",
@@ -977,12 +984,12 @@ def build_idiom_page(d, data, prev_d, next_d):
         f'<a href="{up}people.html#{e(pid)}">{e(data["people"][pid]["name"]["zh"])}</a>'
         for pid in d.get("people") or [] if pid in data["people"]
     )
-    layers.append(f"""<section class="layer">
+    rel_section = f"""<section class="layer">
   <h2>關聯</h2>
   {f'<div class="sub-label">相關成語</div><div class="rel-links" style="margin-bottom:14px">{rel_html}</div>' if rel_html else ''}
   <div class="sub-label">相關人物</div>
   <div class="rel-links">{ppl_html}</div>
-</section>""")
+</section>"""
 
     refs = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(u)}</a></li>'
                    for u in d.get("references") or [])
@@ -1014,7 +1021,15 @@ def build_idiom_page(d, data, prev_d, next_d):
   </div>
 </div>
 {''.join(layers)}
-<section class="layer"><h2>論述</h2><div class="essay">{essay}</div></section>
+<section class="layer"><h2>論述<span class="hint">這件事說明了什麼</span></h2>
+  <div class="essay">{essay}</div></section>
+{lessons_html}
+<div class="kaoju-divider">
+  <span class="kd-label">考據</span>
+  <p class="kd-hint">以下為文獻依據，供查證之用。原文一律附白話今譯，不讀原文亦不影響理解。</p>
+</div>
+{''.join(kaoju)}
+{rel_section}
 {notes}
 <section class="layer"><h2>撰寫依據</h2><ul class="refs">{refs}</ul></section>
 {prevnext}
