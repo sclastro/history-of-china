@@ -392,7 +392,7 @@ def idiom_card(d, data, up=""):
   <span class="zh">{e(d['idiom']['zh'])}</span>
   <span class="meta">{e(year_label(d.get('year')))}・{e(per.get('name', ''))}</span>
   <span class="meaning">{e(d.get('meaning'))}</span>
-  <span class="tags">{type_tag(d['type'])}{rel_tag(d['reliability'])}{states}</span>
+  <span class="tags">{type_tag(d['type'])}{'' if d['reliability'] == '寓言' else rel_tag(d['reliability'])}{states}</span>
 </a>"""
 
 
@@ -903,8 +903,8 @@ def build_idiom_page(d, data, prev_d, next_d):
         layers.append(f"""<section class="layer">
   <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了什麼</span></h2>
   <p class="parable-note">
-  本條為<b>寓言型</b>（<code>type: parable</code>）——諸子所設之譬喻，並無史實本事。
-  其史料價值不在記錄了什麼事，而在它顯示了那個時代的人如何論理。</p>
+  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。
+  它的史料價值不在於記錄了什麼事，而在於顯示了那個時代的人怎樣講道理。</p>
 </section>""")
 
     # 第二層：典源
@@ -1014,7 +1014,7 @@ def build_idiom_page(d, data, prev_d, next_d):
   <div class="literal"><b>字面</b>　{e(d['idiom']['literal'])}　·　{e(d['idiom']['en'])}</div>
   <div class="meaning">{e(d.get('meaning'))}</div>
   <div class="tags">
-    {type_tag(d['type'])}{rel_tag(d['reliability'])}
+    {type_tag(d['type'])}{'' if d['reliability'] == '寓言' else rel_tag(d['reliability'])}
     <span class="tag">{e(per.get('name', ''))}</span>
     <span class="tag">{e(year_label(d.get('year')))}{('・' + e(d['year_note'])) if d.get('year_note') else ''}</span>
     {states}{concepts}
