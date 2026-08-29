@@ -1,0 +1,59 @@
+id: mao-sui-zi-jian
+idiom:
+  zh: 毛遂自薦
+  pinyin: máo suì zì jiàn
+  jyutping: mou4 seoi6 zi6 zin3
+  literal: 毛遂推薦自己
+  en: Mao Sui recommends himself
+type: historical
+period: zhan-guo-late
+year: -257
+year_note: 邯鄲被圍之年
+states: [zhao, chu]
+meaning: 自我推薦、主動爭取機會。
+benshi:
+  event: han-dan-zhi-wei
+  summary: >-
+    秦圍邯鄲，平原君奉命到楚國謀求合縱，要在食客中挑二十個文武兼備的人同行，只選得十九人。門客毛遂自我推薦。平原君以錐處囊中其末立見為喻，質疑他在門下三年而無人稱道；毛遂答自己今日才請求放進袋中，若早得處囊，整個錐子都會脫穎而出。到楚國後談判從日出僵持到中午，毛遂按劍上階，以十步之內楚王性命懸於己手相脅，又以商湯周武之事與白起三戰辱楚之恥相激，楚王當殿定下合縱之約。
+dianyuan:
+  - source: shiji
+    locus: 平原君虞卿列傳
+    ctext_urn: ctp:shiji/ping-yuan-jun-yu-qing-lie-zhuan
+    quote: >-
+      門下有毛遂者，前，自贊於平原君曰：「遂聞君將合從於楚，
+      約與食客門下二十人偕，不外索。合少一人，願君即以遂備員而行矣。」
+    translation: >-
+      門下有個叫毛遂的人上前，向平原君自我推薦說：
+      「我聽說您將要到楚國締結合縱，約定帶食客門下二十人同行，不向外尋求。
+      如今還差一人，希望您就讓我湊個數一起去。」
+crystallisation:
+  note: >-
+    《史記》原文作「自贊」，並無「毛遂自薦」四字；
+    四字語形是後人就此事的概括，宋以降通行。
+  moe_id: 1608
+reliability: 大體可信
+people: [mao-sui, ping-yuan-jun]
+concepts: [自薦, 養士, 識人]
+related_idioms:
+  - target: tuo-ying-er-chu
+    kind: same_event
+    note: 同出毛遂與平原君的那段對答，一是自薦的動作，一是自薦的理由。
+lessons:
+  historical: >-
+    平原君的質疑其實很有道理：
+    「錐之處囊中，其末立見」——真有本事的人不會三年沒有人提起。
+    這是一條在多數情況下成立的判準。
+    毛遂的回答之所以有力，在於他沒有否認這條判準，
+    而是指出它有一個前提：錐子得先被放進袋子裡。
+    「臣乃今日請處囊中耳」——他從來沒有被放進去過。
+    這一層今天讀來仍然尖銳：
+    以「他若真行，早就出頭了」為理由不給機會，
+    是一個會自我證實的循環。
+    順帶一提結局：平原君回國後說「勝不敢復相士」
+    （白話：我不敢再自認能識別人才了）。
+  modern: >-
+    引申為自我推薦。
+    要點不在敢不敢開口，在於毛遂拆穿了一個常見的誤判：
+    沒有表現過，不等於沒有能力——也可能只是從未被放進袋子裡。
+references:
+  - https://ctext.org/shiji/ping-yuan-jun-yu-qing-lie-zhuan/zh

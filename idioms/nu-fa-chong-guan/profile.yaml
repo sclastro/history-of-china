@@ -1,0 +1,55 @@
+id: nu-fa-chong-guan
+idiom:
+  zh: 怒髮衝冠
+  pinyin: nù fà chōng guān
+  jyutping: nou6 faat3 cung1 gun1
+  literal: 頭髮豎起來把帽子頂高
+  en: Hair standing on end, lifting the cap
+type: historical
+period: zhan-guo-late
+year: -283
+year_note: 完璧歸趙之年
+states: [zhao, qin]
+meaning: 憤怒到了極點。
+benshi:
+  event: wan-bi-gui-zhao
+  summary: >-
+    藺相如奉璧入秦，見秦王拿到璧後傳給美人和左右觀看，毫無交城之意，便藉口璧上有瑕取回，退到柱旁，怒髮上衝冠，歷數趙王齋戒五日鄭重送璧、而秦王禮節傲慢的對比，揚言要與璧一同碎在柱上。
+dianyuan:
+  - source: shiji
+    locus: 廉頗藺相如列傳
+    ctext_urn: ctp:shiji/lian-po-lin-xiang-ru-lie-zhuan
+    quote: >-
+      相如因持璧卻立，倚柱，怒髮上衝冠。
+    translation: >-
+      藺相如於是拿著璧退後站定，靠著柱子，
+      憤怒得頭髮豎起、把帽子都頂高了。
+crystallisation:
+  note: >-
+    《史記》原文作「怒髮上衝冠」，五字；
+    後世省去「上」字成四字語形，唐宋以降通行，
+    岳飛〈滿江紅〉「怒髮衝冠」為最著名的用例。
+  moe_id: 1585
+reliability: 信史
+people: [lin-xiang-ru, qin-zhao-xiang-wang]
+concepts: [外交, 姿態, 談判]
+related_idioms:
+  - target: wan-bi-gui-zhao
+    kind: same_event
+    note: 同出完璧歸趙一事，一是那個姿態，一是那次任務的結果。
+lessons:
+  historical: >-
+    這四個字寫的是情緒，但那份情緒是**計算過的**。
+    藺相如的憤怒出現在一個精確的時點：
+    璧已經回到自己手上，人已經退到柱旁——
+    也就是說，他先取得了同歸於盡的能力，才表現出同歸於盡的意願。
+    次序不能倒。若先發怒而璧還在秦王手上，那只是失態。
+    《史記》把「持璧卻立、倚柱」寫在「怒髮上衝冠」之前，
+    這個順序本身就是敘事的重點。
+    談判桌上的威脅要成立，靠的不是聲量，是那一刻雙方對可執行性的判斷。
+  modern: >-
+    引申為極度憤怒。
+    今天多用於形容情緒本身；原文的用法卻提醒一件事：
+    憤怒能否構成籌碼，取決於發怒的人此刻手上握著什麼。
+references:
+  - https://ctext.org/shiji/lian-po-lin-xiang-ru-lie-zhuan/zh

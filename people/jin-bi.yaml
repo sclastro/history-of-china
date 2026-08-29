@@ -1,0 +1,18 @@
+id: jin-bi
+name:
+  zh: 晉鄙
+  en: Jin Bi
+state: wei
+role: 將領
+birth: null
+death: -257
+sort_year: -257
+bio: >-
+  魏國將領。前257年秦圍趙國邯鄲，魏安釐王派他率十萬大軍救趙；秦昭王遣使警告魏國「諸侯有敢救者，已拔趙，必移兵先擊之」（白話：諸侯若有敢來救趙的，等我攻下趙國，一定移兵先打他），魏王恐懼，命晉鄙屯兵鄴地按兵不動，名為救趙，實際上是兩邊觀望。信陵君竊符前來接管軍隊，他合符驗證無誤，卻仍然起疑：十萬大軍屯駐境上是國家重任，如今公子單車前來要接替他，未免可疑，說要請示魏王。朱亥隨即用鐵椎將他打死。他的懷疑完全正確，而正因為正確，他死了。
+sources:
+  - source: shiji
+    locus: 魏公子列傳
+    ctext_urn: ctp:shiji/wei-gong-zi-lie-zhuan
+relations:
+  - target: xin-ling-jun
+    kind: rival

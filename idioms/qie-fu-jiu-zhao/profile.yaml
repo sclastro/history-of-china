@@ -1,0 +1,55 @@
+id: qie-fu-jiu-zhao
+idiom:
+  zh: 竊符救趙
+  pinyin: qiè fú jiù zhào
+  jyutping: sit3 fu4 gau3 ziu6
+  literal: 偷出兵符去救趙國
+  en: Stealing the tally to save Zhao
+type: historical
+period: zhan-guo-late
+year: -257
+year_note: 邯鄲被圍之年
+states: [wei, zhao, qin]
+meaning: 為了大義而採取非常手段。
+benshi:
+  event: han-dan-zhi-wei
+  summary: >-
+    秦圍邯鄲，魏安釐王畏秦而命晉鄙屯兵鄴地觀望。信陵君屢請不從，打算帶門客赴死，途中向侯嬴辭行。侯嬴獻計：兵符藏於魏王臥室，唯如姬能取，而如姬曾受公子報父仇之恩。信陵君依計竊符，又依侯嬴之言帶朱亥同行；晉鄙合符後仍起疑，朱亥以袖中鐵椎擊殺之。信陵君奪軍，簡選八萬進擊秦師，解邯鄲之圍。
+dianyuan:
+  - source: shiji
+    locus: 魏公子列傳
+    ctext_urn: ctp:shiji/wei-gong-zi-lie-zhuan
+    quote: >-
+      嬴聞晉鄙之兵符常在王臥內，而如姬最幸，出入王臥內，力能竊之。
+    translation: >-
+      我聽說晉鄙的兵符常放在魏王的臥室裡，
+      而如姬最受寵幸、可以出入王的臥室，有能力把它偷出來。
+crystallisation:
+  note: >-
+    《史記》原文並無「竊符救趙」四字，是後人就此事的概括；
+    四字語形明清以降通行。
+  moe_id: 1622
+reliability: 信史
+people: [xin-ling-jun, hou-ying, ru-ji, zhu-hai, jin-bi]
+concepts: [大義, 兵權, 忠與義]
+related_idioms:
+  - target: xu-zuo-yi-dai
+    kind: same_source
+    note: 同出《史記·魏公子列傳》，一是信陵君迎侯嬴的禮數，一是侯嬴的回報。
+lessons:
+  historical: >-
+    這件事在史論上一直有爭議，因為它同時是義舉與重罪：
+    竊君主之符、殺國家之將、奪十萬之軍，任何一項都足以誅族。
+    《史記》的處理很值得注意——司馬遷沒有替信陵君開脫，
+    也沒有省略晉鄙。他把晉鄙的懷疑寫得很清楚：
+    十萬大軍屯駐境上是國家重任，公子單車前來要接替，本來就可疑。
+    晉鄙的判斷完全正確，而正因為正確，他死了。
+    一次成功的義舉底下，壓著一個盡忠職守的人。
+    這是《史記》寫人物最見功力的地方：立場鮮明，事實不刪。
+  modern: >-
+    引申為以非常手段成就大義。
+    使用時值得記住這件事的代價結構：
+    受益的是趙國與魏國，付出代價的是晉鄙與如姬，
+    而承擔後果的信陵君此後十年不敢回國。
+references:
+  - https://ctext.org/shiji/wei-gong-zi-lie-zhuan/zh

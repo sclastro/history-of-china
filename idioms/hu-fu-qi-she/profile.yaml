@@ -1,0 +1,58 @@
+id: hu-fu-qi-she
+idiom:
+  zh: 胡服騎射
+  pinyin: hú fú qí shè
+  jyutping: wu4 fuk6 ke4 se6
+  literal: 穿胡人的服裝、學騎馬射箭
+  en: Adopting nomad dress and mounted archery
+type: historical
+period: zhan-guo-mid
+year: -307
+year_note: 趙武靈王十九年
+states: [zhao]
+meaning: 不拘成法，向對手學習有用的東西。
+benshi:
+  event: hu-fu-qi-she
+  summary: >-
+    趙武靈王要改車戰為騎射、改寬袍大袖為胡人短衣革帶。公族以「變古之教、易古之道」相爭，公子成稱病不朝。武靈王親自登門，指出衣服器械只求便用便事、禮法應當因時而變，又舉趙國四面受敵的處境為證。公子成受命，次日穿胡服上朝，變法推行。此後趙國有騎兵之利，北破林胡樓煩，築長城，滅中山。
+dianyuan:
+  - source: shiji
+    locus: 趙世家
+    ctext_urn: ctp:shiji/zhao-shi-jia
+    quote: >-
+      循法之功，不足以高世；法古之學，不足以制今。
+    translation: >-
+      墨守成法所能取得的功業，不足以超越當世；
+      效法古人的學問，不足以應付今天。
+crystallisation:
+  note: >-
+    《史記》原文作「胡服騎射」，見〈趙世家〉，語形自出典源即已定型。
+  moe_id: 1688
+reliability: 信史
+people: [zhao-wu-ling-wang, gong-zi-cheng]
+concepts: [變法, 實用, 華夷]
+related_idioms:
+  - target: xi-mu-li-xin
+    kind: contrast
+    note: 同是戰國變法，一以立信開道，一以說服公族開道。
+  - target: ke-zhou-qiu-jian
+    kind: same_source
+    note: 兩條都指向同一命題：法度應當隨時代而變。
+lessons:
+  historical: >-
+    這場改革真正的難處不在技術，在**方向**。
+    向被視為野蠻的一方學習，等於承認自己在某件事上不如對方；
+    而在華夷之辨極重的戰國，這是一種身分上的讓步。
+    公子成的反對意見說得很坦白：中原是聰明睿智之所居，
+    那些做法是蠻夷才奉行的。
+    武靈王的回答把整個問題換掉了——
+    「聖人利身之謂服，便事之謂教」
+    （白話：聖人以有利於身的叫做服，以便於行事的叫做教）：
+    衣服和禮法都只是工具，工具的判準是好不好用，不是誰在用。
+    值得注意的是他先說服公子成，才頒行全國。
+    改革的第一道關口從來不是百姓，是既得利益的核心圈子。
+  modern: >-
+    引申為不拘成法、向對手學習。
+    要點在於武靈王的判準：不問這東西出自誰，只問它管不管用。
+references:
+  - https://ctext.org/shiji/zhao-shi-jia/zh

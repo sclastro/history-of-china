@@ -1,0 +1,18 @@
+id: ru-ji
+name:
+  zh: 如姬
+  en: Lady Ru
+state: wei
+role: 卿大夫
+birth: null
+death: null
+sort_year: -257
+bio: >-
+  魏安釐王最寵愛的姬妾。她父親被人殺害，她懸賞求報仇者三年而不得；後來求到信陵君門下，信陵君派門客斬下仇人的頭獻給她。她因此願為信陵君死。前257年秦圍邯鄲，魏王畏秦而按兵不動，侯嬴獻計：兵符藏在魏王臥室之內，唯有如姬能取。信陵君請她相助，她果然盜出兵符。《史記》記這件事只用了寥寥數語，卻交代得清清楚楚：一次私恩換來一次國事上的背叛，而背叛的對象是她的君主與丈夫。此後她的下落史無明文。
+sources:
+  - source: shiji
+    locus: 魏公子列傳
+    ctext_urn: ctp:shiji/wei-gong-zi-lie-zhuan
+relations:
+  - target: xin-ling-jun
+    kind: ally

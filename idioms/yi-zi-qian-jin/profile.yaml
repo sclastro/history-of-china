@@ -1,0 +1,58 @@
+id: yi-zi-qian-jin
+idiom:
+  zh: 一字千金
+  pinyin: yī zì qiān jīn
+  jyutping: jat1 zi6 cin1 gam1
+  literal: 一個字值一千金
+  en: A thousand gold for a single word
+type: historical
+period: zhan-guo-late
+year: -239
+year_note: 秦王政八年
+states: [qin]
+meaning: 文辭精妙、價值極高；亦指懸重賞求人指正。
+benshi:
+  event: lv-shi-chun-qiu-cheng-shu
+  summary: >-
+    呂不韋為秦相，恥於秦國在養士上落後於四公子，招致食客三千，命門客各著所聞，彙集成《呂氏春秋》二十餘萬字。書成後懸於咸陽市門，上掛千金，邀請諸侯游士賓客有能增損一字者予千金。《史記》記下的結果是：無人能改。
+dianyuan:
+  - source: shiji
+    locus: 呂不韋列傳
+    ctext_urn: ctp:shiji/lv-bu-wei-lie-zhuan
+    quote: >-
+      布咸陽市門，懸千金其上，延諸侯游士賓客有能增損一字者予千金。
+    translation: >-
+      公布在咸陽的市集門口，上面懸掛千金，
+      邀請諸侯各國的游士賓客，有誰能增添或刪去一個字，就給他千金。
+crystallisation:
+  note: >-
+    《史記》原文作「增損一字者予千金」，並無「一字千金」四字連用；
+    四字語形是後人的節縮，南朝鍾嶸《詩品》已用此語評古詩。
+  moe_id: 1652
+reliability: 信史
+people: [lv-bu-wei]
+concepts: [著述, 權勢, 宣示]
+related_idioms:
+  - target: qi-huo-ke-ju
+    kind: same_source
+    note: 同出呂不韋，一是他的起手，一是他權勢頂點時的手筆。
+  - target: xi-mu-li-xin
+    kind: contrast
+    note: 同樣是懸重賞於市，一為立信而設，一為立威而設。
+lessons:
+  historical: >-
+    後世多把這四個字讀成對文字水準的讚美，
+    但《史記》記下的那句「無人能改」值得多想一層：
+    沒有人敢去改秦國丞相的書——這一點呂不韋自己不會不知道。
+    所以懸書市門、賞格千金，做的不是學術評議，是一次政治宣示：
+    秦國也有能力主持文化事業，而且規模大到可以向天下叫陣。
+    書的內容不主一家（儒道法墨農兵陰陽並收），也與這個目的相符——
+    一部要為即將統一的天下立言的書，不能只屬於某一派。
+    對照商鞅二十年前的徙木立信：同樣是懸重賞於市，
+    一個是為了讓百姓相信法令會執行，一個是為了讓天下看見丞相的分量。
+  modern: >-
+    引申為文辭精妙、價值連城。
+    若取其史義，可以留意的是：無人應徵的懸賞，
+    未必證明標的完美，也可能只證明了懸賞者的權勢。
+references:
+  - https://ctext.org/shiji/lv-bu-wei-lie-zhuan/zh

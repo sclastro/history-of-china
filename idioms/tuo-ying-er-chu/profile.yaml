@@ -1,0 +1,53 @@
+id: tuo-ying-er-chu
+idiom:
+  zh: 脫穎而出
+  pinyin: tuō yǐng ér chū
+  jyutping: tyut3 wing6 ji4 ceot1
+  literal: 整個錐尖都露出袋外
+  en: The whole point breaks through
+type: historical
+period: zhan-guo-late
+year: -257
+year_note: 邯鄲被圍之年
+states: [zhao, chu]
+meaning: 才能完全顯露，超越眾人。
+benshi:
+  event: han-dan-zhi-wei
+  summary: >-
+    平原君以「錐處囊中，其末立見」質疑毛遂三年無人稱道，毛遂回答自己今日才請求放進袋中；若早得處囊，不只露出錐尖，整個錐子都會脫穎而出。
+dianyuan:
+  - source: shiji
+    locus: 平原君虞卿列傳
+    ctext_urn: ctp:shiji/ping-yuan-jun-yu-qing-lie-zhuan
+    quote: >-
+      使遂蚤得處囊中，乃穎脫而出，非特其末見而已。
+    translation: >-
+      假使我早得以放進袋中，整個錐子都會脫穎而出，
+      不只是露出錐尖而已。
+crystallisation:
+  note: >-
+    《史記》原文作「穎脫而出」，「穎」指錐子末端的鋒芒；
+    後世倒作「脫穎而出」，語序改變而語義未變，宋以降通行。
+  moe_id: 1611
+reliability: 大體可信
+people: [mao-sui, ping-yuan-jun]
+concepts: [自薦, 識人, 機會]
+related_idioms:
+  - target: mao-sui-zi-jian
+    kind: same_event
+    note: 同出毛遂與平原君的那段對答，一是自薦的動作，一是自薦的理由。
+lessons:
+  historical: >-
+    這句話的精巧在於它接住了對方的比喻，然後把它推進一步。
+    平原君說錐子放在袋裡，錐尖會自己露出來——意思是人才藏不住。
+    毛遂沒有反駁這個比喻，他反過來用它：
+    如果早把我放進袋裡，露出來的不會只是錐尖，是整支錐子。
+    一句話同時做了三件事：承認對方的道理、
+    指出自己從未被放進袋中、並且抬高了自我評價的量級。
+    先秦辯論常見的高手做法，就是不換比喻而換位置。
+  modern: >-
+    引申為才能顯露、超越眾人。
+    今天多用於形容結果；原文卻是在爭取一個尚未給予的機會——
+    這一層語氣上的差別值得留意。
+references:
+  - https://ctext.org/shiji/ping-yuan-jun-yu-qing-lie-zhuan/zh

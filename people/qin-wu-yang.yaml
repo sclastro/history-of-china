@@ -1,0 +1,18 @@
+id: qin-wu-yang
+name:
+  zh: 秦舞陽
+  en: Qin Wuyang
+state: yan
+role: 刺客
+birth: null
+death: -227
+sort_year: -227
+bio: >-
+  燕國勇士，燕將秦開之孫。據說十三歲就殺過人，人不敢正視，太子丹因此選他做荊軻的副手。荊軻本想等一位遠方的朋友同行，太子丹疑心他反悔，催促再三，只得帶秦舞陽出發。到了秦廷階下，秦舞陽臉色驟變、渾身發抖，群臣覺得可疑；荊軻回頭笑他，上前替他解釋說北方蠻夷之地的粗人沒見過天子，所以害怕。獻圖行刺於是由荊軻獨力進行，失敗。他被選中的理由是十三歲殺人，而在真正的場合裡，那份記錄沒有任何用處。
+sources:
+  - source: shiji
+    locus: 刺客列傳
+    ctext_urn: ctp:shiji/ci-ke-lie-zhuan
+relations:
+  - target: jing-ke
+    kind: ally

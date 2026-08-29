@@ -1,0 +1,59 @@
+id: fu-jing-qing-zui
+idiom:
+  zh: 負荊請罪
+  pinyin: fù jīng qǐng zuì
+  jyutping: fu6 ging1 cing2 zeoi6
+  literal: 背著荊條上門請罪
+  en: Bearing thorns to beg forgiveness
+type: historical
+period: zhan-guo-late
+year: -279
+year_note: 澠池之會後
+states: [zhao]
+meaning: 主動認錯、誠懇道歉。
+benshi:
+  event: jiang-xiang-he
+  summary: >-
+    藺相如以完璧歸趙與澠池之會兩次立功，官位升到廉頗之上。廉頗不服，揚言見面必羞辱他。相如處處迴避，門客不解，相如說強秦不敢加兵於趙只因為有他們兩人在，自己是把國家的急難放在前面、個人恩怨放在後面。廉頗聽到這話，脫去上衣、背著荊條到相如門前謝罪，兩人結為生死之交。
+dianyuan:
+  - source: shiji
+    locus: 廉頗藺相如列傳
+    ctext_urn: ctp:shiji/lian-po-lin-xiang-ru-lie-zhuan
+    quote: >-
+      廉頗聞之，肉袒負荊，因賓客至藺相如門謝罪。
+    translation: >-
+      廉頗聽到這番話，脫去上衣、背著荊條，
+      由賓客引領到藺相如門前謝罪。
+crystallisation:
+  note: >-
+    《史記》原文作「肉袒負荊」，並無「負荊請罪」四字連用；
+    四字語形是後人就此事的概括，元明戲曲中已成套語。
+  moe_id: 1522
+reliability: 信史
+people: [lian-po, lin-xiang-ru]
+concepts: [認錯, 將相和, 國家利益]
+related_idioms:
+  - target: wen-jing-zhi-jiao
+    kind: same_event
+    note: 同出將相和一事，一是認錯的動作，一是和解之後的關係。
+  - target: wan-bi-gui-zhao
+    kind: same_source
+    note: 同出《史記·廉頗藺相如列傳》，一是相如立功之始，一是二人和解之終。
+lessons:
+  historical: >-
+    這件事之所以被記住，多半因為廉頗的姿態。
+    但真正促成和解的是藺相如那句話——他把衝突的層級換掉了。
+    廉頗計較的是位次先後，這是兩個人之間的事；
+    相如答的是「強秦之所以不敢加兵於趙者，徒以吾兩人在也」
+    （白話：強秦之所以不敢出兵攻趙，只因為有我們兩個人在），
+    這是趙國與秦國之間的事。
+    廉頗一旦接受了後一個框架，位次問題就自動消失——
+    它在那個尺度上根本不成立。
+    值得注意的是相如從頭到尾沒有解釋自己的功勞有多大，
+    也沒有請國君評理。他只是換了一把尺。
+  modern: >-
+    引申為誠懇道歉。
+    若取其史義，重點在被冒犯的一方如何處理：
+    與其爭辯誰對誰錯，不如把爭執放進一個更大的尺度裡，讓它自己失去分量。
+references:
+  - https://ctext.org/shiji/lian-po-lin-xiang-ru-lie-zhuan/zh

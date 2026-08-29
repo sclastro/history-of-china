@@ -1,0 +1,56 @@
+id: xu-zuo-yi-dai
+idiom:
+  zh: 虛左以待
+  pinyin: xū zuǒ yǐ dài
+  jyutping: heoi1 zo2 ji5 doi6
+  literal: 空出左邊的尊位等候
+  en: Leaving the seat of honour empty
+type: historical
+period: zhan-guo-late
+year: -258
+year_note: 邯鄲被圍之前
+states: [wei]
+meaning: 空出尊位，誠意等待賢者。
+benshi:
+  event: han-dan-zhi-wei
+  summary: >-
+    信陵君聽說大梁夷門的看門人侯嬴是賢者，於是大會賓客，親自駕車、空出車上左邊的尊位去迎接他。侯嬴穿著破舊衣帽直接坐上尊位，半路又要求繞去屠肆看朱亥，故意站著與朱亥長談以觀察公子；信陵君執轡愈恭、顏色愈和。此後侯嬴成為他最重要的謀士，竊符之計即出其手。
+dianyuan:
+  - source: shiji
+    locus: 魏公子列傳
+    ctext_urn: ctp:shiji/wei-gong-zi-lie-zhuan
+    quote: >-
+      公子從車騎，虛左，自迎夷門侯生。
+    translation: >-
+      公子帶著車馬隨從，空出車上左邊的尊位，
+      親自去迎接夷門的侯生。
+crystallisation:
+  note: >-
+    《史記》原文作「虛左」二字；「虛左以待」的四字語形是後人所增，
+    唐宋以降通行。古時乘車以左為尊，故「虛左」即空出尊位。
+  moe_id: 1631
+reliability: 信史
+people: [xin-ling-jun, hou-ying, zhu-hai]
+concepts: [禮賢, 試探, 養士]
+related_idioms:
+  - target: qie-fu-jiu-zhao
+    kind: same_source
+    note: 同出《史記·魏公子列傳》，一是信陵君迎侯嬴的禮數，一是侯嬴的回報。
+  - target: qian-jin-mai-gu
+    kind: contrast
+    note: 一是以禮數換取賢者，一是以重金製造信號，兩種招賢方式的對照。
+lessons:
+  historical: >-
+    這一段的重點不在信陵君多有禮，在侯嬴那一連串的試探。
+    穿破衣直上尊位、半路要求繞道、故意與屠戶長談——
+    每一步都在給信陵君難堪，而且是在大庭廣眾之下，
+    賓客與魏國的將相宗室都在等著開席。
+    《史記》寫得很細：「公子執轡愈恭」「顏色愈和」「市人皆觀公子執轡」。
+    侯嬴事後自己說明了理由：他要替公子把名聲做出來——
+    自己扮成小人，才顯得公子是長者。
+    禮賢下士要成立，得經得起一次公開的、故意的冒犯。
+  modern: >-
+    引申為以尊位相待、誠意等候。
+    要點在於：真正的禮遇是在對方不配合的時候仍然維持。
+references:
+  - https://ctext.org/shiji/wei-gong-zi-lie-zhuan/zh

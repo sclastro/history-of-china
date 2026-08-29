@@ -1,0 +1,58 @@
+id: wei-wei-jiu-zhao
+idiom:
+  zh: 圍魏救趙
+  pinyin: wéi wèi jiù zhào
+  jyutping: wai4 ngai6 gau3 ziu6
+  literal: 圍攻魏國以解救趙國
+  en: Besiege Wei to rescue Zhao
+type: historical
+period: zhan-guo-early
+year: -353
+year_note: 桂陵之戰
+states: [qi, wei, zhao]
+meaning: 攻擊敵人的要害，迫使他放棄正在進行的攻勢。
+benshi:
+  event: gui-ling-zhi-zhan
+  summary: >-
+    魏將龐涓圍趙國邯鄲，趙求救於齊。齊威王以田忌為將、孫臏為軍師。田忌想直接率軍趕赴邯鄲，孫臏主張不如引兵疾走魏都大梁，據其要害、擊其空虛，魏軍必回師自救，趙圍自解。齊軍遂進逼大梁，龐涓果然棄邯鄲回救，在桂陵遭齊軍伏擊大敗。
+dianyuan:
+  - source: shiji
+    locus: 孫子吳起列傳
+    ctext_urn: ctp:shiji/sun-zi-wu-qi-lie-zhuan
+    quote: >-
+      夫解雜亂紛糾者不控卷，救鬥者不搏撠，批亢擣虛，
+      形格勢禁，則自為解耳。
+    translation: >-
+      要解開纏成一團的絲線，不能握著拳頭硬拉；
+      要勸開打架的人，不能自己也捲進去動手。
+      扼住要害、直搗空虛，使對方形勢受制，包圍自然就解開了。
+crystallisation:
+  note: >-
+    《史記》原文並無「圍魏救趙」四字，是後人就此事的概括；
+    明代所輯《三十六計》列為第二計，四字語形由此大行。
+  moe_id: 1673
+reliability: 信史
+people: [sun-bin, tian-ji, pang-juan]
+concepts: [兵法, 間接路線, 要害]
+related_idioms:
+  - target: jia-dao-fa-guo
+    kind: same_source
+    note: 兩條都由史事變成《三十六計》的條目，再由兵法條目變成成語。
+lessons:
+  historical: >-
+    孫臏那段話的核心是一個比喻，而比喻本身就是論證：
+    解開纏亂的絲線不能握拳硬拉，勸架不能自己動手。
+    正面用力會被同樣的力量頂回來——
+    要改變一個局面，得找到那個「形格勢禁」的位置。
+    值得注意的是這一計成立有嚴格前提：
+    大梁必須是龐涓不能不救的地方。
+    如果魏國的都城可以放棄，或者龐涓有足夠兵力兩邊兼顧，
+    整條計策就落空。
+    「圍魏救趙」不是隨處可用的巧計，它要求先準確判斷
+    對手有什麼是絕對放不下的。
+  modern: >-
+    引申為避實擊虛、以攻代守。
+    要點在於前提：你得先找到對方非救不可的那一點，
+    而且確認他來不及兩邊兼顧。
+references:
+  - https://ctext.org/shiji/sun-zi-wu-qi-lie-zhuan/zh

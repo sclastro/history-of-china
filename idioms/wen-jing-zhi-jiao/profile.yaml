@@ -1,0 +1,53 @@
+id: wen-jing-zhi-jiao
+idiom:
+  zh: 刎頸之交
+  pinyin: wěn jǐng zhī jiāo
+  jyutping: man5 geng2 zi1 gaau1
+  literal: 可以為對方割頸而死的交情
+  en: Friendship worth dying for
+type: historical
+period: zhan-guo-late
+year: -279
+year_note: 澠池之會後
+states: [zhao]
+meaning: 生死與共的交情。
+benshi:
+  event: jiang-xiang-he
+  summary: >-
+    廉頗負荊到藺相如門前謝罪之後，兩人的關係由對立轉為生死之交。此後趙國將相協力，秦國十餘年不敢大舉攻趙。
+dianyuan:
+  - source: shiji
+    locus: 廉頗藺相如列傳
+    ctext_urn: ctp:shiji/lian-po-lin-xiang-ru-lie-zhuan
+    quote: >-
+      卒相與驩，為刎頸之交。
+    translation: >-
+      兩人終於相處融洽，成為可以為對方割頸而死的交情。
+crystallisation:
+  note: 這個四字語形直接出自《史記》原文，未經演變。
+  moe_id: 1533
+reliability: 信史
+people: [lian-po, lin-xiang-ru]
+concepts: [交誼, 將相和, 國家利益]
+related_idioms:
+  - target: fu-jing-qing-zui
+    kind: same_event
+    note: 同出將相和一事，一是認錯的動作，一是和解之後的關係。
+  - target: guan-bao-zhi-jiao
+    kind: contrast
+    note: 一是由對立轉為生死之交，一是自始至終的知己，兩種交誼的來歷不同。
+lessons:
+  historical: >-
+    這四個字容易被讀成一段私誼的美談，但它的位置是在一篇政治傳記裡。
+    《史記》寫將相和，落點始終在趙國的存亡：
+    廉頗善戰而藺相如善謀，兩人相安，秦國就不敢輕舉妄動。
+    「刎頸之交」在這裡不是交情的形容詞，是一種**國防資產**。
+    值得對照的是這段關係的結局：長平之戰趙王棄廉頗而用趙括，
+    藺相如當時已病重，力諫不聽。將相和維持了趙國二十年，
+    而它失效的那一年，四十萬人死在長平。
+  modern: >-
+    引申為生死之交。
+    若取其史義，可以留意的是：這種關係的價值往往不在兩人之間，
+    而在他們共同面對的那個局面。
+references:
+  - https://ctext.org/shiji/lian-po-lin-xiang-ru-lie-zhuan/zh

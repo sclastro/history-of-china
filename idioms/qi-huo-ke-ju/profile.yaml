@@ -1,0 +1,53 @@
+id: qi-huo-ke-ju
+idiom:
+  zh: 奇貨可居
+  pinyin: qí huò kě jū
+  jyutping: kei4 fo3 ho2 geoi1
+  literal: 稀有的貨物值得囤起來
+  en: A rare commodity worth hoarding
+type: historical
+period: zhan-guo-late
+year: -265
+year_note: 呂不韋在邯鄲見異人之年前後
+states: [qin, zhao]
+meaning: 把稀有的人或物囤積起來，等待日後獲取厚利。
+benshi:
+  event: lv-bu-wei-li-zi-chu
+  summary: >-
+    陽翟大商人呂不韋在邯鄲見到在趙國作人質的秦公子異人，處境困窘。他回家問父親：耕田的利潤幾倍？答十倍。珠玉的利潤幾倍？答百倍。扶立一國之君的利潤幾倍？答數不清。於是說「此奇貨可居」，拿出千金替異人結交賓客、西行遊說華陽夫人立他為嫡嗣。異人改名子楚，即位為莊襄王，以呂不韋為丞相，封文信侯。
+dianyuan:
+  - source: shiji
+    locus: 呂不韋列傳
+    ctext_urn: ctp:shiji/lv-bu-wei-lie-zhuan
+    quote: >-
+      呂不韋賈邯鄲，見而憐之，曰：「此奇貨可居。」
+    translation: >-
+      呂不韋在邯鄲經商，見到他而覺得可惜，說：
+      「這是稀有的貨物，值得囤起來。」
+crystallisation:
+  note: 這個四字語形直接出自《史記》原文，未經演變。
+  moe_id: 1645
+reliability: 信史
+people: [lv-bu-wei, zi-chu]
+concepts: [投資, 商人, 君位]
+related_idioms:
+  - target: yi-zi-qian-jin
+    kind: same_source
+    note: 同出呂不韋，一是他的起手，一是他權勢頂點時的手筆。
+lessons:
+  historical: >-
+    這四個字最驚人的地方，是它把一個人明碼標價地當成商品來算。
+    《史記》記下的那段父子對話是一份完整的投資評估：
+    耕田十倍、珠玉百倍、立國家之主無數——
+    三個選項放在同一張表上比較報酬率，而第三項的標的是一位公子。
+    呂不韋投入的是千金，而且分兩筆：
+    五百金給異人結交賓客（提高標的本身的價值），
+    五百金買奇珍西行遊說（打通決策者華陽夫人）。
+    這是先秦文獻中最清晰的一次商業思維進入政治的記錄，
+    而它成功了——莊襄王即位，呂不韋為相，封文信侯。
+    值得一記的是這筆投資的結局：他最後因嫪毐案被免相遷蜀，飲鴆而死。
+  modern: >-
+    引申為囤積居奇、待價而沽。
+    使用時值得留意原文的冷峻：被「居」的那件奇貨，是一個活人。
+references:
+  - https://ctext.org/shiji/lv-bu-wei-lie-zhuan/zh

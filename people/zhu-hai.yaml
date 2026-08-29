@@ -1,0 +1,20 @@
+id: zhu-hai
+name:
+  zh: 朱亥
+  en: Zhu Hai
+state: wei
+role: 刺客
+birth: null
+death: null
+sort_year: -257
+bio: >-
+  大梁市集上的屠戶。侯嬴向信陵君推薦他，說這是個賢者，只是世人不認識，所以隱在屠肆之中。信陵君屢次登門致意，朱亥故意不答謝；信陵君覺得奇怪，侯嬴解釋這正是他在試探公子的誠意。前257年秦圍邯鄲，信陵君竊得兵符去接管晉鄙的軍隊，侯嬴料定晉鄙即使見符也會起疑，於是讓朱亥同行。到了鄴地，晉鄙合符之後果然懷疑，說「今單車來代之，何如哉」（白話：如今您單車前來要接替我，這是怎麼回事），朱亥便用袖中四十斤重的鐵椎把他打死。信陵君由此奪得兵權，挑選八萬精兵擊秦，解了邯鄲之圍。他一生只做了一件事，而那件事沒有第二個人做得成。
+sources:
+  - source: shiji
+    locus: 魏公子列傳
+    ctext_urn: ctp:shiji/wei-gong-zi-lie-zhuan
+relations:
+  - target: xin-ling-jun
+    kind: minister
+  - target: hou-ying
+    kind: ally

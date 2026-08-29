@@ -1,0 +1,60 @@
+id: ji-ming-gou-dao
+idiom:
+  zh: 雞鳴狗盜
+  pinyin: jī míng gǒu dào
+  jyutping: gai1 ming4 gau2 dou6
+  literal: 學雞叫、鑽狗洞行竊
+  en: Cockcrow and dog-thievery
+type: historical
+period: zhan-guo-mid
+year: -299
+year_note: 孟嘗君入秦之年前後
+states: [qi, qin]
+meaning: 微不足道的技能；亦指卑下的手段。
+benshi:
+  event: meng-chang-jun-ru-qin
+  summary: >-
+    孟嘗君入秦為相，秦昭王囚而欲殺之。他派人向昭王寵姬求解，寵姬索要狐白裘，而那件裘已經獻給昭王。門客中有能鑽狗洞行竊的，潛入秦宮取出狐白裘獻給寵姬，得以獲釋。半夜逃至函谷關，關法雞鳴才放客出關；門客中有能學雞叫的，一叫而群雞齊鳴，遂驗傳出關。過了一頓飯工夫，秦國追兵到關，已經晚了。
+dianyuan:
+  - source: shiji
+    locus: 孟嘗君列傳
+    ctext_urn: ctp:shiji/meng-chang-jun-lie-zhuan
+    quote: >-
+      最下坐有能為狗盜者……夜為狗，以入秦宮臧中，取所獻狐白裘至。
+    translation: >-
+      坐在最末位的門客中有會鑽狗洞行竊的……
+      他夜裡扮成狗，潛入秦國宮中的庫房，
+      把先前獻上的狐白裘取了回來。
+crystallisation:
+  note: >-
+    《史記》原文分作「狗盜」「雞鳴」兩事，並非四字連用；
+    「雞鳴狗盜」的四字語形是後人合併，唐宋以降通行，
+    王安石〈讀孟嘗君傳〉用此語而立論相反。
+  moe_id: 1694
+reliability: 大體可信
+people: [meng-chang-jun, qin-zhao-xiang-wang]
+concepts: [養士, 才能, 用人]
+related_idioms:
+  - target: jiao-tu-san-ku
+    kind: same_source
+    note: 同出孟嘗君，一是門客救他一命，一是門客替他鑿三窟。
+lessons:
+  historical: >-
+    這四個字歷來被當作輕薄之譏，而爭議點恰恰在這裡。
+    王安石〈讀孟嘗君傳〉的說法最有名：
+    孟嘗君只是「雞鳴狗盜之雄」，真正的士人不肯來投，
+    正因為他門下都是這種人。
+    但放回事件本身，當日救他一命的正是這兩個人，
+    而那些被認為體面的門客一個都沒有用上。
+    《史記》寫得很細：那個會狗盜的坐在「最下坐」——
+    在孟嘗君自己的門客排序裡，他是最末等的。
+    才能的價值不由平時的位次決定，由用得上的那一刻決定。
+    這兩種讀法都成立，而且互不取消：
+    王安石論的是一個政治集團的整體質量，
+    《史記》記的是一個具體夜晚發生的事。
+  modern: >-
+    引申為微末的技能或不入流的手段。
+    使用時值得記住那個「最下坐」的位置——
+    排序表是按平時的標準排的，而危機不按那張表發生。
+references:
+  - https://ctext.org/shiji/meng-chang-jun-lie-zhuan/zh

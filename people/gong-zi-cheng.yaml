@@ -1,0 +1,18 @@
+id: gong-zi-cheng
+name:
+  zh: 公子成
+  en: Prince Cheng
+state: zhao
+role: 卿大夫
+birth: null
+death: null
+sort_year: -307
+bio: >-
+  趙武靈王的叔父。前307年武靈王要推行胡服騎射，知道公族必有異議，先派人去說服他。公子成稱病不朝，並以「臣聞中國者，蓋聰明徇智之所居也……蠻夷之所義行也」（白話：臣聽說中原是聰明睿智的人所居之地……那些做法是蠻夷才奉行的）為由反對，認為改穿胡服是背棄中原禮法、違背人心。武靈王親自登門，指出衣服器械只是為了便用便事，禮法應當因時而變，又舉出趙國東有齊中山、北有燕東胡、西有樓煩秦韓之邊，若無騎射之備則無以自守。公子成再拜受命，第二天穿著胡服上朝，變法於是推行。他是這場改革中最關鍵的一個人——說服他等於說服了整個公族。
+sources:
+  - source: shiji
+    locus: 趙世家
+    ctext_urn: ctp:shiji/zhao-shi-jia
+relations:
+  - target: zhao-wu-ling-wang
+    kind: kin

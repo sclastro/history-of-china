@@ -1,0 +1,59 @@
+id: tu-qiong-bi-xian
+idiom:
+  zh: 圖窮匕見
+  pinyin: tú qióng bǐ xiàn
+  jyutping: tou4 kung4 bei6 jin6
+  literal: 地圖展到盡頭，匕首露了出來
+  en: The dagger appears as the map unrolls
+type: historical
+period: zhan-guo-late
+year: -227
+year_note: 秦王政二十年
+states: [yan, qin]
+meaning: 事情發展到最後，真正的意圖終於暴露。
+benshi:
+  event: jing-ke-ci-qin
+  summary: >-
+    燕太子丹派荊軻刺秦王，以樊於期的人頭與燕國督亢的地圖為信物取得接見。獻圖時秦舞陽色變，荊軻獨力上前展圖，圖展到盡頭而匕首露出。荊軻抓住秦王衣袖行刺，袖斷；秦王繞柱奔逃，群臣手無兵器，侍醫夏無且以藥囊擲之，秦王拔劍斬斷荊軻大腿。荊軻箕踞而罵，身中八創而死。
+dianyuan:
+  - source: shiji
+    locus: 刺客列傳
+    ctext_urn: ctp:shiji/ci-ke-lie-zhuan
+    quote: >-
+      軻既取圖奏之，秦王發圖，圖窮而匕首見。
+    translation: >-
+      荊軻取過地圖獻上，秦王展開地圖，
+      地圖展到盡頭，匕首露了出來。
+crystallisation:
+  note: >-
+    《史記》原文作「圖窮而匕首見」，六字；
+    後世省作「圖窮匕見」四字，唐宋以降通行。
+    「見」讀作「現」。
+  moe_id: 1667
+reliability: 信史
+people: [jing-ke, qin-wu-yang, fan-wu-ji, yan-tai-zi-dan]
+concepts: [刺殺, 意圖, 準備]
+related_idioms:
+  - target: qie-fu-jiu-zhao
+    kind: contrast
+    note: 兩條都是以個人行動改變國勢的嘗試，一成一敗，準備工夫大不相同。
+lessons:
+  historical: >-
+    這四個字今天泛指真相大白，原文卻是一個極具體的時刻。
+    值得注意的是這場刺殺失敗的原因，《史記》寫得很清楚，
+    而且不是運氣：
+    一是副手選錯——秦舞陽以十三歲殺人聞名，
+    到了秦廷階下卻色變股慄，等於預先示警。
+    二是催促所致——荊軻本要等一位遠方的朋友同行，
+    太子丹疑心他反悔，再三催促，他只得帶秦舞陽出發。
+    三是執行走樣——袖斷之後追逐繞柱，已經是失去先機的搏鬥。
+    太子丹的焦慮直接降低了行動的成功率。
+    司馬遷最後的評語是「其立意較然，不欺其志」
+    （白話：他們的心志明明白白，不曾辜負自己的初衷）——
+    評的是心志，不是成敗。
+  modern: >-
+    引申為真實意圖最終暴露。
+    要點在「窮」字：意圖之所以暴露，不是因為被識破，
+    是因為過程走到了盡頭——再往下就沒有東西可以遮掩了。
+references:
+  - https://ctext.org/shiji/ci-ke-lie-zhuan/zh
