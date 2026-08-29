@@ -1,0 +1,18 @@
+id: zheng-wen-gong
+name:
+  zh: 鄭文公
+  en: Duke Wen of Zheng
+state: zheng
+role: 君主
+birth: null
+death: -628
+sort_year: -630
+bio: >-
+  鄭厲公之子，在位四十五年。他曾在晉公子重耳流亡經過鄭國時不加禮遇，又在城濮之戰前依附楚國——前630年秦晉聯軍圍鄭，用的正是這兩條理由。危急之際佚之狐推薦燭之武，燭之武以年老推辭，文公說「吾不能早用子，今急而求子，是寡人之過也」（白話：我沒能早些任用您，如今情勢危急才來求您，這是寡人的過錯），並且點明「然鄭亡，子亦有不利焉」（白話：不過鄭國滅亡了，對您也沒有好處）。燭之武於是出城遊說秦穆公，圍城得解。一個當眾承認過錯的國君，換來一次挽救國家的出使。
+sources:
+  - source: zuo-zhuan
+    locus: 僖公三十年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-san-shi-nian
+relations:
+  - target: zhu-zhi-wu
+    kind: minister

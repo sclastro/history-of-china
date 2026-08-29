@@ -1,0 +1,18 @@
+id: jie-yang
+name:
+  zh: 解揚
+  en: Xie Yang
+state: jin
+role: 卿大夫
+birth: null
+death: null
+sort_year: -594
+bio: >-
+  晉國大夫，字子虎。前594年楚圍宋，晉景公採納伯宗的意見不出兵，只派他去告訴宋國「晉師悉起，將至矣」（白話：晉國全軍已經出動，就要到了）——一句用來吊住宋國的空話。他途經鄭國被扣，送交楚國。楚莊王重賄他，要他反過來對宋人說晉軍不會來；他假意答應，登上樓車面向宋城，喊的卻仍是原話。莊王要殺他，他說：君主能發布命令是義，臣子能承受命令是信，我受命出使，死也不能廢命。莊王放了他。這一段把「使命」二字的分量說到了極處——他遞的是一句假話，守的卻是真信用。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian
+relations:
+  - target: jin-jing-gong
+    kind: ruler

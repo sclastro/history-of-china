@@ -1,0 +1,50 @@
+id: kun-shou-you-dou
+idiom:
+  zh: 困獸猶鬥
+  pinyin: kùn shòu yóu dòu
+  jyutping: kwan3 sau3 jau4 dau3
+  literal: 被圍困的野獸還要拚鬥
+  en: A cornered beast still fights
+type: historical
+period: wu-ba
+year: -597
+year_note: 魯宣公十二年
+states: [jin]
+meaning: 陷入絕境的人仍會作最後的反抗。
+benshi:
+  event: bi-zhi-zhan
+  summary: >-
+    邲之戰晉軍大敗，中軍元帥荀林父請求處死自己，晉景公打算答應。大夫士貞子以城濮之後楚殺子玉、晉文公因此面露喜色為例勸阻，說殺掉荀林父等於替楚國再勝一場，並以「困獸猶鬥，況國相乎」為喻。景公於是讓荀林父復位。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 宣公十二年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-er-nian
+    quote: >-
+      困獸猶鬥，況國相乎！
+    translation: >-
+      被圍困的野獸尚且要拚鬥，何況是一國的執政呢！
+crystallisation:
+  note: 這個四字語形直接出自《左傳》原文，未經演變。
+  moe_id: 570
+reliability: 信史
+people: [shi-zhen-zi, xun-lin-fu, jin-jing-gong]
+concepts: [用人, 敗戰處置, 後果計算]
+related_idioms:
+  - target: zhi-ge-wei-wu
+    kind: same_event
+    note: 同出邲之戰後，一在楚方拒築京觀，一在晉方赦免敗將。
+lessons:
+  historical: >-
+    這句話今天多用來形容敵人垂死掙扎，原始語境卻是**替自己人求情**。
+    士貞子的論證完全不談寬厚，只談後果：
+    城濮之戰晉國贏了，晉文公卻憂形於色，因為楚國還有子玉；
+    等到楚成王逼死子玉，文公才「喜可知也」——等於楚國自己又輸一場。
+    如今晉國若殺荀林父，就是替楚國再勝一場。
+    「困獸猶鬥」在這裡的意思是：一個被逼到絕境的執政仍有反撲之力，
+    處置他的代價由自己承擔。
+    敗戰之後要問的不是「他該不該罰」，而是「罰了之後誰得益」。
+  modern: >-
+    引申為絕境中的反撲。
+    作為管理原則，它的要點是：追究責任要先算清楚追究本身的成本。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xuan-gong-shi-er-nian/zh

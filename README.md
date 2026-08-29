@@ -127,13 +127,13 @@ python3 scripts/check_links.py
 
 ## 收錄統計
 
-目前收錄 **41** 條成語、**35** 個事件、**88** 個人物。
+目前收錄 **52** 條成語、**43** 個事件、**106** 個人物。
 
 | 分期 | 起訖 | 成語 | 事件 |
 |---|---|---:|---:|
 | 平王東遷 | 前 771 – 前 723 | 1 | 1 |
 | 春秋前期・鄭莊小霸 | 前 722 – 前 686 | 2 | 2 |
-| 春秋中期・五霸迭興 | 前 685 – 前 547 | 15 | 14 |
+| 春秋中期・五霸迭興 | 前 685 – 前 547 | 26 | 22 |
 | 春秋後期・吳越爭霸 | 前 546 – 前 473 | 5 | 3 |
 | 戰國前期・變法圖強 | 前 472 – 前 338 | 11 | 5 |
 | 戰國中期・合縱連橫 | 前 337 – 前 285 | 5 | 3 |
@@ -141,8 +141,8 @@ python3 scripts/check_links.py
 
 | 史料可信度 | 條數 | 判準 |
 |---|---:|---|
-| 信史 | 16 | 同期或近期文獻互證，可繫年繫人 |
-| 大體可信 | 7 | 主源可信，細節有後世增飾 |
+| 信史 | 24 | 同期或近期文獻互證，可繫年繫人 |
+| 大體可信 | 10 | 主源可信，細節有後世增飾 |
 | 孤證 | 3 | 僅一書所載，別無旁證 |
 | 後世附會 | 1 | 晚出，或與早期文獻／出土材料相牴 |
 | 寓言 | 14 | 諸子所設之譬喻，本無其事 |
@@ -151,7 +151,7 @@ python3 scripts/check_links.py
 
 | 文獻 | 層 | 條數 |
 |---|:-:|---:|
-| 《左傳》 | B | 14 |
+| 《左傳》 | B | 25 |
 | 《史記》 | B | 9 |
 | 《韓非子》 | C | 4 |
 | 《莊子》 | C | 4 |
@@ -179,9 +179,20 @@ python3 scripts/check_links.py
 | 貪天之功 | 前 636 | 春秋中期 | 史事 | 《左傳》僖公二十四年 | 信史 | [tan-tian-zhi-gong](idioms/tan-tian-zhi-gong/tan-tian-zhi-gong.md) |
 | 表裡山河 | 前 632 | 春秋中期 | 史事 | 《左傳》僖公二十八年 | 信史 | [biao-li-shan-he](idioms/biao-li-shan-he/biao-li-shan-he.md) |
 | 退避三舍 | 前 632 | 春秋中期 | 史事 | 《左傳》僖公二十三年 | 信史 | [tui-bi-san-she](idioms/tui-bi-san-she/tui-bi-san-she.md) |
+| 東道主 | 前 630 | 春秋中期 | 史事 | 《左傳》僖公三十年 | 信史 | [dong-dao-zhu](idioms/dong-dao-zhu/dong-dao-zhu.md) |
+| 厲兵秣馬 | 前 627 | 春秋中期 | 史事 | 《左傳》僖公三十三年 | 信史 | [li-bing-mo-ma](idioms/li-bing-mo-ma/li-bing-mo-ma.md) |
 | 一鳴驚人 | 前 611 | 春秋中期 | 史事 | 《韓非子》喻老 | 大體可信 | [yi-ming-jing-ren](idioms/yi-ming-jing-ren/yi-ming-jing-ren.md) |
+| 各自為政 | 前 607 | 春秋中期 | 史事 | 《左傳》宣公二年 | 信史 | [ge-zi-wei-zheng](idioms/ge-zi-wei-zheng/ge-zi-wei-zheng.md) |
 | 問鼎中原 | 前 606 | 春秋中期 | 史事 | 《左傳》宣公三年 | 信史 | [wen-ding-zhong-yuan](idioms/wen-ding-zhong-yuan/wen-ding-zhong-yuan.md) |
+| 狼子野心 | 前 605 | 春秋中期 | 史事 | 《左傳》宣公四年 | 大體可信 | [lang-zi-ye-xin](idioms/lang-zi-ye-xin/lang-zi-ye-xin.md) |
 | 篳路藍縷 | 前 597 | 春秋中期 | 史事 | 《左傳》宣公十二年 | 信史 | [bi-lu-lan-lv](idioms/bi-lu-lan-lv/bi-lu-lan-lv.md) |
+| 困獸猶鬥 | 前 597 | 春秋中期 | 史事 | 《左傳》宣公十二年 | 信史 | [kun-shou-you-dou](idioms/kun-shou-you-dou/kun-shou-you-dou.md) |
+| 止戈為武 | 前 597 | 春秋中期 | 史事 | 《左傳》宣公十二年 | 信史 | [zhi-ge-wei-wu](idioms/zhi-ge-wei-wu/zhi-ge-wei-wu.md) |
+| 鞭長莫及 | 前 594 | 春秋中期 | 史事 | 《左傳》宣公十五年 | 信史 | [bian-chang-mo-ji](idioms/bian-chang-mo-ji/bian-chang-mo-ji.md) |
+| 爾虞我詐 | 前 594 | 春秋中期 | 史事 | 《左傳》宣公十五年 | 信史 | [er-yu-wo-zha](idioms/er-yu-wo-zha/er-yu-wo-zha.md) |
+| 結草報恩 | 前 594 | 春秋中期 | 史事 | 《左傳》宣公十五年 | 大體可信 | [jie-cao-bao-en](idioms/jie-cao-bao-en/jie-cao-bao-en.md) |
+| 疲於奔命 | 前 584 | 春秋中期 | 史事 | 《左傳》成公七年 | 信史 | [pi-yu-ben-ming](idioms/pi-yu-ben-ming/pi-yu-ben-ming.md) |
+| 病入膏肓 | 前 581 | 春秋中期 | 史事 | 《左傳》成公十年 | 大體可信 | [bing-ru-gao-huang](idioms/bing-ru-gao-huang/bing-ru-gao-huang.md) |
 | 上下其手 | 前 547 | 春秋中期 | 史事 | 《左傳》襄公二十六年 | 信史 | [shang-xia-qi-shou](idioms/shang-xia-qi-shou/shang-xia-qi-shou.md) |
 | 南橘北枳 | 前 531 | 春秋後期 | 史事 | 《晏子春秋》內篇雜下 | 孤證 | [nan-ju-bei-zhi](idioms/nan-ju-bei-zhi/nan-ju-bei-zhi.md) |
 | 二桃殺三士 | 前 517 | 春秋後期 | 史事 | 《晏子春秋》內篇諫下 | 孤證 | [er-tao-sha-san-shi](idioms/er-tao-sha-san-shi/er-tao-sha-san-shi.md) |

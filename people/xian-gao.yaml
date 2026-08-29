@@ -1,0 +1,18 @@
+id: xian-gao
+name:
+  zh: 弦高
+  en: Xian Gao
+state: zheng
+role: 商人
+birth: null
+death: null
+sort_year: -627
+bio: >-
+  鄭國商人。前627年他趕著牛群到周地做買賣，在滑地碰上偷襲鄭國的秦軍。他當機立斷，先以四張熟牛皮為引、再獻十二頭牛犒勞秦師，並冒稱奉鄭君之命而來：「寡君聞吾子將步師出於敝邑，敢犒從者。」（白話：我們國君聽說您要率軍路過敝國，特地前來犒勞您的隨從。）同時派人快馬回國報信。鄭穆公派人到秦國使者住的館舍查看，見他們「則束載、厲兵、秣馬矣」（白話：已經捆好行裝、磨快兵器、餵飽馬匹了）——「厲兵秣馬」由此而來。秦軍主帥見鄭國已有防備，滅鄭無望，滅了滑國就回師，途中在崤山被晉軍全殲。一個商人的臨場謊言改變了一場戰爭的走向。
+sources:
+  - source: zuo-zhuan
+    locus: 僖公三十三年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-san-shi-san-nian
+relations:
+  - target: zheng-mu-gong
+    kind: ruler

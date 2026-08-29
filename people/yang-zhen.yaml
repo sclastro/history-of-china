@@ -1,0 +1,18 @@
+id: yang-zhen
+name:
+  zh: 羊斟
+  en: Yang Zhen
+state: song
+role: 卿大夫
+birth: null
+death: null
+sort_year: -607
+bio: >-
+  宋國主帥華元的車夫。前607年大棘之戰前，華元殺羊犒賞士卒，獨獨沒有分給羊斟。第二天交戰，羊斟說「疇昔之羊，子為政；今日之事，我為政」（白話：昨天分羊肉的事，你作主；今天駕車的事，我作主），駕著戰車直接衝進鄭軍陣中，主帥華元因此被俘，宋軍大敗。《左傳》的君子評語極重：「羊斟非人也，以其私憾，敗國殄民」（白話：羊斟不是人，為了個人的怨恨，害了國家、殘害了百姓）。他是先秦文獻中最著名的一次「個人怨恨壓過集體存亡」的記錄——一碗羊肉換一場敗仗。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公二年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-er-nian
+relations:
+  - target: hua-yuan
+    kind: rival

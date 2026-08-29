@@ -1,0 +1,52 @@
+id: pi-yu-ben-ming
+idiom:
+  zh: 疲於奔命
+  pinyin: pí yú bēn mìng
+  jyutping: pei4 jyu1 ban1 ming6
+  literal: 為奔走奉命而疲憊不堪
+  en: Worn out running to obey orders
+type: historical
+period: wu-ba
+year: -584
+year_note: 魯成公七年
+states: [chu, jin, wu]
+meaning: 事情紛至沓來，奔走應付到筋疲力盡。
+benshi:
+  event: wu-chen-tong-wu
+  summary: >-
+    楚大夫巫臣因夏姬之事與子反、子重結怨，出奔晉國；楚人殺盡他留在國內的族人並瓜分其家產。巫臣自晉國寫信給二人，說「余必使爾罷於奔命以死」，隨即請求出使吳國，教吳人乘車列陣、用兵之法，並留下兒子做吳國的行人。吳國由此崛起，年年侵擾楚國東境，子反、子重一年之內七次奔走救援。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 成公七年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/cheng-gong-qi-nian
+    quote: >-
+      爾以讒慝貪惏事君，而多殺不辜，余必使爾罷於奔命以死。
+    translation: >-
+      你們用讒害、貪婪來事奉國君，濫殺無辜；
+      我一定要讓你們疲於奔走救援，直到累死為止。
+crystallisation:
+  note: >-
+    《左傳》原文作「罷於奔命」（「罷」是「疲」的古字），
+    語形自漢以後定作「疲於奔命」，字面未變。
+  moe_id: 1052
+reliability: 信史
+people: [wu-chen, zi-fan]
+concepts: [報復, 地緣, 消耗戰]
+related_idioms:
+  - target: wo-xin-chang-dan
+    kind: contrast
+    note: 一是自己隱忍待時，一是替敵人養出一個新敵國，兩種報復路徑可對照。
+lessons:
+  historical: >-
+    這是先秦最徹底的一次私怨報復，方式卻完全不是暗殺。
+    巫臣沒有動楚國一兵一卒，他做的是替楚國的東境造出一個新的敵國：
+    教吳人車戰、列陣、叛楚，並派自己的兒子常駐吳國做外交聯絡。
+    仇恨在他手裡轉化成一項持續數十年的地緣安排——
+    七十年後吳師入郢，源頭正在這裡。
+    「疲於奔命」的殺傷力不在任何一次戰役，
+    在於它讓對手永遠處在應付狀態，無法選擇何時何地用力。
+  modern: >-
+    引申為疲於應付。
+    作為競爭策略，它的邏輯是：與其正面消耗，不如改變對手必須應付的問題數量。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/cheng-gong-qi-nian/zh

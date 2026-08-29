@@ -1,0 +1,58 @@
+id: dong-dao-zhu
+idiom:
+  zh: 東道主
+  pinyin: dōng dào zhǔ
+  jyutping: dung1 dou6 zyu2
+  literal: 東方道路上的主人
+  en: Host on the eastern route
+type: historical
+period: wu-ba
+year: -630
+year_note: 魯僖公三十年
+states: [zheng, qin, jin]
+meaning: 接待賓客的主人。
+benshi:
+  event: zhu-zhi-wu-tui-qin-shi
+  summary: >-
+    秦晉聯軍圍鄭，鄭國老臣燭之武夜縋出城遊說秦穆公。他指出鄭在晉東，秦越晉而有鄭，土地終究歸晉，反而增厚了鄰國；不如留下鄭國作「東道主」，供秦國使者往來時接應。穆公當即與鄭訂盟撤軍，晉文公也退兵。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 僖公三十年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-san-shi-nian
+    quote: >-
+      若舍鄭以為東道主，行李之往來，共其乏困，君亦無所害。
+    translation: >-
+      如果放過鄭國，讓它做東方道路上的主人，
+      貴國使者往來時由它供應所缺，對您也沒有什麼損害。
+crystallisation:
+  note: >-
+    《左傳》原文的「東道主」是實指——鄭國在秦國東行道路上的接待者，
+    「東」字有具體的方位意義。後世泛用為「主人」，
+    方位義完全脫落，是少數由專名轉為通稱的例子。
+  moe_id: 1049
+reliability: 信史
+people: [zhu-zhi-wu, zheng-wen-gong, qin-mu-gong, jin-wen-gong]
+concepts: [外交辭令, 聯盟, 利害拆解]
+related_idioms:
+  - target: li-bing-mo-ma
+    kind: same_event
+    note: 這次留下的秦國戍守者杞子，三年後成了偷襲鄭國的內應。
+  - target: qin-jin-zhi-hao
+    kind: contrast
+    note: 同是秦晉關係，一講聯姻之固，一講聯盟之脆。
+lessons:
+  historical: >-
+    這是春秋辭令的極品：全篇沒有一句替鄭國求情，句句都在替秦國算帳。
+    燭之武的關鍵動作，是把「秦晉聯軍」拆成「秦」與「晉」兩個獨立的利益主體，
+    再指出滅鄭只利晉而不利秦——「鄰之厚，君之薄也」。
+    聯盟一旦被還原成各自的損益表，就撐不住了。
+    他最後補的一刀是提醒穆公：晉惠公答應割地給秦，早上渡河、晚上就築城設防。
+    先講利，再講信用紀錄，次序不能倒過來。
+    值得一記的是後果：這次留下的秦國戍守者杞子，
+    三年後成了偷襲鄭國的內應——一次外交勝利同時埋下了下一場戰爭的引信。
+  modern: >-
+    引申為接待賓客的主人，方位義已完全脫落。
+    若要取其史義，重點是那套拆解聯盟的方法：
+    對付一個聯盟，不必正面對抗，只需讓其中一方看清自己的損益。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xi-gong-san-shi-nian/zh

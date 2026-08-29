@@ -1,0 +1,18 @@
+id: xun-lin-fu
+name:
+  zh: 荀林父
+  en: Xun Linfu
+state: jin
+role: 將領
+birth: null
+death: null
+sort_year: -597
+bio: >-
+  晉國中軍元帥，即中行桓子。前597年邲之戰，他主張晉軍既已來遲就該撤回，中軍佐先縠不聽，擅自率部渡河，晉軍號令不一而大敗於楚。戰後他請求處死自己，景公打算答應，大夫士貞子以城濮之後楚殺子玉、晉文公因此「喜可知也」為例勸阻，說「困獸猶鬥，況國相乎」（白話：被圍困的野獸尚且要拚鬥，何況是一國的執政呢），景公於是恢復他的職位。三年後他滅赤狄潞氏，立了大功。敗軍之將不誅而復用，在春秋是少見的處置——士貞子的理由不是寬厚，是計算：殺掉他等於替敵國除去一個對手。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公十二年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-er-nian
+relations:
+  - target: jin-jing-gong
+    kind: ruler

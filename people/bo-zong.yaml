@@ -1,0 +1,20 @@
+id: bo-zong
+name:
+  zh: 伯宗
+  en: Bo Zong
+state: jin
+role: 卿大夫
+birth: null
+death: -576
+sort_year: -594
+bio: >-
+  晉國大夫，以直言著稱。前594年楚莊王圍宋，宋人告急於晉，景公想出兵相救，伯宗勸阻說「雖鞭之長，不及馬腹」（白話：鞭子雖然長，也打不到馬肚子上），又說「天方授楚，未可與爭」（白話：上天正在扶助楚國，還不能跟它相爭）——意思是晉國此時力有未逮，不如先讓宋國自撐。景公聽從，只派解揚去給宋國一句空話。他的比喻承認了一件當時霸主不願承認的事：力量是有作用半徑的。後因好直言而為三郤所讒，被殺；其子伯州犁奔楚，日後在「上下其手」那樁公案裡任裁決者。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian
+relations:
+  - target: jin-jing-gong
+    kind: ruler
+  - target: bo-zhou-li
+    kind: kin

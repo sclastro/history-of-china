@@ -1,0 +1,18 @@
+id: wei-ke
+name:
+  zh: 魏顆
+  en: Wei Ke
+state: jin
+role: 將領
+birth: null
+death: null
+sort_year: -594
+bio: >-
+  晉國將領，魏武子之子。他父親有一名沒有生育的愛妾，父親生病時囑咐他一定要讓她改嫁；病重神志不清時又改口要她殉葬。父親死後，魏顆讓她改嫁，說「疾病則亂，吾從其治也」（白話：人病重時神志錯亂，我聽從他清醒時的吩咐）。前594年輔氏之役，他與秦國力士杜回交戰，看見一個老人把草打成結絆倒杜回，因而擒獲。夜裡夢見那老人自稱是改嫁婦人的父親，說「余是所嫁婦人之父也，爾用先人之治命，余是以報」（白話：我是那位改嫁婦人的父親。你聽從了先人清醒時的吩咐，我因此來報答你）——「結草報恩」由此而來。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian
+relations:
+  - target: wei-wu-zi
+    kind: kin

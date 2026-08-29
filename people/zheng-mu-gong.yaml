@@ -1,0 +1,18 @@
+id: zheng-mu-gong
+name:
+  zh: 鄭穆公
+  en: Duke Mu of Zheng
+state: zheng
+role: 君主
+birth: null
+death: -606
+sort_year: -627
+bio: >-
+  鄭文公之子，在位二十二年。前627年秦軍偷襲鄭國，商人弦高在途中假託君命犒師並派人回國報信。穆公派人查看秦國使者杞子等人住的館舍，發現他們「束載、厲兵、秣馬」（白話：捆好行裝、磨快兵器、餵飽馬匹），確認內應屬實，於是委婉地下了逐客令，杞子等人逃走，秦軍偷襲落空。他在位期間鄭國夾在晉楚之間，反覆易主，是「朝晉暮楚」處境最典型的一朝。
+sources:
+  - source: zuo-zhuan
+    locus: 僖公三十三年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-san-shi-san-nian
+relations:
+  - target: xian-gao
+    kind: minister

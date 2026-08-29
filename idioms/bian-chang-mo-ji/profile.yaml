@@ -1,0 +1,53 @@
+id: bian-chang-mo-ji
+idiom:
+  zh: 鞭長莫及
+  pinyin: biān cháng mò jí
+  jyutping: bin1 coeng4 mok6 kap6
+  literal: 鞭子再長也打不到
+  en: The whip is long but cannot reach
+type: historical
+period: wu-ba
+year: -594
+year_note: 魯宣公十五年
+states: [jin, chu, song]
+meaning: 力量再大也有到不了的地方。
+benshi:
+  event: chu-wei-song
+  summary: >-
+    楚莊王圍宋，宋國向晉國求救。晉景公想出兵，大夫伯宗以「雖鞭之長，不及馬腹」勸阻，說上天正在扶助楚國，晉國此時力有未逮。景公於是不出兵，只派解揚去給宋國一句空話。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 宣公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian
+    quote: >-
+      不可。古人有言曰：「雖鞭之長，不及馬腹。」天方授楚，未可與爭。
+    translation: >-
+      不行。古人有句話說：「鞭子雖然長，也打不到馬肚子上。」
+      上天正在扶助楚國，還不能跟它相爭。
+crystallisation:
+  first_attested: 明·凌濛初《二刻拍案驚奇》
+  note: >-
+    《左傳》原文作「雖鞭之長，不及馬腹」，並非四字連用。
+    「鞭長莫及」的四字語形要到明代白話小說中才通行。
+  moe_id: 1738
+reliability: 信史
+people: [bo-zong, jin-jing-gong]
+concepts: [力量邊界, 霸權, 現實判斷]
+related_idioms:
+  - target: er-yu-wo-zha
+    kind: same_event
+    note: 同出楚圍宋一役，一是晉國不救的理由，一是宋楚言和的盟辭。
+lessons:
+  historical: >-
+    這句話的要害在於它出自霸主之口。
+    晉國自城濮以來以「救患字孤」為號召，出兵救宋本是它正當性的來源；
+    伯宗要景公承認的，是一件霸主最不願承認的事——
+    力量有作用半徑，超出半徑就無能為力。
+    值得注意的是他用的比喻：鞭子與馬腹的關係不是長度不夠，
+    而是**位置不對**——馬腹在鞭子夠得著的範圍之外，再長也沒有用。
+    這比「力有未逮」精確得多。
+  modern: >-
+    引申為心有餘而力不足、管轄不到。
+    用它的時候值得記住原始語境：承認邊界本身是一種判斷力，不是失敗。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian/zh

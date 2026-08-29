@@ -1,0 +1,23 @@
+id: jin-jing-gong
+name:
+  zh: 晉景公
+  en: Duke Jing of Jin
+state: jin
+role: 君主
+birth: null
+death: -581
+sort_year: -599
+bio: >-
+  晉成公之子，在位十九年。即位之初於邲之戰大敗於楚，霸權旁落。其後改用士會、荀林父，滅赤狄潞氏，前589年鞍之戰大敗齊軍，晉勢復振。前594年楚圍宋，宋來求救，他想出兵，大夫伯宗以「雖鞭之長，不及馬腹」（白話：鞭子雖然長，也打不到馬肚子上）勸阻——這是「鞭長莫及」的出處，也是晉國承認自己力所不及的一次罕見表態。前583年殺趙同、趙括，滅趙氏（即後世「趙氏孤兒」故事所本）。晚年患病，求醫於秦，秦伯使醫緩往診，斷為「疾不可為也，在肓之上、膏之下」（白話：這病治不了了，它在肓的上面、膏的下面）——「病入膏肓」由此而來。同年死。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian
+  - source: zuo-zhuan
+    locus: 成公十年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/cheng-gong-shi-nian
+relations:
+  - target: bo-zong
+    kind: minister
+  - target: xun-lin-fu
+    kind: minister

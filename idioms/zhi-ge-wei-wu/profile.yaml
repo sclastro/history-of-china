@@ -1,0 +1,52 @@
+id: zhi-ge-wei-wu
+idiom:
+  zh: 止戈為武
+  pinyin: zhǐ gē wéi wǔ
+  jyutping: zi2 gwo1 wai4 mou5
+  literal: 「武」字由「止」與「戈」合成
+  en: To stop weapons is martial virtue
+type: historical
+period: wu-ba
+year: -597
+year_note: 魯宣公十二年
+states: [chu, jin]
+meaning: 真正的武功在於制止干戈，而不在於耀武揚威。
+benshi:
+  event: bi-zhi-zhan
+  summary: >-
+    邲之戰楚國大勝，潘黨建議把晉軍屍體堆起來築成京觀以誇耀武功。楚莊王不許，就「武」字由「止」「戈」二字合成立論，提出武有七德，而自己一樣都沒做到，於是只祭河神、修先君宗廟便回師。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 宣公十二年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-er-nian
+    quote: >-
+      非爾所知也。夫文，止戈為武……夫武，禁暴、戢兵、保大、定功、安民、和眾、豐財者也。
+    translation: >-
+      這不是你懂的。就文字說，「武」字由「止」與「戈」合成……
+      所謂武，是禁絕暴亂、收起兵器、保有天下、鞏固功業、安定百姓、和睦人群、豐足財用。
+crystallisation:
+  note: 這個四字語形直接出自《左傳》原文，未經演變。
+  moe_id: 1290
+reliability: 信史
+people: [chu-zhuang-wang]
+concepts: [戰爭倫理, 霸業, 名實]
+related_idioms:
+  - target: bi-lu-lan-lv
+    kind: same_event
+    note: 同出邲之戰，一在戰前欒書的敵情分析，一在戰後楚莊王的自省。
+lessons:
+  historical: >-
+    這段話的分量，在於說話的人剛剛打贏一場大仗。
+    潘黨的提議完全符合當時慣例——築京觀是勝利者的權利；
+    莊王拒絕的理由不是仁慈，而是一套關於「武」的定義：
+    他列出七項功能（禁暴、戢兵、保大、定功、安民、和眾、豐財），
+    逐項對照自己，結論是一項都沒做到。
+    把勝利與「武」拆開，是先秦戰爭倫理最完整的一次表述。
+    順帶一提，「武」字從止從戈的解釋在文字學上並不可靠——
+    甲骨文的「止」是腳趾、表示行進，「武」本義應是持戈行進。
+    莊王用的是一次有意的曲解，而這次曲解本身成了成語。
+  modern: >-
+    引申為以實力止息爭端才是真本事。
+    要留意它的原始語境是勝利者的自我約束，不是弱者的口號。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xuan-gong-shi-er-nian/zh

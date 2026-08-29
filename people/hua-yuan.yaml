@@ -1,0 +1,23 @@
+id: hua-yuan
+name:
+  zh: 華元
+  en: Hua Yuan
+state: song
+role: 卿大夫
+birth: null
+death: null
+sort_year: -594
+bio: >-
+  宋國執政。前607年大棘之戰，他在開戰前殺羊犒賞士卒，卻漏了自己的車夫羊斟。次日交戰，羊斟說「疇昔之羊，子為政；今日之事，我為政」（白話：昨天分羊肉的事，你作主；今天駕車的事，我作主），把戰車直接趕進鄭軍陣中，華元被俘——「各自為政」由此而來。前594年楚圍宋九個月，城中「易子而食，析骸以爨」（白話：交換孩子來吃，劈開屍骨當柴燒）。他夜裡潛入楚軍，登上楚將子反的床把他叫醒，據實相告；子反震動，兩軍遂成城下之盟，盟辭是「我無爾詐，爾無我虞」（白話：我不欺騙你，你也不算計我）——「爾虞我詐」由此而來，而它原本是一句和平誓言。他一生兩度成為成語的來源，一次因為漏了一個人，一次因為對敵人說了實話。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公二年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-er-nian
+  - source: zuo-zhuan
+    locus: 宣公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian
+relations:
+  - target: yang-zhen
+    kind: rival
+  - target: zi-fan
+    kind: rival

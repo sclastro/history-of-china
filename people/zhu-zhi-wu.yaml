@@ -1,0 +1,18 @@
+id: zhu-zhi-wu
+name:
+  zh: 燭之武
+  en: Zhu Zhiwu
+state: zheng
+role: 策士
+birth: null
+death: null
+sort_year: -630
+bio: >-
+  鄭國大夫。前630年秦晉聯軍圍鄭，佚之狐向鄭文公推薦他。他先推辭說「臣之壯也，猶不如人；今老矣，無能為也已」（白話：臣年輕力壯的時候尚且比不上別人；如今老了，做不了什麼了），文公自責之後他才答應。夜裡他用繩子縋出城牆去見秦穆公，說鄭國滅亡對秦國毫無好處——鄭在晉之東，秦越晉而有鄭，土地終究歸晉，「鄰之厚，君之薄也」（白話：鄰國的實力增厚，就是您的實力削薄）；不如留下鄭國做「東道主」（白話：東方道路上的主人），秦國使者往來可以有個接應。他又提醒穆公晉惠公曾經背棄割地的承諾。穆公當即與鄭訂盟撤軍，晉文公也只好退兵。一場圍城，靠一個老人一席話解掉。
+sources:
+  - source: zuo-zhuan
+    locus: 僖公三十年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-san-shi-nian
+relations:
+  - target: zheng-wen-gong
+    kind: ruler

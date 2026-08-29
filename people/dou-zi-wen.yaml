@@ -1,0 +1,18 @@
+id: dou-zi-wen
+name:
+  zh: 鬬子文
+  en: Dou Ziwen
+state: chu
+role: 卿大夫
+birth: null
+death: null
+sort_year: -660
+bio: >-
+  楚國令尹，名穀於菟，若敖氏之賢者，三次做令尹又三次被罷免而不見喜怒。孔子稱他「忠矣」。他的弟弟子良生下兒子越椒，子文看了說：「必殺之。是子也，熊虎之狀而豺狼之聲；弗殺，必滅若敖氏矣。諺曰『狼子野心』，是乃狼也，其可畜乎？」（白話：一定要殺掉他。這孩子有熊虎的形貌、豺狼的聲音；不殺，必定滅掉若敖氏。俗話說「狼崽子有兇野的本性」——他就是一頭狼，怎麼養得？）子良不肯。子文臨死時召集族人說：等越椒掌權，你們就快逃走。前605年越椒果然作亂，若敖氏被滅族——這是「狼子野心」的出處。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公四年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-si-nian
+relations:
+  - target: dou-yue-jiao
+    kind: kin

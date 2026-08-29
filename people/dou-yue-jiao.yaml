@@ -1,0 +1,20 @@
+id: dou-yue-jiao
+name:
+  zh: 鬬越椒
+  en: Dou Yuejiao
+state: chu
+role: 卿大夫
+birth: null
+death: -605
+sort_year: -605
+bio: >-
+  楚國令尹，若敖氏之後，字子越。他出生時，伯父鬬子文看了他的形貌就要求把他殺掉，說他「熊虎之狀而豺狼之聲」，引俗語「狼子野心」為證，斷言留著他必滅若敖氏。他父親子良不肯。前605年他果然殺死令尹蔿賈而據守烝野，起兵攻打楚莊王。兩軍在皋滸交戰，他連射兩箭，一箭穿過車轅釘在鼓架上，一箭穿過車蓋；楚軍動搖，莊王使人在軍中傳言此為先君所遺之神箭，士氣復振，遂敗之。若敖氏被滅族，正如子文所言。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公四年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-si-nian
+relations:
+  - target: dou-zi-wen
+    kind: kin
+  - target: chu-zhuang-wang
+    kind: rival

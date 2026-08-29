@@ -1,0 +1,18 @@
+id: shi-zhen-zi
+name:
+  zh: 士貞子
+  en: Shi Zhenzi
+state: jin
+role: 卿大夫
+birth: null
+death: null
+sort_year: -597
+bio: >-
+  晉國大夫。邲之戰晉軍大敗，中軍元帥荀林父請死，景公將要答應，士貞子進諫：城濮之戰晉國打贏了，晉文公卻面帶憂色，因為楚國的子玉還在；等到楚殺子玉，文公才「喜可知也」——這等於楚國再敗一次。如今晉國若殺荀林父，就是替楚國再勝一場。他接著說「困獸猶鬥，況國相乎」（白話：被圍困的野獸尚且要拚鬥，何況是一國的執政呢）。景公於是讓荀林父復位。他的論證完全不談仁厚，只談後果：處置敗將要問的不是他該不該罰，而是罰了之後誰得益。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公十二年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-er-nian
+relations:
+  - target: xun-lin-fu
+    kind: ally

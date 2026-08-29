@@ -1,0 +1,18 @@
+id: yi-huan
+name:
+  zh: 醫緩
+  en: Physician Huan
+state: qin
+role: 醫者
+birth: null
+death: null
+sort_year: -581
+bio: >-
+  秦國名醫。前581年晉景公病重，向秦國求醫，秦桓公派他前往。醫緩還沒到，景公夢見自己的病變成兩個小孩，一個說「彼良醫也，懼傷我，焉逃之」（白話：那是個良醫，我怕他傷到我們，往哪裡躲呢），另一個說「居肓之上、膏之下，若我何」（白話：躲到肓的上面、膏的下面，他能拿我們怎麼辦）。醫緩到後診視，說的話與夢中一模一樣：「疾不可為也，在肓之上、膏之下，攻之不可，達之不及，藥不至焉，不可為也。」（白話：這病治不了了。它在肓的上面、膏的下面，用灸攻不到，用針達不了，藥力也到不了，沒有辦法了。）景公稱他為良醫，厚禮送他回國。「病入膏肓」由此而來。
+sources:
+  - source: zuo-zhuan
+    locus: 成公十年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/cheng-gong-shi-nian
+relations:
+  - target: jin-jing-gong
+    kind: ruler

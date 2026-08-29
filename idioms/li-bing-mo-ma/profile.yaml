@@ -1,0 +1,52 @@
+id: li-bing-mo-ma
+idiom:
+  zh: 厲兵秣馬
+  pinyin: lì bīng mò mǎ
+  jyutping: lai6 bing1 mut6 maa5
+  literal: 磨快兵器、餵飽馬匹
+  en: Sharpening weapons and feeding the horses
+type: historical
+period: wu-ba
+year: -627
+year_note: 魯僖公三十三年
+states: [qin, zheng, jin]
+meaning: 完成戰備，隨時可以行動。
+benshi:
+  event: xian-gao-gao-shi
+  summary: >-
+    秦軍偷襲鄭國，途中被鄭國商人弦高撞見。弦高假託君命犒師，同時派人回國報信。鄭穆公派人查看留守鄭國的秦國使者杞子等人的館舍，發現他們已經捆好行裝、磨快兵器、餵飽馬匹，確認內應屬實，於是下逐客令。秦軍見鄭國有備，滅滑而還，回程在崤山被晉軍全殲。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 僖公三十三年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-san-shi-san-nian
+    quote: >-
+      鄭穆公使視客館，則束載、厲兵、秣馬矣。
+    translation: >-
+      鄭穆公派人查看賓館，發現他們已經捆好行裝、磨快兵器、餵飽馬匹了。
+crystallisation:
+  note: >-
+    《左傳》原文作「束載、厲兵、秣馬」三事並舉；
+    後世取其中兩事縮成「厲兵秣馬」四字，宋元以降通行。
+  moe_id: 1121
+reliability: 信史
+people: [xian-gao, zheng-mu-gong, qin-mu-gong]
+concepts: [情報, 戰備, 查證]
+related_idioms:
+  - target: dong-dao-zhu
+    kind: same_event
+    note: 三年前燭之武替秦國留下的戍守者，正是這次做內應的杞子。
+lessons:
+  historical: >-
+    這四個字之所以立得住，是因為它是一次**查證**，不是一次臆測。
+    弦高的假託君命只做到一件事：讓秦軍相信鄭國已經知情。
+    真正解除危機的是他同時發出的那條消息，
+    以及鄭穆公據此派人到館舍實地查看的動作——
+    「束載、厲兵、秣馬」是眼睛看見的三個具體狀態，
+    由此確認內應屬實，才有底氣下逐客令。
+    情報的價值不在收到警訊，在於能不能把警訊轉成可核實的事實。
+  modern: >-
+    引申為完成準備、蓄勢待發。
+    今天多用於形容己方備戰，原文卻是用來描述**識破對方**的準備——
+    這一層方向上的差異值得留意。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xi-gong-san-shi-san-nian/zh

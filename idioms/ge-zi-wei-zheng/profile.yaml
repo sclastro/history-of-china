@@ -1,0 +1,53 @@
+id: ge-zi-wei-zheng
+idiom:
+  zh: 各自為政
+  pinyin: gè zì wéi zhèng
+  jyutping: gok3 zi6 wai4 zing3
+  literal: 各人按自己的意思行事
+  en: Each acts on his own authority
+type: historical
+period: wu-ba
+year: -607
+year_note: 魯宣公二年
+states: [song, zheng]
+meaning: 各人自作主張，不顧全局，以致無法協同。
+benshi:
+  event: da-ji-zhi-zhan
+  summary: >-
+    鄭國奉楚命伐宋，戰於大棘。開戰前一天宋國主帥華元殺羊犒賞士卒，卻漏了替他駕車的羊斟。次日交戰，羊斟說「昨天分羊肉你作主，今天駕車我作主」，把戰車直接趕進鄭軍陣中，華元被俘，宋師大敗。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 宣公二年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-er-nian
+    quote: >-
+      疇昔之羊，子為政；今日之事，我為政。
+    translation: >-
+      昨天分羊肉的事，你作主；今天駕車的事，我作主。
+crystallisation:
+  note: >-
+    《左傳》原文作「子為政」「我為政」，分開兩句對舉，並非四字連用；
+    「各自為政」的四字語形是後人就此事的概括。
+  moe_id: 411
+reliability: 信史
+people: [yang-zhen, hua-yuan]
+concepts: [協同, 分配, 組織]
+related_idioms:
+  - target: er-tao-sha-san-shi
+    kind: contrast
+    note: 一是分配不均而毀了一場仗，一是刻意用分配去殺人，可對照。
+lessons:
+  historical: >-
+    這是先秦文獻中最著名的一次「個人怨恨壓過集體存亡」——
+    一碗羊肉換一場敗仗。
+    值得注意的是《左傳》的追究方向：它痛斥羊斟
+    「以其私憾，敗國殄民」，卻同時把華元分羊漏掉車夫這個細節記了下來。
+    主帥在戰前對一個看似無足輕重的人失了禮，代價由全軍承擔。
+    真正的教訓不在羊斟有多壞，而在一個組織裡
+    掌握關鍵操作的人未必是地位最高的人——
+    戰車的方向盤在車夫手上，不在主帥手上。
+  modern: >-
+    引申為各行其是、缺乏協調。
+    要點在於：協同失效通常不是從最重要的環節開始，
+    而是從最容易被忽略的那個環節開始。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xuan-gong-er-nian/zh

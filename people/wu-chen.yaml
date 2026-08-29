@@ -1,0 +1,18 @@
+id: wu-chen
+name:
+  zh: 巫臣
+  en: Wu Chen
+state: chu
+role: 策士
+birth: null
+death: null
+sort_year: -584
+bio: >-
+  楚國申縣縣尹，又稱屈巫。他為了夏姬而與子反、子重結怨，前589年攜夏姬出奔晉國。楚人殺盡他留在國內的族人並瓜分其家產，巫臣從晉國寫信給二人：「余必使爾罷於奔命以死」（白話：我一定要讓你們疲於奔走救援，直到累死為止）。他隨即向晉侯請求出使吳國，教吳人乘車、列陣、用兵，並留下自己的兒子做吳國的行人。吳國由此崛起，年年侵擾楚國的東境，子反、子重「一歲七奔命」。他是先秦最徹底的一次私怨報復——不靠刺殺，而是替敵人培養出一個新的敵國，把仇恨轉化成一套持續數十年的地緣安排。
+sources:
+  - source: zuo-zhuan
+    locus: 成公七年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/cheng-gong-qi-nian
+relations:
+  - target: zi-fan
+    kind: rival

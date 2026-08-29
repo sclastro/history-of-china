@@ -1,0 +1,57 @@
+id: er-yu-wo-zha
+idiom:
+  zh: 爾虞我詐
+  pinyin: ěr yú wǒ zhà
+  jyutping: ji5 jyu4 ngo5 zaa3
+  literal: 你算計我、我欺騙你
+  en: Mutual deceit
+type: historical
+period: wu-ba
+year: -594
+year_note: 魯宣公十五年
+states: [chu, song]
+meaning: 彼此勾心鬥角、互相欺騙。
+benshi:
+  event: chu-wei-song
+  summary: >-
+    楚圍宋九個月，城中易子而食，而楚軍也只剩七天糧食。宋國執政華元夜入楚營，登上司馬子反的床據實相告；子反回報莊王，楚軍退三十里，兩國訂盟。盟辭是「我無爾詐，爾無我虞」——原本是一句約定彼此不再欺騙的和平誓言。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 宣公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian
+    quote: >-
+      宋及楚平。華元為質。盟曰：「我無爾詐，爾無我虞。」
+    translation: >-
+      宋國與楚國講和，華元到楚國做人質。盟辭說：
+      「我不欺騙你，你也不算計我。」
+crystallisation:
+  note: >-
+    《左傳》原文作「我無爾詐，爾無我虞」，是**否定句**——
+    約定彼此不欺不詐。後世節取「爾虞」「我詐」四字，
+    去掉兩個「無」字，意思完全翻轉為互相欺騙。
+    四字語形通行甚晚。
+  moe_id: 1276
+reliability: 信史
+people: [hua-yuan, zi-fan, chu-zhuang-wang]
+concepts: [和議, 語義翻轉, 信用]
+related_idioms:
+  - target: bian-chang-mo-ji
+    kind: same_event
+    note: 同出楚圍宋一役，一是晉國不救的理由，一是宋楚言和的盟辭。
+  - target: zhao-san-mu-si
+    kind: contrast
+    note: 兩條都是語形未變而語義翻轉，可互相對照。
+lessons:
+  historical: >-
+    這一條的價值在於它示範了成語如何背叛自己的出處。
+    盟辭的原意是**停止**互相欺騙；後人刪掉兩個「無」字，
+    它就變成了互相欺騙的代稱——一句和平誓言變成了猜忌的同義詞。
+    而促成這次和議的，恰恰是一次徹底的坦白：
+    華元潛入敵營，把自己一方最不堪的實情（易子而食）和最硬的底線
+    （寧可亡國也不簽城下之盟）一併攤開；子反也據實回報自己只剩七天糧。
+    雙方都不再演，仗才停得下來。
+  modern: >-
+    引申為互相欺騙。若要取其史義，重點反而是相反的一面：
+    當雙方都已到極限，攤開實情比繼續虛張聲勢更快結束對峙。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian/zh

@@ -1,0 +1,63 @@
+id: jie-cao-bao-en
+idiom:
+  zh: 結草報恩
+  pinyin: jié cǎo bào ēn
+  jyutping: git3 cou2 bou3 jan1
+  literal: 把草打成結來報答恩情
+  en: Tying grass to repay a kindness
+type: historical
+period: wu-ba
+year: -594
+year_note: 魯宣公十五年
+states: [jin, qin]
+meaning: 感恩圖報，至死不忘。
+benshi:
+  event: fu-shi-zhi-yi
+  summary: >-
+    晉將魏顆的父親魏武子有一名沒有生育的愛妾，武子生病時囑咐讓她改嫁，病危時又改口要她殉葬。武子死後，魏顆讓她改嫁，理由是人在病危時神志已亂，應當聽從清醒時的吩咐。前594年輔氏之役，魏顆與秦國力士杜回交戰，見一老人結草絆倒杜回而擒獲之；夜裡夢見老人自稱是那名婦人的父親，特來報恩。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 宣公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian
+    quote: >-
+      余，而所嫁婦人之父也。爾用先人之治命，余是以報。
+    translation: >-
+      我是你所嫁出那位婦人的父親。
+      你聽從了先人清醒時的吩咐，我因此來報答你。
+crystallisation:
+  first_attested: 唐以後與「銜環」合為「結草銜環」
+  note: >-
+    《左傳》原文只作「結草以亢杜回」，並無四字語形。
+    「結草報恩」是後人就此事的概括；唐以後又與《續齊諧記》
+    楊寶救黃雀、黃雀銜白環相報的故事合為「結草銜環」。
+  moe_id: 1465
+reliability: 大體可信
+variants:
+  - claim: >-
+      輔氏之役本身見於《左傳》，是實有其事；
+      結草與託夢的情節則是靈異解釋，不能作史實看。
+      被解釋的那件事——魏顆在兩道矛盾的遺命之間取其清醒者——才是實錄。
+    source: zuo-zhuan
+    locus: 宣公十五年
+people: [wei-ke, wei-wu-zi]
+concepts: [報恩, 遺命, 判斷]
+related_idioms:
+  - target: tan-tian-zhi-gong
+    kind: contrast
+    note: 一是報答他人之恩，一是拒絕冒領天功，兩種對「功勞歸屬」的態度。
+lessons:
+  historical: >-
+    這則故事被記住的是結草的靈異，真正值得記住的卻是魏顆的判斷。
+    同一個人留下兩道互相矛盾的遺命：清醒時要她改嫁，病危時要她殉葬。
+    魏顆的處理原則是「疾病則亂，吾從其治也」——
+    不比較先後，而比較神志。
+    在一個以孝為最高德目的時代，違背父親臨終最後的話需要理由；
+    他給的理由不是「殉葬不對」，而是「那句話不算數」——
+    把倫理難題轉成了一個關於意志能力的判斷。
+    結草的情節是後人替這個判斷追加的獎賞。
+  modern: >-
+    引申為感恩圖報。
+    若取其史義，可留意的是另一面：
+    尊重一個人的意願，指的是他有能力表達意願時的那個意願。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian/zh

@@ -1,0 +1,61 @@
+id: bing-ru-gao-huang
+idiom:
+  zh: 病入膏肓
+  pinyin: bìng rù gāo huāng
+  jyutping: beng6 jap6 gou1 fong1
+  literal: 病進到膏與肓之間
+  en: The illness has reached the vitals
+type: historical
+period: wu-ba
+year: -581
+year_note: 魯成公十年
+states: [jin, qin]
+meaning: 病重到無法醫治；引申為事情壞到無可挽回。
+benshi:
+  event: jin-jing-gong-zhi-bing
+  summary: >-
+    晉景公病重，向秦國求醫。他先夢見病化為兩個小孩，商量躲到「肓之上、膏之下」讓良醫無從下手。秦國名醫緩到後診視，所說與夢中一字不差：病在肓上膏下，灸攻不到、針達不了、藥力也到不了，無法可施。景公稱他良醫，厚禮送歸；同年六月死。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 成公十年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/cheng-gong-shi-nian
+    quote: >-
+      疾不可為也，在肓之上、膏之下，攻之不可，達之不及，藥不至焉，不可為也。
+    translation: >-
+      這病治不了了。它在肓的上面、膏的下面，用灸攻不到，用針達不了，
+      藥力也到不了，沒有辦法了。
+crystallisation:
+  note: >-
+    《左傳》原文作「在肓之上，膏之下」，並非四字連用；
+    「病入膏肓」的四字語形是後世的節縮，唐宋以降通行。
+  moe_id: 1023
+reliability: 大體可信
+variants:
+  - claim: >-
+      「膏」「肓」究竟指哪兩處，歷來注家說法不一：
+      杜預注以膏為心下微脂、肓為膈上薄膜，
+      後世醫家另有以肓為腹腔脂膜者。
+      但無論指哪裡，原文的重點都在「針、灸、藥三者皆不能及」。
+    source: zuo-zhuan
+    locus: 成公十年
+people: [yi-huan, jin-jing-gong]
+concepts: [醫學, 不可治, 判斷]
+related_idioms:
+  - target: wai-qiang-zhong-gan
+    kind: contrast
+    note: 一是外表強壯而內裡已虛、臨事才崩潰，一是病已深入而針藥不及，兩種「內裡壞掉」可對照。
+lessons:
+  historical: >-
+    這是先秦最早的一次「不可治」判斷，而它的價值不在絕望，
+    在於醫緩把理由講得極具體：攻之不可、達之不及、藥不至焉——
+    三條治療途徑逐一排除，所以結論是無法可施。
+    這是一段技術性論證，不是感嘆。
+    《左傳》把夢與診斷寫成一字不差，是慣用的敘事手法，
+    把一次醫學判斷包裝成天意的印證；
+    但剝掉那層包裝，留下的仍是一個醫者對自身能力邊界的清楚陳述。
+  modern: >-
+    引申為積弊已深、無可挽回。
+    使用時值得留意原意的分寸：醫緩說的是「我治不了」，
+    而不是「這病本身不可能好」——判斷的是手段，不是命運。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/cheng-gong-shi-nian/zh

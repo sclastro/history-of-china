@@ -1,0 +1,18 @@
+id: wei-wu-zi
+name:
+  zh: 魏武子
+  en: Wei Wuzi
+state: jin
+role: 卿大夫
+birth: null
+death: null
+sort_year: -600
+bio: >-
+  晉國大夫，名犫，魏氏之祖，曾隨晉文公流亡。他有一名沒有生育的愛妾。他生病時囑咐兒子魏顆說「必嫁是」（白話：一定要讓她改嫁）；等到病危，又改口說「必以為殉」（白話：一定要讓她殉葬）。他死後魏顆讓那名妾改嫁，理由是人在病危時神志已亂，應當聽從清醒時的吩咐。這則記載保存了春秋人處理「同一個人前後矛盾的遺命」的一種辦法：不比較先後，而比較神志。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian
+relations:
+  - target: wei-ke
+    kind: kin

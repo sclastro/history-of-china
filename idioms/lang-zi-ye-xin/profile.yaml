@@ -1,0 +1,61 @@
+id: lang-zi-ye-xin
+idiom:
+  zh: 狼子野心
+  pinyin: láng zǐ yě xīn
+  jyutping: long4 zi2 je5 sam1
+  literal: 狼崽子有兇野的本性
+  en: A wolf cub keeps its wild heart
+type: historical
+period: wu-ba
+year: -605
+year_note: 魯宣公四年
+states: [chu]
+meaning: 兇殘的本性難以馴化；比喻居心險惡、難以感化的人。
+benshi:
+  event: ruo-ao-shi-zhi-luan
+  summary: >-
+    楚國令尹鬬子文見弟弟子良新生的兒子越椒，說他有熊虎之形貌、豺狼之聲音，引俗語「狼子野心」為據，要求殺掉他，否則必滅若敖氏。子良不肯。子文臨死前囑咐族人及早逃走。前605年越椒果然作亂，若敖氏被滅族。
+dianyuan:
+  - source: zuo-zhuan
+    locus: 宣公四年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-si-nian
+    quote: >-
+      是子也，熊虎之狀而豺狼之聲；弗殺，必滅若敖氏矣。
+      諺曰「狼子野心」，是乃狼也，其可畜乎？
+    translation: >-
+      這孩子有熊虎的形貌、豺狼的聲音；不殺，必定滅掉若敖氏。
+      俗話說「狼崽子有兇野的本性」——他就是一頭狼，怎麼養得？
+crystallisation:
+  note: >-
+    《左傳》明說這四個字是「諺」——當時已經流傳的俗語，
+    鬬子文是引用而非首創。所以它在典源出現的那一刻就已定型。
+  moe_id: 1155
+reliability: 大體可信
+variants:
+  - claim: >-
+      以形貌聲音斷定嬰兒心性，其事本身不可證；
+      《左傳》記下這則預言並讓它應驗，
+      是一種「事後追記」的敘事結構，未必是當時的實錄。
+    source: zuo-zhuan
+    locus: 宣公四年
+people: [dou-zi-wen, dou-yue-jiao, chu-zhuang-wang]
+concepts: [宗族, 預言, 人性]
+related_idioms:
+  - target: duo-xing-bu-yi
+    kind: contrast
+    note: 一是預先斷定而要求剷除，一是刻意縱容以待其自斃，兩種處置對照鮮明。
+lessons:
+  historical: >-
+    這一條的史料價值不在預言準不準，而在它反映的宗族政治結構。
+    若敖氏是楚國最強的公族，子文身為族長而主張殺掉本族嬰兒，
+    理由是保全整個宗族——他計算的單位是「氏」，不是「人」。
+    越椒之亂被平定後，楚莊王一舉剪除最強公族，王權大振，
+    三年後才有邲之戰的勝利：內部集權在前，對外稱霸在後。
+    至於「以形貌斷心性」，《左傳》記下預言並讓它應驗，
+    本身就是一種史觀的表態——這一層讀者宜自行分辨。
+  modern: >-
+    引申為本性難改、居心叵測。
+    使用時應當留意：原文是一則先斷定、後應驗的記載，
+    而以外貌推斷心性在今天並不成立。
+references:
+  - https://ctext.org/chun-qiu-zuo-zhuan/xuan-gong-si-nian/zh

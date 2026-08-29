@@ -1,0 +1,23 @@
+id: zi-fan
+name:
+  zh: 子反
+  en: Zi Fan
+state: chu
+role: 將領
+birth: null
+death: -575
+sort_year: -594
+bio: >-
+  楚國司馬，名側。前594年楚圍宋九個月不下，楚軍也只剩七天的糧食。宋國執政華元夜裡潛入他的營帳，登上他的床把他叫醒，直說城中「易子而食，析骸以爨」（白話：交換孩子來吃，劈開屍骨當柴燒）卻仍不肯訂城下之盟。子反據實回報莊王，楚軍退三十里，兩國訂盟，盟辭是「我無爾詐，爾無我虞」（白話：我不欺騙你，你也不算計我）。前584年晉人使巫臣通吳，教吳以車戰之法，吳於是屢屢侵楚，子反「一歲七奔命」（白話：一年之內七次疲於奔走救援），「疲於奔命」由此而來。前575年鄢陵之戰，他酒醉不能受召，兵敗自殺。
+sources:
+  - source: zuo-zhuan
+    locus: 宣公十五年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xuan-gong-shi-wu-nian
+  - source: zuo-zhuan
+    locus: 成公七年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/cheng-gong-qi-nian
+relations:
+  - target: chu-zhuang-wang
+    kind: ruler
+  - target: wu-chen
+    kind: rival
