@@ -1,0 +1,54 @@
+id: wang-yang-bu-lao
+idiom:
+  zh: 亡羊補牢
+  pinyin: wáng yáng bǔ láo
+  jyutping: mong4 joeng4 bou2 lou4
+  literal: 羊跑掉了才修補羊圈
+  en: Mending the pen after the sheep are lost
+type: historical
+period: zhan-guo-late
+year: -278
+year_note: 秦拔郢之年前後
+states: [chu, qin]
+meaning: 出了問題之後及時補救，還不算晚。
+benshi:
+  event: zhuang-xin-jian-xiang-wang
+  summary: >-
+    莊辛勸諫楚頃襄王不要與寵臣一味淫逸，襄王反問他是不是老糊塗了。莊辛避居趙國，五個月後秦國果然攻下鄢、郢，襄王流亡城陽，才召回莊辛。莊辛第一句話就是引俗語「見兔而顧犬，未為晚也；亡羊而補牢，未為遲也」（白話：看見兔子才想起獵狗，還不算晚；羊跑掉了才修補羊圈，也還不算遲），隨即用蜻蜓、黃雀、黃鵠、蔡靈侯四個比喻層層推到襄王自己身上。襄王封他為陽陵君，與他謀劃復國。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 楚策四
+    ctext_urn: ctp:zhan-guo-ce/chu-ce-si
+    quote: >-
+      臣聞鄙語曰：「見兔而顧犬，未為晚也；亡羊而補牢，未為遲也。」
+    translation: >-
+      臣聽俗話說：「看見兔子才想起獵狗，還不算晚；
+      羊跑掉了才修補羊圈，也還不算遲。」
+crystallisation:
+  note: >-
+    《戰國策》明說這是「鄙語」——當時已經流傳的俗語，莊辛是引用而非首創。
+    所以它在典源出現的那一刻就已定型。
+  moe_id: 1029
+reliability: 大體可信
+people: [zhuang-xin, chu-xiang-wang]
+concepts: [補救, 進諫, 時機]
+related_idioms:
+  - target: bing-ru-gao-huang
+    kind: contrast
+    note: 一是還來得及補救，一是已經無法可施，兩種對「太遲了嗎」的回答。
+lessons:
+  historical: >-
+    這四個字出現的位置很重要——它不是災前的告誡，是災後的第一句話。
+    莊辛五個月前被斥為老糊塗，如今被請回來，
+    他沒有說「我早就講過」，開口就是現在補還來得及。
+    這一點值得記住：進諫者在被證明正確之後如何說話，
+    往往決定了他的意見第二次會不會被採納。
+    後面那四個層層推進的比喻是先秦說理最精巧的結構之一：
+    蜻蜓、黃雀、黃鵠、蔡靈侯，每一層的主角都以為自己在安全的高度，
+    而每一層之上都還有一層——最後一層是襄王自己。
+  modern: >-
+    引申為及時補救、未為晚也。
+    使用時值得留意它的分寸：莊辛說的是「未為遲」，不是「沒有損失」——
+    郢都已經丟了，補的是往後，不是往前。
+references:
+  - https://ctext.org/zhan-guo-ce/chu-ce-si/zh

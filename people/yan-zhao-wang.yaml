@@ -1,0 +1,18 @@
+id: yan-zhao-wang
+name:
+  zh: 燕昭王
+  en: King Zhao of Yan
+state: yan
+role: 君主
+birth: null
+death: -279
+sort_year: -311
+bio: >-
+  燕王噲之子。父王讓位於相國子之而引發內亂，齊國乘機攻破燕都，殺子之與噲。昭王即位時燕國殘破，他卑身厚幣招攬賢者，向郭隗請教辦法。郭隗以「千金買骨」為喻，並請他「先從隗始」——先厚待一個才能中等的人，好讓天下人相信這裡真的重士。昭王為郭隗改築宮室、以師禮相待，於是樂毅自魏來、鄒衍自齊來、劇辛自趙來。二十八年後燕國富足，他任樂毅為上將軍，聯合五國伐齊，連下七十餘城，齊國僅存莒與即墨。他死後惠王中了田單的反間計，改用騎劫代樂毅，齊國復國——燕國的中興與衰落，都繫於用人一事。
+sources:
+  - source: zhan-guo-ce
+    locus: 燕策一
+    ctext_urn: ctp:zhan-guo-ce/yan-ce-yi
+relations:
+  - target: guo-wei
+    kind: minister

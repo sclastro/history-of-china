@@ -1,0 +1,53 @@
+id: qian-ju-hou-gong
+idiom:
+  zh: 前倨後恭
+  pinyin: qián jù hòu gōng
+  jyutping: cin4 geoi3 hau6 gung1
+  literal: 先前傲慢、後來恭敬
+  en: Haughty before, humble after
+type: historical
+period: zhan-guo-mid
+year: -333
+year_note: 蘇秦佩六國相印之年前後
+states: [zhao, qin, chu]
+meaning: 態度前後判若兩人，隨對方地位高低而轉變。
+benshi:
+  event: su-qin-he-zong
+  summary: >-
+    蘇秦初以連橫遊說秦王，上書十次不被採納，貂裘穿破、百金花光，形容枯槁地回家，妻子不下織機、嫂子不替他做飯、父母不與他說話。他發憤讀書，一年後以合縱之說遊說六國，佩六國相印。路過洛陽時，父母到三十里外迎接，嫂子匍匐爬行不敢正視。蘇秦問嫂子何以前倨而後恭，嫂子答「因為小叔你地位尊貴而且錢多」。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 秦策一
+    ctext_urn: ctp:zhan-guo-ce/qin-ce-yi
+    quote: >-
+      蘇秦曰：「嫂何前倨而後卑也？」嫂曰：「以季子之位尊而多金。」
+    translation: >-
+      蘇秦問：「嫂嫂為何從前那樣傲慢，如今卻這樣謙卑？」
+      嫂子說：「因為小叔你地位尊貴而且錢多。」
+crystallisation:
+  note: >-
+    《戰國策》原文作「前倨而後卑」，《史記·蘇秦列傳》同。
+    「前倨後恭」的四字語形是後世以「恭」易「卑」而成，唐宋以降通行。
+  moe_id: 1350
+reliability: 大體可信
+people: [su-qin]
+concepts: [人情, 勢利, 遊說]
+related_idioms:
+  - target: niao-jin-gong-cang
+    kind: contrast
+    note: 一是親人隨勢而變，一是君主隨勢而變，同一種結構在不同關係中的表現。
+lessons:
+  historical: >-
+    這一條真正的重量不在嫂子勢利，在蘇秦接下來那句感嘆：
+    「此一人之身，富貴則親戚畏懼之，貧賤則輕易之，況眾人乎！」
+    （白話：同樣是這一個人，富貴的時候親戚都畏懼他，貧賤的時候就輕視他——何況一般人呢！）
+    他沒有罵嫂子，他把這件事當成一條可以推廣的規律來讀。
+    值得注意的是嫂子的回答有多坦白——她沒有找藉口，
+    直接說出「位尊而多金」。戰國文獻裡這種不加修飾的實話很常見，
+    而它們往往比任何議論都更能說明那個時代的人際邏輯。
+  modern: >-
+    引申為勢利眼、看人下菜碟。
+    若取其史義，重點反而在被對待的一方：
+    蘇秦把一次羞辱轉成了一條關於人情的觀察，而不是一樁私怨。
+references:
+  - https://ctext.org/zhan-guo-ce/qin-ce-yi/zh

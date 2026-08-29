@@ -1,0 +1,52 @@
+id: lan-yu-chong-shu
+idiom:
+  zh: 濫竽充數
+  pinyin: làn yú chōng shù
+  jyutping: laam6 jyu4 cung1 sou3
+  literal: 不會吹竽的人混在樂隊裡湊數
+  en: Filling a place in the ensemble without being able to play
+type: parable
+period: zhan-guo-mid
+year: null
+states: [qi]
+meaning: 沒有真本事的人混在行家裡充數。
+dianyuan:
+  - source: hanfeizi
+    locus: 內儲說上
+    ctext_urn: ctp:hanfeizi/nei-chu-shuo-shang
+    quote: >-
+      齊宣王使人吹竽，必三百人。南郭處士請為王吹竽，宣王說之，
+      廩食以數百人。宣王死，湣王立，好一一聽之，處士逃。
+    translation: >-
+      齊宣王叫人吹竽，一定要三百人合奏。南郭處士請求為宣王吹竽，
+      宣王很高興，供養他的待遇比照數百人的規格。
+      宣王死後，湣王即位，喜歡一個一個單獨聽，南郭處士就逃走了。
+crystallisation:
+  note: >-
+    《韓非子》原文並無「濫竽充數」四字，是後世對這則寓言的概括；
+    「濫」字有「不當而入」之義，語形唐宋以降通行。
+  moe_id: 1400
+reliability: 寓言
+people: [qi-xuan-wang, qi-min-wang]
+concepts: [考核, 制度, 名實]
+related_idioms:
+  - target: zi-xiang-mao-dun
+    kind: same_source
+    note: 同出《韓非子》，都用一個小故事拆穿一套說不通的安排。
+lessons:
+  historical: >-
+    這則寓言常被讀成嘲笑南郭處士，其實韓非的矛頭指向制度。
+    〈內儲說上〉這一節講的是君主的「聽言之道」，
+    南郭處士只是例子。
+    真正被檢驗的是兩種考核方式：宣王「必三百人」是集體考核，
+    湣王「好一一聽之」是個別考核。
+    同一個人，在前一種制度下混得下去，在後一種制度下混不下去——
+    改變的不是人，是制度。
+    這是先秦對「集體考核」缺陷最早的一次診斷：
+    當產出無法歸屬到個人，濫竽者就必然出現，
+    而且無須任何人存心作弊。
+  modern: >-
+    引申為以次充好、混在行家裡湊數。
+    作為管理原則，它的要點是：與其追查誰在混，不如改變產出的歸屬方式。
+references:
+  - https://ctext.org/hanfeizi/nei-chu-shuo-shang/zh

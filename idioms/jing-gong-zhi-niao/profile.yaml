@@ -1,0 +1,56 @@
+id: jing-gong-zhi-niao
+idiom:
+  zh: 驚弓之鳥
+  pinyin: jīng gōng zhī niǎo
+  jyutping: ging1 gung1 zi1 niu5
+  literal: 被弓弦聲嚇怕的鳥
+  en: A bird startled by the mere twang of a bow
+type: historical
+period: zhan-guo-late
+year: -257
+year_note: 年代不詳；《戰國策·楚策四》繫於魏加語春申君時
+states: [wei]
+meaning: 受過驚嚇的人，一有風吹草動就過度反應。
+benshi:
+  event: geng-lei-xu-fa
+  summary: >-
+    更羸與魏王同在京臺之下，說自己能空拉弓弦而把鳥射下來。有雁自東方飛來，他拉一下空弦，雁果然墜落。他解釋：這隻雁飛得慢是舊傷在痛、叫聲悲是離群已久；舊傷未癒而驚懼未消，一聽到弦聲就拚命高飛，舊傷迸裂而墜落。《戰國策》記此事，是魏加用來勸楚國春申君不要用敗過仗的臨武君為將。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 楚策四
+    ctext_urn: ctp:zhan-guo-ce/chu-ce-si
+    quote: >-
+      故瘡未息而驚心未去也，聞弦音，引而高飛，故瘡隕也。
+    translation: >-
+      舊傷還沒好而驚懼也沒有消退，一聽到弓弦的聲音，
+      就拚命往高處飛，於是舊傷迸裂而墜落。
+crystallisation:
+  note: >-
+    《戰國策》原文作「傷弓之鳥」（魏加語：「臣聞之，傷弓之鳥也」），
+    並無「驚弓之鳥」四字。今通行語形以「驚」易「傷」，
+    強調的重心由舊傷轉為受驚，唐宋以降定型。
+  moe_id: 1074
+reliability: 孤證
+people: [geng-lei]
+concepts: [推論, 創傷, 用人]
+related_idioms:
+  - target: kun-shou-you-dou
+    kind: contrast
+    note: 一是受過創傷而反應過度，一是陷入絕境而仍能反撲，用人時的兩種判斷。
+lessons:
+  historical: >-
+    這則故事真正的內容不是射術，是**推論**。
+    更羸從兩個可觀察的指標（飛得慢、叫聲悲）推出兩個不可見的狀態
+    （舊傷未癒、離群已久），再推出這隻鳥對弦音的反應會過度。
+    整個過程沒有一步靠猜。
+    而魏加把它用在人身上：臨武君曾經敗於秦，
+    「是傷弓之鳥也」——聽到戰鼓的反應也會過度。
+    先秦說客最擅長的正是這種轉移：在一個無關的領域建立原則，再套回本題。
+    順帶一提，今天通行的「驚弓之鳥」把重心從「傷」移到了「驚」，
+    而原文的診斷是先有傷、後有驚——次序不能倒。
+  modern: >-
+    引申為受過打擊的人容易過度反應。
+    用人時值得記住魏加的用法：問題不在他膽小，
+    在於他的反應閾值已經被改變了，而這一點當事人未必自知。
+references:
+  - https://ctext.org/zhan-guo-ce/chu-ce-si/zh

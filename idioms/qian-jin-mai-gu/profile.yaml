@@ -1,0 +1,57 @@
+id: qian-jin-mai-gu
+idiom:
+  zh: 千金買骨
+  pinyin: qiān jīn mǎi gǔ
+  jyutping: cin1 gam1 maai5 gwat1
+  literal: 用千金買一副馬骨
+  en: Buying the bones of a fine horse
+type: historical
+period: zhan-guo-mid
+year: -311
+year_note: 燕昭王即位之初
+states: [yan, qi]
+meaning: 用重金換取一個信號，藉以招攬真正的人才。
+benshi:
+  event: guo-wei-shui-yan-zhao-wang
+  summary: >-
+    燕昭王即位時國家新破於齊，向郭隗請教招賢之法。郭隗講了古代國君懸賞千金求千里馬、近侍卻用五百金買回死馬骨的故事——天下人由此相信這位國君真肯出錢，不到一年千里馬來了三匹。他接著請昭王「先從隗始」。昭王為他改築宮室、以師禮相待，樂毅、鄒衍、劇辛相繼而至，燕國由是強盛。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 燕策一
+    ctext_urn: ctp:zhan-guo-ce/yan-ce-yi
+    quote: >-
+      死馬且買之五百金，況生馬乎？天下必以王為能市馬，馬今至矣。
+    translation: >-
+      死馬尚且用五百金買下，何況活馬？
+      天下人必定認為大王真肯出錢買馬，千里馬很快就會來了。
+crystallisation:
+  note: >-
+    《戰國策》原文並無「千金買骨」四字，
+    是後人就此事的概括；另有「千金市骨」一形，二者通用。
+  moe_id: 1502
+reliability: 大體可信
+people: [guo-wei, yan-zhao-wang]
+concepts: [信號, 招賢, 承諾可信度]
+related_idioms:
+  - target: xi-mu-li-xin
+    kind: same_source
+    note: 兩條都是用一件本身無意義的高價交易，去證明承諾的可信度。
+lessons:
+  historical: >-
+    這是先秦最精巧的一次信號設計。
+    買馬骨本身毫無用處——正因為毫無用處，它才傳遞出一個純粹的訊息：
+    這個買家真的肯付錢。如果他買的是活馬，那是交易，
+    旁人只會計算價格划不划算，學不到關於承諾的任何東西。
+    這與商鞅徙木立信是同一種手法：用一件無意義的高價行為，
+    把「我說話算數」這件事變成可觀察的事實。
+    而郭隗最厲害的一步是把自己放進這個結構裡——
+    他明說自己不是最賢的（「況賢於隗者」），
+    正因為如此，厚待他才構成有效的信號：
+    連郭隗都能得到這種待遇，比他強的人自然會來。
+    他等於自願擔任那副馬骨。
+  modern: >-
+    引申為以優厚待遇招攬人才。
+    要點在於信號的有效性來自「代價與所得不成比例」——
+    合理的價碼傳遞不出任何訊息。
+references:
+  - https://ctext.org/zhan-guo-ce/yan-ce-yi/zh

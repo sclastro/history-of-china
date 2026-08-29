@@ -1,0 +1,61 @@
+id: hui-ji-ji-yi
+idiom:
+  zh: 諱疾忌醫
+  pinyin: huì jí jì yī
+  jyutping: wai5 zat6 gei6 ji1
+  literal: 隱瞞疾病、不肯就醫
+  en: Hiding one's illness and shunning the physician
+type: parable
+period: zhan-guo-mid
+year: null
+states: [qi]
+meaning: 掩飾缺失、拒絕接受批評與補救。
+dianyuan:
+  - source: hanfeizi
+    locus: 喻老
+    ctext_urn: ctp:hanfeizi/yu-lao
+    quote: >-
+      扁鵲曰：「君有疾在腠理，不治將恐深。」桓侯曰：「寡人無疾。」
+      扁鵲出，桓侯曰：「醫之好治不病以為功。」
+    translation: >-
+      扁鵲說：「您的病在皮膚表層，不醫治恐怕會加深。」
+      桓侯說：「寡人沒有病。」扁鵲出去後，桓侯說：
+      「醫生就愛醫治沒病的人，好拿來邀功。」
+crystallisation:
+  note: >-
+    《韓非子》原文並無「諱疾忌醫」四字，
+    是後人對這則寓言的概括；宋代周敦頤《通書》已用此語，
+    四字語形自宋以降通行。
+  moe_id: 1447
+reliability: 寓言
+variants:
+  - claim: >-
+      蔡桓侯（前714–695）的年代遠早於扁鵲，《史記·扁鵲倉公列傳》
+      另作「齊桓侯」，人物與年代都對不上。
+      韓非取此事是為了說理，不是記史，故本站標為寓言。
+    source: hanfeizi
+    locus: 喻老
+people: [bian-que, cai-huan-gong]
+concepts: [自欺, 及早處置, 認知]
+related_idioms:
+  - target: bing-ru-gao-huang
+    kind: contrast
+    note: 一是拒絕就醫而終於不可治，一是已經不可治；前者是後者的成因。
+lessons:
+  historical: >-
+    韓非用這則故事來注老子的「圖難於其易，為大於其細」
+    （白話：解決難事要趁它還容易時，成就大事要從細微處著手）。
+    他關心的不是醫學，是君主對小患的輕忽如何釀成不可救的大禍。
+    值得注意的是四次求見的次序：腠理、肌膚、腸胃、骨髓——
+    病的位置每次都更深一層，而桓侯每次的回答都一樣。
+    真正致命的不是那個病，是那個不變的回答。
+    桓侯那句「醫之好治不病以為功」尤其值得一記：
+    他不是沒有理由，他有一套完整的解釋，
+    足以把每一次警告都消化掉。
+    自欺最穩固的形式，從來不是無知，是一套用得順手的說法。
+  modern: >-
+    引申為拒絕承認問題、不肯接受批評。
+    要點在於：病在腠理時的警告最容易被駁回，
+    因為那時候確實還看不出什麼——而那正是唯一好治的階段。
+references:
+  - https://ctext.org/hanfeizi/yu-lao/zh

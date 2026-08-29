@@ -1,0 +1,51 @@
+id: gao-zhen-wu-you
+idiom:
+  zh: 高枕無憂
+  pinyin: gāo zhěn wú yōu
+  jyutping: gou1 zam2 mou4 jau1
+  literal: 把枕頭墊高睡覺，沒有憂慮
+  en: Sleeping soundly with a high pillow
+type: historical
+period: zhan-guo-mid
+year: -295
+year_note: 年代不詳；事在齊湣王時
+states: [qi, wei]
+meaning: 安然無慮；今多含「因無憂而鬆懈」之意。
+benshi:
+  event: feng-xuan-ke-meng-chang-jun
+  summary: >-
+    孟嘗君被免相回到薛地，見百姓夾道相迎，以為已經安穩。馮諼指出這只是一窟，「未得高枕而臥」，接著替他經營另外兩窟，三窟既成，孟嘗君為相數十年而無纖介之禍。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 齊策四
+    ctext_urn: ctp:zhan-guo-ce/qi-ce-si
+    quote: >-
+      三窟已就，君姑高枕為樂矣。
+    translation: >-
+      三個洞已經鑿成，您姑且可以墊高枕頭安心享樂了。
+crystallisation:
+  note: >-
+    《戰國策》原文作「高枕為樂」，另《戰國策·魏策一》有「高枕而臥」，
+    「高枕無憂」的四字語形是後世的合併，唐宋以降通行。
+  moe_id: 1362
+reliability: 大體可信
+people: [feng-xuan, meng-chang-jun]
+concepts: [安全感, 風險分散, 養士]
+related_idioms:
+  - target: jiao-tu-san-ku
+    kind: same_event
+    note: 同出馮諼那一段話，一講三窟，一講高枕；三窟是條件，高枕是結果。
+lessons:
+  historical: >-
+    這四個字今天多帶貶義——高枕無憂常常等於掉以輕心。
+    但在原文裡它是一個**結論**，而且有嚴格的前提：
+    馮諼說的是「三窟已就，君姑高枕為樂矣」——
+    先有三窟，才談得上高枕。
+    次序不能倒過來。孟嘗君在只有一窟的時候也覺得安穩
+    （百姓夾道相迎，看起來很像安全），馮諼正是在那一刻潑他冷水。
+    真正的危險不是沒有安全感，是**安全感的來源只有一個**。
+  modern: >-
+    引申為無憂無慮，今多用於警告不可鬆懈。
+    若取其史義，可以問一句：我此刻的安心，是建立在幾個彼此獨立的條件上？
+references:
+  - https://ctext.org/zhan-guo-ce/qi-ce-si/zh

@@ -1,0 +1,54 @@
+id: jiao-tu-san-ku
+idiom:
+  zh: 狡兔三窟
+  pinyin: jiǎo tù sān kū
+  jyutping: gaau2 tou3 saam1 fat1
+  literal: 狡猾的兔子有三個洞
+  en: A cunning hare has three burrows
+type: historical
+period: zhan-guo-mid
+year: -295
+year_note: 年代不詳；事在齊湣王時
+states: [qi, wei]
+meaning: 預留多重退路以自保。
+benshi:
+  event: feng-xuan-ke-meng-chang-jun
+  summary: >-
+    馮諼替孟嘗君到薛地收債，卻把債券當眾燒掉，說是替他「買義」。一年後孟嘗君被免相回薛，百姓夾道相迎。馮諼說狡兔有三窟才不過免於一死，如今只有一窟，還不能高枕而臥，隨即替他經營另外兩窟：讓梁惠王三次重金來聘以抬高身價，逼齊王復其相位；又請立先王宗廟於薛，使齊國不敢輕棄。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 齊策四
+    ctext_urn: ctp:zhan-guo-ce/qi-ce-si
+    quote: >-
+      狡兔有三窟，僅得免其死耳；今君有一窟，未得高枕而臥也。
+      請為君復鑿二窟。
+    translation: >-
+      狡猾的兔子有三個洞，才不過免於一死；
+      如今您只有一個洞，還不能高枕無憂。請讓臣替您再鑿兩個洞。
+crystallisation:
+  note: 這個四字語形直接出自《戰國策》原文，未經演變。
+  moe_id: 1391
+reliability: 大體可信
+people: [feng-xuan, meng-chang-jun]
+concepts: [風險分散, 養士, 退路]
+related_idioms:
+  - target: gao-zhen-wu-you
+    kind: same_event
+    note: 同出馮諼那一句話，一講三窟，一講高枕。
+lessons:
+  historical: >-
+    三窟的性質各不相同，這一點常被略過。
+    第一窟是**民心**——燒掉債券，換來薛地百姓的擁戴，這是退路。
+    第二窟是**外部選項**——讓梁惠王三次重金來聘，
+    孟嘗君一概推辭；推辭本身才是重點，它讓齊王看見有人要他，
+    這是議價能力。
+    第三窟是**制度保障**——請立先王宗廟於薛，
+    使齊國若棄薛就等於棄宗廟，這是提高對方的成本。
+    三者分別對應：我走得掉、我有人要、你動不了我。
+    值得注意的是第一窟的代價是真金白銀——馮諼燒掉的是實打實的債權，
+    換來的是不可量化的東西，而孟嘗君當時很不高興。
+  modern: >-
+    引申為多留後路。
+    要點在於三窟的**異質性**：三條同類型的退路不是三窟，只是一窟的三份。
+references:
+  - https://ctext.org/zhan-guo-ce/qi-ce-si/zh

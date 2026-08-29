@@ -1,0 +1,54 @@
+id: hua-she-tian-zu
+idiom:
+  zh: 畫蛇添足
+  pinyin: huà shé tiān zú
+  jyutping: waa6 se4 tim1 zuk1
+  literal: 畫蛇的時候替牠添上腳
+  en: Adding feet to a snake
+type: historical
+period: zhan-guo-mid
+year: -323
+year_note: 楚敗魏於襄陵之後
+states: [chu, qi, wei]
+meaning: 多此一舉，反而壞事。
+benshi:
+  event: chen-zhen-shui-zhao-yang
+  summary: >-
+    楚將昭陽破魏軍、殺其將、得八城，又移兵攻齊。齊王派陳軫遊說。陳軫先問清楚國官制，證明昭陽已居令尹之位、再打贏也無官可加；接著講畫蛇添足的故事，指出百戰百勝而不知止的人，最後身死爵奪。昭陽於是撤兵。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 齊策二
+    ctext_urn: ctp:zhan-guo-ce/qi-ce-er
+    quote: >-
+      蛇固無足，子安能為之足？
+    translation: >-
+      蛇本來就沒有腳，你怎麼能給牠添腳？
+crystallisation:
+  note: >-
+    《戰國策》原文作「為蛇足」「猶為蛇足也」，並無「畫蛇添足」四字連用；
+    四字語形是後世的概括，唐宋以降通行。
+  moe_id: 1219
+reliability: 大體可信
+people: [chen-zhen]
+concepts: [適可而止, 收益封頂, 遊說]
+related_idioms:
+  - target: nan-yuan-bei-zhe
+    kind: same_source
+    note: 兩條同出《戰國策》的說客之口，都用一個日常場景推翻一項軍事決策。
+lessons:
+  historical: >-
+    陳軫的說服分兩步，缺一不可。
+    第一步是算帳：他先問清楚楚國官制——破軍殺將封上柱國，
+    上柱國之上只有令尹，而昭陽已經是令尹。
+    也就是說，再打贏也沒有更高的位置可拿：**收益已經封頂，風險卻還在累加**。
+    第二步才是寓言：畫蛇添足把「收益封頂而繼續投入」這件事變成一個圖像。
+    先算清楚，再給一個記得住的比喻——這是戰國說客的標準工序，
+    次序倒過來就不管用。
+    順帶一提：畫蛇的人輸掉那壺酒，不是因為他畫得慢，
+    恰恰是因為他畫得太快，快到有餘裕做多餘的事。
+  modern: >-
+    引申為多此一舉。
+    在收益已經封頂的處境下，它是一條很硬的判準：
+    繼續投入不會增加收益，只會增加風險敞口。
+references:
+  - https://ctext.org/zhan-guo-ce/qi-ce-er/zh

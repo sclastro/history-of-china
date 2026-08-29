@@ -1,0 +1,56 @@
+id: men-ting-ruo-shi
+idiom:
+  zh: 門庭若市
+  pinyin: mén tíng ruò shì
+  jyutping: mun4 ting4 joek6 si5
+  literal: 門口和庭院裡人多得像市集
+  en: The gate and courtyard as crowded as a market
+type: historical
+period: zhan-guo-early
+year: -350
+year_note: 年代不詳；事在齊威王時
+states: [qi]
+meaning: 來往的人非常多，十分熱鬧。
+benshi:
+  event: zou-ji-feng-jian
+  summary: >-
+    鄒忌從妻、妾、客三人都說他比徐公美這件家事出發，分析出偏愛、畏懼、有求三種動機，再把它按規模放大到整個齊國，指出齊威王受到的蒙蔽極深。威王下令懸賞納諫，命令剛下時進諫的人多得「門庭若市」，幾個月後間或有人來說，一年之後就算想說也沒有什麼可說了。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 齊策一
+    ctext_urn: ctp:zhan-guo-ce/qi-ce-yi
+    quote: >-
+      令初下，群臣進諫，門庭若市；數月之後，時時而間進；
+      期年之後，雖欲言，無可進者。
+    translation: >-
+      命令剛下達時，群臣紛紛進諫，門口和庭院裡人多得像市集；
+      幾個月之後，偶爾才有人來說；滿一年之後，即使想說，也沒有什麼可說的了。
+crystallisation:
+  note: 這個四字語形直接出自《戰國策》原文，未經演變。
+  moe_id: 1487
+reliability: 大體可信
+people: [zou-ji, qi-wei-wang]
+concepts: [納諫, 蒙蔽, 制度]
+related_idioms:
+  - target: san-ren-cheng-hu
+    kind: contrast
+    note: 一是設法讓真話進得來，一是假話如何靠重複變成真話，正反兩面。
+lessons:
+  historical: >-
+    這一條的價值全在那三個階段：門庭若市、時時間進、無可進者。
+    《戰國策》記下的不是納諫的盛況，是納諧的**衰減曲線**——
+    而且明說這是好事：問題被提完了，所以沒得提了。
+    今天用「門庭若市」多半只取熱鬧的意思，
+    把後面兩個階段丟掉了；而後兩個階段才是這段記載真正在講的東西。
+    至於鄒忌的方法，值得單獨一記：他不是先講大道理，
+    而是先發現三個人對自己說了同樣的假話，
+    再逐一分析各自不同的動機（偏愛、畏懼、有求），
+    最後把這三種動機按規模放大到一個國家。
+    進諫的方法本身就是論點的示範——他沒有指責任何人，
+    只是讓威王自己算出蒙蔽的規模。
+  modern: >-
+    引申為賓客盈門、生意興隆。
+    若取其史義，反而該注意的是：制度剛開放時的踴躍不代表成功，
+    真正的指標是它能不能自然地走完由多到少的那條曲線。
+references:
+  - https://ctext.org/zhan-guo-ce/qi-ce-yi/zh

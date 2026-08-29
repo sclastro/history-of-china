@@ -1,0 +1,51 @@
+id: nan-yuan-bei-zhe
+idiom:
+  zh: 南轅北轍
+  pinyin: nán yuán běi zhé
+  jyutping: naam4 jyun4 bak1 cit3
+  literal: 車轅向南、車轍向北
+  en: Steering south while heading north
+type: historical
+period: zhan-guo-early
+year: -354
+year_note: 年代不詳；事在魏攻邯鄲前後
+states: [wei, zhao]
+meaning: 行動與目標背道而馳；條件越好，離目標越遠。
+benshi:
+  event: ji-liang-jian-wei-wang
+  summary: >-
+    魏王想攻打趙國邯鄲。季梁半路折回，衣未整、塵未拂就去見魏王，講了路上遇見一個人要去楚國卻把車頭朝北趕的事——馬好、路費多、車夫技術好，這幾樣越好，離楚國反而越遠。然後指出魏王想成就霸業、取信天下，卻靠攻打邯鄲來擴地揚名，正是同樣的道理。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 魏策四
+    ctext_urn: ctp:zhan-guo-ce/wei-ce-si
+    quote: >-
+      此數者愈善，而離楚愈遠耳。
+    translation: >-
+      這幾樣（馬好、路費多、車夫技術好）越好，離楚國反而越遠。
+crystallisation:
+  note: >-
+    《戰國策》原文只作「猶至楚而北行也」，並無四字語形。
+    「南轅北轍」是後人就此事的概括，宋以後通行。
+  moe_id: 1195
+reliability: 孤證
+people: [ji-liang]
+concepts: [目標與手段, 遊說, 方向]
+related_idioms:
+  - target: ke-zhou-qiu-jian
+    kind: contrast
+    note: 一是方向錯了，一是參照系動了，兩種不同的認識錯誤。
+lessons:
+  historical: >-
+    季梁沒有說攻邯鄲會打不贏——他甚至承認魏國兵精國大。
+    他攻擊的是目標與手段之間的關係：
+    魏王要的是「信於天下」，用的卻是使天下畏懼的辦法。
+    這是先秦最清晰的一次「方向錯了，條件越好越糟」的論證，
+    而它的力量來自那三個遞進的回答：馬好、錢多、車夫好。
+    每一項單獨看都是優勢，合起來只加速偏離。
+    資源本身沒有方向，方向由目標給定；目標一旦錯配，資源就變成負擔。
+  modern: >-
+    引申為背道而馳。
+    在資源充足時它尤其值得一提：條件越好，錯誤方向的代價越大。
+references:
+  - https://ctext.org/zhan-guo-ce/wei-ce-si/zh
