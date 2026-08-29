@@ -646,3 +646,34 @@ main.narrow { max-width: 800px; }
 @media (max-width: 860px) {
   .rows .sub.bio { font-size: 17.5px; line-height: 2.05; }
 }
+
+/* ── 粵語發音掣 ── */
+.say {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; padding: 0;
+  border: 1px solid var(--line); border-radius: 50%;
+  background: var(--surface); color: var(--bronze);
+  cursor: pointer; vertical-align: middle;
+  transition: border-color .14s, color .14s, background .14s;
+  -webkit-tap-highlight-color: transparent;
+}
+.say svg { width: 17px; height: 17px; fill: currentColor; stroke: currentColor;
+           stroke-width: 1.7; stroke-linecap: round; fill-rule: evenodd; }
+.say svg .w1, .say svg .w2 { fill: none; }
+.say:hover { border-color: var(--bronze); background: var(--bg); }
+.say:focus-visible { outline: 2px solid var(--bronze); outline-offset: 2px; }
+.say.playing { background: var(--bronze); border-color: var(--bronze); color: #fff; }
+.say.playing svg .w2 { opacity: .35; }
+
+.romanisation .say { margin-left: 10px; }
+
+/* 卡片上嘅掣：浮喺右上角，唔嵌喺 <a> 入面 */
+.card-wrap { position: relative; display: flex; }
+.card-wrap > .card { flex: 1; min-width: 0; }
+.card-say { position: absolute; top: 11px; right: 11px; z-index: 2; }
+.card-wrap .zh { padding-right: 34px; }
+
+@media (max-width: 860px) {
+  .say { width: 34px; height: 34px; }
+  .say svg { width: 19px; height: 19px; }
+}

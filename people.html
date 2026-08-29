@@ -718,6 +718,24 @@
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) { ev.preventDefault(); open(); }
   });
 })();
+// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+(function () {
+  var a = null;
+  document.addEventListener('click', function (ev) {
+    var b = ev.target.closest ? ev.target.closest('.say') : null;
+    if (!b) return;
+    ev.preventDefault();
+    if (!a) a = new Audio();
+    if (!a.paused) { a.pause(); a.currentTime = 0; }
+    document.querySelectorAll('.say.playing').forEach(function (x) {
+      x.classList.remove('playing');
+    });
+    a.src = b.getAttribute('data-a');
+    b.classList.add('playing');
+    a.onended = a.onerror = function () { b.classList.remove('playing'); };
+    a.play().catch(function () { b.classList.remove('playing'); });
+  });
+})();
 </script>
 </body>
 </html>

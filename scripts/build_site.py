@@ -366,10 +366,43 @@ def page(title, body, *, current="", depth=0, desc=None, canonical=""):
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) {{ ev.preventDefault(); open(); }}
   }});
 }})();
+// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+(function () {{
+  var a = null;
+  document.addEventListener('click', function (ev) {{
+    var b = ev.target.closest ? ev.target.closest('.say') : null;
+    if (!b) return;
+    ev.preventDefault();
+    if (!a) a = new Audio();
+    if (!a.paused) {{ a.pause(); a.currentTime = 0; }}
+    document.querySelectorAll('.say.playing').forEach(function (x) {{
+      x.classList.remove('playing');
+    }});
+    a.src = b.getAttribute('data-a');
+    b.classList.add('playing');
+    a.onended = a.onerror = function () {{ b.classList.remove('playing'); }};
+    a.play().catch(function () {{ b.classList.remove('playing'); }});
+  }});
+}})();
 </script>
 </body>
 </html>
 """
+
+
+SPEAKER_SVG = (
+    '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+    '<path d="M4 9v6h4l5 4V5L8 9H4z"/>'
+    '<path class="w1" d="M16.5 8.5a5 5 0 0 1 0 7"/>'
+    '<path class="w2" d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>'
+)
+
+
+def say_button(iid, up="", label="", cls=""):
+    """粵語發音掣。音檔喺建置時預先生成，瀏覽器只負責播放。"""
+    aria = f"讀出「{label}」的粵語發音" if label else "讀出粵語發音"
+    return (f'<button type="button" class="say {cls}" data-a="{up}assets/audio/{e(iid)}.mp3"'
+            f' aria-label="{e(aria)}" title="粵語發音">{SPEAKER_SVG}</button>')
 
 
 # ────────────────────────── 片段 ──────────────────────────
@@ -388,12 +421,14 @@ def idiom_card(d, data, up=""):
         for s in (d.get("states") or []) if s in data["states"]
     )
     per = data["period_by_id"].get(d.get("period"), {})
-    return f"""<a class="card" href="{up}idioms/{e(d['id'])}/">
+    # 掣要放喺 <a> 外面——<button> 唔可以嵌喺 <a> 入面（無效 HTML）
+    return f"""<div class="card-wrap">{say_button(d['id'], up, d['idiom']['zh'], "card-say")}
+<a class="card" href="{up}idioms/{e(d['id'])}/">
   <span class="zh">{e(d['idiom']['zh'])}</span>
   <span class="meta">{e(year_label(d.get('year')))}・{e(per.get('name', ''))}</span>
   <span class="meaning">{e(d.get('meaning'))}</span>
   <span class="tags">{type_tag(d['type'])}{'' if d['reliability'] == '寓言' else rel_tag(d['reliability'])}{states}</span>
-</a>"""
+</a></div>"""
 
 
 def cite_line(c, data):
@@ -1010,7 +1045,8 @@ def build_idiom_page(d, data, prev_d, next_d):
     body = f"""<main class="narrow">
 <div class="idiom-hero">
   <h1>{e(d['idiom']['zh'])}</h1>
-  <div class="romanisation">{e(d['idiom']['pinyin'])}{jyut}</div>
+  <div class="romanisation">{e(d['idiom']['pinyin'])}{jyut}
+    {say_button(d['id'], up, d['idiom']['zh'])}</div>
   <div class="literal"><b>字面</b>　{e(d['idiom']['literal'])}　·　{e(d['idiom']['en'])}</div>
   <div class="meaning">{e(d.get('meaning'))}</div>
   <div class="tags">

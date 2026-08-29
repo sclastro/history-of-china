@@ -1,9 +1,9 @@
 # 春秋戰國成語知識庫
 
-**網站：<https://cc-chunqiu.vercel.app/>**
-（[時間 × 列國年表](https://cc-chunqiu.vercel.app/timeline.html)：一圖看盡五百五十年・
-[成語索引](https://cc-chunqiu.vercel.app/idioms.html)：四種分組方式・
-[文獻譜系](https://cc-chunqiu.vercel.app/sources.html)：這段歷史該查哪些書）
+**網站：<https://history-of-china-hazel.vercel.app/>**
+（[時間 × 列國年表](https://history-of-china-hazel.vercel.app/timeline.html)：一圖看盡五百五十年・
+[成語索引](https://history-of-china-hazel.vercel.app/idioms.html)：四種分組方式・
+[文獻譜系](https://history-of-china-hazel.vercel.app/sources.html)：這段歷史該查哪些書）
 
 以**四字成語**為主軸，重新組織公元前 770 至前 221 年的歷史事件、人物與概念。
 
@@ -69,6 +69,32 @@ Framework Preset 選 **Other**、Root Directory 用 `./`、Build Command 留空�
 改網址（自訂域名）：改 `scripts/build_site.py` 的 `SITE_URL`，再跑一次 `build_site.py`。
 它只影響 canonical、Open Graph、`sitemap.xml`、`robots.txt`——站內連結全部是相對路徑，
 換域名或放到子路徑都不用改。
+
+## 粵語發音
+
+每條成語旁的喇叭掣播放粵語讀音。音檔在**建置時**預先生成並存為靜態檔案
+（`assets/audio/<id>.mp3`，41 個共約 520 KB），網站只負責播放：
+
+```bash
+pip install gtts
+python3 scripts/build_audio.py            # 只生成尚未存在者
+python3 scripts/build_audio.py --force    # 全部重做
+python3 scripts/build_audio.py --list     # 只列出成語與粵拼
+```
+
+引擎為 Google Translate 的粵語 TTS（`gtts`，`lang="yue"`），免費、無須 API key。
+
+不採用瀏覽器內置的 `speechSynthesis`，是因為粵語 voice 覆蓋率不穩：
+iOS／macOS 有 Sinji、Android 一般有 Google 粵語、Windows 有 zh-HK，
+但桌面 Linux 與部分 Chrome 完全沒有粵語 voice，按下去毫無反應。
+亦不採用 ElevenLabs、Gemini TTS、MiniMax——前兩者官方語言表沒有粵語，
+實測讀出來是普通話；MiniMax 雖聲稱支援，實測亦非地道粵語。
+
+**新增條目後記得重跑 `build_audio.py` 並把音檔一併 commit**，
+與 HTML 一樣——Vercel 只發佈 repo 裡已 commit 的檔案。
+
+破音字：TTS 未必讀對成語中的異讀。每條成語的 `jyutping` 欄會顯示在讀音旁，
+可用來核對。
 
 ## 維護流程
 

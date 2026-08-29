@@ -28,7 +28,8 @@
 <main class="narrow">
 <div class="idiom-hero">
   <h1>作法自斃</h1>
-  <div class="romanisation">zuò fǎ zì bì・粵 zok3 faat3 zi6 bai6</div>
+  <div class="romanisation">zuò fǎ zì bì・粵 zok3 faat3 zi6 bai6
+    <button type="button" class="say " data-a="../../assets/audio/zuo-fa-zi-bi.mp3" aria-label="讀出「作法自斃」的粵語發音" title="粵語發音"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="w1" d="M16.5 8.5a5 5 0 0 1 0 7"/><path class="w2" d="M19 6a8.5 8.5 0 0 1 0 12"/></svg></button></div>
   <div class="literal"><b>字面</b>　自己制定的法律，反而害死了自己　·　Undone by the law one made oneself</div>
   <div class="meaning">自己所立的規矩反過來使自己受害。</div>
   <div class="tags">
@@ -178,6 +179,24 @@
     var tag = (ev.target.tagName || '').toLowerCase();
     if (tag === 'input' || tag === 'textarea') return;
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) { ev.preventDefault(); open(); }
+  });
+})();
+// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+(function () {
+  var a = null;
+  document.addEventListener('click', function (ev) {
+    var b = ev.target.closest ? ev.target.closest('.say') : null;
+    if (!b) return;
+    ev.preventDefault();
+    if (!a) a = new Audio();
+    if (!a.paused) { a.pause(); a.currentTime = 0; }
+    document.querySelectorAll('.say.playing').forEach(function (x) {
+      x.classList.remove('playing');
+    });
+    a.src = b.getAttribute('data-a');
+    b.classList.add('playing');
+    a.onended = a.onerror = function () { b.classList.remove('playing'); };
+    a.play().catch(function () { b.classList.remove('playing'); });
   });
 })();
 </script>

@@ -28,7 +28,8 @@
 <main class="narrow">
 <div class="idiom-hero">
   <h1>五十步笑百步</h1>
-  <div class="romanisation">wǔ shí bù xiào bǎi bù・粵 ng5 sap6 bou6 siu3 baak3 bou6</div>
+  <div class="romanisation">wǔ shí bù xiào bǎi bù・粵 ng5 sap6 bou6 siu3 baak3 bou6
+    <button type="button" class="say " data-a="../../assets/audio/wu-shi-bu-xiao-bai-bu.mp3" aria-label="讀出「五十步笑百步」的粵語發音" title="粵語發音"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="w1" d="M16.5 8.5a5 5 0 0 1 0 7"/><path class="w2" d="M19 6a8.5 8.5 0 0 1 0 12"/></svg></button></div>
   <div class="literal"><b>字面</b>　逃了五十步的人譏笑逃了一百步的人　·　He who fled fifty paces mocks him who fled a hundred</div>
   <div class="meaning">自己的缺點與別人相同，只是程度較輕，卻反過來譏笑別人。</div>
   <div class="tags">
@@ -165,6 +166,24 @@
     var tag = (ev.target.tagName || '').toLowerCase();
     if (tag === 'input' || tag === 'textarea') return;
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) { ev.preventDefault(); open(); }
+  });
+})();
+// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+(function () {
+  var a = null;
+  document.addEventListener('click', function (ev) {
+    var b = ev.target.closest ? ev.target.closest('.say') : null;
+    if (!b) return;
+    ev.preventDefault();
+    if (!a) a = new Audio();
+    if (!a.paused) { a.pause(); a.currentTime = 0; }
+    document.querySelectorAll('.say.playing').forEach(function (x) {
+      x.classList.remove('playing');
+    });
+    a.src = b.getAttribute('data-a');
+    b.classList.add('playing');
+    a.onended = a.onerror = function () { b.classList.remove('playing'); };
+    a.play().catch(function () { b.classList.remove('playing'); });
   });
 })();
 </script>
