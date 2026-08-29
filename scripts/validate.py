@@ -343,6 +343,42 @@ def check_person(path: Path, ids) -> list[str]:
     return errors
 
 
+LABEL_LEAK = re.compile(r"（(?:論述|敘事|小傳|欄位|今譯)）")
+NESTED_GLOSS = re.compile(r"（白話：[^（）]*（白話：")
+QUOTE_GLOSS_PAIR = re.compile(r"(「[^「」]{6,}」)\s*（白話：([^）]+)）")
+
+
+def check_prose_integrity():
+    """三種曾經真實發生過嘅錯誤，一律當作錯誤攔住：
+
+      1. 審查流程漏出嘅段別標籤（論述）（欄位）等混入正文
+      2. 白話括號裡面再嵌一個白話——插入位置錯亂嘅徵狀
+      3. 同一段白話掛喺兩句唔同嘅文言引語上——今譯與原文錯配
+    """
+    from collections import defaultdict
+    errs = []
+    gloss_of = defaultdict(set)
+    where = defaultdict(set)
+    files = (sorted(ROOT.glob("idioms/*/*.md")) + sorted(ROOT.glob("idioms/*/profile.yaml"))
+             + sorted(ROOT.glob("events/*.yaml")) + sorted(ROOT.glob("people/*.yaml")))
+    for p in files:
+        rel = p.relative_to(ROOT)
+        flat = re.sub(r"\s+", "", p.read_text(encoding="utf-8"))
+        for m in LABEL_LEAK.finditer(flat):
+            errs.append(f"{rel}：正文混入段別標籤 {m.group(0)}")
+        if NESTED_GLOSS.search(flat):
+            errs.append(f"{rel}：白話括號內又出現白話，插入位置可能錯亂")
+        for m in QUOTE_GLOSS_PAIR.finditer(flat):
+            quote = m.group(1).rstrip("。！？」") + "」"
+            gloss_of[m.group(2)].add(quote)
+            where[m.group(2)].add(str(rel))
+    for gloss, quotes in gloss_of.items():
+        if len(quotes) > 1:
+            errs.append(f"同一段白話配了 {len(quotes)} 句不同原文（{'、'.join(sorted(where[gloss]))}）："
+                        f"「{gloss[:24]}…」")
+    return errs
+
+
 def main() -> int:
     # ── 先載入四層 id 空間 ──
     states = {s["id"]: s for s in load(DATA_DIR / "states.yaml")}
@@ -392,6 +428,14 @@ def main() -> int:
                 print(f"✓ {rel}")
             for w in warnings[before:]:
                 print(f"    ! {rel}：{w}")
+        print()
+
+    prose_errs = check_prose_integrity()
+    if prose_errs:
+        failed = True
+        print("白話完整性檢查：")
+        for e in prose_errs:
+            print(f"  ✗ {e}")
         print()
 
     total = len(idiom_paths) + len(event_paths) + len(person_paths)
