@@ -1,0 +1,16 @@
+id: xu-you
+name:
+  zh: 許由
+  en: Xu You
+state: zhou
+role: 隱士
+birth: null
+death: null
+sort_year: -420
+bio: >-
+  傳說中的上古隱士，堯要把天下讓給他，他不受。《莊子·逍遙遊》記堯說自己在位有如爝火與日月爭光、如灌溉之與時雨，請許由取代自己。許由拒絕道：「子治天下，天下既已治也，而我猶代子，吾將為名乎？……庖人雖不治庖，尸祝不越樽俎而代之矣。」（白話：您治理天下，天下已經治好了，我還要來代替您，難道是為了名聲嗎？……廚師就算不下廚，主祭的人也不會越過酒樽和砧板去代替他。）——「越俎代庖」由此而來。他是《莊子》用來反襯「名者實之賓」的角色，其人是否真有其事，先秦已不可考；本站不另立條目，只作為寓言中的人物記錄。
+sources:
+  - source: zhuangzi
+    locus: 逍遙遊
+    ctext_urn: ctp:zhuangzi/enjoyment-in-untroubled-ease
+relations: []

@@ -1,0 +1,48 @@
+id: yuan-mu-qiu-yu
+idiom:
+  zh: 緣木求魚
+  pinyin: yuán mù qiú yú
+  jyutping: jyun4 muk6 kau4 jyu4
+  literal: 爬到樹上去找魚
+  en: Climbing a tree to look for fish
+type: parable
+period: zhan-guo-mid
+year: null
+states: [qi]
+meaning: 方法根本不對，絕不可能達到目的。
+dianyuan:
+  - source: mengzi
+    locus: 梁惠王上
+    ctext_urn: ctp:mengzi/liang-hui-wang-i
+    quote: >-
+      以若所為，求若所欲，猶緣木而求魚也。
+    translation: >-
+      用您這樣的做法，去求取您所想要的東西，
+      就像爬到樹上去找魚一樣。
+crystallisation:
+  note: >-
+    這個四字語形直接出自《孟子》原文，未經演變。
+reliability: 寓言
+people: [meng-zi,qi-xuan-wang]
+concepts: [手段與目的, 仁政, 論辯]
+related_idioms:
+  - target: nan-yuan-bei-zhe
+    kind: same_source
+    note: 兩條都指出手段與目的方向相反，一在孟子，一在戰國策士。
+lessons:
+  historical: >-
+    齊宣王想要的是「辟土地，朝秦楚，蒞中國而撫四夷」——
+    開疆拓土、令秦楚來朝。他用的辦法是「興甲兵，危士臣，構怨於諸侯」。
+    孟子的判斷是：緣木求魚。
+    接著他加了一句更重的話：緣木求魚雖然得不到魚，
+    「無後災」——沒有後續的災殃；
+    而以宣王的做法去求宣王所要的，「盡心力而為之，後必有災」。
+    也就是說，爬樹找魚只是白費力氣，而宣王的做法會招來實際的禍害。
+    孟子論辯的一貫方法在這裡看得很清楚：
+    他不否定對方的目標，只拆解目標與手段之間的關係——
+    與季梁的南轅北轍是同一種結構。
+  modern: >-
+    引申為方向根本錯誤、徒勞無功。
+    值得記住孟子加的那半句：有些錯誤的方法不只是無效，還有後患。
+references:
+  - https://ctext.org/mengzi/liang-hui-wang-i/zh

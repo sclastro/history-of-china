@@ -1,0 +1,52 @@
+id: mai-du-huan-zhu
+idiom:
+  zh: 買櫝還珠
+  pinyin: mǎi dú huán zhū
+  jyutping: maai5 duk6 waan4 zyu1
+  literal: 買下木匣而退還珍珠
+  en: Buying the casket and returning the pearl
+type: parable
+period: zhan-guo-late
+year: null
+states: [chu,zheng]
+meaning: 取捨失當，捨棄了真正有價值的東西。
+dianyuan:
+  - source: hanfeizi
+    locus: 外儲說左上
+    ctext_urn: ctp:hanfeizi/wai-chu-shuo-zuo-shang
+    quote: >-
+      楚人有賣其珠於鄭者，為木蘭之櫃，薰以桂椒，綴以珠玉，
+      飾以玫瑰，輯以翡翠。鄭人買其櫝而還其珠。
+    translation: >-
+      有個楚國人到鄭國賣珍珠，用木蘭做成匣子，
+      用桂椒薰香，綴上珠玉，飾以美石，配上翡翠。
+      鄭國人買下他的匣子，卻把珍珠退還了。
+crystallisation:
+  note: >-
+    《韓非子》原文作「買其櫝而還其珠」；
+    「買櫝還珠」的四字語形是後人的節縮，唐宋以降通行。
+reliability: 寓言
+people: [han-fei]
+concepts: [文與質, 取捨, 修辭]
+related_idioms:
+  - target: zi-xiang-mao-dun
+    kind: same_source
+    note: 同出《韓非子》，都用一個交易場景拆穿一套本末倒置的做法。
+lessons:
+  historical: >-
+    這則寓言今天多用來笑買家不識貨，
+    而韓非的矛頭其實指向賣家。
+    緊接在故事之後的評語是：「此可謂善賣櫝矣，未可謂善鬻珠也。」
+    （白話：這可以說是很會賣匣子，卻不能說是很會賣珍珠。）
+    賣珠的人把匣子做得太好，好到搶走了珍珠的位置。
+    而〈外儲說左上〉這一節講的是**辯說與實質**的關係：
+    韓非用它來批評當世的言辯——文辭太美，聽的人只記得文辭，
+    忘了要傳達的道理，「皆道辯說文辭之言，人主覽其文而忘有用」（白話：講的都是巧辯與華美的文辭，君主看了那些文采，反而忘了實際有用的東西）。
+    所以這則寓言真正的對象是說話的人，不是聽話的人。
+    包裝過度不是買家的錯，是賣家自己把主次弄反了。
+  modern: >-
+    引申為取捨失當、捨本逐末。
+    若取其原義，它更像是對表達者的提醒：
+    形式若壓過內容，聽眾的誤取就是必然的結果。
+references:
+  - https://ctext.org/hanfeizi/wai-chu-shuo-zuo-shang/zh

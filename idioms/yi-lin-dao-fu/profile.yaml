@@ -1,0 +1,53 @@
+id: yi-lin-dao-fu
+idiom:
+  zh: 疑鄰盜斧
+  pinyin: yí lín dào fǔ
+  jyutping: ji4 leon4 dou6 fu2
+  literal: 懷疑鄰居偷了自己的斧頭
+  en: Suspecting the neighbour of stealing the axe
+type: parable
+period: zhan-guo-early
+year: null
+states: [wei]
+meaning: 先有成見，所見的一切就都成了佐證。
+dianyuan:
+  - source: liezi
+    locus: 說符
+    ctext_urn: ctp:liezi/shuo-fu
+    quote: >-
+      人有亡鈇者，意其鄰之子。視其行步，竊鈇也；顏色，竊鈇也；
+      言語，竊鈇也；動作態度，無為而不竊鈇也。
+    translation: >-
+      有個人丟了斧頭，懷疑是鄰居的兒子偷的。
+      看他走路的樣子，像偷斧頭的；臉色，像偷斧頭的；
+      說話，像偷斧頭的；一舉一動，沒有一樣不像偷斧頭的。
+crystallisation:
+  note: >-
+    《列子》原文作「亡鈇」（鈇即斧）；
+    「疑鄰盜斧」的四字語形是後人的概括，宋以降通行。
+    同一故事亦見《呂氏春秋·去尤》。
+reliability: 寓言
+people: [lie-zi]
+concepts: [成見, 認知偏誤, 證據]
+related_idioms:
+  - target: san-ren-cheng-hu
+    kind: contrast
+    note: 一是成見自行尋找佐證，一是重複本身製造相信，兩種不同的失真機制。
+lessons:
+  historical: >-
+    這則寓言的結構極簡潔，而且分兩截。
+    前半截：懷疑之後，鄰居兒子的一舉一動都成了證據。
+    後半截只有一句——「俄而抇其谷而得其鈇」
+    （白話：不久他挖開自己的山谷找到了那把斧頭），
+    然後「他日復見其鄰人之子，動作態度無似竊鈇者」
+    （白話：第二天再看鄰居的兒子，一舉一動沒有一樣像偷斧頭的了）。
+    鄰居兒子的行為從頭到尾沒有改變。改變的只有觀察者手上的一個事實。
+    這是先秦對「成見如何自我證實」最清楚的一次描述：
+    偏見不是讓人看不見證據，恰恰相反，它讓人到處看見證據。
+    《呂氏春秋》把同一故事收在〈去尤〉篇，「尤」即偏蔽——
+    先秦諸子對這個機制的關注，比後世想像的早得多。
+  modern: >-
+    引申為成見害人。
+    要點在後半截：讓成見鬆動的不是更多的觀察，是那個被找到的事實。
+references:
+  - https://ctext.org/liezi/shuo-fu/zh

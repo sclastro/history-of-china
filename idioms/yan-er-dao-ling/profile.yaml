@@ -1,0 +1,54 @@
+id: yan-er-dao-ling
+idiom:
+  zh: 掩耳盜鈴
+  pinyin: yǎn ěr dào líng
+  jyutping: jim2 ji5 dou6 ling4
+  literal: 摀住耳朵去偷鈴鐺
+  en: Stealing a bell with one's ears covered
+type: parable
+period: zhan-guo-late
+year: null
+states: [jin]
+meaning: 自欺欺人，以為自己聽不見別人就聽不見。
+dianyuan:
+  - source: lv-shi-chun-qiu
+    locus: 自知
+    ctext_urn: ctp:lv-shi-chun-qiu/zi-zhi
+    quote: >-
+      百姓有得鍾者，欲負而走，則鍾大不可負。以椎毀之，鍾況然有音。
+      恐人聞之而奪己也，遽揜其耳。惡人聞之，可也；惡己自聞之，悖矣。
+    translation: >-
+      有個百姓得到一口鐘，想背走卻背不動。用槌子去打碎它，
+      鐘發出很大的聲響。他怕別人聽見來搶，急忙摀住自己的耳朵。
+      怕別人聽見，還說得過去；怕自己聽見，就荒謬了。
+crystallisation:
+  note: >-
+    《呂氏春秋》原文所偷的是**鐘**，不是鈴。
+    後世改鐘為鈴而成「掩耳盜鈴」四字，語形自宋以降通行。
+    原文的「鍾大不可負」是整個情節的起點，改成鈴之後這一層就不成立了。
+reliability: 寓言
+people: [lv-bu-wei]
+concepts: [自欺, 認知, 名實]
+related_idioms:
+  - target: hui-ji-ji-yi
+    kind: contrast
+    note: 一是明知而摀住自己的耳朵，一是有一套說法可以消化掉一切警告。
+lessons:
+  historical: >-
+    《呂氏春秋》把這則故事放在〈自知〉篇，題旨是君主要能自知。
+    原文的評語分兩截，值得逐句讀：
+    「惡人聞之，可也」——怕別人聽見，這是合理的顧慮；
+    「惡己自聞之，悖矣」——怕自己聽見，這就荒謬了。
+    也就是說，那個人的錯誤不在於他想偷，
+    在於他把「我聽不見」錯當成「聲音不存在」。
+    順帶一提語形的問題：原文偷的是鐘。
+    「鍾大不可負」——因為太大背不走，才要打碎，
+    打碎才有聲響，有聲響才需要摀耳。整個情節環環相扣。
+    改成鈴之後，鈴本來就可以直接拿走，
+    這一連串因果就斷了——只剩下一個滑稽的動作。
+  modern: >-
+    引申為自欺欺人。
+    要點在《呂氏春秋》的分辨：怕別人知道是常情，
+    以為自己不知道就等於沒發生，才是問題所在。
+references:
+  - https://ctext.org/lv-shi-chun-qiu/zi-zhi/zh

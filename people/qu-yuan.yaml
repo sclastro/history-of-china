@@ -1,0 +1,18 @@
+id: qu-yuan
+name:
+  zh: 屈原
+  en: Qu Yuan
+state: chu
+role: 卿大夫
+birth: -340
+death: -278
+sort_year: -300
+bio: >-
+  楚國公族，名平，曾任左徒、三閭大夫。他主張聯齊抗秦、修明法度，為上官大夫與令尹子蘭所讒，被楚懷王疏遠，其後放逐於漢北與江南。懷王受張儀之騙而失地，又赴秦會盟而被扣留，客死於秦。頃襄王即位仍不用他。前278年秦將白起攻破郢都，他自沉汨羅江。《楚辭·漁父》記他被放之後行吟澤畔，漁父問他為何至此，他答「舉世皆濁我獨清，眾人皆醉我獨醒，是以見放」（白話：整個世上都混濁只有我清白，眾人都醉了只有我清醒，因此被放逐）——「眾醉獨醒」由此而來。他是中國文學史上第一位有名有姓的詩人，《離騷》《九章》《天問》皆傳於世。
+sources:
+  - source: shiji
+    locus: 屈原賈生列傳
+    ctext_urn: ctp:shiji/qu-yuan-jia-sheng-lie-zhuan
+relations:
+  - target: chu-xiang-wang
+    kind: ruler

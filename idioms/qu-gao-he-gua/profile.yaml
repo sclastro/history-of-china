@@ -1,0 +1,70 @@
+id: qu-gao-he-gua
+idiom:
+  zh: 曲高和寡
+  pinyin: qǔ gāo hè guǎ
+  jyutping: kuk1 gou1 wo6 gwaa2
+  literal: 曲調越高妙，能跟著唱的人越少
+  en: The loftier the tune, the fewer join in
+type: historical
+period: zhan-guo-late
+year: -270
+year_note: 年代不詳；事在楚頃襄王時
+states: [chu]
+meaning: 言論或作品程度太高，能理解欣賞的人很少。
+benshi:
+  event: song-yu-dui-wen
+  summary: >-
+    楚襄王問宋玉為何士民百姓多有非議。宋玉舉郢中歌者為例：唱《下里》《巴人》時和唱者數千人，唱《陽阿》《薤露》時數百人，唱《陽春》《白雪》時數十人，引商刻羽、雜以流徵時不過三數人——曲調越高，和唱越少。又以鳳凰之於鷃雀、鯤魚之於鯢鰍為喻，說明世俗之人不懂他的作為。
+dianyuan:
+  - source: shiji
+    locus: 屈原賈生列傳
+    ctext_urn: ctp:shiji/qu-yuan-jia-sheng-lie-zhuan
+    quote: >-
+      是其曲彌高，其和彌寡。
+    translation: >-
+      可見曲調越高妙，能跟著唱的人就越少。
+crystallisation:
+  note: >-
+    原文作「其曲彌高，其和彌寡」；
+    「曲高和寡」的四字語形是後人的節縮，唐宋以降通行。
+    「和」讀作去聲，是跟著唱的意思。
+  moe_id: 1795
+reliability: 孤證
+variants:
+  - claim: >-
+      〈對楚王問〉見於《文選》，不見於先秦典籍，
+      一般認為是漢人所輯或後人依託宋玉之名而作，
+      故本站標為孤證。
+    source: shiji
+    locus: 屈原賈生列傳
+people: [song-yu, chu-xiang-wang]
+concepts: [雅俗, 自辯, 受眾]
+related_idioms:
+  - target: zhong-zui-du-xing
+    kind: same_source
+    note: 兩條同出楚辭系統，都在處理「不合於眾」這個處境，而態度不同。
+  - target: gao-shan-liu-shui
+    kind: contrast
+    note: 一是曲高而無人能和，一是曲成而恰有一人能聽，兩種對「知音」的處境。
+lessons:
+  historical: >-
+    這則對答值得收錄的原因，在那個層層遞減的例子本身：
+    四種曲調、四個和唱人數（數千、數百、數十、三數人），
+    是先秦文獻中少見的以量化方式呈現的論證。
+    但論點是否成立，可以另當別論。
+    宋玉用它來解釋自己何以不受歡迎——
+    而「曲高和寡」同樣可以是「唱得不好」的另一種說法。
+    這個結構的問題在於它不可證偽：
+    無論多少人不喜歡，都可以被解釋成他們水準不夠。
+    有意思的是這篇文章的處境：楚王問的是
+    「先生其有遺行與」（白話：先生大概有些不檢點的行為吧），
+    問的是品行；宋玉答的卻是水準。他換掉了問題。
+    與同一系統中屈原「眾人皆醉我獨醒」對照，
+    屈原說的是自己做不到隨波逐流，宋玉說的是別人聽不懂——
+    前者關於自己，後者關於別人。
+  modern: >-
+    引申為知音難覓、曲高難和。
+    使用時值得留意它的不可證偽性：這個解釋太好用，
+    所以用它之前最好先排除比較平常的可能。
+references:
+  - https://ctext.org/shiji/qu-yuan-jia-sheng-lie-zhuan/zh

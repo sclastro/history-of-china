@@ -1,0 +1,48 @@
+id: yue-zu-dai-pao
+idiom:
+  zh: 越俎代庖
+  pinyin: yuè zǔ dài páo
+  jyutping: jyut6 zo2 doi6 paau4
+  literal: 越過祭器去代替廚師
+  en: Stepping over the altar to do the cook's work
+type: parable
+period: zhan-guo-early
+year: null
+states: [zhou]
+meaning: 超越自己的職分去代做別人的事。
+dianyuan:
+  - source: zhuangzi
+    locus: 逍遙遊
+    ctext_urn: ctp:zhuangzi/enjoyment-in-untroubled-ease
+    quote: >-
+      庖人雖不治庖，尸祝不越樽俎而代之矣。
+    translation: >-
+      廚師就算不下廚，主祭的人也不會越過酒樽和砧板去代替他。
+crystallisation:
+  note: >-
+    《莊子》原文作「不越樽俎而代之」，並無四字語形；
+    「越俎代庖」是後人的節縮，唐宋以降通行。
+reliability: 寓言
+people: [xu-you]
+concepts: [職分, 名實, 治理]
+related_idioms:
+  - target: pao-ding-jie-niu
+    kind: same_source
+    note: 同出《莊子》，都以廚事為喻，一講職分，一講技進於道。
+lessons:
+  historical: >-
+    這句話的語境常被略掉。堯要把天下讓給許由，
+    許由拒絕的理由不是謙虛，是一套關於名實的論證：
+    「名者，實之賓也，吾將為賓乎？」
+    （白話：名是實的附屬，我難道要去做那個附屬嗎？）
+    天下已經治好了，此時取代堯，取得的只有名，沒有實。
+    「越俎代庖」是這段話的收尾——
+    主祭的人有主祭的職分，廚師有廚師的職分；
+    就算廚師不做事，主祭也不會跨過去替他做。
+    重點不在能力，在**職分本身有其界線**：
+    跨過去就算做得好，那件事的性質也變了。
+  modern: >-
+    引申為超越職分、代人做事。
+    要點在許由的理由：他不是做不來，是做了也只得虛名。
+references:
+  - https://ctext.org/zhuangzi/enjoyment-in-untroubled-ease/zh

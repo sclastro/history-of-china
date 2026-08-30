@@ -1,0 +1,18 @@
+id: song-yu
+name:
+  zh: 宋玉
+  en: Song Yu
+state: chu
+role: 卿大夫
+birth: null
+death: null
+sort_year: -280
+bio: >-
+  楚國辭賦家，相傳為屈原之後學，事楚頃襄王。《文選》載其〈對楚王問〉：楚王問他何以士民眾庶多有非議，他答有客在郢中唱歌，唱《下里》《巴人》時國中和唱者數千人，唱《陽阿》《薤露》時數百人，唱《陽春》《白雪》時不過數十人，唱到引商刻羽、雜以流徵時，國中和唱者不過三數人而已——「是其曲彌高，其和彌寡」（白話：可見曲調越高妙，能跟著唱的人就越少）。「曲高和寡」由此而來。他又以鯤鵬與鷃雀、鯤魚與鯢鰍為喻，說明「世俗之民，又安知臣之所為哉」。〈九辯〉〈風賦〉〈高唐賦〉等篇相傳出其手，而多有後人依託，真偽難定。
+sources:
+  - source: shiji
+    locus: 屈原賈生列傳
+    ctext_urn: ctp:shiji/qu-yuan-jia-sheng-lie-zhuan
+relations:
+  - target: chu-xiang-wang
+    kind: ruler

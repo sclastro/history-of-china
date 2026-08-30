@@ -1,0 +1,54 @@
+id: san-ling-wu-shen
+idiom:
+  zh: 三令五申
+  pinyin: sān lìng wǔ shēn
+  jyutping: saam1 ling6 ng5 san1
+  literal: 三次下令、五次告誡
+  en: Three orders and five admonitions
+type: historical
+period: chun-qiu-late
+year: -512
+year_note: 吳王闔閭三年前後
+states: [wu]
+meaning: 反覆叮嚀、再三告誡。
+benshi:
+  event: sun-wu-lian-bing
+  summary: >-
+    孫武以宮中婦人一百八十人試演軍法。他先講明前後左右的口令，反覆申明三次、告誡五次，然後擊鼓下令。婦人大笑不動，他歸咎於自己號令未明，再次申明；仍然不動，才說這是軍吏士卒的過錯，下令斬兩名隊長——闔閭最寵愛的兩名姬妾。此後隊伍進退跪起全都合乎規矩。
+dianyuan:
+  - source: shiji
+    locus: 孫子吳起列傳
+    ctext_urn: ctp:shiji/sun-zi-wu-qi-lie-zhuan
+    quote: >-
+      約束既布，乃設鈇鉞，即三令五申之。
+    translation: >-
+      紀律既已頒布，於是擺出斧鉞等刑具，
+      隨即反覆申明三次、告誡五次。
+crystallisation:
+  note: 這個四字語形直接出自《史記》原文，未經演變。
+  moe_id: 1712
+reliability: 大體可信
+people: [sun-wu, wu-zi-xu]
+concepts: [軍法, 責任次序, 執行]
+related_idioms:
+  - target: xi-mu-li-xin
+    kind: contrast
+    note: 一以反覆申明在先，一以重賞兌現在先，兩種建立可信度的路徑。
+lessons:
+  historical: >-
+    這四個字的分量不在「反覆」，在**責任的次序**。
+    第一次婦人不從，孫武說「約束不明，申令不熟，將之罪也」
+    （白話：紀律不明、號令不熟，是將領的過錯）——歸咎於自己，然後再講一次。
+    第二次仍然不從，他才說「既已明而不如法者，吏士之罪也」
+    （白話：已經講明白了還不照做，就是軍吏士卒的過錯）——這時才動刑。
+    也就是說，罰之前先窮盡了自己的責任。
+    這是整套軍法能夠成立的前提：沒有申明在先的處罰，只是暴力。
+    而闔閭求情時他答「將在軍，君命有所不受」
+    （白話：將領在軍中，君主的命令有時可以不接受），
+    則是把這套規則的效力推到了君主之上——
+    軍法若對國君的寵姬失效，對士卒也就失效了。
+  modern: >-
+    引申為再三叮囑。
+    要點在孫武的次序：先確認要求已經講清楚，才追究不照做的責任。
+references:
+  - https://ctext.org/shiji/sun-zi-wu-qi-lie-zhuan/zh

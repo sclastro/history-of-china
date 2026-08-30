@@ -1,0 +1,16 @@
+id: ji-xing-zi
+name:
+  zh: 紀渻子
+  en: Ji Xingzi
+state: qi
+role: 工匠
+birth: null
+death: null
+sort_year: -350
+bio: >-
+  《莊子·達生》中替國君馴養鬥雞的人。國君屢次派人問雞可以出賽了沒有。十天後他說還不行，這雞「方虛憍而恃氣」（白話：正虛浮驕矜而依恃血氣）；再十天，還不行，牠聽到聲音、看到影子仍然有反應；再十天，還不行，牠仍然目光凌厲、盛氣未消；再過十天，他才說差不多了——別的雞就算叫，牠也沒有反應，看上去像木頭做的雞一樣，德行已經完備，別的雞不敢應戰，掉頭就走。「呆若木雞」由此而來，而原意是最高的境界，與今天用作形容發愣正好相反。
+sources:
+  - source: zhuangzi
+    locus: 達生
+    ctext_urn: ctp:zhuangzi/full-understanding-of-life
+relations: []

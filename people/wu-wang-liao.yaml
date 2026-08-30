@@ -1,0 +1,18 @@
+id: wu-wang-liao
+name:
+  zh: 吳王僚
+  en: King Liao of Wu
+state: wu
+role: 君主
+birth: null
+death: -515
+sort_year: -515
+bio: >-
+  吳王夷末之子。吳國本有兄終弟及之約，季札不受而讓，僚遂即位；公子光（即後來的闔閭）認為自己才是諸樊之子、應當繼位，心懷不平。伍子胥看出他的意思，替他引薦刺客專諸。前515年吳王僚乘楚國有喪而出兵伐楚，國內空虛，公子光設宴請他赴會。僚穿三重甲，衛士執長戟夾道排列直到堂上。專諸把匕首藏在烤魚腹中進獻，到席前掰開魚取出匕首刺殺吳王僚，一擊而中；專諸當場被殺。公子光即位為闔閭。《莊子·外物》另有「螳螂捕蟬，黃雀在後」之喻，而《說苑》把這個比喻繫於吳王欲伐荊、少孺子以此進諫一事——所指的吳王，一般以為即闔閭或夫差。
+sources:
+  - source: shiji
+    locus: 刺客列傳
+    ctext_urn: ctp:shiji/ci-ke-lie-zhuan
+relations:
+  - target: wu-zi-xu
+    kind: rival

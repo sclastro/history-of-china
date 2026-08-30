@@ -1,0 +1,51 @@
+id: qi-lu-wang-yang
+idiom:
+  zh: 歧路亡羊
+  pinyin: qí lù wáng yáng
+  jyutping: kei4 lou6 mong4 joeng4
+  literal: 岔路太多而丟失了羊
+  en: Losing the sheep among too many forks
+type: parable
+period: zhan-guo-early
+year: null
+states: [wei]
+meaning: 方向太多而無所適從，終致一無所得。
+dianyuan:
+  - source: liezi
+    locus: 說符
+    ctext_urn: ctp:liezi/shuo-fu
+    quote: >-
+      大道以多歧亡羊，學者以多方喪生。
+    translation: >-
+      大路因為岔路太多而丟失了羊，
+      求學的人因為方向太多而迷失了本性。
+crystallisation:
+  note: >-
+    《列子》原文即有「多歧亡羊」之語；
+    「歧路亡羊」的四字語形是後人的調整，唐宋以降通行。
+reliability: 寓言
+people: [yang-zhu]
+concepts: [方向, 求學, 選擇]
+related_idioms:
+  - target: nan-yuan-bei-zhe
+    kind: contrast
+    note: 一是方向太多而無所適從，一是方向錯了而越走越遠。
+lessons:
+  historical: >-
+    楊朱的鄰居丟了一隻羊，帶著親屬又借了楊朱的僮僕去追。
+    楊朱問：一隻羊而已，為什麼要這麼多人？
+    答：歧路太多。
+    等他們回來，問追到沒有，答沒有——因為「歧路之中又有歧焉」，
+    不知道該往哪邊走，只好回來。
+    楊朱聽完整天不說話，一天沒有笑容。弟子覺得奇怪，
+    一隻羊又不是他的，何必如此。
+    後來心都子替他說明：大路因為岔路多而丟了羊，
+    求學的人因為方向多而迷失本性。
+    這則寓言真正的重量在最後一句：
+    亡羊只是損失一隻羊，而「喪生」——失去本性——是不可補的。
+    岔路本身不是問題，問題是每一條看起來都對。
+  modern: >-
+    引申為頭緒太多而迷失方向。
+    要點在心都子的話：方向的數量本身就是一種消耗。
+references:
+  - https://ctext.org/liezi/shuo-fu/zh

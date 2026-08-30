@@ -1,0 +1,20 @@
+id: wu-zi-xu
+name:
+  zh: 伍子胥
+  en: Wu Zixu
+state: wu
+role: 卿大夫
+birth: null
+death: -484
+sort_year: -506
+bio: >-
+  楚國大夫伍奢之子。楚平王聽信費無忌之讒，殺伍奢與其長子伍尚，伍子胥出奔，過昭關一夜白頭，輾轉奔吳。他七次推薦孫武，助闔閭奪位，訓練吳軍。前506年吳師破楚入郢，楚平王已死，他掘墓鞭屍三百。舊友申包胥責他「子之報讎，其以甚乎」（白話：您這樣報仇，未免太過分了吧），他答「吾日莫途遠，吾故倒行而逆施之」（白話：我的日子已近黃昏而路途還遠，所以只好倒過來做、違背常理去行事）——「日暮途遠」與「倒行逆施」皆出於此。夫差即位後，他力諫勿赦越國、勿伐齊而先滅越，夫差不聽，賜屬鏤之劍令他自盡。他臨死說把眼睛挖出來掛在東門，要看著越軍入吳。九年後越滅吳。
+sources:
+  - source: shiji
+    locus: 伍子胥列傳
+    ctext_urn: ctp:shiji/wu-zi-xu-lie-zhuan
+relations:
+  - target: fu-chai
+    kind: ruler
+  - target: sun-wu
+    kind: ally

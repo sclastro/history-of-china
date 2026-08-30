@@ -1,0 +1,53 @@
+id: wang-yang-xing-tan
+idiom:
+  zh: 望洋興嘆
+  pinyin: wàng yáng xīng tàn
+  jyutping: mong6 joeng4 hing1 taan3
+  literal: 仰望大海而發出感嘆
+  en: Gazing at the ocean and sighing
+type: parable
+period: zhan-guo-mid
+year: null
+states: [zhou]
+meaning: 見到別人的高遠而自感渺小；今多指力所不及而無可奈何。
+dianyuan:
+  - source: zhuangzi
+    locus: 秋水
+    ctext_urn: ctp:zhuangzi/autumn-floods
+    quote: >-
+      於是焉河伯始旋其面目，望洋向若而歎曰：「野語有之曰：
+      『聞道百，以為莫己若者』，我之謂也。」
+    translation: >-
+      於是河伯才轉過臉來，仰望著大海對北海若感嘆說：
+      「俗話說『聽到的道理多了，就以為沒有人比得上自己』，
+      說的就是我這種人。」
+crystallisation:
+  note: >-
+    「望洋」是連綿詞，意為仰視的樣子，並非「望著海洋」；
+    後世望文生義而作後解，反倒成了通行的理解。
+    四字語形出自《莊子》原文，未經演變。
+reliability: 寓言
+people: [zhuang-zi]
+concepts: [認識邊界, 自省, 尺度]
+related_idioms:
+  - target: jing-di-zhi-wa
+    kind: same_source
+    note: 同出《莊子·秋水》，一在篇首河伯自省，一在篇中北海若舉例。
+lessons:
+  historical: >-
+    〈秋水〉開篇：秋水暴漲，百川灌河，兩岸之間連牛馬都分辨不出，
+    河伯因此「欣然自喜，以天下之美為盡在己」（白話：高興得不得了，認為天下的美盡在自己身上）。
+    等他順流東行見到大海，才轉過臉來嘆息。
+    值得注意的是他嘆的內容：不是「大海真大」，
+    而是「聞道百，以為莫己若者，我之謂也」（白話：聽到的道理多了，就以為沒有人比得上自己——說的就是我這種人）——
+    他嘆的是自己先前的判斷方式。
+    河水確實大過所有支流，這個觀察沒有錯；
+    錯在他把「比得過所見的一切」等同於「最大」。
+    《莊子》接下來借北海若之口說出井蛙、夏蟲、曲士三喻，
+    整篇的主題就是：任何認識都有一個它自己看不見的邊界。
+  modern: >-
+    引申為因能力不及而無可奈何。
+    若取其原義，重點在河伯轉臉的那一刻——
+    他不是被大海嚇到，是發現了自己用錯了尺。
+references:
+  - https://ctext.org/zhuangzi/autumn-floods/zh

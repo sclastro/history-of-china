@@ -1,0 +1,25 @@
+id: kong-zi
+name:
+  zh: 孔子
+  en: Confucius
+state: lu
+role: 思想家
+birth: -551
+death: -479
+sort_year: -500
+philosophy_ref: confucius
+bio: >-
+  魯國陬邑人，名丘，字仲尼。曾任魯國中都宰、司空、大司寇，其後周遊列國十四年而不見用，晚年返魯，刪詩書、訂禮樂、修《春秋》，弟子三千，身通六藝者七十二人。《論語·季氏》記他評論季氏將伐顓臾，指出真正的憂患不在外敵——「吾恐季孫之憂，不在顓臾，而在蕭牆之內也」（白話：我恐怕季孫的憂患不在顓臾，而在自己家的屏門之內），「禍起蕭牆」由此而來。《論語·子路》記子路問為政首要，他答「必也正名乎」，並說「名不正則言不順，言不順則事不成」（白話：名分不正，說話就不順理；說話不順理，事情就辦不成）——「名正言順」由此而來。《史記·孔子世家》又記他晚年喜《易》，「讀《易》，韋編三絕」。思想部分見哲學家知識庫，本站只記其史事。
+sources:
+  - source: analects
+    locus: 季氏
+    ctext_urn: ctp:analects/ji-shi
+  - source: analects
+    locus: 子路
+    ctext_urn: ctp:analects/zi-lu
+  - source: shiji
+    locus: 孔子世家
+    ctext_urn: ctp:shiji/kong-zi-shi-jia
+relations:
+  - target: lu-zhuang-gong
+    kind: ruler

@@ -1,0 +1,56 @@
+id: ri-mu-tu-yuan
+idiom:
+  zh: 日暮途遠
+  pinyin: rì mù tú yuǎn
+  jyutping: jat6 mou6 tou4 jyun5
+  literal: 天色已晚而路途還遠
+  en: Dusk falling with the road still long
+type: historical
+period: chun-qiu-late
+year: -506
+year_note: 魯定公四年
+states: [wu, chu]
+meaning: 時日無多而事情未了，處境急迫。
+benshi:
+  event: wu-shi-ru-ying
+  summary: >-
+    伍子胥掘楚平王之墓鞭屍三百，申包胥責他報仇太過。他回話說「吾日莫途遠，吾故倒行而逆施之」（白話：我的日子已近黃昏而路途還遠，所以只好倒過來做、違背常理去行事）——因為時間不夠了，所以只好違背常理去做。
+dianyuan:
+  - source: shiji
+    locus: 伍子胥列傳
+    ctext_urn: ctp:shiji/wu-zi-xu-lie-zhuan
+    quote: >-
+      吾日莫途遠，吾故倒行而逆施之。
+    translation: >-
+      我的日子已近黃昏而路途還遠，
+      所以只好倒過來做、違背常理去行事。
+crystallisation:
+  note: >-
+    《史記》原文作「日莫途遠」（「莫」是「暮」的古字）；
+    後世寫作「日暮途遠」，字面未變。
+    另有「日暮途窮」一形，語義稍異——窮是路已到頭，遠是路還很長。
+  moe_id: 1731
+reliability: 大體可信
+people: [wu-zi-xu]
+concepts: [時間, 急迫, 復仇]
+related_idioms:
+  - target: dao-xing-ni-shi
+    kind: same_event
+    note: 兩條同出伍子胥回覆申包胥的那一句話，本是一組因果。
+lessons:
+  historical: >-
+    這四個字常被讀成一句感嘆，而在原文裡它是一個**理由**。
+    完整的句子是「吾日莫途遠，吾故倒行而逆施之」（白話：我的日子已近黃昏而路途還遠，所以只好倒過來做、違背常理去行事）——
+    前半句解釋後半句：因為時間不夠，所以只能不擇手段。
+    伍子胥出奔時父兄剛被殺，等到入郢已經過了十六年，
+    而他要報仇的對象楚平王已經死了。
+    「日暮」是他自己的年歲，「途遠」是他還沒做完的事——
+    兩者之間的落差，就是他用來解釋一切的東西。
+    值得留意的是這個理由的結構：時間壓力本身不能證明手段正當，
+    它只能解釋為什麼那個人會選擇那個手段。
+    《史記》記下這句話而不加判斷，讓讀者自己分辨這兩者。
+  modern: >-
+    引申為時不我與、事情做不完。
+    要點在於分清：急迫是處境，不擇手段是選擇。
+references:
+  - https://ctext.org/shiji/wu-zi-xu-lie-zhuan/zh

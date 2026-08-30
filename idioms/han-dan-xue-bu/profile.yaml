@@ -1,0 +1,48 @@
+id: han-dan-xue-bu
+idiom:
+  zh: 邯鄲學步
+  pinyin: hán dān xué bù
+  jyutping: hon4 daan1 hok6 bou6
+  literal: 到邯鄲去學走路
+  en: Learning to walk at Handan
+type: parable
+period: zhan-guo-mid
+year: null
+states: [yan,zhao]
+meaning: 一味模仿別人，結果連自己原有的本事也丟了。
+dianyuan:
+  - source: zhuangzi
+    locus: 秋水
+    ctext_urn: ctp:zhuangzi/autumn-floods
+    quote: >-
+      且子獨不聞夫壽陵餘子之學行於邯鄲與？未得國能，
+      又失其故行矣，直匍匐而歸耳。
+    translation: >-
+      再說您難道沒聽過燕國壽陵那個少年到邯鄲學走路的事嗎？
+      他沒學會趙國人的本事，反而把自己原來的走法也忘了，
+      只好爬著回去。
+crystallisation:
+  note: >-
+    《莊子》原文作「壽陵餘子之學行於邯鄲」，並無四字語形；
+    「邯鄲學步」是後人的概括，唐宋以降通行。
+reliability: 寓言
+people: [zhuang-zi]
+concepts: [模仿, 本性, 學習]
+related_idioms:
+  - target: dong-shi-xiao-pin
+    kind: same_source
+    note: 兩條同出《莊子》，都講模仿形式而不得其所以然。
+lessons:
+  historical: >-
+    這則寓言的位置在〈秋水〉末尾，公孫龍向魏牟自陳
+    讀了莊子之言而茫然若失，魏牟以此回答他。
+    所以它針對的不是一般的模仿，是**用一套框架去套另一套框架**：
+    公孫龍以名家的辯術去理解莊子，等於用壽陵少年的腿去學趙國的步法。
+    值得注意的是結局的兩重損失：既沒學到新的，又丟了原有的。
+    模仿之所以危險，不在於學不會，在於學習的過程會覆蓋掉
+    原本運作良好的東西——而那部分本來是不必付出的代價。
+  modern: >-
+    引申為盲目模仿而失其故我。
+    要點在於區分：學技術可以照搬，學風格則往往連根拔起。
+references:
+  - https://ctext.org/zhuangzi/autumn-floods/zh

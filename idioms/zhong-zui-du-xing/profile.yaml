@@ -1,0 +1,65 @@
+id: zhong-zui-du-xing
+idiom:
+  zh: 眾醉獨醒
+  pinyin: zhòng zuì dú xǐng
+  jyutping: zung3 zeoi3 duk6 sing2
+  literal: 眾人都醉了只有自己清醒
+  en: Sober alone among the drunken
+type: historical
+period: zhan-guo-late
+year: -278
+year_note: 秦拔郢之年
+states: [chu]
+meaning: 眾人昏昧而自己獨保清明；亦含不合於時、因而見棄之意。
+benshi:
+  event: qu-yuan-zi-chen
+  summary: >-
+    屈原主張聯齊抗秦、修明法度，為上官大夫與令尹子蘭所讒，被懷王疏遠，頃襄王時放逐江南。《楚辭·漁父》記他行吟澤畔，漁父問他何以至此，他答「舉世皆濁我獨清，眾人皆醉我獨醒，是以見放」。前278年秦破郢都，他自沉汨羅江。
+dianyuan:
+  - source: shiji
+    locus: 屈原賈生列傳
+    ctext_urn: ctp:shiji/qu-yuan-jia-sheng-lie-zhuan
+    quote: >-
+      舉世皆濁我獨清，眾人皆醉我獨醒，是以見放。
+    translation: >-
+      整個世上都混濁只有我清白，眾人都醉了只有我清醒，因此被放逐。
+crystallisation:
+  note: >-
+    《楚辭·漁父》與《史記·屈原列傳》原文作
+    「眾人皆醉我獨醒」，並無四字語形；
+    「眾醉獨醒」是後人的節縮，唐宋以降通行。
+  moe_id: 1783
+reliability: 大體可信
+variants:
+  - claim: >-
+      〈漁父〉一篇是否出自屈原之手，歷來有爭議。
+      多數學者以為是後人代擬，理由之一是通篇以第三人稱敘屈原，
+      且結尾漁父「莞爾而笑，鼓枻而去」的筆法近於小說。
+      但《史記》已引其語，可見戰國末至漢初已經流傳。
+    source: shiji
+    locus: 屈原賈生列傳
+people: [qu-yuan, chu-xiang-wang]
+concepts: [清濁, 處世, 放逐]
+related_idioms:
+  - target: qu-gao-he-gua
+    kind: same_source
+    note: 兩條同出楚辭系統，都在處理「不合於眾」這個處境，而態度不同。
+lessons:
+  historical: >-
+    〈漁父〉最值得注意的地方，是它沒有判定誰對誰錯。
+    漁父不是反派。他的主張說得相當通達：
+    聖人不凝滯於物而能與世推移；世人都濁，何不攪渾泥水、揚起波瀾？
+    眾人都醉，何不也吃那酒糟、喝那薄酒？
+    而屈原的回答是兩個具體的動作——
+    剛洗過頭的人一定要彈去帽上的灰，剛洗過澡的人一定要抖淨衣上的塵。
+    他沒有論證自己對，只說自己做不到那樣。
+    最後漁父「莞爾而笑，鼓枻而去」，唱的是
+    「滄浪之水清兮，可以濯吾纓；滄浪之水濁兮，可以濯吾足」
+    （白話：滄浪的水清啊，可以洗我的帽帶；滄浪的水濁啊，可以洗我的腳）——
+    水清水濁都有用處，端看你拿它來做什麼。
+    兩種態度並排放著，篇末沒有結論。
+  modern: >-
+    引申為獨持清醒而不合於眾。
+    使用時值得記住〈漁父〉的分寸：它把另一種活法也寫得很有分量。
+references:
+  - https://ctext.org/shiji/qu-yuan-jia-sheng-lie-zhuan/zh

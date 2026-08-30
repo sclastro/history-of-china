@@ -1,0 +1,51 @@
+id: he-zhe-zhi-fu
+idiom:
+  zh: 涸轍之鮒
+  pinyin: hé zhé zhī fù
+  jyutping: kok3 cit3 zi1 fu6
+  literal: 乾涸車轍裡的鮒魚
+  en: The minnow in the dried-up rut
+type: parable
+period: zhan-guo-mid
+year: null
+states: [wei]
+meaning: 處於困境、急待救援的人。
+dianyuan:
+  - source: zhuangzi
+    locus: 外物
+    ctext_urn: ctp:zhuangzi/external-things
+    quote: >-
+      吾失我常與，我無所處，吾得斗升之水然活耳。
+      君乃言此，曾不如早索我於枯魚之肆！
+    translation: >-
+      我失去了平常賴以生存的水，無處安身，
+      只要得到一斗半升的水就能活。您卻說這種話，
+      那還不如早點到賣魚乾的鋪子裡去找我！
+crystallisation:
+  note: >-
+    《莊子》原文作「涸轍之鮒」，見於篇中鮒魚自稱，語形自出典源即已定型。
+    另有「涸轍鮒魚」「枯魚之肆」等衍生用語。
+reliability: 寓言
+people: [zhuang-zi,jian-he-hou]
+concepts: [急難, 救助, 時機]
+related_idioms:
+  - target: wang-yang-bu-lao
+    kind: contrast
+    note: 一是補救得太遲而無用，一是補救雖遲而仍可為，兩種對時機的判斷。
+lessons:
+  historical: >-
+    莊周家貧去借糧，監河侯答應等收到封邑稅金再借三百金。
+    這個回答並非拒絕——三百金遠多於他要借的糧，
+    而且說話的人也沒有失禮。
+    莊周變色，是因為問題不在數量，在時間。
+    鮒魚要的是一斗半升的水，不是西江之水；
+    要的是現在，不是南遊吳越之後。
+    「曾不如早索我於枯魚之肆」是全篇最狠的一句——
+    如果只能等到那時候，那就別談救援，直接到魚乾鋪找我。
+    救助這件事有一個時效窗口，錯過之後，
+    再慷慨的承諾都只是另一種形式的拒絕。
+  modern: >-
+    引申為身陷困境、亟待援手。
+    要點在於：承諾的規模若不匹配時效，規模再大也等於零。
+references:
+  - https://ctext.org/zhuangzi/external-things/zh

@@ -1,0 +1,21 @@
+id: yang-zhu
+name:
+  zh: 楊朱
+  en: Yang Zhu
+state: wei
+role: 思想家
+birth: null
+death: null
+sort_year: -390
+bio: >-
+  戰國初期思想家，主張「為我」「貴生」「全性保真」。孟子把他與墨翟並列為當世顯學，斥為「楊氏為我，是無君也；墨氏兼愛，是無父也」（白話：楊朱主張為自己，這是目中無君；墨翟主張兼愛，這是目中無父）。他的著作沒有流傳，思想散見於《孟子》《莊子》《韓非子》《呂氏春秋》，而以今傳《列子·楊朱》一篇最集中——該篇是魏晉人所輯，未必可靠。《列子·說符》記他鄰居走失了羊，帶著眾人去追還嫌人手不夠，因為「歧路之中又有歧焉」，最後空手而回；楊朱為此整天不說話，弟子問他，他借此說明「大道以多歧亡羊，學者以多方喪生」（白話：大路因為岔路太多而丟失了羊，求學的人因為方向太多而迷失了本性）——「歧路亡羊」由此而來。
+sources:
+  - source: liezi
+    locus: 說符
+    ctext_urn: ctp:liezi/shuo-fu
+  - source: mengzi
+    locus: 滕文公下
+    ctext_urn: ctp:mengzi/teng-wen-gong-ii
+relations:
+  - target: meng-zi
+    kind: rival

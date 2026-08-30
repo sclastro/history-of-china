@@ -1,0 +1,18 @@
+id: jian-he-hou
+name:
+  zh: 監河侯
+  en: The Marquis of Jianhe
+state: wei
+role: 卿大夫
+birth: null
+death: null
+sort_year: -330
+bio: >-
+  《莊子·外物》中的人物。莊周家貧，去向他借糧。監河侯說：「諾。我將得邑金，將貸子三百金，可乎？」（白話：好。我就要收到封邑的稅金了，到時候借你三百金，可以嗎？）莊周變了臉色，說自己昨天來的路上聽見車轍裡有聲音，回頭看見一條鮒魚，問牠要什麼，鮒魚說「我，東海之波臣也。君豈有斗升之水而活我哉？」（白話：我是東海的水族之臣。您可有一斗半升的水讓我活命嗎？）莊周答應等他南遊吳越，再引西江的水來接牠；鮒魚變了臉色說：「吾失我常與，我無所處……曾不如早索我於枯魚之肆！」（白話：我失去了平常賴以生存的水，無處安身……那還不如早點到賣魚乾的鋪子裡去找我！）——「涸轍之鮒」由此而來。他在文獻中只出現這一次，是《莊子》用來說明「遠水不救近火」的一個角色。
+sources:
+  - source: zhuangzi
+    locus: 外物
+    ctext_urn: ctp:zhuangzi/external-things
+relations:
+  - target: zhuang-zi
+    kind: rival

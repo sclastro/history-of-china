@@ -1,0 +1,64 @@
+id: ming-zheng-yan-shun
+idiom:
+  zh: 名正言順
+  pinyin: míng zhèng yán shùn
+  jyutping: ming4 zing3 jin4 seon6
+  literal: 名分端正，說話才順理
+  en: With names rectified, words follow
+type: historical
+period: chun-qiu-late
+year: -489
+year_note: 年代不詳；事在孔子居衛時
+states: [lu]
+meaning: 名分正當，做起事來理由充分。
+benshi:
+  event: zi-lu-wen-zheng
+  summary: >-
+    子路問孔子：衛國國君等著先生去治理國政，先生打算先做什麼？孔子答「必也正名乎」。子路以為迂闊，孔子責備他粗野，然後說出由名到言、到事、到禮樂、到刑罰、到民的一整條因果鏈。
+dianyuan:
+  - source: analects
+    locus: 子路
+    ctext_urn: ctp:analects/zi-lu
+    quote: >-
+      名不正則言不順，言不順則事不成，事不成則禮樂不興，
+      禮樂不興則刑罰不中，刑罰不中則民無所措手足。
+    translation: >-
+      名分不正，說話就不順理；說話不順理，事情就辦不成；
+      事情辦不成，禮樂就興不起來；禮樂興不起來，刑罰就不得當；
+      刑罰不得當，百姓就手足無措。
+crystallisation:
+  note: >-
+    《論語》原文作「名不正則言不順」，是**否定句**；
+    「名正言順」的四字肯定語形是後人的翻轉，唐宋以降通行。
+  moe_id: 1771
+reliability: 信史
+people: [kong-zi]
+concepts: [正名, 制度, 語言]
+related_idioms:
+  - target: huo-qi-xiao-qiang
+    kind: same_source
+    note: 兩條同出《論語》，都是孔子對具體政事的判斷，而非泛論。
+  - target: zi-xiang-mao-dun
+    kind: contrast
+    note: 一講名分不正則整套規範無從運作，一講名實相牴則主張本身不成立。
+lessons:
+  historical: >-
+    這段話的背景是衛國的君位之爭。
+    衛出公輒與其父蒯聵爭位，父子相攻——
+    在這個局面下，「君」「父」「子」這些名分全部錯亂。
+    子路以為「正名」迂闊，孔子的回答卻是一條完整的因果鏈：
+    名 → 言 → 事 → 禮樂 → 刑罰 → 民。
+    每一環都以前一環為前提。
+    今天用「名正言順」，多半是說做一件事有正當理由；
+    原文講的其實是**制度的可運作性**：
+    名分若不確定，說話就沒有依據，
+    說話沒有依據，指令就無法執行，
+    一路推到最後，受害的是不知道該怎麼辦的百姓。
+    最後那句「君子於其言，無所苟而已矣」
+    （白話：君子對於自己說的話，絕不隨便）
+    把整段話收回到說話的人身上。
+  modern: >-
+    引申為理由正當、說得過去。
+    若取其原義，它更接近一個制度問題：定義不清的地方，執行必然走樣。
+references:
+  - https://ctext.org/analects/zi-lu/zh

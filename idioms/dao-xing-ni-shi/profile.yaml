@@ -1,0 +1,56 @@
+id: dao-xing-ni-shi
+idiom:
+  zh: 倒行逆施
+  pinyin: dào xíng nì shī
+  jyutping: dou3 hang4 jik6 si1
+  literal: 倒過來做、違背常理去行事
+  en: Acting against the natural order
+type: historical
+period: chun-qiu-late
+year: -506
+year_note: 魯定公四年
+states: [wu, chu]
+meaning: 做事違背常理；今多指施行暴虐或違背時代潮流。
+benshi:
+  event: wu-shi-ru-ying
+  summary: >-
+    伍子胥父兄為楚平王所殺，他奔吳助闔閭練兵，前506年吳師破楚入郢。平王已死，他掘墓鞭屍三百。舊友申包胥責他報仇太過，違背天道；他回話說自己日暮途遠，所以只好倒行逆施。
+dianyuan:
+  - source: shiji
+    locus: 伍子胥列傳
+    ctext_urn: ctp:shiji/wu-zi-xu-lie-zhuan
+    quote: >-
+      吾日莫途遠，吾故倒行而逆施之。
+    translation: >-
+      我的日子已近黃昏而路途還遠，
+      所以只好倒過來做、違背常理去行事。
+crystallisation:
+  note: >-
+    《史記》原文作「倒行而逆施之」；
+    「倒行逆施」的四字語形是後人的節縮，唐宋以降通行。
+  moe_id: 1725
+reliability: 大體可信
+people: [wu-zi-xu]
+concepts: [復仇, 時間, 常理]
+related_idioms:
+  - target: ri-mu-tu-yuan
+    kind: same_event
+    note: 兩條同出伍子胥回覆申包胥的那一句話，本是一組因果。
+lessons:
+  historical: >-
+    今天用這四個字，是最重的譴責之一。
+    而它出自當事人自己口中——伍子胥不是被人指控倒行逆施，
+    是他自己這樣說的。
+    值得注意的是他沒有辯解自己做得對。
+    申包胥指控他「豈其無天道之極乎」，
+    他的回答完全不碰「對不對」這個問題，
+    只解釋為什麼非如此不可：日子不多了，路還很遠。
+    一個承認自己違背常理的人，與一個為自己找理由的人，是兩回事。
+    《史記》把這段對答完整記下，也沒有加評語——
+    司馬遷在〈伍子胥列傳〉末尾說的是
+    「怨毒之於人甚矣哉」（白話：怨恨對於人的作用真是太厲害了）。
+  modern: >-
+    引申為胡作非為、違背時勢。
+    使用時值得記住它的來歷：這是一句自述，不是一句判詞。
+references:
+  - https://ctext.org/shiji/wu-zi-xu-lie-zhuan/zh

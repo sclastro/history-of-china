@@ -127,39 +127,40 @@ python3 scripts/check_links.py
 
 ## 收錄統計
 
-目前收錄 **77** 條成語、**52** 個事件、**115** 個人物。
+目前收錄 **96** 條成語、**59** 個事件、**125** 個人物。
 
 | 分期 | 起訖 | 成語 | 事件 |
 |---|---|---:|---:|
 | 平王東遷 | 前 771 – 前 723 | 1 | 1 |
 | 春秋前期・鄭莊小霸 | 前 722 – 前 686 | 2 | 2 |
 | 春秋中期・五霸迭興 | 前 685 – 前 547 | 26 | 22 |
-| 春秋後期・吳越爭霸 | 前 546 – 前 473 | 5 | 3 |
-| 戰國前期・變法圖強 | 前 472 – 前 338 | 14 | 7 |
-| 戰國中期・合縱連橫 | 前 337 – 前 285 | 14 | 6 |
-| 戰國後期・秦滅六國 | 前 284 – 前 221 | 15 | 11 |
+| 春秋後期・吳越爭霸 | 前 546 – 前 473 | 12 | 8 |
+| 戰國前期・變法圖強 | 前 472 – 前 338 | 17 | 7 |
+| 戰國中期・合縱連橫 | 前 337 – 前 285 | 19 | 6 |
+| 戰國後期・秦滅六國 | 前 284 – 前 221 | 19 | 13 |
 
 | 史料可信度 | 條數 | 判準 |
 |---|---:|---|
-| 信史 | 34 | 同期或近期文獻互證，可繫年繫人 |
-| 大體可信 | 20 | 主源可信，細節有後世增飾 |
-| 孤證 | 6 | 僅一書所載，別無旁證 |
+| 信史 | 36 | 同期或近期文獻互證，可繫年繫人 |
+| 大體可信 | 25 | 主源可信，細節有後世增飾 |
+| 孤證 | 7 | 僅一書所載，別無旁證 |
 | 後世附會 | 1 | 晚出，或與早期文獻／出土材料相牴 |
-| 寓言 | 16 | 諸子所設之譬喻，本無其事 |
+| 寓言 | 27 | 諸子所設之譬喻，本無其事 |
 
 ## 各書貢獻（典源計）
 
 | 文獻 | 層 | 條數 |
 |---|:-:|---:|
+| 《史記》 | B | 28 |
 | 《左傳》 | B | 25 |
-| 《史記》 | B | 22 |
 | 《戰國策》 | B | 12 |
-| 《韓非子》 | C | 6 |
-| 《莊子》 | C | 4 |
-| 《列子》 | C | 3 |
+| 《莊子》 | C | 10 |
+| 《韓非子》 | C | 7 |
+| 《列子》 | C | 5 |
+| 《孟子》 | C | 3 |
 | 《晏子春秋》 | C | 2 |
-| 《孟子》 | C | 2 |
-| 《呂氏春秋》 | C | 1 |
+| 《論語》 | C | 2 |
+| 《呂氏春秋》 | C | 2 |
 
 ## 成語一覽
 
@@ -196,9 +197,16 @@ python3 scripts/check_links.py
 | 上下其手 | 前 547 | 春秋中期 | 史事 | 《左傳》襄公二十六年 | 信史 | [shang-xia-qi-shou](idioms/shang-xia-qi-shou/shang-xia-qi-shou.md) |
 | 南橘北枳 | 前 531 | 春秋後期 | 史事 | 《晏子春秋》內篇雜下 | 孤證 | [nan-ju-bei-zhi](idioms/nan-ju-bei-zhi/nan-ju-bei-zhi.md) |
 | 二桃殺三士 | 前 517 | 春秋後期 | 史事 | 《晏子春秋》內篇諫下 | 孤證 | [er-tao-sha-san-shi](idioms/er-tao-sha-san-shi/er-tao-sha-san-shi.md) |
+| 三令五申 | 前 512 | 春秋後期 | 史事 | 《史記》孫子吳起列傳 | 大體可信 | [san-ling-wu-shen](idioms/san-ling-wu-shen/san-ling-wu-shen.md) |
+| 倒行逆施 | 前 506 | 春秋後期 | 史事 | 《史記》伍子胥列傳 | 大體可信 | [dao-xing-ni-shi](idioms/dao-xing-ni-shi/dao-xing-ni-shi.md) |
+| 日暮途遠 | 前 506 | 春秋後期 | 史事 | 《史記》伍子胥列傳 | 大體可信 | [ri-mu-tu-yuan](idioms/ri-mu-tu-yuan/ri-mu-tu-yuan.md) |
 | 臥薪嘗膽 | 前 490 | 春秋後期 | 史事 | 《史記》越王句踐世家 | 大體可信 | [wo-xin-chang-dan](idioms/wo-xin-chang-dan/wo-xin-chang-dan.md) |
+| 名正言順 | 前 489 | 春秋後期 | 史事 | 《論語》子路 | 信史 | [ming-zheng-yan-shun](idioms/ming-zheng-yan-shun/ming-zheng-yan-shun.md) |
+| 禍起蕭牆 | 前 484 | 春秋後期 | 史事 | 《論語》季氏 | 信史 | [huo-qi-xiao-qiang](idioms/huo-qi-xiao-qiang/huo-qi-xiao-qiang.md) |
+| 韋編三絕 | 前 484 | 春秋後期 | 史事 | 《史記》孔子世家 | 大體可信 | [wei-bian-san-jue](idioms/wei-bian-san-jue/wei-bian-san-jue.md) |
 | 鳥盡弓藏 | 前 473 | 春秋後期 | 史事 | 《史記》越王句踐世家 | 大體可信 | [niao-jin-gong-cang](idioms/niao-jin-gong-cang/niao-jin-gong-cang.md) |
 | 東施效顰 | — | 春秋後期 | 寓言 | 《莊子》天運 | 寓言 | [dong-shi-xiao-pin](idioms/dong-shi-xiao-pin/dong-shi-xiao-pin.md) |
+| 螳螂捕蟬 | — | 春秋後期 | 寓言 | 《莊子》山木 | 寓言 | [tang-lang-bu-chan](idioms/tang-lang-bu-chan/tang-lang-bu-chan.md) |
 | 三家分晉 | 前 403 | 戰國前期 | 史事 | 《史記》六國年表 | 信史 | [san-jia-fen-jin](idioms/san-jia-fen-jin/san-jia-fen-jin.md) |
 | 徙木立信 | 前 356 | 戰國前期 | 史事 | 《史記》商君列傳 | 大體可信 | [xi-mu-li-xin](idioms/xi-mu-li-xin/xi-mu-li-xin.md) |
 | 南轅北轍 | 前 354 | 戰國前期 | 史事 | 《戰國策》魏策四 | 孤證 | [nan-yuan-bei-zhe](idioms/nan-yuan-bei-zhe/nan-yuan-bei-zhe.md) |
@@ -208,10 +216,13 @@ python3 scripts/check_links.py
 | 高山流水 | — | 戰國前期 | 寓言 | 《列子》湯問 | 寓言 | [gao-shan-liu-shui](idioms/gao-shan-liu-shui/gao-shan-liu-shui.md) |
 | 井底之蛙 | — | 戰國前期 | 寓言 | 《莊子》秋水 | 寓言 | [jing-di-zhi-wa](idioms/jing-di-zhi-wa/jing-di-zhi-wa.md) |
 | 庖丁解牛 | — | 戰國前期 | 寓言 | 《莊子》養生主 | 寓言 | [pao-ding-jie-niu](idioms/pao-ding-jie-niu/pao-ding-jie-niu.md) |
+| 歧路亡羊 | — | 戰國前期 | 寓言 | 《列子》說符 | 寓言 | [qi-lu-wang-yang](idioms/qi-lu-wang-yang/qi-lu-wang-yang.md) |
 | 杞人憂天 | — | 戰國前期 | 寓言 | 《列子》天瑞 | 寓言 | [qi-ren-you-tian](idioms/qi-ren-you-tian/qi-ren-you-tian.md) |
 | 五十步笑百步 | — | 戰國前期 | 寓言 | 《孟子》梁惠王上 | 寓言 | [wu-shi-bu-xiao-bai-bu](idioms/wu-shi-bu-xiao-bai-bu/wu-shi-bu-xiao-bai-bu.md) |
 | 揠苗助長 | — | 戰國前期 | 寓言 | 《孟子》公孫丑上 | 寓言 | [ya-miao-zhu-zhang](idioms/ya-miao-zhu-zhang/ya-miao-zhu-zhang.md) |
+| 疑鄰盜斧 | — | 戰國前期 | 寓言 | 《列子》說符 | 寓言 | [yi-lin-dao-fu](idioms/yi-lin-dao-fu/yi-lin-dao-fu.md) |
 | 愚公移山 | — | 戰國前期 | 寓言 | 《列子》湯問 | 寓言 | [yu-gong-yi-shan](idioms/yu-gong-yi-shan/yu-gong-yi-shan.md) |
+| 越俎代庖 | — | 戰國前期 | 寓言 | 《莊子》逍遙遊 | 寓言 | [yue-zu-dai-pao](idioms/yue-zu-dai-pao/yue-zu-dai-pao.md) |
 | 朝三暮四 | — | 戰國前期 | 寓言 | 《莊子》齊物論 | 寓言 | [zhao-san-mu-si](idioms/zhao-san-mu-si/zhao-san-mu-si.md) |
 | 前倨後恭 | 前 333 | 戰國中期 | 史事 | 《戰國策》秦策一 | 大體可信 | [qian-ju-hou-gong](idioms/qian-ju-hou-gong/qian-ju-hou-gong.md) |
 | 畫蛇添足 | 前 323 | 戰國中期 | 史事 | 《戰國策》齊策二 | 大體可信 | [hua-she-tian-zu](idioms/hua-she-tian-zu/hua-she-tian-zu.md) |
@@ -220,18 +231,25 @@ python3 scripts/check_links.py
 | 雞鳴狗盜 | 前 299 | 戰國中期 | 史事 | 《史記》孟嘗君列傳 | 大體可信 | [ji-ming-gou-dao](idioms/ji-ming-gou-dao/ji-ming-gou-dao.md) |
 | 高枕無憂 | 前 295 | 戰國中期 | 史事 | 《戰國策》齊策四 | 大體可信 | [gao-zhen-wu-you](idioms/gao-zhen-wu-you/gao-zhen-wu-you.md) |
 | 狡兔三窟 | 前 295 | 戰國中期 | 史事 | 《戰國策》齊策四 | 大體可信 | [jiao-tu-san-ku](idioms/jiao-tu-san-ku/jiao-tu-san-ku.md) |
+| 呆若木雞 | — | 戰國中期 | 寓言 | 《莊子》達生 | 寓言 | [dai-ruo-mu-ji](idioms/dai-ruo-mu-ji/dai-ruo-mu-ji.md) |
+| 邯鄲學步 | — | 戰國中期 | 寓言 | 《莊子》秋水 | 寓言 | [han-dan-xue-bu](idioms/han-dan-xue-bu/han-dan-xue-bu.md) |
+| 涸轍之鮒 | — | 戰國中期 | 寓言 | 《莊子》外物 | 寓言 | [he-zhe-zhi-fu](idioms/he-zhe-zhi-fu/he-zhe-zhi-fu.md) |
 | 狐假虎威 | — | 戰國中期 | 寓言 | 《戰國策》楚策一 | 寓言 | [hu-jia-hu-wei](idioms/hu-jia-hu-wei/hu-jia-hu-wei.md) |
 | 諱疾忌醫 | — | 戰國中期 | 寓言 | 《韓非子》喻老 | 寓言 | [hui-ji-ji-yi](idioms/hui-ji-ji-yi/hui-ji-ji-yi.md) |
 | 刻舟求劍 | — | 戰國中期 | 寓言 | 《呂氏春秋》慎大覽·察今 | 寓言 | [ke-zhou-qiu-jian](idioms/ke-zhou-qiu-jian/ke-zhou-qiu-jian.md) |
 | 濫竽充數 | — | 戰國中期 | 寓言 | 《韓非子》內儲說上 | 寓言 | [lan-yu-chong-shu](idioms/lan-yu-chong-shu/lan-yu-chong-shu.md) |
 | 三人成虎 | — | 戰國中期 | 寓言 | 《戰國策》魏策二 | 寓言 | [san-ren-cheng-hu](idioms/san-ren-cheng-hu/san-ren-cheng-hu.md) |
 | 守株待兔 | — | 戰國中期 | 寓言 | 《韓非子》五蠹 | 寓言 | [shou-zhu-dai-tu](idioms/shou-zhu-dai-tu/shou-zhu-dai-tu.md) |
+| 望洋興嘆 | — | 戰國中期 | 寓言 | 《莊子》秋水 | 寓言 | [wang-yang-xing-tan](idioms/wang-yang-xing-tan/wang-yang-xing-tan.md) |
+| 緣木求魚 | — | 戰國中期 | 寓言 | 《孟子》梁惠王上 | 寓言 | [yuan-mu-qiu-yu](idioms/yuan-mu-qiu-yu/yuan-mu-qiu-yu.md) |
 | 自相矛盾 | — | 戰國中期 | 寓言 | 《韓非子》難一 | 寓言 | [zi-xiang-mao-dun](idioms/zi-xiang-mao-dun/zi-xiang-mao-dun.md) |
 | 怒髮衝冠 | 前 283 | 戰國後期 | 史事 | 《史記》廉頗藺相如列傳 | 信史 | [nu-fa-chong-guan](idioms/nu-fa-chong-guan/nu-fa-chong-guan.md) |
 | 完璧歸趙 | 前 283 | 戰國後期 | 史事 | 《史記》廉頗藺相如列傳 | 大體可信 | [wan-bi-gui-zhao](idioms/wan-bi-gui-zhao/wan-bi-gui-zhao.md) |
 | 負荊請罪 | 前 279 | 戰國後期 | 史事 | 《史記》廉頗藺相如列傳 | 信史 | [fu-jing-qing-zui](idioms/fu-jing-qing-zui/fu-jing-qing-zui.md) |
 | 刎頸之交 | 前 279 | 戰國後期 | 史事 | 《史記》廉頗藺相如列傳 | 信史 | [wen-jing-zhi-jiao](idioms/wen-jing-zhi-jiao/wen-jing-zhi-jiao.md) |
 | 亡羊補牢 | 前 278 | 戰國後期 | 史事 | 《戰國策》楚策四 | 大體可信 | [wang-yang-bu-lao](idioms/wang-yang-bu-lao/wang-yang-bu-lao.md) |
+| 眾醉獨醒 | 前 278 | 戰國後期 | 史事 | 《史記》屈原賈生列傳 | 大體可信 | [zhong-zui-du-xing](idioms/zhong-zui-du-xing/zhong-zui-du-xing.md) |
+| 曲高和寡 | 前 270 | 戰國後期 | 史事 | 《史記》屈原賈生列傳 | 孤證 | [qu-gao-he-gua](idioms/qu-gao-he-gua/qu-gao-he-gua.md) |
 | 鷸蚌相爭 | 前 270 | 戰國後期 | 史事 | 《戰國策》燕策二 | 孤證 | [yu-bang-xiang-zheng](idioms/yu-bang-xiang-zheng/yu-bang-xiang-zheng.md) |
 | 奇貨可居 | 前 265 | 戰國後期 | 史事 | 《史記》呂不韋列傳 | 信史 | [qi-huo-ke-ju](idioms/qi-huo-ke-ju/qi-huo-ke-ju.md) |
 | 紙上談兵 | 前 260 | 戰國後期 | 史事 | 《史記》廉頗藺相如列傳 | 信史 | [zhi-shang-tan-bing](idioms/zhi-shang-tan-bing/zhi-shang-tan-bing.md) |
@@ -242,5 +260,7 @@ python3 scripts/check_links.py
 | 脫穎而出 | 前 257 | 戰國後期 | 史事 | 《史記》平原君虞卿列傳 | 大體可信 | [tuo-ying-er-chu](idioms/tuo-ying-er-chu/tuo-ying-er-chu.md) |
 | 一字千金 | 前 239 | 戰國後期 | 史事 | 《史記》呂不韋列傳 | 信史 | [yi-zi-qian-jin](idioms/yi-zi-qian-jin/yi-zi-qian-jin.md) |
 | 圖窮匕見 | 前 227 | 戰國後期 | 史事 | 《史記》刺客列傳 | 信史 | [tu-qiong-bi-xian](idioms/tu-qiong-bi-xian/tu-qiong-bi-xian.md) |
+| 買櫝還珠 | — | 戰國後期 | 寓言 | 《韓非子》外儲說左上 | 寓言 | [mai-du-huan-zhu](idioms/mai-du-huan-zhu/mai-du-huan-zhu.md) |
+| 掩耳盜鈴 | — | 戰國後期 | 寓言 | 《呂氏春秋》自知 | 寓言 | [yan-er-dao-ling](idioms/yan-er-dao-ling/yan-er-dao-ling.md) |
 
 <!-- INDEX:END -->

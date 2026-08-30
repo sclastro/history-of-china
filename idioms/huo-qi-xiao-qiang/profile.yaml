@@ -1,0 +1,59 @@
+id: huo-qi-xiao-qiang
+idiom:
+  zh: 禍起蕭牆
+  pinyin: huò qǐ xiāo qiáng
+  jyutping: wo6 hei2 siu1 coeng4
+  literal: 禍患從門內的屏牆之內興起
+  en: Calamity arises within the screen wall
+type: historical
+period: chun-qiu-late
+year: -484
+year_note: 年代不詳；事在孔子返魯之後
+states: [lu]
+meaning: 禍患起於內部，而非來自外敵。
+benshi:
+  event: ji-shi-fa-zhuan-yu
+  summary: >-
+    魯國執政季氏將攻打顓臾，家臣冉有、季路來告訴孔子。孔子責備他們不能匡正主人，並指出顓臾是先王所封、又在魯國境內，本非威脅；季氏真正的憂患不在顓臾，而在自己家的屏門之內。
+dianyuan:
+  - source: analects
+    locus: 季氏
+    ctext_urn: ctp:analects/ji-shi
+    quote: >-
+      吾恐季孫之憂，不在顓臾，而在蕭牆之內也。
+    translation: >-
+      我恐怕季孫的憂患不在顓臾，而在自己家的屏門之內。
+crystallisation:
+  note: >-
+    《論語》原文作「在蕭牆之內」，並無「禍起蕭牆」四字連用；
+    四字語形是後人的概括，唐宋以降通行。
+    「蕭牆」是宮室門內的屏牆，引申指最內部的地方。
+  moe_id: 1764
+reliability: 信史
+people: [kong-zi]
+concepts: [內憂外患, 進諫, 魯政]
+related_idioms:
+  - target: ming-zheng-yan-shun
+    kind: same_source
+    note: 兩條同出《論語》，都是孔子對具體政事的判斷，而非泛論。
+lessons:
+  historical: >-
+    孔子的判斷後來應驗了。
+    魯國真正的動亂來自三桓與其家臣：
+    季氏自己的家臣陽虎專權、囚禁季桓子，
+    公山弗擾據費邑叛，都發生在此前後；
+    而顓臾始終沒有成為威脅。
+    值得注意的是這段話之前那半篇。
+    孔子先責備冉有推卸責任——「危而不持，顛而不扶，
+    則將焉用彼相矣」（白話：主人有危險不去扶持，快跌倒了不去攙扶，
+    那要輔佐的人做什麼呢）；
+    再責備他找藉口——君子最討厭不肯直說「我想要」而硬要編理由的人；
+    然後才提出他的主張：「不患寡而患不均，不患貧而患不安」
+    （白話：不擔憂人少而擔憂分配不均，不擔憂貧窮而擔憂不安定）。
+    「禍起蕭牆」是這一串論證的結論，不是一句孤立的警語。
+  modern: >-
+    引申為禍患來自內部。
+    要點在孔子的推理路徑：他不是憑直覺說內部有問題，
+    是先指出對外用兵這件事本身不成立，才反推真正的動機在哪裡。
+references:
+  - https://ctext.org/analects/ji-shi/zh

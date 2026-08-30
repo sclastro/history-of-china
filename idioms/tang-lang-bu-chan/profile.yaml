@@ -1,0 +1,62 @@
+id: tang-lang-bu-chan
+idiom:
+  zh: 螳螂捕蟬
+  pinyin: táng láng bǔ chán
+  jyutping: tong4 long4 bou6 sim4
+  literal: 螳螂捕捉蟬
+  en: The mantis stalks the cicada
+type: parable
+period: chun-qiu-late
+year: null
+states: [wu]
+meaning: 只顧眼前的利益，不知身後的危險。
+dianyuan:
+  - source: zhuangzi
+    locus: 山木
+    ctext_urn: ctp:zhuangzi/the-tree-on-the-mountain
+    quote: >-
+      睹一蟬方得美蔭而忘其身，螳蜋執翳而搏之，見得而忘其形；
+      異鵲從而利之，見利而忘其真。
+    translation: >-
+      看見一隻蟬正得到濃蔭而忘了自身，
+      螳螂藏在葉子後面撲牠，只見所得而忘了自己的形跡；
+      一隻怪鵲跟在後面要撿便宜，只見利益而忘了自己的本真。
+crystallisation:
+  note: >-
+    《莊子·山木》原文有蟬、螳螂、異鵲三層，而無「黃雀在後」之語。
+    「螳螂捕蟬，黃雀在後」的定型出自漢代《說苑·正諫》
+    ——吳王欲伐荊，少孺子懷丸操彈於後園，以此進諫，吳王乃止。
+    今通行語形合兩書而成。
+  moe_id: 1746
+reliability: 寓言
+variants:
+  - claim: >-
+      《說苑》所記的吳王，一般以為即闔閭或夫差，
+      而《說苑》是漢代劉向所輯，其事不見於先秦典籍，
+      故本站以《莊子》為典源，《說苑》為語形所自。
+    source: zhuangzi
+    locus: 山木
+people: [zhuang-zi, wu-wang-liao]
+concepts: [利害, 連環, 視野]
+related_idioms:
+  - target: yu-bang-xiang-zheng
+    kind: contrast
+    note: 一是三層相因而各有身後之患，一是兩方相持而第三者得利。
+lessons:
+  historical: >-
+    《莊子》原文有一個常被略掉的第四層：莊周自己。
+    他手執彈弓瞄準那隻異鵲，「見利而忘其真」——
+    正在做的事和他所觀察的三隻蟲一模一樣。
+    然後守園人以為他是偷栗子的，追出來罵他。
+    莊周回去之後三個月不出門，弟子問他為什麼，
+    他說「吾守形而忘身，觀於濁水而迷於清淵」
+    （白話：我守著外形而忘了自身，只看見濁水而迷失了清澈的深淵）。
+    所以這則寓言不是站在高處看三隻蟲的愚蠢，
+    而是發現自己就在那條鏈上——而且是被守園人追的那一環。
+    《說苑》把它改寫成臣子勸諫君主的故事，
+    層次變得清楚，卻也失去了這一層自省。
+  modern: >-
+    引申為只顧眼前而不知後患。
+    要點在莊子那一層：看得見別人在鏈條上，不等於自己不在鏈條上。
+references:
+  - https://ctext.org/zhuangzi/the-tree-on-the-mountain/zh

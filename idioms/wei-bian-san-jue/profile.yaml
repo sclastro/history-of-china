@@ -1,0 +1,63 @@
+id: wei-bian-san-jue
+idiom:
+  zh: 韋編三絕
+  pinyin: wéi biān sān jué
+  jyutping: wai4 pin1 saam1 zyut6
+  literal: 串連竹簡的皮繩斷了三次
+  en: The leather binding broke three times
+type: historical
+period: chun-qiu-late
+year: -484
+year_note: 孔子返魯之後
+states: [lu]
+meaning: 讀書勤奮、反覆研讀。
+benshi:
+  event: kong-zi-du-yi
+  summary: >-
+    孔子周遊列國十四年不見用，晚年返魯，不再求仕，專力整理文獻與教學。他喜好《易》，為〈彖〉〈繫〉〈象〉〈說卦〉〈文言〉作解，反覆翻讀，串連竹簡的皮繩斷了三次。同期他刪定《詩》《書》、訂正禮樂、修《春秋》。
+dianyuan:
+  - source: shiji
+    locus: 孔子世家
+    ctext_urn: ctp:shiji/kong-zi-shi-jia
+    quote: >-
+      孔子晚而喜《易》……讀《易》，韋編三絕。
+      曰：「假我數年，若是，我於《易》則彬彬矣。」
+    translation: >-
+      孔子晚年喜好《易》……讀《易》讀到串連竹簡的皮繩斷了三次。
+      他說：「再給我幾年時間，這樣的話，我對《易》就能通達了。」
+crystallisation:
+  note: 這個四字語形直接出自《史記》原文，未經演變。
+  moe_id: 1758
+reliability: 大體可信
+variants:
+  - claim: >-
+      孔子與《易》的關係歷來有爭議。
+      《論語》中孔子論《易》僅一見，且異文作「亦」；
+      馬王堆帛書《易傳》有孔子與弟子論《易》之語，可為旁證，
+      但〈十翼〉出自孔子之手一說，今日學界已不主張。
+      「韋編三絕」記的是他讀《易》之勤，不足以證明他作《易傳》。
+    source: shiji
+    locus: 孔子世家
+people: [kong-zi]
+concepts: [治學, 竹簡, 晚年]
+related_idioms:
+  - target: gao-shan-liu-shui
+    kind: contrast
+    note: 一是反覆自修而終不敢言通達，一是遇一知音而終身不復鼓琴。
+lessons:
+  historical: >-
+    「韋編三絕」不是形容詞，是竹簡時代的物理事實。
+    一卷竹簡由皮繩串連，翻閱時繩子承受磨損；
+    磨斷三次，意味著整卷書被翻到散架三次。
+    這個記錄之所以有力，正因為它可以被計量。
+    而更值得記住的是緊接著的那句話：
+    「假我數年，若是，我於《易》則彬彬矣」（白話：再給我幾年時間，這樣的話，我對《易》就能通達了）——
+    一個被後世奉為聖人的人，在晚年說自己對《易》還沒有通達。
+    《史記》把「三絕」與「假我數年」寫在一起，
+    次序也是有意的：讀到書散架三次的人，說的是還不夠。
+  modern: >-
+    引申為勤學不倦。
+    要點在那句「假我數年」——衡量學問深淺的，
+    往往是當事人對自己還差多遠的估計。
+references:
+  - https://ctext.org/shiji/kong-zi-shi-jia/zh
