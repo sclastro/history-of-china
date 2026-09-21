@@ -1,0 +1,57 @@
+id: qian-shi-bu-wang
+idiom:
+  zh: 前事不忘，後事之師
+  pinyin: qián shì bù wàng, hòu shì zhī shī
+  jyutping: cin4 si6 bat1 mong4, hau6 si6 zi1 si1
+  literal: 不忘記先前的事，可以做日後的借鑒
+  en: Remember the past; it teaches the future
+type: historical
+period: zhan-guo-early
+year: -453
+year_note: 三家滅智伯之年
+states: [jin, zhao]
+meaning: 記取過去的經驗教訓，作為日後行事的借鑒。
+benshi:
+  event: jin-yang-zhi-zhan
+  summary: >-
+    智伯率韓魏圍晉陽、決水灌城，趙襄子的謀臣張孟談潛出說動韓魏倒戈，三家反攻，前453年殺智伯而三分其地。事成之後張孟談請求離去，襄子不許；他以「前事之不忘，後事之師」勸襄子考慮功臣與君主的關係，隨即辭去封地耕於負親之丘。
+dianyuan:
+  - source: zhan-guo-ce
+    locus: 趙策一
+    ctext_urn: ctp:zhan-guo-ce/zhao-ce-yi
+    quote: >-
+      前事之不忘，後事之師。君其圖之。
+    translation: >-
+      先前發生過的事不要忘記，可以作為日後行事的借鑒。
+      您好好考慮吧。
+crystallisation:
+  note: >-
+    《戰國策》原文作「前事之不忘，後事之師」，語形自出典源即已定型；
+    今多省作「前事不忘，後事之師」。
+  moe_id: 1871
+reliability: 信史
+people: [zhang-meng-tan, zhao-xiang-zi, zhi-bo]
+concepts: [功成身退, 借鑒, 君臣]
+related_idioms:
+  - target: niao-jin-gong-cang
+    kind: same_source
+    note: 兩條都在處理功成之後的君臣關係，一是離去，一是留下。
+lessons:
+  historical: >-
+    這八個字今天幾乎是「以史為鑒」的同義語，而原文的用法要具體得多。
+    張孟談說這句話，是在勸趙襄子放自己走。
+    他舉的「前事」是有所指的：智伯之所以敗亡，
+    是因為權臣與君主的勢位相當而終於相疑；
+    如今自己立了大功、名顯身尊、眾人歸附，
+    正走在同一條路上。
+    所以「前事不忘」不是一句泛論，是一次**對自己處境的比對**——
+    他把自己放進了那個剛剛失敗的模型裡。
+    然後他辭去封地去耕田。
+    與范蠡的浮海而去、文種的稱病不朝並看，
+    這是先秦「功成身退」最早也最清醒的一例：
+    范蠡是看穿君主，張孟談是看穿結構。
+  modern: >-
+    引申為記取教訓、以史為鑒。
+    要點在張孟談的用法：他比對的不是別人的失敗，是自己此刻所處的位置。
+references:
+  - https://ctext.org/zhan-guo-ce/zhao-ce-yi/zh

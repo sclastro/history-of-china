@@ -1,0 +1,56 @@
+id: peng-cheng-wan-li
+idiom:
+  zh: 鵬程萬里
+  pinyin: péng chéng wàn lǐ
+  jyutping: paang4 cing4 maan6 lei5
+  literal: 大鵬一飛就是萬里
+  en: The Peng's flight spans ten thousand li
+type: parable
+period: zhan-guo-mid
+year: null
+states: [wei]
+meaning: 前程遠大，不可限量。
+dianyuan:
+  - source: zhuangzi
+    locus: 逍遙遊
+    ctext_urn: ctp:zhuangzi/enjoyment-in-untroubled-ease
+    quote: >-
+      鵬之徙於南冥也，水擊三千里，摶扶搖而上者九萬里，去以六月息者也。
+    translation: >-
+      鵬遷往南海的時候，翅膀拍擊水面三千里，
+      乘著旋風盤旋而上九萬里，憑藉六月的大風而去。
+crystallisation:
+  note: >-
+    《莊子》原文作「摶扶搖而上者九萬里」，並無「鵬程萬里」四字。
+    四字語形是後人的概括，唐宋以降通行，多用於祝人前程遠大。
+  moe_id: 1972
+reliability: 寓言
+people: [zhuang-zi]
+concepts: [大小之辨, 憑藉, 逍遙]
+related_idioms:
+  - target: jing-di-zhi-wa
+    kind: same_source
+    note: 兩條同出《莊子》論大小之辨，一在天上，一在井底。
+  - target: qu-gao-he-gua
+    kind: contrast
+    note: 宋玉以鳳凰自比而嘆無人能和；莊子舉鵬鳥卻是要說明大小各有其所待。
+lessons:
+  historical: >-
+    這四個字今天是一句吉祥話，而《莊子》的原意要複雜得多。
+    〈逍遙遊〉舉鵬鳥之後，緊接著寫蜩與學鳩的嘲笑：
+    我奮力一飛也不過到榆樹枋樹，有時還飛不到就落地，
+    何必要到九萬里之外去？
+    莊子沒有站在鵬這邊嘲笑蜩鳩。他接著說的是
+    「此小大之辯也」——這是大小的分別，
+    然後筆鋒一轉：鵬要飛九萬里，得等六月的大風；
+    沒有那股風，牠一樣飛不起來。
+    也就是說，鵬也是**有所待**的。
+    真正的逍遙是「無待」——不依賴任何條件。
+    鵬與蜩鳩的差別只在所待之物的大小，本質上是同一類。
+    後世取「鵬程萬里」來祝人前程遠大，
+    恰恰留下了莊子要超越的那一層。
+  modern: >-
+    引申為前程遠大，多用於祝頌。
+    若讀原文，可以留意莊子補的那一句：飛得再高，也要等風。
+references:
+  - https://ctext.org/zhuangzi/enjoyment-in-untroubled-ease/zh

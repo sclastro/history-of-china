@@ -1,0 +1,58 @@
+id: yi-yan-jiu-ding
+idiom:
+  zh: 一言九鼎
+  pinyin: yī yán jiǔ dǐng
+  jyutping: jat1 jin4 gau2 ding2
+  literal: 一句話重如九鼎
+  en: A single word worth the nine cauldrons
+type: historical
+period: zhan-guo-late
+year: -257
+year_note: 邯鄲被圍之年
+states: [zhao, chu]
+meaning: 一句話分量極重，足以決定大事。
+benshi:
+  event: han-dan-zhi-wei
+  summary: >-
+    平原君奉命到楚國謀求合縱，談判從日出僵持到中午不決。門客毛遂按劍上階，以十步之內楚王性命懸於己手相脅，又以商湯周武之事與白起三戰辱楚之恥相激，楚王當殿定盟。平原君回國後說：毛先生一到楚國，就使趙國的分量重於九鼎大呂。
+dianyuan:
+  - source: shiji
+    locus: 平原君虞卿列傳
+    ctext_urn: ctp:shiji/ping-yuan-jun-yu-qing-lie-zhuan
+    quote: >-
+      毛先生一至楚而使趙重於九鼎大呂。毛先生以三寸之舌，彊於百萬之師。
+    translation: >-
+      毛先生一到楚國，就使趙國的分量重於九鼎大呂。
+      毛先生憑三寸之舌，比百萬大軍還要強。
+crystallisation:
+  note: >-
+    《史記》原文作「使趙重於九鼎大呂」，並無「一言九鼎」四字。
+    四字語形是後人的概括，唐宋以降通行。
+    九鼎是王權的實物象徵——參見本站「問鼎中原」一條。
+  moe_id: 1849
+reliability: 大體可信
+people: [mao-sui, ping-yuan-jun]
+concepts: [遊說, 分量, 合縱]
+related_idioms:
+  - target: san-cun-bu-lan-zhi-she
+    kind: same_event
+    note: 同出平原君對毛遂的評語，一講分量，一講憑藉。
+  - target: wen-ding-zhong-yuan
+    kind: same_source
+    note: 兩條都以九鼎為喻，一問鼎之輕重，一以鼎喻言之重。
+lessons:
+  historical: >-
+    平原君這句評語用的是一個很重的參照：九鼎大呂。
+    九鼎是夏商周三代相傳的王權信物——「問鼎中原」那一條裡
+    楚莊王問的就是它；大呂是周廟的大鐘。
+    用它們來衡量一次外交，等於說這次合縱之成，
+    份量等同於王權的轉移。
+    值得注意的是這句話的前提：毛遂並不是靠口才取勝。
+    他先按劍走到十步之內，取得了對楚王人身的直接威脅，
+    才開始講道理——與藺相如「持璧卻立、倚柱」而後怒髮衝冠是同一個次序。
+    「一言」之所以能有九鼎之重，是因為說話的人先站到了那個位置。
+  modern: >-
+    引申為說話極有分量、一諾千金。
+    要點在那個被省略的前提：話的分量往往來自說話者所處的位置。
+references:
+  - https://ctext.org/shiji/ping-yuan-jun-yu-qing-lie-zhuan/zh

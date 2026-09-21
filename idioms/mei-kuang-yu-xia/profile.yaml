@@ -1,0 +1,57 @@
+id: mei-kuang-yu-xia
+idiom:
+  zh: 每況愈下
+  pinyin: měi kuàng yù xià
+  jyutping: mui5 fong3 jyu6 haa6
+  literal: 每往下一層就越清楚
+  en: The lower you probe, the clearer it gets
+type: parable
+period: zhan-guo-mid
+year: null
+states: [wei]
+meaning: 今指情況越來越壞；原義卻是越往低處驗證越能見出實情。
+dianyuan:
+  - source: zhuangzi
+    locus: 知北遊
+    ctext_urn: ctp:zhuangzi/knowledge-rambling-in-the-north
+    quote: >-
+      正獲之問於監市履狶也，每下愈況。
+    translation: >-
+      就像市場的管理人員問屠夫怎麼檢驗豬的肥瘦，
+      要踩牠的腿——越往下踩，越能看出實情。
+crystallisation:
+  note: >-
+    《莊子》原文作「每下愈況」——「況」是明顯、顯著的意思，
+    整句說越往下驗證越清楚。
+    後世誤倒為「每況愈下」，並把「況」理解成情況，
+    語義由「越驗越明」變成「越來越壞」。
+    這是本站語形與語義同時走樣的一例。
+  moe_id: 1984
+reliability: 寓言
+people: [zhuang-zi]
+concepts: [語義翻轉, 驗證, 道在屎溺]
+related_idioms:
+  - target: dai-ruo-mu-ji
+    kind: contrast
+    note: 兩條都是語義倒轉，一由褒轉貶，一由方法變成評語。
+lessons:
+  historical: >-
+    這一條的來歷值得完整交代。
+    東郭子問莊子：所謂道，究竟在哪裡？
+    莊子說：無所不在。東郭子要他說得具體些。
+    莊子答：在螻蟻。——何以下邪？在稊稗。——何以愈下邪？
+    在瓦甓。——何以愈甚邪？在屎溺。
+    東郭子不作聲了。
+    莊子於是解釋：你問得不對。這就像市場的管理人員問屠夫
+    怎麼檢驗豬的肥瘦——要踩牠的腿，**越往下踩越看得清楚**，
+    因為腿最難長肉，腿上有肉，整隻就肥。
+    所以「每下愈況」講的是一種驗證方法：
+    要看一個原則是否真的普遍，就到最低處去檢驗它。
+    後世把「每下愈況」倒成「每況愈下」，
+    又把「況」讀成情況，於是一句關於方法的話，
+    變成了一句關於衰敗的嘆息。
+  modern: >-
+    今指情況越來越壞，這個用法已經約定俗成。
+    但知道它原本的意思仍有價值：檢驗普遍性，要往最低處找。
+references:
+  - https://ctext.org/zhuangzi/knowledge-rambling-in-the-north/zh

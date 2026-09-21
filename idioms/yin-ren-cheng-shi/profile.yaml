@@ -1,0 +1,54 @@
+id: yin-ren-cheng-shi
+idiom:
+  zh: 因人成事
+  pinyin: yīn rén chéng shì
+  jyutping: jan1 jan4 sing4 si6
+  literal: 靠別人才把事情辦成
+  en: Succeeding by another's doing
+type: historical
+period: zhan-guo-late
+year: -257
+year_note: 邯鄲被圍之年
+states: [zhao, chu]
+meaning: 依靠他人的力量把事情辦成；含自己無所作為之意。
+benshi:
+  event: han-dan-zhi-wei
+  summary: >-
+    毛遂在楚殿上迫使楚王定下合縱之盟，取雞狗馬之血請楚王、平原君與自己依次歃血。禮成之後，他左手提著盛血的銅盤、右手招呼堂下那十九位同行的門客上來歃血，說：諸位在堂下歃血吧——你們不過是靠別人才把事情辦成的。
+dianyuan:
+  - source: shiji
+    locus: 平原君虞卿列傳
+    ctext_urn: ctp:shiji/ping-yuan-jun-yu-qing-lie-zhuan
+    quote: >-
+      公相與歃此血於堂下。公等錄錄，所謂因人成事者也。
+    translation: >-
+      諸位就在堂下一起歃這血吧。
+      各位平庸無能，正是所謂靠別人才把事情辦成的那種人。
+crystallisation:
+  note: 這個四字語形直接出自《史記》原文，未經演變。
+  moe_id: 1862
+reliability: 大體可信
+people: [mao-sui, ping-yuan-jun]
+concepts: [功勞, 自薦, 從眾]
+related_idioms:
+  - target: mao-sui-zi-jian
+    kind: same_event
+    note: 同出毛遂使楚一事，一是出發前的自薦，一是事成後對同行者的評語。
+lessons:
+  historical: >-
+    這句話說得相當不客氣，而它的對象值得留意：
+    那十九個人是平原君從三千食客中親自挑出來的「文武備具者」，
+    是門下公認最好的一批。
+    出發前他們「相與目笑之而未發也」——互相使眼色嘲笑毛遂，
+    只是沒有說出口。
+    談判從日出僵持到中午，是他們一起說「先生上」，
+    把毛遂推上去的。
+    事情辦成之後，毛遂用「錄錄」（平庸無能）兩個字回敬他們。
+    值得一記的是這四個字後來的用法：
+    今天多用作自謙——靠大家幫忙才辦成；
+    而原文是一句極重的譏刺。語氣完全翻轉了。
+  modern: >-
+    今多用作自謙語，說自己是靠別人幫忙才成事。
+    原文卻是責備他人隨眾而無所作為——用它自謙時，語氣已經和原義相反。
+references:
+  - https://ctext.org/shiji/ping-yuan-jun-yu-qing-lie-zhuan/zh

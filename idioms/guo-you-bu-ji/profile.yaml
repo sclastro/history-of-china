@@ -1,0 +1,56 @@
+id: guo-you-bu-ji
+idiom:
+  zh: 過猶不及
+  pinyin: guò yóu bù jí
+  jyutping: gwo3 jau4 bat1 kap6
+  literal: 過頭和不夠是一樣的
+  en: Going too far is as bad as falling short
+type: historical
+period: chun-qiu-late
+year: -490
+year_note: 年代不詳；《論語》所記師弟問答
+states: [lu]
+meaning: 做得過頭與做得不夠，同樣不合適。
+benshi:
+  event: kong-zi-lun-xue
+  summary: >-
+    子貢問孔子：子張與子夏哪一個賢些？孔子說子張做得過頭、子夏做得不夠。子貢說：那麼子張強些？孔子答：過頭和不夠是一樣的。
+dianyuan:
+  - source: analects
+    locus: 先進
+    ctext_urn: ctp:analects/xian-jin
+    quote: >-
+      子曰：「師也過，商也不及。」曰：「然則師愈與？」子曰：「過猶不及。」
+    translation: >-
+      孔子說：「子張做得過頭，子夏做得不夠。」
+      子貢說：「那麼子張強些？」孔子說：「過頭和不夠是一樣的。」
+crystallisation:
+  note: 這個四字語形直接出自《論語》原文，未經演變。
+  moe_id: 1891
+reliability: 信史
+people: [kong-zi]
+concepts: [中庸, 分寸, 評價]
+related_idioms:
+  - target: yu-su-ze-bu-da
+    kind: same_source
+    note: 兩條同出《論語》，都在說「多」與「快」並不等於好。
+lessons:
+  historical: >-
+    子貢問的是一個很自然的問題：兩個人比較，誰強？
+    而孔子的回答取消了這個問題的前提。
+    「過」與「不及」在日常直覺裡不是對稱的——
+    做太多通常被看成努力過頭，做不夠則是懶；
+    前者比後者體面。
+    孔子說兩者一樣，等於指出：偏離標準就是偏離，
+    方向不同不改變它是偏離這件事。
+    這是《論語》裡少見的一次**取消排序**：
+    子貢想要一個高下，孔子給的是一把尺。
+    值得一提的是被比較的兩人後來的分別：
+    子張氣象闊大而流於疏闊，子夏篤實而失之拘謹——
+    孔子的評語後來各自應驗。
+  modern: >-
+    引申為凡事應當適度。
+    要點在孔子的做法：不是折衷，是先確立一個外在的標準，
+    再由這個標準判斷兩邊都偏了。
+references:
+  - https://ctext.org/analects/xian-jin/zh

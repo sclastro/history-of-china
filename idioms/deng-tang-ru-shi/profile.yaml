@@ -1,0 +1,56 @@
+id: deng-tang-ru-shi
+idiom:
+  zh: 登堂入室
+  pinyin: dēng táng rù shì
+  jyutping: dang1 tong4 jap6 sat1
+  literal: 登上廳堂、進入內室
+  en: Ascending the hall, entering the chamber
+type: historical
+period: chun-qiu-late
+year: -490
+year_note: 年代不詳；《論語》所記師弟問答
+states: [lu]
+meaning: 學問或技藝由淺入深，達到很高的造詣。
+benshi:
+  event: kong-zi-lun-xue
+  summary: >-
+    子路在孔子門前彈瑟，孔子說了一句「由之瑟，奚為於丘之門」，門人因此不再敬重子路。孔子便替他說明：仲由已經登上廳堂，只是還沒有進入內室。
+dianyuan:
+  - source: analects
+    locus: 先進
+    ctext_urn: ctp:analects/xian-jin
+    quote: >-
+      子曰：「由也升堂矣，未入於室也。」
+    translation: >-
+      孔子說：「仲由已經登上廳堂，只是還沒有進入內室。」
+crystallisation:
+  note: >-
+    《論語》原文作「升堂矣，未入於室也」；
+    「登堂入室」的四字語形是後人以「登」易「升」並節縮而成，唐宋以降通行。
+    古代宮室由外而內為門、堂、室，故以堂室喻造詣深淺。
+  moe_id: 1915
+reliability: 信史
+people: [kong-zi, zi-lu]
+concepts: [造詣, 分級, 師弟]
+related_idioms:
+  - target: ju-yi-fan-san
+    kind: same_source
+    note: 兩條同出《論語》，一講教的時機，一講學的階段。
+lessons:
+  historical: >-
+    這句話的場合值得留意：它是一次**補救**。
+    孔子先說了一句重話——「由之瑟，奚為於丘之門」
+    （白話：仲由這樣彈瑟，怎麼配在我門下），
+    門人聽見，就不再敬重子路。
+    孔子隨即補上這一句，把子路的位置說清楚：
+    已經升堂，只是未入室。
+    也就是說，那句批評針對的是還差的一段，不是全盤否定。
+    古代宮室由外而內是門、堂、室；
+    用這個空間次序來比喻造詣，好處是它給出一把**可分級的尺**——
+    不是「好」與「不好」，而是走到了第幾進。
+    一句批評加一把尺，效果完全不同。
+  modern: >-
+    引申為造詣精深。
+    要點在孔子補那一句的動作：批評若不附上位置，聽的人會當成否定。
+references:
+  - https://ctext.org/analects/xian-jin/zh

@@ -1,0 +1,57 @@
+id: yu-su-ze-bu-da
+idiom:
+  zh: 欲速則不達
+  pinyin: yù sù zé bù dá
+  jyutping: juk6 cuk1 zak1 bat1 daat6
+  literal: 想要快反而達不到
+  en: Haste defeats the purpose
+type: historical
+period: chun-qiu-late
+year: -490
+year_note: 年代不詳；子夏為莒父宰時
+states: [lu]
+meaning: 一味求快，反而達不到目的。
+benshi:
+  event: kong-zi-lun-xue
+  summary: >-
+    子夏做莒父的邑宰，向孔子問政。孔子答：不要求快，不要貪圖小利；求快反而達不到目的，貪圖小利就辦不成大事。
+dianyuan:
+  - source: analects
+    locus: 子路
+    ctext_urn: ctp:analects/zi-lu
+    quote: >-
+      無欲速，無見小利。欲速則不達，見小利則大事不成。
+    translation: >-
+      不要求快，不要貪圖小利。
+      求快反而達不到目的，貪圖小利就辦不成大事。
+crystallisation:
+  note: 這個五字語形直接出自《論語》原文，未經演變。
+  moe_id: 1903
+reliability: 信史
+people: [kong-zi]
+concepts: [為政, 速度, 分寸]
+related_idioms:
+  - target: guo-you-bu-ji
+    kind: same_source
+    note: 兩條同出《論語》，都在說「多」與「快」並不等於好。
+  - target: ya-miao-zhu-zhang
+    kind: contrast
+    note: 一是孔子對邑宰的告誡，一是孟子以宋人拔苗為喻，同指催促之害。
+lessons:
+  historical: >-
+    這句話是對一個剛上任的年輕官員說的，所以很具體。
+    「欲速」與「見小利」在原文裡是並列的兩件事，通常只引前一件。
+    兩者其實同源：都是把可以立刻看見的成果，
+    當成了值得追求的成果。
+    求快，是把時間尺度縮短；貪小利，是把範圍縮小。
+    兩種縮短都會讓人得到一些東西——而正是那些到手的東西，
+    使人看不見沒有到手的部分。
+    孔子的告誡之所以難，在於它要求的是放棄可驗證的回饋，
+    去等一個當下看不出來的結果。
+    與孟子的揠苗助長相比：宋人拔苗是主動催促，
+    而這裡講的是更平常的情況——只是想早點看到成效。
+  modern: >-
+    引申為急於求成反而壞事。
+    要點在那個被略掉的下半句：求快與貪小利是同一個毛病的兩面。
+references:
+  - https://ctext.org/analects/zi-lu/zh

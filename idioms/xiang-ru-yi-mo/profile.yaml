@@ -1,0 +1,52 @@
+id: xiang-ru-yi-mo
+idiom:
+  zh: 相濡以沫
+  pinyin: xiāng rú yǐ mò
+  jyutping: soeng1 jyu4 ji5 mut6
+  literal: 用口沫互相沾濕對方
+  en: Moistening each other with spittle
+type: parable
+period: zhan-guo-mid
+year: null
+states: [wei]
+meaning: 在困境中以微薄的力量互相扶持。
+dianyuan:
+  - source: zhuangzi
+    locus: 大宗師
+    ctext_urn: ctp:zhuangzi/the-great-and-most-honoured-master
+    quote: >-
+      泉涸，魚相與處於陸，相呴以濕，相濡以沫，不如相忘於江湖。
+    translation: >-
+      泉水乾了，魚一起困在陸地上，
+      用濕氣互相噓吸、用口沫互相沾濕，
+      倒不如在江湖裡彼此相忘。
+crystallisation:
+  note: >-
+    《莊子》原文作「相濡以沫」，語形自出典源即已定型；
+    同段的「相忘於江湖」亦成常語。
+  moe_id: 1965
+reliability: 寓言
+people: [zhuang-zi]
+concepts: [患難, 自然, 相忘]
+related_idioms:
+  - target: he-zhe-zhi-fu
+    kind: same_source
+    note: 兩條同以困於乾涸的魚為喻，一求救援，一論相處。
+lessons:
+  historical: >-
+    今天用這四個字，幾乎全是正面的——患難與共、彼此扶持。
+    而《莊子》原文緊接著的是「不如相忘於江湖」。
+    也就是說，相濡以沫在莊子眼裡**不是值得稱道的狀態**，
+    它是困境的產物：如果泉水沒有乾，魚根本不必這樣。
+    魚在江湖裡各自游動、互不相識，那才是好的。
+    這一段在〈大宗師〉裡是用來說仁義的：
+    「與其譽堯而非桀，不如兩忘而化其道」（白話：與其稱讚堯而非難桀，不如把兩者都忘掉而融入大道）——
+    要靠互相標榜才維繫的關係，
+    恰恰證明那個讓關係自然運作的條件已經失去。
+    這是莊子一貫的看法：值得珍惜的德目，
+    往往是某種缺失的補償。
+  modern: >-
+    引申為患難中互相扶持，今多用作褒義。
+    若取其原義，它其實是一句嘆息——相濡以沫之所以動人，正因為泉已經乾了。
+references:
+  - https://ctext.org/zhuangzi/the-great-and-most-honoured-master/zh

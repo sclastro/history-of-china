@@ -1,0 +1,56 @@
+id: ju-yi-fan-san
+idiom:
+  zh: 舉一反三
+  pinyin: jǔ yī fǎn sān
+  jyutping: geoi2 jat1 faan2 saam1
+  literal: 舉出一個角落而能推知另外三個
+  en: Given one corner, infer the other three
+type: historical
+period: chun-qiu-late
+year: -490
+year_note: 年代不詳；《論語》所記師弟問答
+states: [lu]
+meaning: 由一件事類推而懂得許多相關的事。
+benshi:
+  event: kong-zi-lun-xue
+  summary: >-
+    孔子談教學的時機：不到學生想弄明白而弄不明白的時候，不去開導；不到他想說出來而說不出來的時候，不去啟發。舉出一個角落而他不能由此推知另外三個角落，就不再教他了。
+dianyuan:
+  - source: analects
+    locus: 述而
+    ctext_urn: ctp:analects/shu-er
+    quote: >-
+      不憤不啟，不悱不發。舉一隅不以三隅反，則不復也。
+    translation: >-
+      不到他想弄明白而弄不明白的時候，不去開導他；
+      不到他想說出來而說不出來的時候，不去啟發他。
+      舉出一個角落而他不能由此推知另外三個角落，就不再教他了。
+crystallisation:
+  note: >-
+    《論語》原文作「舉一隅不以三隅反」，是否定句；
+    「舉一反三」的四字肯定語形是後人的翻轉與節縮，唐宋以降通行。
+  moe_id: 1884
+reliability: 信史
+people: [kong-zi]
+concepts: [教學, 類推, 時機]
+related_idioms:
+  - target: deng-tang-ru-shi
+    kind: same_source
+    note: 兩條同出《論語》，一講教的時機，一講學的階段。
+lessons:
+  historical: >-
+    這一則今天多被讀成對學生的期許——要能觸類旁通。
+    而原文講的其實是**教的時機**。
+    「憤」是心裡想弄通而弄不通，「悱」是想說而說不出來——
+    孔子規定要等到這兩種狀態出現才開口。
+    也就是說，教的前提是學生已經自己走到了卡住的地方。
+    「舉一隅不以三隅反，則不復也」是同一個原則的另一面：
+    如果他連推都推不動，那不是講得不夠多的問題，
+    再講下去也沒有用。
+    整段話對教學的要求其實很嚴苛：
+    它把「什麼時候該說」看得比「說什麼」更要緊。
+  modern: >-
+    引申為觸類旁通、善於類推。
+    若取其原義，它更像對教學者的規定：不到火候，不要先講。
+references:
+  - https://ctext.org/analects/shu-er/zh

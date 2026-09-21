@@ -1,0 +1,59 @@
+id: san-cun-bu-lan-zhi-she
+idiom:
+  zh: 三寸不爛之舌
+  pinyin: sān cùn bù làn zhī shé
+  jyutping: saam1 cyun3 bat1 laan6 zi1 sit3
+  literal: 三寸長而不會爛的舌頭
+  en: A three-inch tongue that never rots
+type: historical
+period: zhan-guo-late
+year: -257
+year_note: 邯鄲被圍之年
+states: [zhao, chu]
+meaning: 能言善辯的口才。
+benshi:
+  event: han-dan-zhi-wei
+  summary: >-
+    毛遂在楚國殿上按劍進言，促成楚趙合縱。平原君回國後說毛遂憑三寸之舌比百萬大軍還強，並自承「勝不敢復相士」——不敢再自認能識別人才。
+dianyuan:
+  - source: shiji
+    locus: 平原君虞卿列傳
+    ctext_urn: ctp:shiji/ping-yuan-jun-yu-qing-lie-zhuan
+    quote: >-
+      毛先生以三寸之舌，彊於百萬之師。勝不敢復相士。
+    translation: >-
+      毛先生憑三寸之舌，比百萬大軍還要強。
+      我不敢再自認能識別人才了。
+crystallisation:
+  note: >-
+    《史記》原文作「三寸之舌」；
+    「三寸不爛之舌」的加長語形出於後世白話小說，
+    《三國演義》等書中習見。
+  moe_id: 1856
+reliability: 大體可信
+people: [mao-sui, ping-yuan-jun]
+concepts: [口才, 識人, 遊說]
+related_idioms:
+  - target: yi-yan-jiu-ding
+    kind: same_event
+    note: 同出平原君對毛遂的評語，一講分量，一講憑藉。
+  - target: mao-sui-zi-jian
+    kind: same_event
+    note: 一是毛遂爭取機會的方式，一是他得到機會之後的結果。
+lessons:
+  historical: >-
+    這句話真正的重量在後半：「勝不敢復相士。」
+    一個養了三千食客、以識人自負的人，
+    在毛遂立功之後說自己不敢再自認能識別人才。
+    而他三年裡沒有看見毛遂，理由當時聽起來還很有道理——
+    「錐之處囊中，其末立見」，真有本事的人藏不住。
+    《史記》把這兩句放在一起，是有用意的：
+    「三寸之舌彊於百萬之師」是對毛遂的評價，
+    「勝不敢復相士」是對自己的評價。
+    後世只記住了前一句。
+  modern: >-
+    引申為能言善辯。
+    若取其史義，可以一併記住平原君那句自承——
+    識人之難，往往在於判準本身看起來太合理。
+references:
+  - https://ctext.org/shiji/ping-yuan-jun-yu-qing-lie-zhuan/zh

@@ -1,0 +1,53 @@
+id: mu-wu-quan-niu
+idiom:
+  zh: 目無全牛
+  pinyin: mù wú quán niú
+  jyutping: muk6 mou4 cyun4 ngau4
+  literal: 眼中再也看不見完整的牛
+  en: No longer seeing the whole ox
+type: parable
+period: zhan-guo-mid
+year: null
+states: [wei]
+meaning: 技藝純熟到了把對象看成結構而非整體的地步。
+dianyuan:
+  - source: zhuangzi
+    locus: 養生主
+    ctext_urn: ctp:zhuangzi/nourishing-the-lord-of-life
+    quote: >-
+      始臣之解牛之時，所見無非牛者；三年之後，未嘗見全牛也。
+    translation: >-
+      我剛開始解牛的時候，眼中所見無非是整頭牛；
+      三年之後，就再也看不見完整的牛了。
+crystallisation:
+  note: >-
+    《莊子》原文作「未嘗見全牛也」；
+    「目無全牛」的四字語形是後人的概括，唐宋以降通行。
+  moe_id: 1941
+reliability: 寓言
+people: [pao-ding, zhuang-zi]
+concepts: [知覺, 熟練, 結構]
+related_idioms:
+  - target: you-ren-you-yu
+    kind: same_event
+    note: 三條同出〈養生主〉，分別是看見、下刀與結果。
+  - target: pao-ding-jie-niu
+    kind: same_event
+    note: 同出庖丁解牛一段，「目無全牛」是第二階段。
+lessons:
+  historical: >-
+    這是先秦少見的一段關於「熟練如何改變知覺」的描述，
+    而它分三個階段，每一段看見的東西都不一樣：
+    剛開始——「所見無非牛者」，眼中只有一整頭牛；
+    三年之後——「未嘗見全牛也」，看見的是關節與縫隙；
+    到最後——「以神遇而不以目視」，眼睛已經不參與了。
+    關鍵在第二階段：看不見完整的牛，不是視力變差，
+    是**對象被結構取代了**。
+    高手與新手看的是同一頭牛，而他們看見的不是同一個東西。
+    這也說明為什麼經驗難以傳授：
+    可以教的是怎麼下刀，不能教的是看見什麼。
+  modern: >-
+    引申為技藝精熟。
+    要點在那個轉變本身：熟練改變的往往不是動作，是所看見的對象。
+references:
+  - https://ctext.org/zhuangzi/nourishing-the-lord-of-life/zh

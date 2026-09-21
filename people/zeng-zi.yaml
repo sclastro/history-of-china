@@ -1,0 +1,21 @@
+id: zeng-zi
+name:
+  zh: 曾子
+  en: Zengzi
+state: lu
+role: 思想家
+birth: -505
+death: -435
+sort_year: -470
+bio: >-
+  名參，字子輿，孔子晚年弟子，以孝著稱，相傳《大學》與《孝經》出其傳。《論語》記他「吾日三省吾身」——替人謀事是否盡心、與朋友交往是否守信、老師傳授的是否溫習。《韓非子·外儲說左上》記他妻子要上市集，兒子哭著要跟去，妻子哄他說回來殺豬給他吃。妻子回來，曾子真的要捉豬來殺。妻子阻止，說那只是哄小孩的話，曾子說：「嬰兒非與戲也。嬰兒非有知也，待父母而學者也，聽父母之教。今子欺之，是教子欺也。」（白話：小孩不是可以跟他開玩笑的。小孩沒有自己的判斷，凡事等著向父母學習、聽父母的教導。如今你欺騙他，就是教他欺騙。）於是把豬殺了煮給兒子吃——「曾子殺彘」由此而來。韓非收錄這則故事，用意在說明信用是可以教出來的，也可以被教壞。
+sources:
+  - source: analects
+    locus: 學而
+    ctext_urn: ctp:analects/xue-er
+  - source: hanfeizi
+    locus: 外儲說左上
+    ctext_urn: ctp:hanfeizi/wai-chu-shuo-zuo-shang
+relations:
+  - target: kong-zi
+    kind: teacher

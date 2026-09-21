@@ -1,0 +1,52 @@
+id: hou-sheng-ke-wei
+idiom:
+  zh: 後生可畏
+  pinyin: hòu shēng kě wèi
+  jyutping: hau6 sang1 ho2 wai3
+  literal: 年輕人是值得敬畏的
+  en: The young are to be regarded with awe
+type: historical
+period: chun-qiu-late
+year: -490
+year_note: 年代不詳；《論語》所記
+states: [lu]
+meaning: 年輕人有無限可能，值得敬重。
+benshi:
+  event: kong-zi-lun-xue
+  summary: >-
+    孔子說年輕人是值得敬畏的，怎麼知道將來的人比不上今天的人；不過一個人到了四五十歲還沒有名聲，那也就不值得敬畏了。
+dianyuan:
+  - source: analects
+    locus: 子罕
+    ctext_urn: ctp:analects/zi-han
+    quote: >-
+      後生可畏，焉知來者之不如今也？四十五十而無聞焉，斯亦不足畏也已。
+    translation: >-
+      年輕人是值得敬畏的，怎麼知道將來的人比不上今天的人呢？
+      不過一個人到了四五十歲還沒有名聲，那也就不值得敬畏了。
+crystallisation:
+  note: 這個四字語形直接出自《論語》原文，未經演變。
+  moe_id: 1922
+reliability: 信史
+people: [kong-zi]
+concepts: [時間, 評價, 世代]
+related_idioms:
+  - target: mao-sui-zi-jian
+    kind: contrast
+    note: 一說後來者未必不如今人，一說沒有機會就不會有表現，可並看。
+lessons:
+  historical: >-
+    今天引這四個字，多半到「後生可畏」為止，語氣是鼓勵。
+    而《論語》原文有下半句，語氣相當冷：
+    「四十五十而無聞焉，斯亦不足畏也已。」（白話：一個人到了四五十歲還沒有名聲，那也就不值得敬畏了。）
+    兩句合起來才是完整的意思：年輕人值得敬畏，
+    是因為**時間還站在他那邊**——還沒有到可以判斷的時候。
+    而時間一旦用完，那份敬畏就沒有理由了。
+    所以這不是一句關於年輕的讚美，是一句關於**不確定性**的判斷：
+    可畏的不是年輕本身，是還沒有揭曉的結果。
+    順帶一提：孔子說這話時大概已經過了五十。
+  modern: >-
+    引申為年輕人不可輕視。
+    要點在被略掉的下半句：可畏的是尚未揭曉，不是年紀本身。
+references:
+  - https://ctext.org/analects/zi-han/zh

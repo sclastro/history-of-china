@@ -1,0 +1,20 @@
+id: zhang-meng-tan
+name:
+  zh: 張孟談
+  en: Zhang Mengtan
+state: jin
+role: 策士
+birth: null
+death: null
+sort_year: -453
+bio: >-
+  趙襄子的謀臣。智伯率韓魏圍晉陽、決汾水灌城，城中「沈灶產蛙」而民無叛意。他自請潛出城去見韓康子與魏桓子，指出「唇亡則齒寒，今智伯帥二國之君伐趙，趙亡則韓魏為之次矣」（白話：嘴唇沒了牙齒就冷；如今智伯帶著兩國之君攻趙，趙國一亡，下一個就輪到韓、魏），說動二家倒戈。前453年三家反攻，殺智伯於晉陽城下而三分其地。事成之後他請求離去，襄子不許，他說：「前事之不忘，後事之師。君其圖之。」（白話：先前發生過的事不要忘記，可以作為日後行事的借鑒。您好好考慮吧。）並指出功成而不退則勢必生嫌，於是辭去封地，耕於負親之丘。「前事不忘，後事之師」由此而來。
+sources:
+  - source: zhan-guo-ce
+    locus: 趙策一
+    ctext_urn: ctp:zhan-guo-ce/zhao-ce-yi
+relations:
+  - target: zhao-xiang-zi
+    kind: ruler
+  - target: zhi-bo
+    kind: rival

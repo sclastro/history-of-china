@@ -1,0 +1,57 @@
+id: yuan-jiao-jin-gong
+idiom:
+  zh: 遠交近攻
+  pinyin: yuǎn jiāo jìn gōng
+  jyutping: jyun5 gaau1 gan6 gung1
+  literal: 結交遠方、攻打鄰近
+  en: Befriend the distant, attack the near
+type: historical
+period: zhan-guo-late
+year: -266
+year_note: 秦昭王四十一年
+states: [qin, wei, han, qi]
+meaning: 對遠方的示好、對鄰近的用兵，是一套分化對手的戰略。
+benshi:
+  event: fan-sui-shui-qin
+  summary: >-
+    范睢入秦，指出穰侯越過韓魏去攻打齊國的錯誤——打贏了那塊地也守不住、連不上，最後仍歸韓魏。他提出應當結交遠方的齊楚而先取相鄰的韓魏，奪一寸就實實在在多一寸。秦昭王採納，此後先取韓之滎陽、斷太行之道，而以外交穩住齊楚。
+dianyuan:
+  - source: shiji
+    locus: 范睢蔡澤列傳
+    ctext_urn: ctp:shiji/fan-sui-cai-ze-lie-zhuan
+    quote: >-
+      王不如遠交而近攻，得寸則王之寸也，得尺亦王之尺也。
+    translation: >-
+      大王不如結交遠方而攻打鄰近，
+      奪得一寸就是大王的一寸，奪得一尺也是大王的一尺。
+crystallisation:
+  note: >-
+    《史記》原文作「遠交而近攻」；「遠交近攻」的四字語形是後人的節縮。
+    明代所輯《三十六計》列為第二十三計，四字語形由此大行。
+  moe_id: 1812
+reliability: 信史
+people: [fan-sui, qin-zhao-xiang-wang]
+concepts: [戰略, 地緣, 合縱連橫]
+related_idioms:
+  - target: ya-zi-bi-bao
+    kind: same_source
+    note: 同出范睢，一是他替秦國定下的戰略，一是他自己的為人。
+  - target: bao-xin-jiu-huo
+    kind: contrast
+    note: 一是秦國分化六國的辦法，一是六國割地求和的後果。
+lessons:
+  historical: >-
+    范睢的論據完全不在道義，在**地理與守成**。
+    穰侯主張越過韓魏去打齊國，就算打贏，那塊土地與秦國本土之間隔著韓魏，
+    守不住也連不上，最後仍然落入韓魏之手——出的是秦國的力，得利的是別人。
+    「得寸則王之寸也，得尺亦王之尺也」（白話：奪得一寸就是大王的一寸，奪得一尺也是大王的一尺）講的正是這件事：
+    奪來的土地要能連得上、守得住，才算數。
+    這一條同時解釋了秦國為什麼在長平之後仍能逐一擊破：
+    六國之間始終沒有形成穩定的合縱，
+    因為秦國一直在用外交把它們切開——
+    長平之戰時齊國拒絕借糧給趙國，就是這套策略的結果。
+  modern: >-
+    引申為分化對手、各個擊破。
+    要點在那個「守得住」的判準：擴張的成果若不能鞏固，出的力就是替人作嫁。
+references:
+  - https://ctext.org/shiji/fan-sui-cai-ze-lie-zhuan/zh

@@ -1,0 +1,54 @@
+id: ya-zi-bi-bao
+idiom:
+  zh: 睚眥必報
+  pinyin: yá zì bì bào
+  jyutping: ngaai4 zaai6 bit1 bou3
+  literal: 瞪一眼的怨恨也一定報復
+  en: Repaying even a glare
+type: historical
+period: zhan-guo-late
+year: -266
+year_note: 范睢拜相之後
+states: [qin, wei]
+meaning: 極小的怨恨也要報復；形容氣量狹窄。
+benshi:
+  event: fan-sui-shui-qin
+  summary: >-
+    范睢在魏國時被魏相魏齊鞭笞至肋折齒落、棄於廁中，裝死才得脫。入秦拜相之後，他迫使魏齊自殺；而對當年在他落魄時贈他一件綈袍的須賈，則加以寬免。《史記》因此說他「一飯之德必償，睚眥之怨必報」。
+dianyuan:
+  - source: shiji
+    locus: 范睢蔡澤列傳
+    ctext_urn: ctp:shiji/fan-sui-cai-ze-lie-zhuan
+    quote: >-
+      一飯之德必償，睚眥之怨必報。
+    translation: >-
+      一頓飯的恩德一定報答，瞪一眼的怨恨也一定報復。
+crystallisation:
+  note: >-
+    《史記》原文作「睚眥之怨必報」；
+    「睚眥必報」的四字語形是後人的節縮，唐宋以降通行。
+  moe_id: 1824
+reliability: 信史
+people: [fan-sui]
+concepts: [恩怨, 對稱, 人物評價]
+related_idioms:
+  - target: yuan-jiao-jin-gong
+    kind: same_source
+    note: 同出范睢，一是他替秦國定下的戰略，一是他自己的為人。
+lessons:
+  historical: >-
+    今天用這四個字純粹是貶義，而《史記》原文是一組**對稱**的評語：
+    「一飯之德必償」與「睚眥之怨必報」並列，前半句是褒。
+    司馬遷要說的不是范睢小氣，是他對恩與怨一樣認真、一樣不放過。
+    而且這兩半在他身上都有具體的事：
+    須賈當年在他落魄時贈他一件綈袍，他入秦拜相後便饒了須賈；
+    魏齊當年幾乎把他打死，他就逼得魏齊自殺。
+    後世只留下後半句，前半句丟掉了——
+    於是一個賞罰分明到極處的人，變成了一個氣量狹窄的人。
+    順帶一提：范睢最後也是因為舉薦的人出事而引咎歸相印，
+    《史記》記他「一飯必償」，也記他為薦人負責。
+  modern: >-
+    引申為氣量狹窄、有怨必報。
+    使用時值得記住被省略的那半句：原評語說的是恩怨都不放過。
+references:
+  - https://ctext.org/shiji/fan-sui-cai-ze-lie-zhuan/zh
