@@ -19,6 +19,7 @@ Vercel 直接發佈 repo 內已 commit 的檔案，不執行任何 build step。
 
 七期收錄計劃全部完成：**116 條成語、62 個事件、129 個人物**，粵語音檔 116 個（約 1.7 MB）。
 `validate.py` 全部通過，今譯提示為零。
+事件今譯改寫已完成 20 個（連同試點），附原文選段；進度及待辦見下文「今譯改寫進度」。
 `docs/framework.md` 候選名單尚餘約 110 條未收；續補時在該檔「五、後續收錄計劃」表下方另立期次（第八期起）。
 
 ## 目錄結構
@@ -32,8 +33,9 @@ data/periods.yaml          七個分期（start／end 為閉區間）
 data/states.yaml           列國譜系
 data/sources.yaml          文獻譜系（含 ctext slug、locus_format）
 schema/*-template.yaml     三種條目的欄位範本——新增條目前必讀
-docs/                      design.md、sources.md、framework.md
-scripts/                   validate、build_index、build_site、build_audio、check_links
+docs/                      design.md、sources.md、framework.md、translation-style.md（今譯標準及覆核清單）
+scripts/                   validate、build_index、build_site、build_audio、check_links、
+                           poe_rewrite、verify_original、lint_style
 assets/                    style.css、search-index.js（生成）、audio/<id>.mp3（生成）
 *.html、sitemap.xml、robots.txt、404.html   全部由 build_site.py 生成，切勿手改
 ```
@@ -50,6 +52,9 @@ python3 scripts/build_index.py     # 重生 README.md 內 <!-- INDEX:START/END -
 python3 scripts/build_site.py      # 重生全部 HTML、search-index.js、sitemap.xml
 python3 scripts/build_audio.py     # 為新成語生成粵語音檔（--force 全部重做；--list 只列出）
 python3 scripts/check_links.py     # 覆檢 ctext.org 與教育部成語典連結（需連網；403 標為「無法判定」）
+python3 scripts/poe_rewrite.py --model <型號> --out <暫存目錄> --all --limit N   # 經 Poe 改寫事件（見下文）
+python3 scripts/verify_original.py <稿件.yaml ...>   # 以維基文庫逐字核對 original 原文（需連網）
+python3 scripts/lint_style.py <稿件.yaml ...>        # 檢查「什麼」、引號內非原文、殘留文言虛詞
 ```
 
 ## 修改條目的標準流程
@@ -90,12 +95,33 @@ python3 scripts/check_links.py     # 覆檢 ctext.org 與教育部成語典連�
 - 每次只開**一個** agent／請求，逐條順序處理，絕不並行，以免一次過耗盡 Poe 額度。
 - 模型用 Poe 上**最高版本的 Claude Opus**（先以 `scripts/poe_rewrite.py --list-models` 查核）。
 - 批量改寫用 `scripts/poe_rewrite.py`，輸出先寫到暫存目錄，經人手覆核（尤其原文是否逐字照錄）後才併入 `events/`。
-- 雲端環境須在 Network access 允許 `api.poe.com`。
+- 雲端環境須在 Network access 允許 `api.poe.com`；核對原文另須允許 `zh.wikisource.org`。
+- 腳本用串流請求：非串流請求在生成期間毫無資料往來，約 160 秒即被網絡代理斷線。
+- prompt 要求模型不作網上搜尋：Poe 上的 Opus 會自行搜尋，令 token 用量增至五至十倍，
+  亦會令回覆只有說明文字而無 YAML。回覆無法解析時存為 `<id>.raw.txt`，重跑時自動重做。
+- 每條約需五至六分鐘；以背景執行，逐條完成後即核對，不必等整批跑完。
+
+## 原文核對
+
+ctext.org 網頁設有防機械人關卡，並明言不歡迎程式抓取；其 API 取全文須機構訂閱。故不設法繞過，
+改以 `scripts/verify_original.py` 取維基文庫原文逐字比對。兩者底本不盡相同（《戰國策》用士禮居本），
+報告的差異須人手判斷：異體字保留，版本異文查明後保留，模型改字、刪句、自擬文字則須改正。
+維基文庫的 API（api.php）限流嚴格，腳本改用 `index.php?action=raw`，並附帶聯絡網址的 User-Agent。
+覆核須逐項對照 `docs/translation-style.md`「覆核清單」。
 
 ## 今譯改寫進度
 
-標準見 `docs/translation-style.md`。已完成：城濮之戰（試點）。其餘 61 個事件、成語 `translation` 欄、人物小傳夾註待辦。
+標準見 `docs/translation-style.md`。事件按檔名字母序處理。
+
+- 已完成（20）：城濮之戰（試點）；邲之戰、長平之戰、長勺之戰、陳軫說昭陽、重耳流亡、楚俘皇頡爭功、
+  楚莊王親政、大棘之戰、二桃殺三士、齊桓伐山戎、范睢說秦昭王、馮諼客孟嘗君、輔氏之役、更羸虛發、
+  管仲相齊、桂陵之戰、郭隗說燕昭王、邯鄲之圍、韓原之戰（2026-09-25，Poe claude-opus-4.8 改寫，人手覆核）。
+- 未能完成：楚圍宋（`chu-wei-song`）。Poe 連續三次失敗（一次只回說明文字，兩次回傳 Internal server error），
+  疑與原文「易子而食，析骸以爨」等內容有關，未再重試。
+- 待辦：其餘 42 個事件（`poe_rewrite.py --all` 自動略過已有 `original` 者）、成語 `translation` 欄、人物小傳夾註。
 
 ## 已知問題
 
+- 楚圍宋未能經 Poe 改寫，見「今譯改寫進度」。
+- 原文核對以維基文庫為準，與站內 `ctext_urn` 所指的 ctext 底本或有出入（如更羸虛發「驚心未去／未至」）。
 - `docs/framework.md` 候選名單的粗體標示不完整（第四期以後收錄者多未加粗），收錄與否以 `README.md`「成語一覽」為準。

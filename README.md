@@ -34,7 +34,7 @@
 ```
 idioms/<id>/profile.yaml   結構化數據：四層考據、關聯人物事件、雙欄啟示（可供程式查詢）
 idioms/<id>/<id>.md        論述文章（供讀者閱讀）
-events/<id>.yaml           事件節點：敘事、史料、意義
+events/<id>.yaml           事件節點：敘事、原文選段、史料、意義
 people/<id>.yaml           人物節點：小傳、生平年表、關聯
 data/{states,sources,periods}.yaml   列國譜系、文獻譜系、分期定義
 ```
@@ -52,6 +52,7 @@ data/{states,sources,periods}.yaml   列國譜系、文獻譜系、分期定義
 - [docs/design.md](docs/design.md) — 四層考據原則（以臥薪嘗膽、烽火戲諸侯為範例）
 - [docs/sources.md](docs/sources.md) — 文獻分層與引用規範
 - [docs/framework.md](docs/framework.md) — 分期架構、列國泳道、成語候選名單與分期收錄計劃
+- [docs/translation-style.md](docs/translation-style.md) — 今譯與白話敘事標準、改寫稿覆核清單
 - [schema/](schema/) — 三種條目的欄位 template
 
 ## 部署
@@ -122,6 +123,14 @@ python3 scripts/check_links.py
 
 > ctext.org 會攔截非瀏覽器的 User-Agent。`check_links.py` 已帶瀏覽器 UA，
 > 若仍回 403 會標為「無法判定」而不算失敗，須以人手覆核。
+
+**原文核對**：事件 `original` 欄的原文選段，以維基文庫全文逐字比對
+（ctext.org 設有防抓取關卡，不能自動核對）；另有文字規範檢查：
+
+```sh
+python3 scripts/verify_original.py events/<id>.yaml
+python3 scripts/lint_style.py events/<id>.yaml
+```
 
 <!-- INDEX:START -->
 

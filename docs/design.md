@@ -141,6 +141,9 @@
 
 譯文一律自譯，不得抄錄他人譯本；詳見 [sources.md](sources.md) 的引用規範。
 
+事件另有更嚴格的寫法（2026-09 起逐步改寫）：`narrative` 全用現代書面語，不夾文言引語；
+原文改放 `original` 欄，每段附自譯，網頁上預設摺疊。標準見 [translation-style.md](translation-style.md)。
+
 > **另註**：YAML 折疊純量（`>-`）與 Markdown 的段落換行都會摺成空格，
 > 中文之間出現空格會很難看。`build_site.py` 會在載入時把
 > 「中日韓字元之間的空白」一律清走（`cjk_tidy`），
