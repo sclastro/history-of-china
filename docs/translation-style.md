@@ -23,7 +23,7 @@
   正文不夾文言引語；對話以間接引述寫出。唯一例外是成語本身，可用「」標出。
 - `original`：原文選段，三至六段，揀選與成語及關鍵轉折直接相關者。
   每段 `speaker`（說話者，可省）、`locus`、`quote`（原文照錄）、`translation`（按本標準自譯）；
-  `source` 缺省時沿用 `sources` 第一條，`ctext_urn` 在 `locus` 相同時亦自動沿用。
+  `source` 缺省時沿用 `sources` 第一條；`ctext_urn` 缺省時，自動沿用 `sources` 中同書同篇者的連結。
 - `significance`：一至三句現代書面語。可保留一句關鍵原文，但須緊接「（白話：……）」。
 
 ## 覆核清單

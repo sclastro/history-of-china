@@ -467,8 +467,12 @@ def event_originals(ev, data):
     blocks = ""
     for c in items:
         c = {"source": base.get("source"), **c}
-        if "ctext_urn" not in c and c.get("locus") == base.get("locus"):
-            c["ctext_urn"] = base.get("ctext_urn")
+        if "ctext_urn" not in c:
+            # 沿用 sources 中同書同篇者的連結（不限第一條）
+            same = [s for s in ev.get("sources") or []
+                    if s.get("source") == c["source"] and s.get("locus") == c.get("locus")]
+            if same and same[0].get("ctext_urn"):
+                c["ctext_urn"] = same[0]["ctext_urn"]
         speaker = f'<span class="speaker">{e(c["speaker"])}</span>・' if c.get("speaker") else ""
         blocks += (f'<div class="quote-block"><div class="cite">{speaker}{cite_line(c, data)}</div>'
                    f'<div class="translation">{e(c.get("translation", ""))}</div>'
