@@ -101,27 +101,27 @@ iOS／macOS 有 Sinji、Android 一般有 Google 粵語、Windows 有 zh-HK，
 新增或修改條目後：
 
 ```sh
-python3 scripts/validate.py        # 檢查格式與四層 id 空間嘅交叉引用
+python3 scripts/validate.py        # 檢查格式與四層 id 空間的交叉引用
 python3 scripts/build_index.py     # 重新生成本 README 索引
 python3 scripts/build_site.py      # 重新生成網站頁面
 ```
 
-`validate.py` 除咗檢查必填欄位，仲會檢查：
+`validate.py` 除檢查必填欄位外，亦檢查：
 `benshi.event` 存在於 `events/`、`people[]` 全部存在於 `people/`、
-`states`／`period`／`dianyuan[].source` 對得上 `data/*.yaml`、
-`ctext_urn` 嘅書名同該文獻嘅 ctext slug 一致、
+`states`／`period`／`dianyuan[].source` 與 `data/*.yaml` 相符、
+`ctext_urn` 的書名與該文獻的 ctext slug 一致、
 `type: parable` 必須配 `reliability: 寓言`、
-`related_idioms[].target` 存在且唔指向自己。
+`related_idioms[].target` 存在且不指向自身。
 
-**連結覆檢**：ctext.org 同教育部成語典嘅網址可能改動，舊連結會靜靜變成 404，
+**連結覆檢**：ctext.org 與教育部成語典的網址可能改動，舊連結或會悄然失效（404），
 故宜定期執行（需連網）：
 
 ```sh
 python3 scripts/check_links.py
 ```
 
-> ctext.org 會擋非瀏覽器嘅 User-Agent。`check_links.py` 已帶瀏覽器 UA，
-> 若仍回 403 會標為「無法判定」而唔算失敗——請人手覆核。
+> ctext.org 會攔截非瀏覽器的 User-Agent。`check_links.py` 已帶瀏覽器 UA，
+> 若仍回 403 會標為「無法判定」而不算失敗，須以人手覆核。
 
 <!-- INDEX:START -->
 
