@@ -84,6 +84,18 @@ python3 scripts/check_links.py     # 覆檢 ctext.org 與教育部成語典連�
 程式碼註解及部分 schema 註解、`validate.py` 輸出仍混有廣東口語（如「唔」「嘅」），屬歷史遺留；
 改動相關檔案時可順手改為書面語，但毋須為此另開 commit。
 
+## Poe API 使用規則
+
+- key 只從環境變數 `POE_API_KEY` 讀取，**切勿寫入 repo、commit 或對話**。
+- 每次只開**一個** agent／請求，逐條順序處理，絕不並行，以免一次過耗盡 Poe 額度。
+- 模型用 Poe 上**最高版本的 Claude Opus**（先以 `scripts/poe_rewrite.py --list-models` 查核）。
+- 批量改寫用 `scripts/poe_rewrite.py`，輸出先寫到暫存目錄，經人手覆核（尤其原文是否逐字照錄）後才併入 `events/`。
+- 雲端環境須在 Network access 允許 `api.poe.com`。
+
+## 今譯改寫進度
+
+標準見 `docs/translation-style.md`。已完成：城濮之戰（試點）。其餘 61 個事件、成語 `translation` 欄、人物小傳夾註待辦。
+
 ## 已知問題
 
 - `docs/framework.md` 候選名單的粗體標示不完整（第四期以後收錄者多未加粗），收錄與否以 `README.md`「成語一覽」為準。
