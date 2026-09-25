@@ -15,10 +15,10 @@ Vercel 直接發佈 repo 內已 commit 的檔案，不執行任何 build step。
 - 預設分支（Vercel 追蹤）：`claude/spring-autumn-history-site-f4tzkd`
 - 早期曾用 GitHub Actions 部署 GitHub Pages，`.github/workflows/pages.yml` 已刪除，現只用 Vercel。
 
-## 現況（2026-09-22）
+## 現況（2026-09-25）
 
 七期收錄計劃全部完成：**116 條成語、62 個事件、129 個人物**，粵語音檔 116 個（約 1.7 MB）。
-`validate.py` 全部通過，餘 1 項今譯提示（見「已知問題」）。
+`validate.py` 全部通過，今譯提示為零。
 `docs/framework.md` 候選名單尚餘約 110 條未收；續補時在該檔「五、後續收錄計劃」表下方另立期次（第八期起）。
 
 ## 目錄結構
@@ -86,9 +86,4 @@ python3 scripts/check_links.py     # 覆檢 ctext.org 與教育部成語典連�
 
 ## 已知問題
 
-- `people/ping-yuan-jun.yaml` 的 `bio` 把轉述「十步之內楚王性命就懸在他手上」置於引號內，觸發今譯提示；
-  應改為不加引號的轉述，或引《史記》原文「十步之內，王不得恃楚國之眾也，王之命縣於遂手」並附白話。
-- `docs/framework.md` 第三節候選名單的戰國三期小標題起訖（前 339、前 338–前 261、前 260 起）
-  與 `data/periods.yaml`（前 338、前 337–前 285、前 284 起）不一致，以 `periods.yaml` 為準。
-- `docs/framework.md` 末段兩句「續補時另立期次」內容重複，可刪其一。
-- `README.md`「維護流程」一節仍用廣東口語，與全站書面語規範不符。
+- `docs/framework.md` 候選名單的粗體標示不完整（第四期以後收錄者多未加粗），收錄與否以 `README.md`「成語一覽」為準。
