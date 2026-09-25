@@ -11,6 +11,7 @@
   python3 scripts/poe_rewrite.py --model <型號> --out /tmp/rewrite --all --limit 5
 """
 import argparse
+import http.client
 import json
 import os
 import re
@@ -150,7 +151,11 @@ def main():
         if (a.out / f"{i}.yaml").exists():
             print(f"- {i} 已有輸出，略過")
             continue
-        rewrite(i, a.model, a.out)
+        try:
+            rewrite(i, a.model, a.out)
+        except (OSError, http.client.HTTPException) as err:
+            # 連線中斷、逾時等：記下後繼續下一條，重跑時自動補做
+            print(f"✗ {i}：網絡錯誤（{type(err).__name__}: {err}），略過", flush=True)
 
 
 if __name__ == "__main__":
