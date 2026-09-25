@@ -115,6 +115,11 @@ def rich(text):
     return GLOSS.sub(r'<span class="vern">\1</span>', out)
 
 
+def paras(text):
+    """多段敘事：資料中的換行即分段，每段各成 <p>。"""
+    return "".join(f"<p>{rich(x.strip())}</p>" for x in (text or "").split("\n") if x.strip())
+
+
 def year_num(v):
     """把 year 欄化為整數以供排序、定位；不可考者回傳 None。"""
     if isinstance(v, int):
@@ -452,6 +457,26 @@ def quote_block(c, data):
     return f'<div class="quote-block">{"".join(parts)}</div>'
 
 
+
+def event_originals(ev, data):
+    """事件的原文選段：整組預設摺疊；每段白話在上、原文在下。"""
+    items = ev.get("original") or []
+    if not items:
+        return ""
+    base = (ev.get("sources") or [{}])[0]
+    blocks = ""
+    for c in items:
+        c = {"source": base.get("source"), **c}
+        if "ctext_urn" not in c and c.get("locus") == base.get("locus"):
+            c["ctext_urn"] = base.get("ctext_urn")
+        speaker = f'<span class="speaker">{e(c["speaker"])}</span>・' if c.get("speaker") else ""
+        blocks += (f'<div class="quote-block"><div class="cite">{speaker}{cite_line(c, data)}</div>'
+                   f'<div class="translation">{e(c.get("translation", ""))}</div>'
+                   f'<details class="orig-wrap" open><summary>原文</summary>'
+                   f'<div class="original">{e(c.get("quote", ""))}</div></details></div>')
+    return (f'<details class="ev-original"><summary>原文選段・白話對照（{len(items)} 段）</summary>'
+            f'{blocks}</details>')
+
 # ────────────────────────── 各頁 ──────────────────────────
 
 def build_index(data):
@@ -753,7 +778,8 @@ def build_events(data):
             if ev.get("narrative"):
                 story = (f'<details class="ev-story" id="{e(ev["id"])}">'
                          f'<summary>讀故事</summary>'
-                         f'<div class="narrative">{rich(ev["narrative"])}</div></details>')
+                         f'<div class="narrative">{paras(ev["narrative"])}</div>'
+                         f'{event_originals(ev, data)}</details>')
             rows += f"""<div class="row">
   <span class="yr">{e(yl)}</span>
   <span class="main">
@@ -926,7 +952,7 @@ def build_idiom_page(d, data, prev_d, next_d):
   <div class="sub-label">所繫事件</div>
   <div class="ev-name">{e(ev['name'])}
     <span class="ev-year">（{e(yl)}）</span></div>
-  <div class="narrative">{rich(ev.get('narrative', ''))}</div>
+  <div class="narrative">{paras(ev.get('narrative'))}</div>{event_originals(ev, data)}
   <div class="significance"><b>意義：</b>{rich(ev.get('significance', ''))}</div>
 </div>"""
         layers.append(f"""<section class="layer">

@@ -471,6 +471,8 @@ main.narrow { max-width: 800px; }
 .ev-name { font-family: var(--serif); font-size: 20px; color: var(--ink-strong); }
 .ev-year { font-family: var(--sans); font-size: 14px; color: var(--muted); }
 .narrative { font-size: 18px; line-height: 2.0; margin-top: 8px; }
+.narrative p { margin: 0 0 .9em; }
+.narrative p:last-child { margin-bottom: 0; }
 .significance {
   font-size: 16px; line-height: 1.95; color: var(--muted); margin-top: 11px;
 }
@@ -614,6 +616,17 @@ main.narrow { max-width: 800px; }
 
 /* ── 大事表：展開讀故事 ── */
 .ev-story { margin-top: 12px; }
+/* 事件原文選段：整組摺疊，展開後每段白話在上、原文在下 */
+.ev-original { margin-top: 14px; }
+.ev-original > summary {
+  font-family: var(--sans); font-size: 14px; color: var(--bronze-deep);
+  cursor: pointer; list-style: none; padding: 4px 0; letter-spacing: .08em;
+}
+.ev-original > summary::-webkit-details-marker { display: none; }
+.ev-original > summary::before { content: "▸ "; }
+.ev-original[open] > summary::before { content: "▾ "; }
+.ev-original .quote-block { margin-top: 12px; }
+.ev-original .speaker { font-weight: 600; color: var(--ink-strong); }
 .ev-story > summary {
   display: inline-block;
   cursor: pointer;

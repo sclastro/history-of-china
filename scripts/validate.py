@@ -282,6 +282,13 @@ def check_event(path: Path, ids) -> list[str]:
     check_citations(data["sources"], "sources", ids["sources"], errors)
     check_citations(data.get("variants"), "variants", ids["sources"], errors)
     warnings.extend(missing_gloss(data.get("narrative"), "narrative"))
+    # 原文選段（選填）：每段須有 quote 及 translation；source 缺省時沿用 sources 第一條
+    for i, c in enumerate(data.get("original") or []):
+        for f in ("locus", "quote", "translation"):
+            if not c.get(f):
+                errors.append(f"original[{i}] 缺少 {f}")
+        if c.get("source") and c["source"] not in ids["sources"]:
+            errors.append(f"original[{i}] 的 source 無效：{c['source']}")
     return errors
 
 
