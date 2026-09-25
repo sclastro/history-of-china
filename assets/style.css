@@ -536,7 +536,12 @@ main.narrow { max-width: 800px; }
   .lessons { grid-template-columns: 1fr; }
   .timeline-wrap { display: none; }
   .tl-mobile { display: block; }
-  .site-nav { order: 3; width: 100%; margin-left: 0; }
+  .tl-detail { display: none; }   /* 手機版無圓點可點，說明框改由分期列表取代 */
+  /* 導覽改為單行橫向捲動，免得最後一項掉到第二行 */
+  .site-nav { order: 3; width: 100%; margin-left: 0; flex-wrap: nowrap; overflow-x: auto;
+              scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-nav a { flex: 0 0 auto; padding-left: 12px; padding-right: 12px; }
   .search-trigger { margin-left: auto; }
   main { padding: 24px 16px 60px; }
   .row { flex-direction: column; gap: 6px; }

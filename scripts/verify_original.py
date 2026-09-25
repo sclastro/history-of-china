@@ -17,7 +17,7 @@ import yaml
 CACHE = Path(tempfile.gettempdir()) / "wikisource-cache"
 CACHE.mkdir(exist_ok=True)
 UA = "history-of-china-verify/0.1 (https://github.com/sclastro/history-of-china)"
-PUNCT = re.compile(r"[\s，。、；：？！「」『』（）《》〈〉…—．,.;:?!()\"'·‘’“”〔〕\[\]{}|=<>/a-zA-Z0-9_　-]")
+PUNCT = re.compile(r"[\s，。、；：？！「」『』（）《》〈〉…—．,.;:?!()\"'·‘’“”〔〕\[\]{}|=<>/a-zA-Z0-9_　*-]")
 # 常見異體字，只作比對時統一，不改動稿件
 VARIANT = str.maketrans("爲衆羣敎旣卽竝脩庄説甯巵冲歳撃鬬獘棬閒夸鄕捨髙倶絶擧鷄歩内顚", "為眾群教既即並修莊說寧卮沖歲擊鬥弊捲間誇鄉舍高俱絕舉雞步內顛")
 GONG = "隱桓莊閔僖文宣成襄昭定哀"
@@ -32,13 +32,14 @@ SHIJI = {"十二諸侯年表": "014", "六國年表": "015", "周本紀": "004",
          "范雎蔡澤列傳": "079", "樂毅列傳": "080", "廉頗藺相如列傳": "081", "田單列傳": "082",
          "魯仲連鄒陽列傳": "083", "屈原賈生列傳": "084", "呂不韋列傳": "085", "刺客列傳": "086",
          "李斯列傳": "087", "滑稽列傳": "126"}
-BOOK = {"hanfeizi": "韓非子", "zhuangzi": "莊子", "liezi": "列子", "mengzi": "孟子", "analects": "論語",
+BOOK = {"hanfeizi": "韓非子", "zhuangzi": "莊子", "mengzi": "孟子", "analects": "論語",
         "lv-shi-chun-qiu": "呂氏春秋", "xunzi": "荀子", "mozi": "墨子", "shuo-yuan": "說苑",
         "xin-xu": "新序", "huainanzi": "淮南子", "yanzi-chun-qiu": "晏子春秋"}
 YANZI = {"內篇諫上": "卷一", "內篇諫下": "卷二", "內篇問上": "卷三", "內篇問下": "卷四",
          "內篇雜上": "卷五", "內篇雜下": "卷六", "外篇上": "卷七", "外篇下": "卷八"}
 ANALECTS = ["學而", "為政", "八佾", "里仁", "公冶長", "雍也", "述而", "泰伯", "子罕", "鄉黨", "先進",
             "顏淵", "子路", "憲問", "衛靈公", "季氏", "陽貨", "微子", "子張", "堯曰"]
+LVSHI = {"本味": "卷十四", "察今": "卷十五", "自知": "卷二十四"}   # 維基文庫按卷分頁；按需補充
 GUOYU = {name: f"國語/卷{i:02d}" for i, name in enumerate(
     ["周語上", "周語中", "周語下", "魯語上", "魯語下", "齊語", "晉語一", "晉語二", "晉語三", "晉語四",
      "晉語五", "晉語六", "晉語七", "晉語八", "晉語九", "鄭語", "楚語上", "楚語下", "吳語", "越語上", "越語下"], 1)}
@@ -80,11 +81,19 @@ def locate(c, ev):
         return f"史記/卷{SHIJI[loc]}"
     if src == "guo-yu":
         return GUOYU.get(loc)
+    if src == "liezi":
+        return f"列子/{loc}篇"
+    if src == "lv-shi-chun-qiu":
+        return f"呂氏春秋/{LVSHI.get(loc.split('·')[-1], loc)}"
     if src == "yanzi-chun-qiu":
         return f"晏子春秋/{YANZI.get(loc, loc)}"
     if src == "analects":
         n = ANALECTS.index(loc) + 1 if loc in ANALECTS else 0
         return f"論語/{loc}第{'十' * (n // 10) if n < 20 else '二十'}{'一二三四五六七八九'[n % 10 - 1] if n % 10 else ''}" if n else None
+    if src == "xin-xu":
+        return f"新序/雜事/卷{loc[2:]}" if loc.startswith("雜事") else None   # 雜事一 → 新序/雜事/卷一
+    if src == "hanfeizi":
+        loc = {"內儲說上": "內儲說上七術", "內儲說下": "內儲說下六微"}.get(loc, loc)
     if src in BOOK:
         return f"{BOOK[src]}/{loc}"
     return None
