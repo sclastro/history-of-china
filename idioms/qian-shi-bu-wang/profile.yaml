@@ -18,7 +18,7 @@ benshi:
 dianyuan:
   - source: zhan-guo-ce
     locus: 趙策一
-    ctext_urn: ctp:zhan-guo-ce/zhao-ce-yi
+    ctext_urn: ctp:zhan-guo-ce/zhao-yi
     quote: >-
       前事之不忘，後事之師。君若弗圖，則臣力不足。
     translation: >-
@@ -34,11 +34,11 @@ people: [zhang-meng-tan, zhao-xiang-zi, zhi-bo]
 concepts: [功成身退, 借鑒, 君臣]
 related_idioms:
   - target: niao-jin-gong-cang
-    kind: same_source
+    kind: parallel
     note: 兩條都在處理功成之後的君臣關係，一是離去，一是留下。
 lessons:
   historical: >-
-    這八個字今天幾乎是「以史為鑒」的同義語，而原文的用法要具體得多。
+    這八個字今天幾乎等同以史為鑒，而原文的用法要具體得多。
     張孟談說這句話，是在勸趙襄子放自己走。
     他舉的「前事」是有所指的：智伯之所以敗亡，
     是因為權臣與君主的勢位相當而終於相疑；
@@ -48,10 +48,10 @@ lessons:
     他把自己放進了那個剛剛失敗的模型裡。
     然後他辭去封地去耕田。
     與范蠡的浮海而去、文種的稱病不朝並看，
-    這是先秦「功成身退」最早也最清醒的一例：
+    這是先秦功成身退最清醒的一例：
     范蠡是看穿君主，張孟談是看穿結構。
   modern: >-
     引申為記取教訓、以史為鑒。
     要點在張孟談的用法：他比對的不是別人的失敗，是自己此刻所處的位置。
 references:
-  - https://ctext.org/zhan-guo-ce/zhao-ce-yi/zh
+  - https://ctext.org/zhan-guo-ce/zhao-yi/zh

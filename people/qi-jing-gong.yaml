@@ -16,7 +16,7 @@ bio: >-
 sources:
   - source: yanzi-chun-qiu
     locus: 內篇諫下
-    ctext_urn: ctp:yanzi-chun-qiu/nei-pian/jian-xia
+    ctext_urn: ctp:yanzi-chun-qiu/jian-xia
   - source: shiji
     locus: 齊太公世家
     ctext_urn: ctp:shiji/qi-tai-gong-shi-jia

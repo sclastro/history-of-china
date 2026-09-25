@@ -26,7 +26,7 @@ narrative: >-
 sources:
   - source: yanzi-chun-qiu
     locus: 內篇雜下
-    ctext_urn: ctp:yanzi-chun-qiu/nei-pian/za-xia
+    ctext_urn: ctp:yanzi-chun-qiu/za-xia
 reliability: 孤證
 significance: >-
   春秋外交辭令的另一種類型：不是召陵之盟那種以名分交易的宏大場面，

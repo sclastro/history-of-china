@@ -27,7 +27,6 @@ dianyuan:
 crystallisation:
   note: >-
     《史記》原文作「胡服騎射」，見〈趙世家〉，語形自出典源即已定型。
-  moe_id: 1688
 reliability: 信史
 people: [zhao-wu-ling-wang, gong-zi-cheng]
 concepts: [變法, 實用, 華夷]
@@ -36,7 +35,7 @@ related_idioms:
     kind: contrast
     note: 同是戰國變法，一以立信開道，一以說服公族開道。
   - target: ke-zhou-qiu-jian
-    kind: same_source
+    kind: parallel
     note: 兩條都指向同一命題：法度應當隨時代而變。
 lessons:
   historical: >-

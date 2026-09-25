@@ -32,7 +32,7 @@ narrative: >-
 sources:
   - source: zhan-guo-ce
     locus: 齊策一
-    ctext_urn: ctp:zhan-guo-ce/qi-ce-yi
+    ctext_urn: ctp:zhan-guo-ce/qi-yi
 reliability: 大體可信
 significance: >-
   先秦談納諫的文字很多，這一篇的特別之處在於它是從**懷疑自己**開始的。

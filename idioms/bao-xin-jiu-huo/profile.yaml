@@ -37,7 +37,7 @@ related_idioms:
     kind: contrast
     note: 一是秦國分化六國的辦法，一是六國割地求和的後果。
   - target: yu-bang-xiang-zheng
-    kind: same_source
+    kind: parallel
     note: 同出蘇代，兩條都是用一個日常場景推翻一項國策。
 lessons:
   historical: >-

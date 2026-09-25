@@ -18,7 +18,7 @@ benshi:
 dianyuan:
   - source: zhan-guo-ce
     locus: 齊策二
-    ctext_urn: ctp:zhan-guo-ce/qi-ce-er
+    ctext_urn: ctp:zhan-guo-ce/qi-er
     quote: >-
       蛇固無足，子安能為之足？
     translation: >-
@@ -51,4 +51,4 @@ lessons:
     在收益已經封頂的處境下，它是一條很硬的判準：
     繼續投入不會增加收益，只會增加風險敞口。
 references:
-  - https://ctext.org/zhan-guo-ce/qi-ce-er/zh
+  - https://ctext.org/zhan-guo-ce/qi-er/zh

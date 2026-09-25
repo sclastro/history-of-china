@@ -21,14 +21,14 @@ dianyuan:
       就像爬到樹上去找魚一樣。
 crystallisation:
   note: >-
-    這個四字語形直接出自《孟子》原文，未經演變。
+    《孟子》原文作「緣木而求魚」，省去「而」字即成四字語形。
   moe_id: 86
 reliability: 寓言
 people: [meng-zi,qi-xuan-wang]
 concepts: [手段與目的, 仁政, 論辯]
 related_idioms:
   - target: nan-yuan-bei-zhe
-    kind: same_source
+    kind: parallel
     note: 兩條都指出手段與目的方向相反，一在孟子，一在戰國策士。
 lessons:
   historical: >-

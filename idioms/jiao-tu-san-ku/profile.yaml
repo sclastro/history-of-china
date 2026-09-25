@@ -18,7 +18,7 @@ benshi:
 dianyuan:
   - source: zhan-guo-ce
     locus: 齊策四
-    ctext_urn: ctp:zhan-guo-ce/qi-ce-si
+    ctext_urn: ctp:zhan-guo-ce/qi-si
     quote: >-
       狡兔有三窟，僅得免其死耳；今君有一窟，未得高枕而臥也。
       請為君復鑿二窟。
@@ -26,7 +26,7 @@ dianyuan:
       狡猾的兔子有三個洞，才不過免於一死；
       如今您只有一個洞，還不能高枕無憂。請讓臣替您再鑿兩個洞。
 crystallisation:
-  note: 這個四字語形直接出自《戰國策》原文，未經演變。
+  note: 《戰國策》原文作「狡兔有三窟」，省去「有」字即成四字語形。
   moe_id: 512
 reliability: 大體可信
 people: [feng-xuan, meng-chang-jun]
@@ -51,4 +51,4 @@ lessons:
     引申為多留後路。
     要點在於三窟的**異質性**：三條同類型的退路不是三窟，只是一窟的三份。
 references:
-  - https://ctext.org/zhan-guo-ce/qi-ce-si/zh
+  - https://ctext.org/zhan-guo-ce/qi-si/zh

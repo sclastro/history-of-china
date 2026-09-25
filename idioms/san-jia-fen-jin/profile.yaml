@@ -38,7 +38,7 @@ people: [zhao-xiang-zi, zhi-bo]
 concepts: [封建解體, 名分, 陪臣執國命, 分期]
 related_idioms:
   - target: chun-wang-chi-han
-    kind: derived
+    kind: parallel
     note: 晉陽城下張孟談說反韓魏，用的正是「唇亡齒寒」之理。
 lessons:
   historical: >-

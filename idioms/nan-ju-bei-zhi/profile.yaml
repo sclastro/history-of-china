@@ -14,11 +14,11 @@ meaning: 同樣的人事因環境不同而性質改變。
 benshi:
   event: yan-zi-shi-chu
   summary: >-
-    晏嬰出使楚國，楚王預先安排武士押一「齊人坐盜」者過堂前，當面問「齊人固善盜乎」來羞辱他。晏子用橘枳的比喻反問：是否楚國的水土使人善於偷盜。楚王自認「反取病焉」。
+    晏嬰出使楚國，楚王預先安排小吏押一名據說是齊國人、犯了盜竊罪的人從堂前經過，當面問「齊人固善盜乎」來羞辱他。晏子用橘枳的比喻反問：是否楚國的水土使人善於偷盜。楚王自認「反取病焉」。
 dianyuan:
   - source: yanzi-chun-qiu
     locus: 內篇雜下
-    ctext_urn: ctp:yanzi-chun-qiu/nei-pian/za-xia
+    ctext_urn: ctp:yanzi-chun-qiu/za-xia
     quote: >-
       嬰聞之，橘生淮南則為橘，生于淮北則為枳，葉徒相似，其實味不同。
       所以然者何？水土異也。今民生長於齊不盜，入楚則盜，
@@ -31,7 +31,7 @@ dianyuan:
 crystallisation:
   note: >-
     《晏子春秋》原文作「橘生淮南則為橘，生于淮北則為枳」（白話：橘樹生在淮南就是橘，生在淮北就成了枳），「南橘北枳」四字是後人節縮而成的；另外「橘化為枳」這個說法也同時流行。
-  moe_id: 1362
+  moe_id: 14597
 reliability: 孤證
 people: [yan-ying]
 concepts: [環境決定, 外交辭令, 歸因]
@@ -46,9 +46,9 @@ lessons:
     把個人品性換成環境條件。
     這是外交辭令中極高明的一手：正面否認事實會陷入舉證的泥沼，
     而重新解釋事實則可以把攻勢原封不動地送回去。
-    就思想史而言，這也是先秦少見的一次「環境決定論」表述——
+    就思想史而言，這也是先秦少見的一次環境決定論表述——
     行為的差異不必歸因於族群本性，可以歸因於制度與環境。
   modern: >-
     現在多用來說明環境對人的塑造。援用時可留意其原始語境是外交反擊，而非人類學觀察。
 references:
-  - https://ctext.org/yanzi-chun-qiu/nei-pian/za-xia/zh
+  - https://ctext.org/yanzi-chun-qiu/za-xia/zh

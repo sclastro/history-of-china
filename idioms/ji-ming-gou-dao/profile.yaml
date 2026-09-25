@@ -36,7 +36,7 @@ people: [meng-chang-jun, qin-zhao-xiang-wang]
 concepts: [養士, 才能, 用人]
 related_idioms:
   - target: jiao-tu-san-ku
-    kind: same_source
+    kind: parallel
     note: 同出孟嘗君，一是門客救他一命，一是門客替他鑿三窟。
 lessons:
   historical: >-

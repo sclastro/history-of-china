@@ -31,7 +31,7 @@ sources:
     ctext_urn: ctp:shiji/wei-shi-jia
   - source: zhan-guo-ce
     locus: 魏策三
-    ctext_urn: ctp:zhan-guo-ce/wei-ce-san
+    ctext_urn: ctp:zhan-guo-ce/wei-san
 reliability: 大體可信
 significance: >-
   「抱薪救火」是先秦對「讓步換和平」最精確的一次批評，

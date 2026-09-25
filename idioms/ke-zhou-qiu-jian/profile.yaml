@@ -13,7 +13,7 @@ meaning: 拘泥於固定的參照而不知情勢已變。
 dianyuan:
   - source: lv-shi-chun-qiu
     locus: 慎大覽·察今
-    ctext_urn: ctp:lv-shi-chun-qiu/shen-da-lan/cha-jin
+    ctext_urn: ctp:lv-shi-chun-qiu/cha-jin
     quote: >-
       楚人有涉江者，其劍自舟中墜於水，遽契其舟曰：「是吾劍之所從墜。」
       舟止，從其所契者入水求之。舟已行矣，而劍不行，求劍若此，不亦惑乎？
@@ -29,17 +29,17 @@ people: [lv-bu-wei]
 concepts: [變法, 參照系, 時勢, 法後王]
 related_idioms:
   - target: shou-zhu-dai-tu
-    kind: same_source
+    kind: parallel
     note: 同為戰國諸子以寓言論「世異則事異」，一出韓非、一出呂覽。
 lessons:
   historical: >-
     〈察今〉全篇的主旨在篇名——考察當下。
-    這則寓言之後緊接著另一則（引嬰投江），
-    再往下是「世易時移，變法宜矣」（白話：時代變了、形勢移了，變法就是應該的）的結論。
+    這則寓言之前，篇中已先提出「世易時移，變法宜矣」（白話：時代變了、形勢移了，變法就是應該的）的結論，
+    寓言之後又緊接另一則（引嬰投江），兩則都是結論的例證。
     值得注意的是它的精確性：那個楚人並沒有做錯記號，
     他的記號在船的座標系裡完全準確；
     錯的是他把一個**移動中的參照系**當成了固定的。
-    這比「不知變通」要深一層——問題不在他不肯改，
+    這比不知變通要深一層——問題不在他不肯改，
     在他不知道自己站在甚麼上面。
     《呂氏春秋》成書於秦統一前夕，由呂不韋門客集體編纂，
     這一篇正是為即將到來的新秩序作論證。
@@ -47,4 +47,4 @@ lessons:
     引申為墨守成規。更精確的一層是：
     要定期檢查自己的判斷所依據的座標系有沒有在移動。
 references:
-  - https://ctext.org/lv-shi-chun-qiu/shen-da-lan/cha-jin/zh
+  - https://ctext.org/lv-shi-chun-qiu/cha-jin/zh

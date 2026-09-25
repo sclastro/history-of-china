@@ -18,6 +18,7 @@ benshi:
 dianyuan:
   - source: xin-xu
     locus: 雜事一
+    ctext_urn: ctp:xin-xu/za-shi-yi
     quote: >-
       是其曲彌高者，其和彌寡。
     translation: >-
@@ -41,7 +42,7 @@ people: [song-yu, chu-xiang-wang]
 concepts: [雅俗, 自辯, 受眾]
 related_idioms:
   - target: zhong-zui-du-xing
-    kind: same_source
+    kind: parallel
     note: 兩條同出楚辭系統，都在處理「不合於眾」這個處境，而態度不同。
   - target: gao-shan-liu-shui
     kind: contrast
@@ -53,7 +54,7 @@ lessons:
     是先秦文獻中少見的以量化方式呈現的論證。
     但論點是否成立，可以另當別論。
     宋玉用它來解釋自己何以不受歡迎——
-    而「曲高和寡」同樣可以是「唱得不好」的另一種說法。
+    而曲高和寡同樣可以是唱得不好的另一種說法。
     這個結構的問題在於它不可證偽：
     無論多少人不喜歡，都可以被解釋成他們水準不夠。
     有意思的是這篇文章的處境：楚王問的是
@@ -67,4 +68,4 @@ lessons:
     使用時值得留意它的不可證偽性：這個解釋太好用，
     所以用它之前最好先排除比較平常的可能。
 references:
-  - https://ctext.org/shiji/qu-yuan-jia-sheng-lie-zhuan/zh
+  - https://ctext.org/xin-xu/za-shi-yi/zh

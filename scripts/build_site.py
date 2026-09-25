@@ -1051,7 +1051,8 @@ def build_idiom_page(d, data, prev_d, next_d):
 
     # 關聯
     kind_label = {"same_event": "同一事件", "same_source": "同一典源",
-                  "contrast": "意義相對", "derived": "由此衍生"}
+                  "contrast": "意義相對", "derived": "由此衍生",
+                  "sequel": "前後相承", "parallel": "相互參照"}
     rel_html = ""
     for r in d.get("_related") or []:
         t = data["idioms"][r["target"]]

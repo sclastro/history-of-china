@@ -18,7 +18,7 @@ benshi:
 dianyuan:
   - source: zhan-guo-ce
     locus: 燕策二
-    ctext_urn: ctp:zhan-guo-ce/yan-ce-er
+    ctext_urn: ctp:zhan-guo-ce/yan-er
     quote: >-
       兩者不肯相舍，漁者得而并禽之。今趙且伐燕，燕趙久相支以敝大眾，
       臣恐強秦之為漁父也。
@@ -36,8 +36,8 @@ people: [su-dai]
 concepts: [第三方, 消耗, 外交]
 related_idioms:
   - target: dong-dao-zhu
-    kind: same_source
-    note: 兩條都靠「把第三方引進畫面」來改變當事人的計算。
+    kind: parallel
+    note: 兩條都靠把第三方引進畫面，來改變當事人的計算。
 lessons:
   historical: >-
     蘇代的說法有一個關鍵設計：他沒有替燕國喊冤，
@@ -52,4 +52,4 @@ lessons:
     引申為兩敗俱傷、第三者得利。
     在競爭中它提醒的是：先確認這場競爭的贏家是不是自己。
 references:
-  - https://ctext.org/zhan-guo-ce/yan-ce-er/zh
+  - https://ctext.org/zhan-guo-ce/yan-er/zh

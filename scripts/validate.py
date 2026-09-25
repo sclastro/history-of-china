@@ -35,7 +35,7 @@ DATA_DIR = ROOT / "data"
 
 IDIOM_TYPES = {"historical", "parable"}
 RELIABILITY = {"信史", "大體可信", "孤證", "後世附會", "寓言"}
-REL_KINDS = {"same_event", "same_source", "contrast", "derived"}
+REL_KINDS = {"same_event", "same_source", "contrast", "derived", "sequel", "parallel"}
 EVENT_TYPES = {"戰役", "會盟", "變法", "弒君篡位", "遷都", "外交",
                "滅國", "內亂", "出奔", "刺殺", "著述", "拜相",
                "行賞", "論政", "獻策"}

@@ -18,7 +18,7 @@ benshi:
 dianyuan:
   - source: yanzi-chun-qiu
     locus: 內篇諫下
-    ctext_urn: ctp:yanzi-chun-qiu/nei-pian/jian-xia
+    ctext_urn: ctp:yanzi-chun-qiu/jian-xia
     quote: >-
       因請公使人少饋之二桃，曰：「三子何不計功而食桃？」
     translation: >-
@@ -26,7 +26,7 @@ dianyuan:
 crystallisation:
   note: >-
     《晏子春秋》原文沒有這五個字，是後人對該則故事的概括；舊題諸葛亮所作的〈梁甫吟〉「一朝被讒言，二桃殺三士」是現存最早的定型用例，這個說法也因此從樂府詩流傳開來。
-  moe_id: 1173
+  moe_id: 7669
 reliability: 孤證
 variants:
   - claim: 此事僅見於《晏子春秋》，《左傳》和《史記》都沒有記載；《晏子春秋》是戰國時人編輯的故事集，並非史書。
@@ -47,4 +47,4 @@ lessons:
     引申為挑撥離間。更值得警覺的是它的一般形式——
     在稀缺資源上疊加一套排名規則，足以讓原本合作的一群人自行瓦解。
 references:
-  - https://ctext.org/yanzi-chun-qiu/nei-pian/jian-xia/zh
+  - https://ctext.org/yanzi-chun-qiu/jian-xia/zh

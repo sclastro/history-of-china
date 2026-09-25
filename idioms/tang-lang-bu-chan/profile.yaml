@@ -31,12 +31,12 @@ crystallisation:
 reliability: 寓言
 variants:
   - claim: >-
-      《說苑》所記的吳王，一般以為即闔閭或夫差，
+      《說苑》所記的吳王未著名號，
       而《說苑》是漢代劉向所輯，其事不見於先秦典籍，
       故本站以《莊子》為典源，《說苑》為語形所自。
     source: zhuangzi
     locus: 山木
-people: [zhuang-zi, wu-wang-liao]
+people: [zhuang-zi]
 concepts: [利害, 連環, 視野]
 related_idioms:
   - target: yu-bang-xiang-zheng

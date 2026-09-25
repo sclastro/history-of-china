@@ -18,7 +18,7 @@ benshi:
 dianyuan:
   - source: zhan-guo-ce
     locus: 魏策四
-    ctext_urn: ctp:zhan-guo-ce/wei-ce-si
+    ctext_urn: ctp:zhan-guo-ce/wei-si
     quote: >-
       此數者愈善，而離楚愈遠耳。
     translation: >-
@@ -40,7 +40,7 @@ lessons:
     季梁沒有說攻邯鄲會打不贏——他甚至承認魏國兵精國大。
     他攻擊的是目標與手段之間的關係：
     魏王要的是「信於天下」，用的卻是使天下畏懼的辦法。
-    這是先秦最清晰的一次「方向錯了，條件越好越糟」的論證，
+    這是先秦最清晰的一次論證：方向錯了，條件越好越糟；
     而它的力量來自那三個遞進的回答：馬好、錢多、車夫好。
     每一項單獨看都是優勢，合起來只加速偏離。
     資源本身沒有方向，方向由目標給定；目標一旦錯配，資源就變成負擔。
@@ -48,4 +48,4 @@ lessons:
     引申為背道而馳。
     在資源充足時它尤其值得一提：條件越好，錯誤方向的代價越大。
 references:
-  - https://ctext.org/zhan-guo-ce/wei-ce-si/zh
+  - https://ctext.org/zhan-guo-ce/wei-si/zh

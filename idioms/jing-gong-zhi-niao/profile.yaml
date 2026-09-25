@@ -18,7 +18,7 @@ benshi:
 dianyuan:
   - source: zhan-guo-ce
     locus: 楚策四
-    ctext_urn: ctp:zhan-guo-ce/chu-ce-si
+    ctext_urn: ctp:zhan-guo-ce/chu-si
     quote: >-
       故瘡未息而驚心未去也，聞弦音，引而高飛，故瘡隕也。
     translation: >-
@@ -54,4 +54,4 @@ lessons:
     用人時值得記住魏加的用法：問題不在他膽小，
     在於他的反應閾值已經被改變了，而這一點當事人未必自知。
 references:
-  - https://ctext.org/zhan-guo-ce/chu-ce-si/zh
+  - https://ctext.org/zhan-guo-ce/chu-si/zh

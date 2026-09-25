@@ -12,7 +12,7 @@ bio: >-
 sources:
   - source: zhan-guo-ce
     locus: 趙策一
-    ctext_urn: ctp:zhan-guo-ce/zhao-ce-yi
+    ctext_urn: ctp:zhan-guo-ce/zhao-yi
 relations:
   - target: zhao-xiang-zi
     kind: ruler

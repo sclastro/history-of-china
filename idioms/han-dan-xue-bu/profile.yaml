@@ -13,7 +13,7 @@ meaning: 一味模仿別人，結果連自己原有的本事也丟了。
 dianyuan:
   - source: zhuangzi
     locus: 秋水
-    ctext_urn: ctp:zhuangzi/autumn-floods
+    ctext_urn: ctp:zhuangzi/floods-of-autumn
     quote: >-
       且子獨不聞夫壽陵餘子之學行於邯鄲與？未得國能，
       又失其故行矣，直匍匐而歸耳。
@@ -46,4 +46,4 @@ lessons:
     引申為盲目模仿而失其故我。
     要點在於區分：學技術可以照搬，學風格則往往連根拔起。
 references:
-  - https://ctext.org/zhuangzi/autumn-floods/zh
+  - https://ctext.org/zhuangzi/floods-of-autumn/zh

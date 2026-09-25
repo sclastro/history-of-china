@@ -14,7 +14,7 @@ meaning: 攻擊敵人的要害，迫使他放棄正在進行的攻勢。
 benshi:
   event: gui-ling-zhi-zhan
   summary: >-
-    魏將龐涓圍趙國邯鄲，趙求救於齊。齊威王以田忌為將、孫臏為軍師。田忌想直接率軍趕赴邯鄲，孫臏主張不如引兵疾走魏都大梁，據其要害、擊其空虛，魏軍必回師自救，趙圍自解。齊軍遂進逼大梁，龐涓果然棄邯鄲回救，在桂陵遭齊軍伏擊大敗。
+    魏將龐涓圍趙國邯鄲，趙求救於齊。齊威王以田忌為將、孫臏為軍師。田忌想直接率軍趕赴邯鄲，孫臏主張不如引兵疾走魏都大梁，據其要害、擊其空虛，魏軍必回師自救，趙圍自解。齊軍遂進逼大梁，龐涓果然棄邯鄲回救，在桂陵被齊軍迎擊而大敗。
 dianyuan:
   - source: shiji
     locus: 孫子吳起列傳
@@ -29,14 +29,14 @@ dianyuan:
 crystallisation:
   note: >-
     《史記》原文並無「圍魏救趙」四字，是後人就此事的概括；
-    明代所輯《三十六計》列為第二計，四字語形由此大行。
-  moe_id: 1673
+    一般認為成書於明末清初的《三十六計》列為第二計，四字語形由此大行。
+  moe_id: 17170
 reliability: 信史
 people: [sun-bin, tian-ji, pang-juan]
 concepts: [兵法, 間接路線, 要害]
 related_idioms:
   - target: jia-dao-fa-guo
-    kind: same_source
+    kind: parallel
     note: 兩條都由史事變成《三十六計》的條目，再由兵法條目變成成語。
 lessons:
   historical: >-

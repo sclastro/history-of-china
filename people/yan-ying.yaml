@@ -24,7 +24,7 @@ timeline:
 sources:
   - source: yanzi-chun-qiu
     locus: 內篇雜下
-    ctext_urn: ctp:yanzi-chun-qiu/nei-pian/za-xia
+    ctext_urn: ctp:yanzi-chun-qiu/za-xia
   - source: shiji
     locus: 管晏列傳
     ctext_urn: ctp:shiji/guan-yan-lie-zhuan

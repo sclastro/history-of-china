@@ -18,7 +18,7 @@ benshi:
 dianyuan:
   - source: zhan-guo-ce
     locus: 齊策一
-    ctext_urn: ctp:zhan-guo-ce/qi-ce-yi
+    ctext_urn: ctp:zhan-guo-ce/qi-yi
     quote: >-
       令初下，群臣進諫，門庭若市；數月之後，時時而間進；
       期年之後，雖欲言，無可進者。
@@ -38,8 +38,8 @@ related_idioms:
 lessons:
   historical: >-
     這一條的價值全在那三個階段：門庭若市、時時間進、無可進者。
-    《戰國策》記下的不是納諫的盛況，是納諧的**衰減曲線**——
-    而且明說這是好事：問題被提完了，所以沒得提了。
+    《戰國策》記下的不是納諫的盛況，是納諫的**衰減曲線**——
+    而且明說這是好事：問題被提完了，所以無可再提。
     今天用「門庭若市」多半只取熱鬧的意思，
     把後面兩個階段丟掉了；而後兩個階段才是這段記載真正在講的東西。
     至於鄒忌的方法，值得單獨一記：他不是先講大道理，
@@ -53,4 +53,4 @@ lessons:
     若取其史義，反而該注意的是：制度剛開放時的踴躍不代表成功，
     真正的指標是它能不能自然地走完由多到少的那條曲線。
 references:
-  - https://ctext.org/zhan-guo-ce/qi-ce-yi/zh
+  - https://ctext.org/zhan-guo-ce/qi-yi/zh

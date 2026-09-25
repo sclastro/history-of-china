@@ -35,7 +35,7 @@ people: [zhu-zhi-wu, zheng-wen-gong, qin-mu-gong, jin-wen-gong]
 concepts: [外交辭令, 聯盟, 利害拆解]
 related_idioms:
   - target: li-bing-mo-ma
-    kind: same_event
+    kind: sequel
     note: 這次留下的秦國戍守者杞子，三年後成了偷襲鄭國的內應。
   - target: qin-jin-zhi-hao
     kind: contrast
