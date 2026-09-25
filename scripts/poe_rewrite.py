@@ -38,6 +38,32 @@ def call(path, body=None):
         return json.load(r)
 
 
+def chat(model, content):
+    """以串流方式請求：生成期間持續有資料傳回，避免長時間靜默被代理或網關斷線。"""
+    key = os.environ.get("POE_API_KEY")
+    if not key:
+        sys.exit("未設定環境變數 POE_API_KEY。")
+    body = {"model": model, "stream": True, "stream_options": {"include_usage": True},
+            "messages": [{"role": "user", "content": content}]}
+    req = urllib.request.Request(
+        f"{API}/chat/completions", data=json.dumps(body).encode(),
+        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
+    parts, usage = [], {}
+    with urllib.request.urlopen(req, timeout=600) as r:
+        for raw in r:
+            line = raw.decode().strip()
+            if not line.startswith("data:"):
+                continue
+            data = line[5:].strip()
+            if data == "[DONE]":
+                break
+            chunk = json.loads(data)
+            usage = chunk.get("usage") or usage
+            for c in chunk.get("choices") or []:
+                parts.append((c.get("delta") or {}).get("content") or "")
+    return "".join(parts), usage
+
+
 def list_models():
     ids = [m["id"] for m in call("models")["data"]]
     for m in sorted(i for i in ids if re.search(r"opus", i, re.I)):
@@ -73,11 +99,7 @@ def prompt(event_id):
 
 def rewrite(event_id, model, out):
     src = yaml.safe_load((ROOT / f"events/{event_id}.yaml").read_text())
-    resp = call("chat/completions", {
-        "model": model,
-        "messages": [{"role": "user", "content": prompt(event_id)}],
-    })
-    text = resp["choices"][0]["message"]["content"]
+    text, usage = chat(model, prompt(event_id))
     m = re.search(r"```(?:yaml)?\n(.*?)```", text, re.S)
     body = m.group(1) if m else text
     new = yaml.safe_load(body)
@@ -89,8 +111,7 @@ def rewrite(event_id, model, out):
         body = None
     path = out / f"{event_id}.yaml"
     path.write_text(body if body else yaml.safe_dump(new, allow_unicode=True, sort_keys=False, width=1000))
-    usage = resp.get("usage", {})
-    print(f"✓ {event_id} → {path}（tokens：{usage.get('total_tokens', '?')}）")
+    print(f"✓ {event_id} → {path}（tokens：{usage.get('total_tokens', '?')}）", flush=True)
 
 
 def main():
