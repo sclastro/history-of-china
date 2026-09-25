@@ -9,7 +9,7 @@ type: historical
 period: zhan-guo-mid
 year: -299
 year_note: 孟嘗君入秦之年前後
-states: [qi, qin]
+states: [tian-qi, qin]
 meaning: 微不足道的技能；亦指卑下的手段。
 benshi:
   event: meng-chang-jun-ru-qin
@@ -30,7 +30,7 @@ crystallisation:
     《史記》原文分作「狗盜」「雞鳴」兩事，並非四字連用；
     「雞鳴狗盜」的四字語形是後人合併，唐宋以降通行，
     王安石〈讀孟嘗君傳〉用此語而立論相反。
-  moe_id: 1694
+  moe_id: 474
 reliability: 大體可信
 people: [meng-chang-jun, qin-zhao-xiang-wang]
 concepts: [養士, 才能, 用人]

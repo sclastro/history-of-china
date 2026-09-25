@@ -15,7 +15,7 @@ dianyuan:
     locus: 五蠹
     ctext_urn: ctp:hanfeizi/wu-du
     quote: >-
-      宋人有耕者，田中有株，兔走觸株，折頸而死，因釋其耒而守株，冀復得兔。
+      宋人有耕田者，田中有株，兔走觸株，折頸而死，因釋其耒而守株，冀復得兔。
       兔不可復得，而身為宋國笑。今欲以先王之政治當世之民，皆守株之類也。
     translation: >-
       宋國有個耕田的人，田裡有個樹樁，一隻兔子跑過去撞上樹樁，
@@ -25,7 +25,7 @@ dianyuan:
 crystallisation:
   note: >-
     《韓非子》原文作「釋其耒而守株」，沒有「守株待兔」四字；四字語形出於後世節縮，唐宋已通行。
-  moe_id: 1240
+  moe_id: 39
 reliability: 寓言
 people: [han-fei]
 concepts: [歷史變化觀, 法先王之非, 偶然與規律, 變法]

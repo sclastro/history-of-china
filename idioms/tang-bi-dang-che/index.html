@@ -40,12 +40,11 @@
   </div>
 </div>
 <section class="layer">
-  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了什麼</span></h2>
+  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了甚麼</span></h2>
   <p class="parable-note">
-  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。
-  它的史料價值不在於記錄了什麼事，而在於顯示了那個時代的人怎樣講道理。</p>
+  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。它的史料價值不在於記錄了甚麼事，而在於顯示了那個時代的人怎樣講道理。</p>
 </section>
-<section class="layer"><h2>論述<span class="hint">這件事說明了什麼</span></h2>
+<section class="layer"><h2>論述<span class="hint">這件事說明了甚麼</span></h2>
   <div class="essay"><h1>螳臂當車</h1>
 <p><strong>螳臂當車</strong>（táng bì dāng chē）——螳螂舉起前臂去擋車。</p>
 <h2>它是說給一個危險處境裡的人聽的</h2>
@@ -67,12 +66,12 @@
 <h2>所以它不是嘲笑</h2>
 <p>今天用「螳臂當車」，是笑人不自量力。</p>
 <p>而《莊子》這一段裡，沒有一個字是在笑螳螂。</p>
-<p>它是說給一個必須與危險相處的人聽的—— 顏闔的處境是真的，他躲不掉。</p>
+<p>它是說給一個必須與危險相處的人聽的——顏闔的處境是真的，他躲不掉。</p>
 <p>蘧伯玉能給的，只是「戒之慎之」四個字，加上三個一個比一個難的例子。</p></div></section>
 <section class="layer">
   <h2>啟示<span class="hint">史觀分析與現代引申分開處理</span></h2>
   <div class="lessons">
-    <div class="box"><h3>史觀</h3><p>這則比喻的語境常被略掉。〈人間世〉記顏闔要去做衛靈公太子的師傅，那位太子「其德天殺」——生性殘忍。顏闔向蘧伯玉請教怎麼辦。蘧伯玉先說要戒慎，然後舉了三個例子：螳臂當車、養虎、愛馬。螳臂當車是第一個，講的是<strong>硬碰硬會死</strong>；養虎是第二個，講順著牠的性子；愛馬是第三個，講就算你對牠再好，一次不小心也會被踢。所以這則寓言不是嘲笑螳螂愚蠢，是講一個弱勢者在強權旁邊該怎麼活下去。值得注意原文的用詞：「是其才之美者也」—— 螳螂之所以去擋車，正因為牠對自己的能力有信心。把才能誤認為可以硬碰的本錢，這才是那句話要說的事。</p></div>
+    <div class="box"><h3>史觀</h3><p>這則比喻的語境常被略掉。〈人間世〉記顏闔要去做衛靈公太子的師傅，那位太子「其德天殺」——生性殘忍。顏闔向蘧伯玉請教怎麼辦。蘧伯玉先說要戒慎，然後舉了三個例子：螳臂當車、養虎、愛馬。螳臂當車是第一個，講的是<strong>硬碰硬會死</strong>；養虎是第二個，講順著牠的性子；愛馬是第三個，講就算你對牠再好，一次不小心也會被踢。所以這則寓言不是嘲笑螳螂愚蠢，是講一個弱勢者在強權旁邊該怎麼活下去。值得注意原文的用詞：「是其才之美者也」——螳螂之所以去擋車，正因為牠對自己的能力有信心。把才能誤認為可以硬碰的本錢，這才是那句話要說的事。</p></div>
     <div class="box modern">
   <h3>現代引申</h3><p>引申為不自量力。原文的重點卻在處境：它是說給一個必須與危險相處的人聽的。</p>
   <div class="caveat">※ 引申義，非史料本身所有。</div>
@@ -90,7 +89,7 @@
   <h2><span class="num">第三層</span>語形定型<span class="hint">「四字成語」這個形式何時確立</span></h2>
   
   <p class="cryst-note">《莊子》原文作「怒其臂以當車轍」；「螳臂當車」的四字語形是後人的節縮，唐宋以降通行。</p>
-  <div class="moe-link">交叉核對：<a href="https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=1953&webMd=1&la=0" target="_blank" rel="noopener">教育部《成語典》 ↗</a></div>
+  <div class="moe-link">交叉核對：<a href="https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=60&webMd=1&la=0" target="_blank" rel="noopener">教育部《成語典》 ↗</a></div>
 </section><section class="layer">
   <h2><span class="num">第四層</span>可信度與異說<span class="hint">本事有多可信、有沒有相牴的記載</span></h2>
   <div style="display:flex;align-items:center;gap:11px;margin-bottom:11px">
@@ -140,10 +139,16 @@
   }
   function render(q) {
     q = q.trim().toLowerCase();
-    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; }).slice(0, 40)
+    // 標題完全相符者排最前，其次標題開首相符、標題包含，最後才是其他欄位相符
+    function rank(r) { var t = r.t.toLowerCase().replace(/[《》]/g, '');
+      return t === q ? 0 : t.indexOf(q) === 0 ? 1 : t.indexOf(q) >= 0 ? 2 : 3; }
+    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; })
+                  .map(function (r, i) { return [rank(r), i, r]; })
+                  .sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; })
+                  .map(function (x) { return x[2]; }).slice(0, 40)
               : SEARCH_INDEX.slice(0, 20);
     sel = 0;
-    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">搵唔到相符嘅條目。</div>'; return; }
+    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">找不到相符的條目。</div>'; return; }
     results.innerHTML = shown.map(function (r, i) {
       return '<a href="' + base + r.u + '" class="' + (i === 0 ? 'sel' : '') + '">' +
              '<span class="r-zh">' + r.t + '</span>' +
@@ -176,7 +181,7 @@
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) { ev.preventDefault(); open(); }
   });
 })();
-// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+// 粵語發音：全站共用一個 audio 物件，不必每條成語各開一個
 (function () {
   var a = null;
   document.addEventListener('click', function (ev) {

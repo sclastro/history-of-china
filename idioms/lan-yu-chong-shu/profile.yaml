@@ -8,7 +8,7 @@ idiom:
 type: parable
 period: zhan-guo-mid
 year: null
-states: [qi]
+states: [tian-qi]
 meaning: 沒有真本事的人混在行家裡充數。
 dianyuan:
   - source: hanfeizi
@@ -25,7 +25,7 @@ crystallisation:
   note: >-
     《韓非子》原文並無「濫竽充數」四字，是後世對這則寓言的概括；
     「濫」字有「不當而入」之義，語形唐宋以降通行。
-  moe_id: 1400
+  moe_id: 54
 reliability: 寓言
 people: [qi-xuan-wang, qi-min-wang]
 concepts: [考核, 制度, 名實]

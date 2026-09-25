@@ -9,7 +9,7 @@ type: historical
 period: zhan-guo-mid
 year: -295
 year_note: 年代不詳；事在齊湣王時
-states: [qi, wei]
+states: [tian-qi, wei]
 meaning: 預留多重退路以自保。
 benshi:
   event: feng-xuan-ke-meng-chang-jun
@@ -27,7 +27,7 @@ dianyuan:
       如今您只有一個洞，還不能高枕無憂。請讓臣替您再鑿兩個洞。
 crystallisation:
   note: 這個四字語形直接出自《戰國策》原文，未經演變。
-  moe_id: 1391
+  moe_id: 512
 reliability: 大體可信
 people: [feng-xuan, meng-chang-jun]
 concepts: [風險分散, 養士, 退路]

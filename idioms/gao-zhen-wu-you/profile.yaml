@@ -9,8 +9,8 @@ type: historical
 period: zhan-guo-mid
 year: -295
 year_note: 年代不詳；事在齊湣王時
-states: [qi, wei]
-meaning: 安然無慮；今多含「因無憂而鬆懈」之意。
+states: [tian-qi, wei]
+meaning: 安然無慮；今多含因無憂而鬆懈之意。
 benshi:
   event: feng-xuan-ke-meng-chang-jun
   summary: >-
@@ -27,7 +27,7 @@ crystallisation:
   note: >-
     《戰國策》原文作「高枕為樂」，另《戰國策·魏策一》有「高枕而臥」，
     「高枕無憂」的四字語形是後世的合併，唐宋以降通行。
-  moe_id: 1362
+  moe_id: 255
 reliability: 大體可信
 people: [feng-xuan, meng-chang-jun]
 concepts: [安全感, 風險分散, 養士]

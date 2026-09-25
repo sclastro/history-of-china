@@ -9,7 +9,7 @@ type: historical
 period: zhan-guo-early
 year: -353
 year_note: 桂陵之戰
-states: [qi, wei, zhao]
+states: [tian-qi, wei, zhao]
 meaning: 攻擊敵人的要害，迫使他放棄正在進行的攻勢。
 benshi:
   event: gui-ling-zhi-zhan
@@ -20,7 +20,7 @@ dianyuan:
     locus: 孫子吳起列傳
     ctext_urn: ctp:shiji/sun-zi-wu-qi-lie-zhuan
     quote: >-
-      夫解雜亂紛糾者不控卷，救鬥者不搏撠，批亢擣虛，
+      夫解雜亂紛糾者不控捲，救鬥者不搏撠，批亢擣虛，
       形格勢禁，則自為解耳。
     translation: >-
       要解開纏成一團的絲線，不能握著拳頭硬拉；
@@ -49,7 +49,7 @@ lessons:
     如果魏國的都城可以放棄，或者龐涓有足夠兵力兩邊兼顧，
     整條計策就落空。
     「圍魏救趙」不是隨處可用的巧計，它要求先準確判斷
-    對手有什麼是絕對放不下的。
+    對手有甚麼是絕對放不下的。
   modern: >-
     引申為避實擊虛、以攻代守。
     要點在於前提：你得先找到對方非救不可的那一點，

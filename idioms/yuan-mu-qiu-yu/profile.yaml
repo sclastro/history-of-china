@@ -8,7 +8,7 @@ idiom:
 type: parable
 period: zhan-guo-mid
 year: null
-states: [qi]
+states: [tian-qi]
 meaning: 方法根本不對，絕不可能達到目的。
 dianyuan:
   - source: mengzi
@@ -22,6 +22,7 @@ dianyuan:
 crystallisation:
   note: >-
     這個四字語形直接出自《孟子》原文，未經演變。
+  moe_id: 86
 reliability: 寓言
 people: [meng-zi,qi-xuan-wang]
 concepts: [手段與目的, 仁政, 論辯]

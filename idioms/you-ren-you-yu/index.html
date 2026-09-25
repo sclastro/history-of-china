@@ -40,12 +40,11 @@
   </div>
 </div>
 <section class="layer">
-  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了什麼</span></h2>
+  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了甚麼</span></h2>
   <p class="parable-note">
-  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。
-  它的史料價值不在於記錄了什麼事，而在於顯示了那個時代的人怎樣講道理。</p>
+  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。它的史料價值不在於記錄了甚麼事，而在於顯示了那個時代的人怎樣講道理。</p>
 </section>
-<section class="layer"><h2>論述<span class="hint">這件事說明了什麼</span></h2>
+<section class="layer"><h2>論述<span class="hint">這件事說明了甚麼</span></h2>
   <div class="essay"><h1>遊刃有餘</h1>
 <p><strong>遊刃有餘</strong>（yóu rèn yǒu yú）——運轉刀刃還有餘地。</p>
 <h2>餘地不是擠出來的</h2>
@@ -54,7 +53,7 @@
 <p>「彼節者有間」——空隙是牛身上本來就有的。「刀刃者無厚」——刀薄，是庖丁維持出來的。</p>
 <p>兩者相遇，餘地就出現了。</p>
 <p>也就是說，那份從容不是他擠出來的，是那個結構本來就有的，他找到了它。</p>
-<h2>為什麼刀不會鈍</h2>
+<h2>為甚麼刀不會鈍</h2>
 <p>庖丁的刀用了十九年，解了幾千頭牛，刀刃還像剛磨出來一樣。</p>
 <p>原因不是刀好，也不是他力氣大——恰恰相反：</p>
 <p>好廚子一年換一把刀，因為他用<strong>割</strong>的；普通廚子一個月換一把，因為他用<strong>砍</strong>的。</p>
@@ -91,7 +90,7 @@
   <h2><span class="num">第三層</span>語形定型<span class="hint">「四字成語」這個形式何時確立</span></h2>
   
   <p class="cryst-note">《莊子》原文作「遊刃必有餘地」；「遊刃有餘」的四字語形是後人的節縮，唐宋以降通行。</p>
-  <div class="moe-link">交叉核對：<a href="https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=1934&webMd=1&la=0" target="_blank" rel="noopener">教育部《成語典》 ↗</a></div>
+  <div class="moe-link">交叉核對：<a href="https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=1731&webMd=1&la=0" target="_blank" rel="noopener">教育部《成語典》 ↗</a></div>
 </section><section class="layer">
   <h2><span class="num">第四層</span>可信度與異說<span class="hint">本事有多可信、有沒有相牴的記載</span></h2>
   <div style="display:flex;align-items:center;gap:11px;margin-bottom:11px">
@@ -141,10 +140,16 @@
   }
   function render(q) {
     q = q.trim().toLowerCase();
-    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; }).slice(0, 40)
+    // 標題完全相符者排最前，其次標題開首相符、標題包含，最後才是其他欄位相符
+    function rank(r) { var t = r.t.toLowerCase().replace(/[《》]/g, '');
+      return t === q ? 0 : t.indexOf(q) === 0 ? 1 : t.indexOf(q) >= 0 ? 2 : 3; }
+    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; })
+                  .map(function (r, i) { return [rank(r), i, r]; })
+                  .sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; })
+                  .map(function (x) { return x[2]; }).slice(0, 40)
               : SEARCH_INDEX.slice(0, 20);
     sel = 0;
-    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">搵唔到相符嘅條目。</div>'; return; }
+    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">找不到相符的條目。</div>'; return; }
     results.innerHTML = shown.map(function (r, i) {
       return '<a href="' + base + r.u + '" class="' + (i === 0 ? 'sel' : '') + '">' +
              '<span class="r-zh">' + r.t + '</span>' +
@@ -177,7 +182,7 @@
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) { ev.preventDefault(); open(); }
   });
 })();
-// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+// 粵語發音：全站共用一個 audio 物件，不必每條成語各開一個
 (function () {
   var a = null;
   document.addEventListener('click', function (ev) {

@@ -21,7 +21,7 @@ dianyuan:
     ctext_urn: ctp:shiji/ping-yuan-jun-yu-qing-lie-zhuan
     quote: >-
       門下有毛遂者，前，自贊於平原君曰：「遂聞君將合從於楚，
-      約與食客門下二十人偕，不外索。合少一人，願君即以遂備員而行矣。」
+      約與食客門下二十人偕，不外索。今少一人，願君即以遂備員而行矣。」
     translation: >-
       門下有個叫毛遂的人上前，向平原君自我推薦說：
       「我聽說您將要到楚國締結合縱，約定帶食客門下二十人同行，不向外尋求。
@@ -30,7 +30,7 @@ crystallisation:
   note: >-
     《史記》原文作「自贊」，並無「毛遂自薦」四字；
     四字語形是後人就此事的概括，宋以降通行。
-  moe_id: 1608
+  moe_id: 291
 reliability: 大體可信
 people: [mao-sui, ping-yuan-jun]
 concepts: [自薦, 養士, 識人]

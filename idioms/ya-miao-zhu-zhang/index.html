@@ -40,12 +40,11 @@
   </div>
 </div>
 <section class="layer">
-  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了什麼</span></h2>
+  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了甚麼</span></h2>
   <p class="parable-note">
-  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。
-  它的史料價值不在於記錄了什麼事，而在於顯示了那個時代的人怎樣講道理。</p>
+  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。它的史料價值不在於記錄了甚麼事，而在於顯示了那個時代的人怎樣講道理。</p>
 </section>
-<section class="layer"><h2>論述<span class="hint">這件事說明了什麼</span></h2>
+<section class="layer"><h2>論述<span class="hint">這件事說明了甚麼</span></h2>
   <div class="essay"><h1>揠苗助長</h1>
 <p><strong>揠苗助長</strong>（yà miáo zhù zhǎng）——把禾苗拔高來幫它生長。</p>
 <h2>故事</h2>
@@ -58,7 +57,7 @@
 <p>他列了<strong>兩種</strong>錯誤，不是一種。放棄不管（不耘苗）與強行催熟（揠苗），同樣有害。</p>
 <h2>中間那個位置</h2>
 <p>今天用這四個字，通常只警告後一種：別急。但孟子真正要說的是那個中間位置——持續投入而不預期時程。</p>
-<p>這也是儒道在此處的分界。道家講順其自然；孟子要求在順其自然的同時「必有事焉」—— 不催它，但也不能不管它。</p>
+<p>這也是儒道在此處的分界。道家講順其自然；孟子要求在順其自然的同時「必有事焉」——不催它，但也不能不管它。</p>
 <p>這個位置很難站穩，所以他才要用一個宋國人的笑話來標記它。</p></div></section>
 <section class="layer">
   <h2>啟示<span class="hint">史觀分析與現代引申分開處理</span></h2>
@@ -81,7 +80,7 @@
   <h2><span class="num">第三層</span>語形定型<span class="hint">「四字成語」這個形式何時確立</span></h2>
   
   <p class="cryst-note">《孟子》原文作「揠之」，沒有「揠苗助長」這四個字；這個四字說法是後人節縮而來的，另外也有「拔苗助長」的說法並行流傳（「揠」即拔）。</p>
-  <div class="moe-link">交叉核對：<a href="https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=1064&webMd=1&la=0" target="_blank" rel="noopener">教育部《成語典》 ↗</a></div>
+  <div class="moe-link">交叉核對：<a href="https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=56&webMd=1&la=0" target="_blank" rel="noopener">教育部《成語典》 ↗</a></div>
 </section><section class="layer">
   <h2><span class="num">第四層</span>可信度與異說<span class="hint">本事有多可信、有沒有相牴的記載</span></h2>
   <div style="display:flex;align-items:center;gap:11px;margin-bottom:11px">
@@ -131,10 +130,16 @@
   }
   function render(q) {
     q = q.trim().toLowerCase();
-    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; }).slice(0, 40)
+    // 標題完全相符者排最前，其次標題開首相符、標題包含，最後才是其他欄位相符
+    function rank(r) { var t = r.t.toLowerCase().replace(/[《》]/g, '');
+      return t === q ? 0 : t.indexOf(q) === 0 ? 1 : t.indexOf(q) >= 0 ? 2 : 3; }
+    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; })
+                  .map(function (r, i) { return [rank(r), i, r]; })
+                  .sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; })
+                  .map(function (x) { return x[2]; }).slice(0, 40)
               : SEARCH_INDEX.slice(0, 20);
     sel = 0;
-    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">搵唔到相符嘅條目。</div>'; return; }
+    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">找不到相符的條目。</div>'; return; }
     results.innerHTML = shown.map(function (r, i) {
       return '<a href="' + base + r.u + '" class="' + (i === 0 ? 'sel' : '') + '">' +
              '<span class="r-zh">' + r.t + '</span>' +
@@ -167,7 +172,7 @@
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) { ev.preventDefault(); open(); }
   });
 })();
-// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+// 粵語發音：全站共用一個 audio 物件，不必每條成語各開一個
 (function () {
   var a = null;
   document.addEventListener('click', function (ev) {

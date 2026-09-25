@@ -14,7 +14,7 @@ meaning: 才能完全顯露，超越眾人。
 benshi:
   event: han-dan-zhi-wei
   summary: >-
-    平原君以「錐處囊中，其末立見」質疑毛遂三年無人稱道，毛遂回答自己今日才請求放進袋中；若早得處囊，不只露出錐尖，整個錐子都會脫穎而出。
+    平原君以「錐之處囊中，其末立見」質疑毛遂三年無人稱道，毛遂回答自己今日才請求放進袋中；若早得處囊，不只露出錐尖，整個錐子都會脫穎而出。
 dianyuan:
   - source: shiji
     locus: 平原君虞卿列傳
@@ -28,7 +28,7 @@ crystallisation:
   note: >-
     《史記》原文作「穎脫而出」，「穎」指錐子末端的鋒芒；
     後世倒作「脫穎而出」，語序改變而語義未變，宋以降通行。
-  moe_id: 1611
+  moe_id: 823
 reliability: 大體可信
 people: [mao-sui, ping-yuan-jun]
 concepts: [自薦, 識人, 機會]

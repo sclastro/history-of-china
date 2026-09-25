@@ -27,8 +27,7 @@
 
 <main class="narrow">
 <div class="page-head"><h1>找不到這一頁</h1>
-<p class="lede">網址可能已經變更，或者這一條還沒收錄。
-可以回<a href="index.html">總覽</a>看看，或者按 <kbd>/</kbd> 全站搜尋。</p></div></main>
+<p class="lede">網址可能已經變更，或者這一條還沒收錄。可以回<a href="index.html">總覽</a>看看，或者按 <kbd>/</kbd> 全站搜尋。</p></div></main>
 
 <footer class="site-footer"><div class="inner">
   <span>共 116 條成語・62 個事件・129 個人物</span>
@@ -61,10 +60,16 @@
   }
   function render(q) {
     q = q.trim().toLowerCase();
-    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; }).slice(0, 40)
+    // 標題完全相符者排最前，其次標題開首相符、標題包含，最後才是其他欄位相符
+    function rank(r) { var t = r.t.toLowerCase().replace(/[《》]/g, '');
+      return t === q ? 0 : t.indexOf(q) === 0 ? 1 : t.indexOf(q) >= 0 ? 2 : 3; }
+    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; })
+                  .map(function (r, i) { return [rank(r), i, r]; })
+                  .sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; })
+                  .map(function (x) { return x[2]; }).slice(0, 40)
               : SEARCH_INDEX.slice(0, 20);
     sel = 0;
-    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">搵唔到相符嘅條目。</div>'; return; }
+    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">找不到相符的條目。</div>'; return; }
     results.innerHTML = shown.map(function (r, i) {
       return '<a href="' + base + r.u + '" class="' + (i === 0 ? 'sel' : '') + '">' +
              '<span class="r-zh">' + r.t + '</span>' +
@@ -97,7 +102,7 @@
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) { ev.preventDefault(); open(); }
   });
 })();
-// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+// 粵語發音：全站共用一個 audio 物件，不必每條成語各開一個
 (function () {
   var a = null;
   document.addEventListener('click', function (ev) {
