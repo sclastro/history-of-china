@@ -50,6 +50,9 @@ sources:
     ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-si-nian
   - source: guo-yu
     locus: 晉語四
+  - source: shiji
+    locus: 晉世家
+    ctext_urn: ctp:shiji/jin-shi-jia
 reliability: 信史
 significance: >-
   「秦晉之好」的實際內容，是三代互相通婚、三次擁立晉國國君：秦國藉婚姻插手晉國的君位繼承，

@@ -86,6 +86,9 @@ sources:
   - source: zuo-zhuan
     locus: 僖公二十八年
     ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-ba-nian
+  - source: zuo-zhuan
+    locus: 僖公二十七年
+    ctext_urn: ctp:chun-qiu-zuo-zhuan/xi-gong-er-shi-qi-nian
 reliability: 信史
 significance: >-
   春秋時代最重要的一場會戰。晉國由此成為霸主，楚國向北擴張的勢頭受阻了三十多年。

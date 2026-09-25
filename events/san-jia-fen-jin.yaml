@@ -44,6 +44,12 @@ sources:
   - source: shiji
     locus: 六國年表
     ctext_urn: ctp:shiji/liu-guo-nian-biao
+  - source: shiji
+    locus: 周本紀
+    ctext_urn: ctp:shiji/zhou-ben-ji
+  - source: shiji
+    locus: 晉世家
+    ctext_urn: ctp:shiji/jin-shi-jia
 reliability: 信史
 significance: >-
   這是春秋與戰國的分界線。就制度而言，它宣告了封建宗法秩序的破產：卿大夫掌握國家大權，
