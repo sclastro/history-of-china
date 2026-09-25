@@ -58,6 +58,8 @@ def chat(model, content):
             if data == "[DONE]":
                 break
             chunk = json.loads(data)
+            if chunk.get("error"):
+                print(f"  ! Poe 回傳錯誤：{chunk['error']}", flush=True)
             usage = chunk.get("usage") or usage
             for c in chunk.get("choices") or []:
                 parts.append((c.get("delta") or {}).get("content") or "")
@@ -91,6 +93,7 @@ def prompt(event_id):
 ```
 
 要求：
+- 不要上網搜尋、不要調用任何工具，直接憑所知作答；原文事後另行逐字核對。
 - 只輸出一個完整的 YAML 代碼塊，不要任何說明文字。
 - narrative、original、significance 以外的欄位原封不動。
 - original 的 quote 必須逐字照錄《左傳》《史記》等原典，不可自行改寫或杜撰；無把握者寧缺毋濫。
@@ -102,7 +105,16 @@ def rewrite(event_id, model, out):
     text, usage = chat(model, prompt(event_id))
     m = re.search(r"```(?:yaml)?\n(.*?)```", text, re.S)
     body = m.group(1) if m else text
-    new = yaml.safe_load(body)
+    try:
+        new = yaml.safe_load(body)
+    except yaml.YAMLError:
+        new = None
+    if not isinstance(new, dict):
+        # 回覆無法解析：保存原文供檢查，不寫 .yaml，下次重跑時會再處理此條
+        (out / f"{event_id}.raw.txt").write_text(text)
+        print(f"✗ {event_id}：回覆無法解析為 YAML（{len(text)} 字），原文存於 {event_id}.raw.txt"
+              f"（tokens：{usage.get('total_tokens', '?')}）", flush=True)
+        return
     changed = [k for k in src if k not in REWRITTEN and src[k] != new.get(k)]
     if changed:
         print(f"  ! {event_id}：模型改動了不應改的欄位 {changed}，已照原值還原")
