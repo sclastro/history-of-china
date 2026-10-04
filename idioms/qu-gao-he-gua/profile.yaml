@@ -14,34 +14,35 @@ meaning: 言論或作品程度太高，能理解欣賞的人很少。
 benshi:
   event: song-yu-dui-wen
   summary: >-
-    楚襄王問宋玉為何士民百姓多有非議。宋玉舉郢中歌者為例：唱《下里》《巴人》時和唱者數千人，唱《陽阿》《薤露》時數百人，唱《陽春》《白雪》時數十人，引商刻羽、雜以流徵時不過三數人——曲調越高，和唱越少。又以鳳凰之於鷃雀、鯤魚之於鯢鰍為喻，說明世俗之人不懂他的作為。
+    楚襄王問宋玉為何士民百姓多有非議。宋玉舉郢中歌者為例：唱《下里》《巴人》時和唱者數千人，唱《陽阿》《薤露》時數百人，唱《陽春》《白雪》時數十人，引商刻羽、雜以流徵時不過數人——曲調越高，和唱越少。又以鳳凰之於鷃雀、鯤魚之於鯢鰍為喻，說明世俗之人不懂他的作為。
 dianyuan:
-  - source: shiji
-    locus: 屈原賈生列傳
-    ctext_urn: ctp:shiji/qu-yuan-jia-sheng-lie-zhuan
+  - source: xin-xu
+    locus: 雜事一
+    ctext_urn: ctp:xin-xu/za-shi-yi
     quote: >-
-      是其曲彌高，其和彌寡。
+      是其曲彌高者，其和彌寡。
     translation: >-
       可見曲調越高妙，能跟著唱的人就越少。
 crystallisation:
   note: >-
-    原文作「其曲彌高，其和彌寡」；
+    《新序·雜事一》作「是其曲彌高者，其和彌寡」，問者為楚威王；
+    《文選》所載宋玉〈對楚王問〉作「是其曲彌高，其和彌寡」，問者為楚襄王，本站敘事據此。
     「曲高和寡」的四字語形是後人的節縮，唐宋以降通行。
     「和」讀作去聲，是跟著唱的意思。
-  moe_id: 1795
+  moe_id: 301
 reliability: 孤證
 variants:
   - claim: >-
-      〈對楚王問〉見於《文選》，不見於先秦典籍，
-      一般認為是漢人所輯或後人依託宋玉之名而作，
-      故本站標為孤證。
-    source: shiji
-    locus: 屈原賈生列傳
+      〈對楚王問〉見於《文選》，劉向《新序》亦載其事而文字互異，不見於先秦典籍；
+      一般認為是漢人所輯或後人依託宋玉之名而作，故本站標為孤證。
+      《史記·屈原賈生列傳》只提及宋玉之名，不載此事。
+    source: xin-xu
+    locus: 雜事一
 people: [song-yu, chu-xiang-wang]
 concepts: [雅俗, 自辯, 受眾]
 related_idioms:
   - target: zhong-zui-du-xing
-    kind: same_source
+    kind: parallel
     note: 兩條同出楚辭系統，都在處理「不合於眾」這個處境，而態度不同。
   - target: gao-shan-liu-shui
     kind: contrast
@@ -49,11 +50,11 @@ related_idioms:
 lessons:
   historical: >-
     這則對答值得收錄的原因，在那個層層遞減的例子本身：
-    四種曲調、四個和唱人數（數千、數百、數十、三數人），
+    四種曲調、四個和唱人數（數千、數百、數十、數人），
     是先秦文獻中少見的以量化方式呈現的論證。
     但論點是否成立，可以另當別論。
     宋玉用它來解釋自己何以不受歡迎——
-    而「曲高和寡」同樣可以是「唱得不好」的另一種說法。
+    而曲高和寡同樣可以是唱得不好的另一種說法。
     這個結構的問題在於它不可證偽：
     無論多少人不喜歡，都可以被解釋成他們水準不夠。
     有意思的是這篇文章的處境：楚王問的是
@@ -67,4 +68,4 @@ lessons:
     使用時值得留意它的不可證偽性：這個解釋太好用，
     所以用它之前最好先排除比較平常的可能。
 references:
-  - https://ctext.org/shiji/qu-yuan-jia-sheng-lie-zhuan/zh
+  - https://ctext.org/xin-xu/za-shi-yi/zh

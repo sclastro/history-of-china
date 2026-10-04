@@ -15,10 +15,13 @@ Vercel 直接發佈 repo 內已 commit 的檔案，不執行任何 build step。
 - 預設分支（Vercel 追蹤）：`claude/spring-autumn-history-site-f4tzkd`
 - 早期曾用 GitHub Actions 部署 GitHub Pages，`.github/workflows/pages.yml` 已刪除，現只用 Vercel。
 
-## 現況（2026-09-25）
+## 現況（2026-10-04）
 
 七期收錄計劃全部完成：**116 條成語、62 個事件、129 個人物**，粵語音檔 116 個（約 1.7 MB）。
 `validate.py` 全部通過，今譯提示為零。
+62 個事件今譯改寫全部完成，均附原文選段；成語典源譯文及人物小傳白話夾註亦已按同一標準修訂（2026-10-04）。
+進度見下文「今譯改寫進度」。
+2026-09-25 完成全站覆核（成語、事件、人物逐篇通讀，連結及界面系統檢查），做法及結論見下文「全站覆核」。
 `docs/framework.md` 候選名單尚餘約 110 條未收；續補時在該檔「五、後續收錄計劃」表下方另立期次（第八期起）。
 
 ## 目錄結構
@@ -32,8 +35,9 @@ data/periods.yaml          七個分期（start／end 為閉區間）
 data/states.yaml           列國譜系
 data/sources.yaml          文獻譜系（含 ctext slug、locus_format）
 schema/*-template.yaml     三種條目的欄位範本——新增條目前必讀
-docs/                      design.md、sources.md、framework.md
-scripts/                   validate、build_index、build_site、build_audio、check_links
+docs/                      design.md、sources.md、framework.md、translation-style.md（今譯標準及覆核清單）
+scripts/                   validate、build_index、build_site、build_audio、check_links、
+                           poe_rewrite、verify_original、lint_style
 assets/                    style.css、search-index.js（生成）、audio/<id>.mp3（生成）
 *.html、sitemap.xml、robots.txt、404.html   全部由 build_site.py 生成，切勿手改
 ```
@@ -50,6 +54,9 @@ python3 scripts/build_index.py     # 重生 README.md 內 <!-- INDEX:START/END -
 python3 scripts/build_site.py      # 重生全部 HTML、search-index.js、sitemap.xml
 python3 scripts/build_audio.py     # 為新成語生成粵語音檔（--force 全部重做；--list 只列出）
 python3 scripts/check_links.py     # 覆檢 ctext.org 與教育部成語典連結（需連網；403 標為「無法判定」）
+python3 scripts/poe_rewrite.py --model <型號> --out <暫存目錄> --all --limit N   # 經 Poe 改寫事件（見下文）
+python3 scripts/verify_original.py <稿件.yaml ...>   # 以維基文庫逐字核對 original 原文（需連網）
+python3 scripts/lint_style.py <稿件.yaml ...>        # 檢查「什麼」、引號內非原文、殘留文言虛詞
 ```
 
 ## 修改條目的標準流程
@@ -84,6 +91,59 @@ python3 scripts/check_links.py     # 覆檢 ctext.org 與教育部成語典連�
 程式碼註解及部分 schema 註解、`validate.py` 輸出仍混有廣東口語（如「唔」「嘅」），屬歷史遺留；
 改動相關檔案時可順手改為書面語，但毋須為此另開 commit。
 
+## Poe API 使用規則
+
+- key 只從環境變數 `POE_API_KEY` 讀取，**切勿寫入 repo、commit 或對話**。
+- 每次只開**一個** agent／請求，逐條順序處理，絕不並行，以免一次過耗盡 Poe 額度。
+- 模型用 Poe 上**最高版本的 Claude Opus**（先以 `scripts/poe_rewrite.py --list-models` 查核）。
+- 批量改寫用 `scripts/poe_rewrite.py`，輸出先寫到暫存目錄，經人手覆核（尤其原文是否逐字照錄）後才併入 `events/`。
+- 雲端環境須在 Network access 允許 `api.poe.com`；核對原文另須允許 `zh.wikisource.org`。
+- 腳本用串流請求：非串流請求在生成期間毫無資料往來，約 160 秒即被網絡代理斷線。
+- prompt 要求模型不作網上搜尋：Poe 上的 Opus 會自行搜尋，令 token 用量增至五至十倍，
+  亦會令回覆只有說明文字而無 YAML。回覆無法解析時存為 `<id>.raw.txt`，重跑時自動重做。
+- 每條約需五至六分鐘；以背景執行，逐條完成後即核對，不必等整批跑完。
+
+## 原文核對
+
+ctext.org 網頁設有防機械人關卡，並明言不歡迎程式抓取；其 API 取全文須機構訂閱。故不設法繞過，
+改以 `scripts/verify_original.py` 取維基文庫原文逐字比對。兩者底本不盡相同（《戰國策》用士禮居本），
+報告的差異須人手判斷：異體字保留，版本異文查明後保留，模型改字、刪句、自擬文字則須改正。
+維基文庫的 API（api.php）限流嚴格，腳本改用 `index.php?action=raw`，並附帶聯絡網址的 User-Agent。
+覆核須逐項對照 `docs/translation-style.md`「覆核清單」。
+
+ctext 篇章 slug 可用搜尋引擎核實（搜 `ctext.org <書 slug> <篇名>`，看結果網址），不必抓取 ctext 本站。
+規則見 `docs/sources.md`：《戰國策》作 `qi-yi` 而非 `qi-ce-yi`；《呂氏春秋》《晏子春秋》《新序》只用篇名一層。
+
+## 全站覆核（2026-09-25）
+
+- 成語典源、md 引文及行內文言引語全部以維基文庫逐字核對，改正多處改字、刪句、自擬原文及出處錯標
+  （如驚弓之鳥、高山流水、曲高和寡、一字千金「無人能改」實出高誘序）。
+- 教育部《成語典》ID 原來全部錯誤，已逐條以網頁標題核實後重填；附錄條目用附錄 ID，查無者不填。
+- 相關成語新增 `sequel`（前後相承）、`parallel`（相互參照）兩類，改正誤標為同一典源／同一事件者。
+- 常見錯誤類型已補入 `docs/translation-style.md`「覆核清單」第十至十四項，新稿須一併檢查。
+- 站內連結（含錨點及搜尋索引）全部有效；手機版界面無橫向溢出。
+
+## 今譯改寫進度
+
+標準見 `docs/translation-style.md`。事件按檔名字母序處理。
+
+- 已完成（21）：城濮之戰（試點）；邲之戰、長平之戰、長勺之戰、陳軫說昭陽、重耳流亡、楚俘皇頡爭功、
+  楚莊王親政、大棘之戰、二桃殺三士、齊桓伐山戎、范睢說秦昭王、馮諼客孟嘗君、輔氏之役、更羸虛發、
+  管仲相齊、桂陵之戰、郭隗說燕昭王、邯鄲之圍、韓原之戰（2026-09-25，Poe claude-opus-4.8 改寫，人手覆核）；
+  楚圍宋（Poe 連續三次失敗，兩次回傳 Internal server error，改由 Claude Code 直接改寫，同樣以工具核對）。
+- 第二批已完成（20）：胡服騎射、季梁諫魏王、將相和、晉景公之病、晉滅虢虞、晉文行賞、晉陽之戰、荊軻刺秦、
+  孔子晚年讀易、孔子論學、呂不韋立子楚、呂氏春秋成書、孟嘗君入秦、澠池之會、秦納重耳、若敖氏之亂、
+  三家分晉、商鞅變法（2026-09-25，Poe claude-opus-4.8 改寫，人手覆核）；季氏將伐顓臾、屈原自沉
+  （Poe 分別兩次回傳 Internal server error、兩次連線中斷，改由 Claude Code 直接改寫）。
+- 第三批已完成（21）：商鞅之死至鄒忌諷諫（2026-10-03，應使用者要求不經 Poe，由 Claude Code 直接改寫，
+  原文經 `verify_original.py` 逐字核對；〈繫年〉原文據整理者通行釋文，以搜尋結果人手核對）。
+- 成語及人物（2026-10-04，Claude Code 直接修訂）：重譯成語典源 `translation` 三十六段，論述文章的白話色塊同步；
+  成語、人物、事件三類譯文及夾註內的自稱與尊稱統一（臣、寡人、老夫→我；君侯→您；寡君→我們國君），
+  並改去殘留的文言用語（如豈、有德者）。目前沒有待辦的今譯工作。
+
 ## 已知問題
 
-- `docs/framework.md` 候選名單的粗體標示不完整（第四期以後收錄者多未加粗），收錄與否以 `README.md`「成語一覽」為準。
+- 宋玉對楚王問：敘事據《文選》（楚頃襄王），原文選段據已登記的《新序·雜事一》（楚威王），兩者文字互異，事件中已註明。
+- 維基文庫《晏子春秋》作「何為者也」「與嬉」，站內從通行本「曷為者也」「與熙」。
+- 維基文庫《史記·商君列傳》作「為法自斃」，通行本作「為法之敝」，站內從通行本，並在作法自斃條目註明。
+- 原文核對以維基文庫為準，與站內 `ctext_urn` 所指的 ctext 底本或有出入（如更羸虛發「驚心未去／未至」）。

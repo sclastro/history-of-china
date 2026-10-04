@@ -15,7 +15,7 @@
 
 | 層 | 問的問題 | 例：臥薪嘗膽 |
 |---|---|---|
-| **本事** | 歷史上實際發生了什麼？ | 前 494 年句踐敗於夫椒，前 473 年滅吳 |
+| **本事** | 歷史上實際發生了甚麼？ | 前 494 年句踐敗於夫椒，前 473 年滅吳 |
 | **典源** | 最早見於哪本書、哪一段？ | 《左傳》《國語》**皆無此語**；「嘗膽」首見《史記》，作「置膽於坐」 |
 | **語形定型** | 四字形式何時確立？ | 「臥薪嘗膽」四字連用最早見於蘇軾，而且說的是**孫權** |
 | **可信度** | 有多可信？有沒有相牴的記載？ | 大體可信——本事確鑿，「臥薪」為宋人所加 |
@@ -34,7 +34,7 @@
 ```
 idioms/<id>/profile.yaml   結構化數據：四層考據、關聯人物事件、雙欄啟示（可供程式查詢）
 idioms/<id>/<id>.md        論述文章（供讀者閱讀）
-events/<id>.yaml           事件節點：敘事、史料、意義
+events/<id>.yaml           事件節點：敘事、原文選段、史料、意義
 people/<id>.yaml           人物節點：小傳、生平年表、關聯
 data/{states,sources,periods}.yaml   列國譜系、文獻譜系、分期定義
 ```
@@ -45,13 +45,14 @@ data/{states,sources,periods}.yaml   列國譜系、文獻譜系、分期定義
 **與哲學家知識庫的分工**：先秦思想家（孔子、老子、莊子、孟子、韓非……）
 的思想部分不在本站重複撰寫，`people/` 以 `philosophy_ref` 欄外連至
 [哲學家知識庫](https://cc-philosophy.vercel.app/)——
-那邊講他們想了什麼，這邊講他們身在什麼局裡。
+那邊講他們想了甚麼，這邊講他們身在甚麼局裡。
 
 ## 文件
 
 - [docs/design.md](docs/design.md) — 四層考據原則（以臥薪嘗膽、烽火戲諸侯為範例）
 - [docs/sources.md](docs/sources.md) — 文獻分層與引用規範
 - [docs/framework.md](docs/framework.md) — 分期架構、列國泳道、成語候選名單與分期收錄計劃
+- [docs/translation-style.md](docs/translation-style.md) — 今譯與白話敘事標準、改寫稿覆核清單
 - [schema/](schema/) — 三種條目的欄位 template
 
 ## 部署
@@ -123,6 +124,14 @@ python3 scripts/check_links.py
 > ctext.org 會攔截非瀏覽器的 User-Agent。`check_links.py` 已帶瀏覽器 UA，
 > 若仍回 403 會標為「無法判定」而不算失敗，須以人手覆核。
 
+**原文核對**：事件 `original` 欄的原文選段，以維基文庫全文逐字比對
+（ctext.org 設有防抓取關卡，不能自動核對）；另有文字規範檢查：
+
+```sh
+python3 scripts/verify_original.py events/<id>.yaml
+python3 scripts/lint_style.py events/<id>.yaml
+```
+
 <!-- INDEX:START -->
 
 ## 收錄統計
@@ -151,7 +160,7 @@ python3 scripts/check_links.py
 
 | 文獻 | 層 | 條數 |
 |---|:-:|---:|
-| 《史記》 | B | 34 |
+| 《史記》 | B | 33 |
 | 《左傳》 | B | 25 |
 | 《莊子》 | C | 16 |
 | 《戰國策》 | B | 13 |
@@ -161,6 +170,7 @@ python3 scripts/check_links.py
 | 《孟子》 | C | 3 |
 | 《晏子春秋》 | C | 2 |
 | 《呂氏春秋》 | C | 2 |
+| 《新序》 | E | 1 |
 
 ## 成語一覽
 
@@ -214,7 +224,7 @@ python3 scripts/check_links.py
 | 螳螂捕蟬 | — | 春秋後期 | 寓言 | 《莊子》山木 | 寓言 | [tang-lang-bu-chan](idioms/tang-lang-bu-chan/tang-lang-bu-chan.md) |
 | 曾子殺彘 | 前 470 | 戰國前期 | 史事 | 《韓非子》外儲說左上 | 大體可信 | [zeng-zi-sha-zhi](idioms/zeng-zi-sha-zhi/zeng-zi-sha-zhi.md) |
 | 前事不忘，後事之師 | 前 453 | 戰國前期 | 史事 | 《戰國策》趙策一 | 信史 | [qian-shi-bu-wang](idioms/qian-shi-bu-wang/qian-shi-bu-wang.md) |
-| 三家分晉 | 前 403 | 戰國前期 | 史事 | 《史記》六國年表 | 信史 | [san-jia-fen-jin](idioms/san-jia-fen-jin/san-jia-fen-jin.md) |
+| 三家分晉 | 前 403 | 戰國前期 | 史事 | 《史記》周本紀 | 信史 | [san-jia-fen-jin](idioms/san-jia-fen-jin/san-jia-fen-jin.md) |
 | 徙木立信 | 前 356 | 戰國前期 | 史事 | 《史記》商君列傳 | 大體可信 | [xi-mu-li-xin](idioms/xi-mu-li-xin/xi-mu-li-xin.md) |
 | 南轅北轍 | 前 354 | 戰國前期 | 史事 | 《戰國策》魏策四 | 孤證 | [nan-yuan-bei-zhe](idioms/nan-yuan-bei-zhe/nan-yuan-bei-zhe.md) |
 | 圍魏救趙 | 前 353 | 戰國前期 | 史事 | 《史記》孫子吳起列傳 | 信史 | [wei-wei-jiu-zhao](idioms/wei-wei-jiu-zhao/wei-wei-jiu-zhao.md) |
@@ -263,7 +273,7 @@ python3 scripts/check_links.py
 | 亡羊補牢 | 前 278 | 戰國後期 | 史事 | 《戰國策》楚策四 | 大體可信 | [wang-yang-bu-lao](idioms/wang-yang-bu-lao/wang-yang-bu-lao.md) |
 | 眾醉獨醒 | 前 278 | 戰國後期 | 史事 | 《史記》屈原賈生列傳 | 大體可信 | [zhong-zui-du-xing](idioms/zhong-zui-du-xing/zhong-zui-du-xing.md) |
 | 抱薪救火 | 前 273 | 戰國後期 | 史事 | 《史記》魏世家 | 大體可信 | [bao-xin-jiu-huo](idioms/bao-xin-jiu-huo/bao-xin-jiu-huo.md) |
-| 曲高和寡 | 前 270 | 戰國後期 | 史事 | 《史記》屈原賈生列傳 | 孤證 | [qu-gao-he-gua](idioms/qu-gao-he-gua/qu-gao-he-gua.md) |
+| 曲高和寡 | 前 270 | 戰國後期 | 史事 | 《新序》雜事一 | 孤證 | [qu-gao-he-gua](idioms/qu-gao-he-gua/qu-gao-he-gua.md) |
 | 鷸蚌相爭 | 前 270 | 戰國後期 | 史事 | 《戰國策》燕策二 | 孤證 | [yu-bang-xiang-zheng](idioms/yu-bang-xiang-zheng/yu-bang-xiang-zheng.md) |
 | 睚眥必報 | 前 266 | 戰國後期 | 史事 | 《史記》范睢蔡澤列傳 | 信史 | [ya-zi-bi-bao](idioms/ya-zi-bi-bao/ya-zi-bi-bao.md) |
 | 遠交近攻 | 前 266 | 戰國後期 | 史事 | 《史記》范睢蔡澤列傳 | 信史 | [yuan-jiao-jin-gong](idioms/yuan-jiao-jin-gong/yuan-jiao-jin-gong.md) |

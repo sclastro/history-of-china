@@ -8,7 +8,7 @@ idiom:
 type: parable
 period: zhan-guo-mid
 year: null
-states: [qi]
+states: [tian-qi]
 meaning: 沒有真本事的人混在行家裡充數。
 dianyuan:
   - source: hanfeizi
@@ -25,7 +25,7 @@ crystallisation:
   note: >-
     《韓非子》原文並無「濫竽充數」四字，是後世對這則寓言的概括；
     「濫」字有「不當而入」之義，語形唐宋以降通行。
-  moe_id: 1400
+  moe_id: 54
 reliability: 寓言
 people: [qi-xuan-wang, qi-min-wang]
 concepts: [考核, 制度, 名實]
@@ -36,8 +36,8 @@ related_idioms:
 lessons:
   historical: >-
     這則寓言常被讀成嘲笑南郭處士，其實韓非的矛頭指向制度。
-    〈內儲說上〉這一節講的是君主的「聽言之道」，
-    南郭處士只是例子。
+    〈內儲說上〉這一節屬七術中的「一聽責下」，
+    講君主要逐一聽取、責成臣下，南郭處士只是例子。
     真正被檢驗的是兩種考核方式：宣王「必三百人」是集體考核，
     湣王「好一一聽之」是個別考核。
     同一個人，在前一種制度下混得下去，在後一種制度下混不下去——

@@ -40,12 +40,11 @@
   </div>
 </div>
 <section class="layer">
-  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了什麼</span></h2>
+  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了甚麼</span></h2>
   <p class="parable-note">
-  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。
-  它的史料價值不在於記錄了什麼事，而在於顯示了那個時代的人怎樣講道理。</p>
+  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。它的史料價值不在於記錄了甚麼事，而在於顯示了那個時代的人怎樣講道理。</p>
 </section>
-<section class="layer"><h2>論述<span class="hint">這件事說明了什麼</span></h2>
+<section class="layer"><h2>論述<span class="hint">這件事說明了甚麼</span></h2>
   <div class="essay"><h1>邯鄲學步</h1>
 <p><strong>邯鄲學步</strong>（hán dān xué bù）——到邯鄲去學走路。</p>
 <h2>兩重損失</h2>
@@ -80,12 +79,12 @@
 </div>
 <section class="layer">
   <h2><span class="num">第二層</span>典源<span class="hint">最早見於哪本書、哪一段</span></h2>
-  <div class="quote-block"><div class="cite"><span class="book">《莊子》</span><span>秋水</span> <a href="https://ctext.org/zhuangzi/autumn-floods/zh" target="_blank" rel="noopener">ctext ↗</a></div><div class="translation">再說您難道沒聽過燕國壽陵那個少年到邯鄲學走路的事嗎？他沒學會趙國人的本事，反而把自己原來的走法也忘了，只好爬著回去。</div><details class="orig-wrap" open><summary>原文</summary><div class="original">且子獨不聞夫壽陵餘子之學行於邯鄲與？未得國能，又失其故行矣，直匍匐而歸耳。</div></details></div>
+  <div class="quote-block"><div class="cite"><span class="book">《莊子》</span><span>秋水</span> <a href="https://ctext.org/zhuangzi/floods-of-autumn/zh" target="_blank" rel="noopener">ctext ↗</a></div><div class="translation">再說您難道沒聽過燕國壽陵那個少年到邯鄲學走路的事嗎？他沒學會趙國人的本事，反而把自己原來的走法也忘了，只好爬著回去。</div><details class="orig-wrap" open><summary>原文</summary><div class="original">且子獨不聞夫壽陵餘子之學行於邯鄲與？未得國能，又失其故行矣，直匍匐而歸耳。</div></details></div>
 </section><section class="layer">
   <h2><span class="num">第三層</span>語形定型<span class="hint">「四字成語」這個形式何時確立</span></h2>
   
   <p class="cryst-note">《莊子》原文作「壽陵餘子之學行於邯鄲」，並無四字語形；「邯鄲學步」是後人的概括，唐宋以降通行。</p>
-  
+  <div class="moe-link">交叉核對：<a href="https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=712&webMd=1&la=0" target="_blank" rel="noopener">教育部《成語典》 ↗</a></div>
 </section><section class="layer">
   <h2><span class="num">第四層</span>可信度與異說<span class="hint">本事有多可信、有沒有相牴的記載</span></h2>
   <div style="display:flex;align-items:center;gap:11px;margin-bottom:11px">
@@ -100,7 +99,7 @@
   <div class="rel-links"><a href="../../people.html#zhuang-zi">莊子</a></div>
 </section>
 
-<section class="layer"><h2>撰寫依據</h2><ul class="refs"><li><a href="https://ctext.org/zhuangzi/autumn-floods/zh" target="_blank" rel="noopener">https://ctext.org/zhuangzi/autumn-floods/zh</a></li></ul></section>
+<section class="layer"><h2>撰寫依據</h2><ul class="refs"><li><a href="https://ctext.org/zhuangzi/floods-of-autumn/zh" target="_blank" rel="noopener">https://ctext.org/zhuangzi/floods-of-autumn/zh</a></li></ul></section>
 <div class="prevnext"><a href="../../idioms/dai-ruo-mu-ji/">← 呆若木雞</a><a href="../../idioms/he-zhe-zhi-fu/">涸轍之鮒 →</a></div>
 </main>
 
@@ -135,10 +134,16 @@
   }
   function render(q) {
     q = q.trim().toLowerCase();
-    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; }).slice(0, 40)
+    // 標題完全相符者排最前，其次標題開首相符、標題包含，最後才是其他欄位相符
+    function rank(r) { var t = r.t.toLowerCase().replace(/[《》]/g, '');
+      return t === q ? 0 : t.indexOf(q) === 0 ? 1 : t.indexOf(q) >= 0 ? 2 : 3; }
+    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; })
+                  .map(function (r, i) { return [rank(r), i, r]; })
+                  .sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; })
+                  .map(function (x) { return x[2]; }).slice(0, 40)
               : SEARCH_INDEX.slice(0, 20);
     sel = 0;
-    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">搵唔到相符嘅條目。</div>'; return; }
+    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">找不到相符的條目。</div>'; return; }
     results.innerHTML = shown.map(function (r, i) {
       return '<a href="' + base + r.u + '" class="' + (i === 0 ? 'sel' : '') + '">' +
              '<span class="r-zh">' + r.t + '</span>' +
@@ -171,7 +176,7 @@
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) { ev.preventDefault(); open(); }
   });
 })();
-// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+// 粵語發音：全站共用一個 audio 物件，不必每條成語各開一個
 (function () {
   var a = null;
   document.addEventListener('click', function (ev) {

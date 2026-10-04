@@ -68,7 +68,7 @@ BOLD = re.compile(r"\*\*([^*]+)\*\*")
 
 # YAML 折疊純量同 Markdown 段落換行都會摺成空格；中文之間唔應該有空格，
 # 故一律把「中日韓字元之間嘅空白」刪走（拉丁字母、數字之間嘅空格保留）。
-CJK = r"\u2e80-\u9fff\uf900-\ufaff\uff01-\uff60\u3000-\u303f"
+CJK = r"\u2e80-\u9fff\uf900-\ufaff\uff01-\uff60\u3000-\u303f\u2014\u2026\u2018\u2019\u201c\u201d"
 CJK_SPACE = re.compile(rf"(?<=[{CJK}])[ \t]+(?=[{CJK}])")
 
 
@@ -84,7 +84,7 @@ def cjk_tidy(text):
 
 
 def tidy_all(node):
-    """遞迴清走資料中所有字串嘅中文字間空白。"""
+    """遞迴清走資料中所有字串的中文字間空白。"""
     if isinstance(node, str):
         return cjk_tidy(node)
     if isinstance(node, list):
@@ -113,6 +113,11 @@ def rich(text):
         r'<span class="orig">（原文：\1）</span>', out)
     # 未緊接引語嘅白話（罕見）仍照舊呈現
     return GLOSS.sub(r'<span class="vern">\1</span>', out)
+
+
+def paras(text):
+    """多段敘事：資料中的換行即分段，每段各成 <p>。"""
+    return "".join(f"<p>{rich(x.strip())}</p>" for x in (text or "").split("\n") if x.strip())
 
 
 def year_num(v):
@@ -231,7 +236,7 @@ VERN_RE = re.compile(
 
 
 def pair_quote_vernacular(blocks):
-    """把「文言引文 + 緊隨嘅白話段」重排為白話在前、原文在後（可摺疊）。"""
+    """把「文言引文 + 緊隨的白話段」重排為白話在前、原文在後（可摺疊）。"""
     out, i = [], 0
     while i < len(blocks):
         bq = BQ_RE.match(blocks[i])
@@ -260,7 +265,13 @@ NAV = [
 ]
 
 
+# 模板內段落文字換行：中文字之間、中文字與行內標籤之間的換行會顯示成空格，輸出前刪去
+INLINE_NL = re.compile(rf"(?<=[{CJK}])[ \t]*\n[ \t]*(?=[{CJK}]|</?(?:b|a|span|em|strong)\b)"
+                       rf"|(?<=</b>|</a>)[ \t]*\n[ \t]*(?=[{CJK}])")
+
+
 def page(title, body, *, current="", depth=0, desc=None, canonical=""):
+    body = INLINE_NL.sub("", body)
     up = "../" * depth
     desc = desc or SITE_DESC
     nav = "".join(
@@ -330,10 +341,16 @@ def page(title, body, *, current="", depth=0, desc=None, canonical=""):
   }}
   function render(q) {{
     q = q.trim().toLowerCase();
-    shown = q ? SEARCH_INDEX.filter(function (r) {{ return r.k.toLowerCase().indexOf(q) >= 0; }}).slice(0, 40)
+    // 標題完全相符者排最前，其次標題開首相符、標題包含，最後才是其他欄位相符
+    function rank(r) {{ var t = r.t.toLowerCase().replace(/[《》]/g, '');
+      return t === q ? 0 : t.indexOf(q) === 0 ? 1 : t.indexOf(q) >= 0 ? 2 : 3; }}
+    shown = q ? SEARCH_INDEX.filter(function (r) {{ return r.k.toLowerCase().indexOf(q) >= 0; }})
+                  .map(function (r, i) {{ return [rank(r), i, r]; }})
+                  .sort(function (a, b) {{ return a[0] - b[0] || a[1] - b[1]; }})
+                  .map(function (x) {{ return x[2]; }}).slice(0, 40)
               : SEARCH_INDEX.slice(0, 20);
     sel = 0;
-    if (!shown.length) {{ results.innerHTML = '<div class="cmdk-empty">搵唔到相符嘅條目。</div>'; return; }}
+    if (!shown.length) {{ results.innerHTML = '<div class="cmdk-empty">找不到相符的條目。</div>'; return; }}
     results.innerHTML = shown.map(function (r, i) {{
       return '<a href="' + base + r.u + '" class="' + (i === 0 ? 'sel' : '') + '">' +
              '<span class="r-zh">' + r.t + '</span>' +
@@ -366,7 +383,7 @@ def page(title, body, *, current="", depth=0, desc=None, canonical=""):
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) {{ ev.preventDefault(); open(); }}
   }});
 }})();
-// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+// 粵語發音：全站共用一個 audio 物件，不必每條成語各開一個
 (function () {{
   var a = null;
   document.addEventListener('click', function (ev) {{
@@ -452,6 +469,30 @@ def quote_block(c, data):
     return f'<div class="quote-block">{"".join(parts)}</div>'
 
 
+
+def event_originals(ev, data):
+    """事件的原文選段：整組預設摺疊；每段白話在上、原文在下。"""
+    items = ev.get("original") or []
+    if not items:
+        return ""
+    base = (ev.get("sources") or [{}])[0]
+    blocks = ""
+    for c in items:
+        c = {"source": base.get("source"), **c}
+        if "ctext_urn" not in c:
+            # 沿用 sources 中同書同篇者的連結（不限第一條）
+            same = [s for s in ev.get("sources") or []
+                    if s.get("source") == c["source"] and s.get("locus") == c.get("locus")]
+            if same and same[0].get("ctext_urn"):
+                c["ctext_urn"] = same[0]["ctext_urn"]
+        speaker = f'<span class="speaker">{e(c["speaker"])}</span>・' if c.get("speaker") else ""
+        blocks += (f'<div class="quote-block"><div class="cite">{speaker}{cite_line(c, data)}</div>'
+                   f'<div class="translation">{e(c.get("translation", ""))}</div>'
+                   f'<details class="orig-wrap" open><summary>原文</summary>'
+                   f'<div class="original">{e(c.get("quote", ""))}</div></details></div>')
+    return (f'<details class="ev-original"><summary>原文選段・白話對照（{len(items)} 段）</summary>'
+            f'{blocks}</details>')
+
 # ────────────────────────── 各頁 ──────────────────────────
 
 def build_index(data):
@@ -468,8 +509,8 @@ def build_index(data):
     body = f"""<main>
 <div class="page-head">
   <h1>春秋戰國成語知識庫</h1>
-  <p class="lede">{e(SITE_DESC)}
-  每條成語都分清<b>本事</b>（實際發生了什麼）、<b>典源</b>（最早見於哪一段）、
+  <p class="lede">以四字成語為主軸，重新組織春秋戰國五百五十年的歷史事件、人物與概念。
+  每條成語都分清<b>本事</b>（實際發生了甚麼）、<b>典源</b>（最早見於哪一段）、
   <b>語形定型</b>（四字形式何時確立）與<b>史料可信度</b>——
   這四者往往相差數百年乃至兩千年。</p>
 </div>
@@ -611,7 +652,7 @@ def build_timeline(data):
   <h1>時間 × 列國</h1>
   <p class="lede">橫軸為公元前 770 至前 221 年，縱軸為列國。
   晉在前 403 年分為趙、魏、韓（三條泳道由此開始），齊在前 386 年由田氏取代姜姓（綠色泳道）。
-  點擊圓點可看該事件及其所繫的成語。</p>
+  點擊圓點可看該事件及其所繫的成語（手機版改為按分期列出）。</p>
 </div>
 <div class="timeline-wrap"><div class="timeline">
   <div class="tl-periods">{segs}</div>
@@ -753,7 +794,8 @@ def build_events(data):
             if ev.get("narrative"):
                 story = (f'<details class="ev-story" id="{e(ev["id"])}">'
                          f'<summary>讀故事</summary>'
-                         f'<div class="narrative">{rich(ev["narrative"])}</div></details>')
+                         f'<div class="narrative">{paras(ev["narrative"])}</div>'
+                         f'{event_originals(ev, data)}</details>')
             rows += f"""<div class="row">
   <span class="yr">{e(yl)}</span>
   <span class="main">
@@ -773,7 +815,7 @@ def build_events(data):
   <h1>編年大事</h1>
   <p class="lede">按分期排列的事件骨幹。每個事件下方列出繫於其上的成語——
   一個事件可以生出多條成語（城濮之戰生出退避三舍與表裡山河），
-  一條成語也可能橫跨數十年（退避三舍的承諾與兌現相隔十九年）。</p>
+  一條成語的本事也可能橫跨數年（退避三舍從許諾到兌現相隔五年）。</p>
 </div>
 {out}
 </main>"""
@@ -800,7 +842,7 @@ def build_people(data):
         if pr.get("philosophy_ref"):
             phil = (f'<a class="tag" href="https://cc-philosophy.vercel.app/philosophers/'
                     f'{e(pr["philosophy_ref"])}/" target="_blank" rel="noopener">哲學家知識庫 ↗</a>')
-        return f"""<div class="row">
+        return f"""<div class="row" id="{e(pr['id'])}">
   <span class="yr">{e(yrs)}</span>
   <span class="main">
     <h3>{e(pr['name']['zh'])} <span class="p-en">{e(pr['name'].get('en',''))}</span></h3>
@@ -826,7 +868,7 @@ def build_people(data):
   <h1>人物</h1>
   <p class="lede">按所屬列國分組，國內按生年排序。生卒不可考者以「？」標示。
   先秦思想家的思想部分不在本站重複撰寫，改以外連至<a href="https://cc-philosophy.vercel.app/" target="_blank" rel="noopener">哲學家知識庫</a>——
-  那邊講他們想了什麼，這邊講他們身在什麼局裡。</p>
+  那邊講他們想了甚麼，這邊講他們身在甚麼局裡。</p>
 </div>
 {out}
 </main>"""
@@ -879,7 +921,7 @@ def build_sources(data):
                 meta.append(f'{s["excavated"]} 年出土')
             caveat = (f'<div class="caveat"><b>須注意：</b>{e(s["caveat"])}</div>'
                       if s.get("caveat") else "")
-            cards += f"""<div class="src-card">
+            cards += f"""<div class="src-card" id="{e(s['id'])}">
   <div class="top"><h3>《{e(s['name'])}》</h3>
     <span class="src-meta">{e("・".join(meta))}</span>{link}{badge}</div>
   {f'<div class="nature">{e(s["nature"])}</div>' if s.get('nature') else ''}
@@ -911,7 +953,7 @@ def build_idiom_page(d, data, prev_d, next_d):
     concepts = "".join(f'<span class="tag">{e(c)}</span>' for c in d.get("concepts") or [])
 
     layers = []      # 可讀部分：本事（白話故事）
-    kaoju = []       # 考據部分：典源、語形定型、可信度——供查證，唔係主線閱讀
+    kaoju = []       # 考據部分：典源、語形定型、可信度——供查證，不是主線閱讀
 
     # 第一層：本事
     benshi = d.get("benshi")
@@ -926,20 +968,20 @@ def build_idiom_page(d, data, prev_d, next_d):
   <div class="sub-label">所繫事件</div>
   <div class="ev-name">{e(ev['name'])}
     <span class="ev-year">（{e(yl)}）</span></div>
-  <div class="narrative">{rich(ev.get('narrative', ''))}</div>
+  <div class="narrative">{paras(ev.get('narrative'))}</div>{event_originals(ev, data)}
   <div class="significance"><b>意義：</b>{rich(ev.get('significance', ''))}</div>
 </div>"""
         layers.append(f"""<section class="layer">
-  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了什麼</span></h2>
+  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了甚麼</span></h2>
   <p class="benshi-summary">{rich(benshi.get('summary'))}</p>
   {ev_html}
 </section>""")
     else:
         layers.append(f"""<section class="layer">
-  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了什麼</span></h2>
+  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了甚麼</span></h2>
   <p class="parable-note">
   本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。
-  它的史料價值不在於記錄了什麼事，而在於顯示了那個時代的人怎樣講道理。</p>
+  它的史料價值不在於記錄了甚麼事，而在於顯示了那個時代的人怎樣講道理。</p>
 </section>""")
 
     # 第二層：典源
@@ -1009,7 +1051,8 @@ def build_idiom_page(d, data, prev_d, next_d):
 
     # 關聯
     kind_label = {"same_event": "同一事件", "same_source": "同一典源",
-                  "contrast": "意義相對", "derived": "由此衍生"}
+                  "contrast": "意義相對", "derived": "由此衍生",
+                  "sequel": "前後相承", "parallel": "相互參照"}
     rel_html = ""
     for r in d.get("_related") or []:
         t = data["idioms"][r["target"]]
@@ -1057,7 +1100,7 @@ def build_idiom_page(d, data, prev_d, next_d):
   </div>
 </div>
 {''.join(layers)}
-<section class="layer"><h2>論述<span class="hint">這件事說明了什麼</span></h2>
+<section class="layer"><h2>論述<span class="hint">這件事說明了甚麼</span></h2>
   <div class="essay">{essay}</div></section>
 {lessons_html}
 <div class="kaoju-divider">
@@ -1077,6 +1120,12 @@ def build_idiom_page(d, data, prev_d, next_d):
 
 # ────────────────────────── 搜尋索引 ──────────────────────────
 
+def plain_pinyin(py):
+    """去掉拼音聲調符號（wò xīn → wo xin），讓搜尋時不必輸入聲調。"""
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", py) if not unicodedata.combining(c)).replace("ü", "v")
+
+
 def build_search_index(data):
     rows = []
     for d in sorted(data["idioms"].values(), key=sort_key_idiom):
@@ -1084,12 +1133,13 @@ def build_search_index(data):
         rows.append({
             "t": d["idiom"]["zh"], "c": "成語", "u": f"idioms/{d['id']}/",
             "s": f"{year_label(d.get('year'))}・{per.get('name','')}",
-            "k": " ".join([d["idiom"]["zh"], d["idiom"]["pinyin"], d["idiom"].get("jyutping", ""),
+            "k": " ".join([d["idiom"]["zh"], d["idiom"]["pinyin"], plain_pinyin(d["idiom"]["pinyin"]),
+                           d["idiom"].get("jyutping", ""),
                            d.get("meaning", ""), " ".join(d.get("concepts") or [])]),
         })
     for ev in sorted(data["events"].values(), key=lambda x: year_num(x.get("year")) or 0):
         rows.append({
-            "t": ev["name"], "c": "事件", "u": "events.html",
+            "t": ev["name"], "c": "事件", "u": f"events.html#{ev['id']}",
             "s": year_label(ev.get("year")),
             "k": " ".join([ev["name"], ev.get("significance", "")]),
         })
@@ -1102,7 +1152,7 @@ def build_search_index(data):
         })
     for s in data["sources"].values():
         rows.append({
-            "t": f'《{s["name"]}》', "c": "文獻", "u": "sources.html",
+            "t": f'《{s["name"]}》', "c": "文獻", "u": f"sources.html#{s['id']}",
             "s": s.get("compiler", "") or "",
             "k": " ".join([s["name"], s.get("full_name", "") or "", s.get("nature", "") or ""]),
         })

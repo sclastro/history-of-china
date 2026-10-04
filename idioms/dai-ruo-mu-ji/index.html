@@ -40,15 +40,14 @@
   </div>
 </div>
 <section class="layer">
-  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了什麼</span></h2>
+  <h2><span class="num">第一層</span>本事<span class="hint">歷史上實際發生了甚麼</span></h2>
   <p class="parable-note">
-  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。
-  它的史料價值不在於記錄了什麼事，而在於顯示了那個時代的人怎樣講道理。</p>
+  本條是<b>寓言</b>——諸子用來說理的比喻，並沒有真實發生過的本事。它的史料價值不在於記錄了甚麼事，而在於顯示了那個時代的人怎樣講道理。</p>
 </section>
-<section class="layer"><h2>論述<span class="hint">這件事說明了什麼</span></h2>
+<section class="layer"><h2>論述<span class="hint">這件事說明了甚麼</span></h2>
   <div class="essay"><h1>呆若木雞</h1>
 <p><strong>呆若木雞</strong>（dāi ruò mù jī）——呆得像木頭做的雞。</p>
-<p>這是本站少數幾條<strong>語形未變而語義完全倒轉</strong>的成語。今天它形容發愣失神；在《莊子》裡，它是最高的境界。</p>
+<p>這是本站少數幾條<strong>語義完全倒轉</strong>的成語。今天它形容發愣失神；在《莊子》裡，它是最高的境界。</p>
 <h2>四十天</h2>
 <p>紀渻子替國君養鬥雞。每隔十天，國君派人來問一次可以出賽了沒有。</p>
 <p><strong>第十天</strong>：還不行——「方虛憍而恃氣」（白話：正虛浮驕矜而依恃血氣）。</p>
@@ -63,10 +62,10 @@
 <h2>牠並沒有去鬥</h2>
 <p>最後的效果值得注意：這隻鬥雞沒有鬥。</p>
 <p>「異雞無敢應者，反走矣」——別的雞看見牠，掉頭就走。</p>
-<p>〈達生〉篇講的是「達生之情者，不務生之所無以為」—— 通達生命實情的人，不去做那些對生命沒有用處的事。</p>
+<p>〈達生〉篇講的是「達生之情者，不務生之所無以為」——通達生命實情的人，不去做那些對生命沒有用處的事。</p>
 <p>不爭而勝，前提是真的不動心；如果只是忍著，對手看得出來，那就仍然是一場鬥。</p>
-<h2>語義為什麼會倒轉</h2>
-<p>「木雞」二字的字面容易讓人想到僵硬、遲鈍、沒有反應—— 而這些在日常語感裡都是負面的。</p>
+<h2>語義為甚麼會倒轉</h2>
+<p>「木雞」二字的字面容易讓人想到僵硬、遲鈍、沒有反應——而這些在日常語感裡都是負面的。</p>
 <p>原文的「望之似木雞」是旁人看見的<strong>外觀</strong>，內裡是「其德全矣」。後世只留下外觀，丟掉了內裡，於是四十天的訓練成果，變成了一個人被嚇到說不出話的樣子。</p></div></section>
 <section class="layer">
   <h2>啟示<span class="hint">史觀分析與現代引申分開處理</span></h2>
@@ -88,8 +87,8 @@
 </section><section class="layer">
   <h2><span class="num">第三層</span>語形定型<span class="hint">「四字成語」這個形式何時確立</span></h2>
   
-  <p class="cryst-note">《莊子》原文作「望之似木雞矣」，並無四字語形。「呆若木雞」是後世的概括，而語義完全翻轉—— 原義是最高境界，今義是發愣失神。這是本站語形演變中語義倒轉的一例，與「朝三暮四」「爾虞我詐」同類。</p>
-  
+  <p class="cryst-note">《莊子》原文作「望之似木雞矣」，並無四字語形。「呆若木雞」是後世的概括，而語義完全翻轉——原義是最高境界，今義是發愣失神。這是本站語形演變中語義倒轉的一例，與「朝三暮四」「爾虞我詐」同類。</p>
+  <div class="moe-link">交叉核對：<a href="https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=647&webMd=1&la=0" target="_blank" rel="noopener">教育部《成語典》 ↗</a></div>
 </section><section class="layer">
   <h2><span class="num">第四層</span>可信度與異說<span class="hint">本事有多可信、有沒有相牴的記載</span></h2>
   <div style="display:flex;align-items:center;gap:11px;margin-bottom:11px">
@@ -139,10 +138,16 @@
   }
   function render(q) {
     q = q.trim().toLowerCase();
-    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; }).slice(0, 40)
+    // 標題完全相符者排最前，其次標題開首相符、標題包含，最後才是其他欄位相符
+    function rank(r) { var t = r.t.toLowerCase().replace(/[《》]/g, '');
+      return t === q ? 0 : t.indexOf(q) === 0 ? 1 : t.indexOf(q) >= 0 ? 2 : 3; }
+    shown = q ? SEARCH_INDEX.filter(function (r) { return r.k.toLowerCase().indexOf(q) >= 0; })
+                  .map(function (r, i) { return [rank(r), i, r]; })
+                  .sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; })
+                  .map(function (x) { return x[2]; }).slice(0, 40)
               : SEARCH_INDEX.slice(0, 20);
     sel = 0;
-    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">搵唔到相符嘅條目。</div>'; return; }
+    if (!shown.length) { results.innerHTML = '<div class="cmdk-empty">找不到相符的條目。</div>'; return; }
     results.innerHTML = shown.map(function (r, i) {
       return '<a href="' + base + r.u + '" class="' + (i === 0 ? 'sel' : '') + '">' +
              '<span class="r-zh">' + r.t + '</span>' +
@@ -175,7 +180,7 @@
     if (ev.key === '/' || ((ev.metaKey || ev.ctrlKey) && ev.key === 'k')) { ev.preventDefault(); open(); }
   });
 })();
-// 粵語發音：全站共用一個 audio 物件，唔好每條成語開一個
+// 粵語發音：全站共用一個 audio 物件，不必每條成語各開一個
 (function () {
   var a = null;
   document.addEventListener('click', function (ev) {

@@ -27,7 +27,6 @@ dianyuan:
 crystallisation:
   note: >-
     《史記》原文作「胡服騎射」，見〈趙世家〉，語形自出典源即已定型。
-  moe_id: 1688
 reliability: 信史
 people: [zhao-wu-ling-wang, gong-zi-cheng]
 concepts: [變法, 實用, 華夷]
@@ -36,7 +35,7 @@ related_idioms:
     kind: contrast
     note: 同是戰國變法，一以立信開道，一以說服公族開道。
   - target: ke-zhou-qiu-jian
-    kind: same_source
+    kind: parallel
     note: 兩條都指向同一命題：法度應當隨時代而變。
 lessons:
   historical: >-
@@ -44,8 +43,8 @@ lessons:
     向被視為野蠻的一方學習，等於承認自己在某件事上不如對方；
     而在華夷之辨極重的戰國，這是一種身分上的讓步。
     公子成的反對意見說得很坦白：中原是聰明睿智之所居，
-    那些做法是蠻夷才奉行的。
-    武靈王的回答把整個問題換掉了——
+    是四方蠻夷前來效法的地方，怎能反過來仿效遠方的服飾？
+    武靈王後來答覆趙文、趙造等人時，把整個問題換掉了——
     「聖人利身之謂服，便事之謂教」
     （白話：聖人以有利於身的叫做服，以便於行事的叫做教）：
     衣服和禮法都只是工具，工具的判準是好不好用，不是誰在用。

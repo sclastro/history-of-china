@@ -18,26 +18,25 @@ benshi:
 dianyuan:
   - source: zhan-guo-ce
     locus: 燕策二
-    ctext_urn: ctp:zhan-guo-ce/yan-ce-er
+    ctext_urn: ctp:zhan-guo-ce/yan-er
     quote: >-
       兩者不肯相舍，漁者得而并禽之。今趙且伐燕，燕趙久相支以敝大眾，
       臣恐強秦之為漁父也。
     translation: >-
-      兩個都不肯放手，漁夫就把牠們一併捉走了。
-      如今趙國要攻打燕國，燕趙長久相持而使兩國百姓疲敝，
-      臣恐怕強大的秦國就是那個漁夫。
+      兩者都不肯放手，漁夫走過來，把牠們一起捉走了。如今趙國要攻打燕國，燕、趙兩國長期相持，兩國百姓都會疲憊不堪，
+      我擔心強大的秦國就會成為那個漁夫。
 crystallisation:
   note: >-
     《戰國策》原文並無「鷸蚌相爭」四字，
     是後人對這則寓言的概括；宋元以降與「漁翁得利」連用而定型。
-  moe_id: 1268
+  moe_id: 1471
 reliability: 孤證
 people: [su-dai]
 concepts: [第三方, 消耗, 外交]
 related_idioms:
   - target: dong-dao-zhu
-    kind: same_source
-    note: 兩條都靠「把第三方引進畫面」來改變當事人的計算。
+    kind: parallel
+    note: 兩條都靠把第三方引進畫面，來改變當事人的計算。
 lessons:
   historical: >-
     蘇代的說法有一個關鍵設計：他沒有替燕國喊冤，
@@ -52,4 +51,4 @@ lessons:
     引申為兩敗俱傷、第三者得利。
     在競爭中它提醒的是：先確認這場競爭的贏家是不是自己。
 references:
-  - https://ctext.org/zhan-guo-ce/yan-ce-er/zh
+  - https://ctext.org/zhan-guo-ce/yan-er/zh

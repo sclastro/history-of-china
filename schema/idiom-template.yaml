@@ -75,7 +75,8 @@ concepts: [信義, 軍禮, 霸權]               # （必填）自由標籤，�
 related_idioms:                 # （選填）網站會自動生成反向關聯，故只需單邊填寫
   - target: biao-li-shan-he     # （必填）必須係已收錄嘅成語 id，且唔可以指向自己
     kind: same_event            # （必填）same_event 同一事件／same_source 同一典源／
-                                #        contrast 意義相對／derived 由此衍生
+                                #        contrast 意義相對／derived 由此衍生／
+                                #        sequel 前後相承（相連的兩個事件）／parallel 相互參照（主題相近而出處不同）
     note: 一句說明呢層關係。        # （選填）
 
 # ── 啟示（雙欄）──────────────────────────────

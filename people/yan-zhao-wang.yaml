@@ -12,7 +12,7 @@ bio: >-
 sources:
   - source: zhan-guo-ce
     locus: 燕策一
-    ctext_urn: ctp:zhan-guo-ce/yan-ce-yi
+    ctext_urn: ctp:zhan-guo-ce/yan-yi
 relations:
   - target: guo-wei
     kind: minister

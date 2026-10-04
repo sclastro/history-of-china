@@ -35,7 +35,7 @@ DATA_DIR = ROOT / "data"
 
 IDIOM_TYPES = {"historical", "parable"}
 RELIABILITY = {"信史", "大體可信", "孤證", "後世附會", "寓言"}
-REL_KINDS = {"same_event", "same_source", "contrast", "derived"}
+REL_KINDS = {"same_event", "same_source", "contrast", "derived", "sequel", "parallel"}
 EVENT_TYPES = {"戰役", "會盟", "變法", "弒君篡位", "遷都", "外交",
                "滅國", "內亂", "出奔", "刺殺", "著述", "拜相",
                "行賞", "論政", "獻策"}
@@ -282,6 +282,13 @@ def check_event(path: Path, ids) -> list[str]:
     check_citations(data["sources"], "sources", ids["sources"], errors)
     check_citations(data.get("variants"), "variants", ids["sources"], errors)
     warnings.extend(missing_gloss(data.get("narrative"), "narrative"))
+    # 原文選段（選填）：每段須有 quote 及 translation；source 缺省時沿用 sources 第一條
+    for i, c in enumerate(data.get("original") or []):
+        for f in ("locus", "quote", "translation"):
+            if not c.get(f):
+                errors.append(f"original[{i}] 缺少 {f}")
+        if c.get("source") and c["source"] not in ids["sources"]:
+            errors.append(f"original[{i}] 的 source 無效：{c['source']}")
     return errors
 
 

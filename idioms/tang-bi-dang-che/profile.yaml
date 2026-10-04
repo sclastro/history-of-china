@@ -8,7 +8,7 @@ idiom:
 type: parable
 period: zhan-guo-mid
 year: null
-states: [wei]
+states: [wey]
 meaning: 不自量力，以極弱之力去抗拒極強之勢。
 dianyuan:
   - source: zhuangzi
@@ -23,7 +23,7 @@ crystallisation:
   note: >-
     《莊子》原文作「怒其臂以當車轍」；
     「螳臂當車」的四字語形是後人的節縮，唐宋以降通行。
-  moe_id: 1953
+  moe_id: 60
 reliability: 寓言
 people: [zhuang-zi]
 concepts: [自不量力, 處世, 才能]

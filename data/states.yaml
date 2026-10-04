@@ -41,7 +41,7 @@
   succeeded_by: tian-qi
   lane: true
   lane_order: 3
-  note: 首霸之國。桓公用管仲，通魚鹽之利、行「叁其國而伍其鄙」，開霸主政治之端。
+  note: 首霸之國。桓公用管仲，通魚鹽之利、行「參其國而伍其鄙」，開霸主政治之端。
 
 - id: tian-qi
   name: 田齊
@@ -166,7 +166,7 @@
 
 - id: chu
   name: 楚
-  surname: 芈
+  surname: 羋
   house: 熊
   founder: 熊繹（周成王封以子男之田）
   capitals: [丹陽, 郢, 陳, 壽春]

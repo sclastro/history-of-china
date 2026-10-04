@@ -43,9 +43,11 @@
    > （《左傳》`xi-gong-wu-nian`、《韓非子》`wu-du`、《史記》`shang-jun-lie-zhuan`），
    > 但**《莊子》用英譯**——〈養生主〉是 `nourishing-the-lord-of-life`、
    > 〈秋水〉是 `floods-of-autumn`、〈齊物論〉是 `adjustment-of-controversies`。
-   > 另有多層路徑者：《呂氏春秋》作 `shen-da-lan/cha-jin`，
-   > 《晏子春秋》作 `nei-pian/za-xia`。新增條目時**務必到 ctext 書目頁核對實際 href**，
-   > 不可由篇名逕自拼音。
+   > 《戰國策》篇章不含「策」字：〈齊策一〉是 `qi-yi`、〈秦策一〉是 `qin-yi`（不作 `qi-ce-yi`）。
+   > 《呂氏春秋》《晏子春秋》《新序》只用篇名一層：`cha-jin`、`za-xia`、`za-shi-yi`，
+   > 不加上層的「覽」「內篇」目錄。新增條目時**務必核對實際 href**，不可由篇名逕自拼音。
+   > ctext 網頁設有防機械人關卡，不宜以程式抓取；可用搜尋引擎查 `ctext.org <書 slug> <篇名>`，
+   > 從搜尋結果的網址確認 slug（2026-09 以此法核實上述各例）。
 
    `scripts/check_links.py` 會定期覆檢是否失效；但 ctext 會對自動請求回 403，
    該類連結會標為「無法判定」，仍須人手覆核。
@@ -70,6 +72,6 @@
 | 資源 | 網址 | 用途 |
 |---|---|---|
 | 中國哲學書電子化計劃（ctext） | <https://ctext.org/> | 原文與段落級定位；每篇有穩定 URN，另有 API |
-| 教育部《成語典》 | <https://dict.idioms.moe.edu.tw/> | 語形、釋義、近義反義的交叉核對。**只作核對，不抄錄其文字**；條目以 `crystallisation.moe_id` 記其 ID |
+| 教育部《成語典》 | <https://dict.idioms.moe.edu.tw/> | 語形、釋義、近義反義的交叉核對。**只作核對，不抄錄其文字**；條目以 `crystallisation.moe_id` 記其 ID；正文查無而見於附錄者（網頁標題註「修訂本參考資料」等）亦可用其 ID，兩者皆查無則留空 |
 | 中央研究院漢籍電子文獻 | <https://hanchi.ihp.sinica.edu.tw/> | 校勘與異文覆核 |
 | 維基文庫 | <https://zh.wikisource.org/> | 公有領域原典的備用來源 |
