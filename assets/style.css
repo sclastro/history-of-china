@@ -695,3 +695,176 @@ main.narrow { max-width: 800px; }
   .say { width: 34px; height: 34px; }
   .say svg { width: 19px; height: 19px; }
 }
+
+/* ============================================================
+   索引頁：固定篩選欄、分組跳轉（成語索引、大事、人物）
+   ============================================================ */
+[hidden] { display: none !important; }
+
+.idx-bar {
+  position: sticky; top: var(--hdr, 62px); z-index: 40;
+  background: var(--bg); padding: 10px 0 8px; margin: -6px 0 6px;
+  border-bottom: 1px solid var(--line);
+}
+.idx-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.idx-q {
+  flex: 1 1 220px; min-width: 0; font: inherit; font-size: 16px;
+  padding: 8px 14px; border: 1px solid var(--line-strong); border-radius: 10px;
+  background: var(--surface); color: var(--ink); outline: none;
+}
+.idx-q:focus { border-color: var(--bronze); box-shadow: 0 0 0 3px var(--bronze-tint); }
+.idx-sel {
+  font: inherit; font-size: 15px; padding: 7px 10px; max-width: 46%;
+  border: 1px solid var(--line-strong); border-radius: 10px;
+  background: var(--surface); color: var(--ink);
+}
+.idx-count { font-size: 13.5px; color: var(--muted); white-space: nowrap; margin-left: auto; }
+.idx-groups { display: flex; border: 1px solid var(--line-strong); border-radius: 10px; overflow: hidden; }
+.idx-groups button {
+  font: inherit; font-size: 14.5px; padding: 7px 13px; border: none; cursor: pointer;
+  background: var(--surface); color: var(--ink); border-left: 1px solid var(--line);
+}
+.idx-groups button:first-child { border-left: none; }
+.idx-groups button.on { background: var(--bronze); color: #fff; }
+
+.idx-jump {
+  display: flex; gap: 6px; flex-wrap: wrap; margin-top: 9px;
+}
+.idx-jump a {
+  flex: 0 0 auto; font-size: 14.5px; padding: 3px 11px; border-radius: 16px;
+  background: var(--surface); border: 1px solid var(--line); color: var(--ink); white-space: nowrap;
+}
+.idx-jump a:hover { border-color: var(--bronze); color: var(--bronze-deep); }
+.idx-jump a.on { background: var(--bronze-tint); border-color: var(--bronze); color: var(--bronze-deep); }
+.idx-jump a .n { font-size: 11.5px; color: var(--muted); margin-left: 4px; }
+.idx-jump a.empty { opacity: .4; pointer-events: none; }
+.idx-sec { scroll-margin-top: calc(var(--hdr, 62px) + var(--bar, 110px) + 10px); }
+.idx-sec:first-child .section-title { margin-top: 18px; }
+.idx-empty { color: var(--muted); padding: 30px 0; text-align: center; }
+
+/* 大事索引：精簡條列，整行可點 */
+.ev-list { display: flex; flex-direction: column; gap: 7px; }
+.ev-item {
+  position: relative; display: flex; gap: 14px; align-items: flex-start;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 10px 15px; transition: border-color .14s, box-shadow .14s;
+}
+.ev-item:hover { border-color: var(--bronze); box-shadow: var(--shadow); }
+.ev-item .yr {
+  font-family: var(--serif); font-size: 15px; color: var(--bronze-deep);
+  white-space: nowrap; min-width: 96px; padding-top: 2px;
+}
+.ev-item .main { flex: 1; min-width: 0; }
+.ev-item h3 { font-family: var(--serif); font-size: 19px; font-weight: 700; line-height: 1.5; }
+.ev-item h3 a { color: var(--ink-strong); }
+.ev-item h3 a.stretch::after { content: ""; position: absolute; inset: 0; border-radius: 10px; }
+.ev-item .sub {
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  font-size: 15px; color: var(--muted); line-height: 1.8; margin-top: 2px;
+}
+.ev-item .tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 6px; }
+.ev-item .tags a { position: relative; z-index: 1; }
+
+/* 人物索引：小卡格陣 */
+.pp-grid { display: grid; gap: 9px; grid-template-columns: repeat(auto-fill, minmax(196px, 1fr)); }
+.pp-card {
+  display: flex; flex-direction: column; gap: 1px; min-width: 0;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 9px 13px 10px; color: var(--ink); transition: border-color .14s, box-shadow .14s;
+}
+.pp-card:hover { border-color: var(--bronze); box-shadow: var(--shadow); color: var(--ink); }
+.pp-card .nm { font-family: var(--serif); font-size: 19px; font-weight: 700; color: var(--ink-strong); letter-spacing: .04em; }
+.pp-card .meta { font-size: 13px; color: var(--muted); }
+.pp-card .ids {
+  font-family: var(--serif); font-size: 14px; color: var(--bronze-deep);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.pp-card .ids:empty { display: none; }
+
+/* 事件頁、人物頁 */
+.crumbs { font-size: 14px; color: var(--muted); margin-bottom: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+.crumbs .sep { color: var(--line-strong); }
+.crumbs .sep:last-child { display: none; }
+.ev-hero h1 { font-size: 36px; letter-spacing: .06em; }
+.ev-hero .meaning { font-size: 17.5px; }
+.layer .grid { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.pt-list { display: flex; flex-direction: column; gap: 4px; }
+.pt-row { display: flex; gap: 14px; font-size: 16.5px; line-height: 1.85; }
+.pt-row .yr { font-family: var(--serif); color: var(--bronze-deep); min-width: 72px; white-space: nowrap; }
+.src-list { list-style: none; margin-left: 0; }
+.src-list li { display: flex; gap: 8px; flex-wrap: wrap; align-items: baseline; }
+.src-list .book { color: var(--bronze-deep); }
+.ev-name a { color: var(--ink-strong); border-bottom: 1px solid var(--line-strong); }
+.ev-name a:hover { color: var(--bronze-deep); border-color: var(--bronze); }
+
+/* 年表：縮放、圓點防重疊、事件清單 */
+.tl-zoom { margin-bottom: 12px; }
+.tl-periods .seg {
+  background: none; border-top: none; border-right: none; border-bottom: none;
+  font-family: inherit; text-align: left; cursor: zoom-in; line-height: 22px;
+}
+.tl-periods .seg:hover { color: var(--bronze-deep); background: var(--bronze-tint); }
+.tl-lane { transition: height .15s; }
+.tl-lane .span { top: 13px; }
+.tl-dot { top: 6px; width: 16px; height: 16px; margin-left: -8px; transition: transform .12s, top .15s; }
+.tl-dot::before { content: ""; position: absolute; inset: -5px; border-radius: 50%; }
+.tl-dot.sel { box-shadow: 0 0 0 3px var(--ink-strong); z-index: 5; }
+.tl-legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); margin: 10px 2px 0; }
+.tl-legend i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: 5px;
+               background: var(--bronze); vertical-align: -1px; }
+.tl-legend i[data-type="戰役"] { background: var(--cinnabar); }
+.tl-legend i[data-type="會盟"] { background: var(--jade); }
+.tl-legend i[data-type="變法"] { background: #6a4a86; }
+.tl-evs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.tl-ev {
+  font: inherit; font-size: 14.5px; padding: 4px 11px; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--ink);
+}
+.tl-ev .y { font-size: 12px; color: var(--muted); margin-right: 6px; }
+.tl-ev:hover { border-color: var(--bronze); }
+.tl-ev.sel { background: var(--bronze); border-color: var(--bronze); color: #fff; }
+.tl-ev.sel .y { color: rgba(255, 255, 255, .8); }
+.tl-detail h3 a { color: var(--ink-strong); }
+.tl-detail .ev-more { display: inline-block; margin-top: 12px; font-size: 15px; }
+.tlm-row { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--surface-sunk); }
+.tlm-row:last-child { border-bottom: none; }
+.tlm-row .yr { font-family: var(--serif); color: var(--bronze-deep); min-width: 62px; white-space: nowrap; }
+.tlm-row .main { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.tlm-row .t { font-family: var(--serif); font-size: 18px; color: var(--ink-strong); font-weight: 700; }
+.tlm-row .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tlm-row .tags a { font-family: var(--serif); font-size: 15px; padding: 0 9px; background: var(--bronze-tint); border-radius: 12px; }
+
+@media (max-width: 860px) {
+  /* 索引頁：頂部導覽不固定，讓篩選欄佔頂 */
+  body:has(.idx-bar) .site-header { position: static; }
+  .idx-bar { padding-top: 8px; }
+  .idx-q { flex-basis: 100%; font-size: 16px; }
+  .idx-groups { flex: 1 1 auto; }
+  .idx-groups button { flex: 1; padding: 7px 6px; font-size: 14.5px; }
+  .idx-sel { flex: 1 1 0; max-width: none; }
+  .idx-jump { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+              margin-left: -16px; margin-right: -16px; padding: 0 16px; }
+  .idx-jump::-webkit-scrollbar { display: none; }
+  .ev-item { flex-direction: column; gap: 0; padding: 10px 14px; }
+  .ev-item .yr { min-width: 0; font-size: 14px; padding-top: 0; }
+  .ev-item h3 { font-size: 19.5px; }
+  .ev-item .sub { -webkit-line-clamp: 1; font-size: 15.5px; }
+  .pp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .pp-card .nm { font-size: 18.5px; }
+  .ev-hero h1 { font-size: 30px; }
+  .ev-hero .meaning { font-size: 18px; }
+  .pt-row { font-size: 17.5px; }
+}
+@media (max-width: 860px) {
+  .tl-zoom, .tl-legend, .tl-evs { display: none; }
+}
+@media (max-width: 860px) {
+  .idx-sec .section-title .sub { display: none; }
+  /* 成語索引在手機上改為精簡卡片 */
+  [data-idx-scope] .card { padding: 12px 15px; gap: 4px; }
+  [data-idx-scope] .card .tags { display: none; }
+  [data-idx-scope] .card .meaning {
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  [data-idx-scope] .grid { gap: 9px; }
+}

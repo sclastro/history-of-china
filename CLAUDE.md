@@ -39,6 +39,7 @@ docs/                      design.md、sources.md、framework.md、translation-s
 scripts/                   validate、build_index、build_site、build_audio、check_links、
                            poe_rewrite、verify_original、lint_style
 assets/                    style.css、search-index.js（生成）、audio/<id>.mp3（生成）
+event/<id>/、person/<id>/  事件頁、人物頁（生成；與資料目錄 events/、people/ 分開）
 *.html、sitemap.xml、robots.txt、404.html   全部由 build_site.py 生成，切勿手改
 ```
 
@@ -140,6 +141,15 @@ ctext 篇章 slug 可用搜尋引擎核實（搜 `ctext.org <書 slug> <篇名>`
 - 成語及人物（2026-10-04，Claude Code 直接修訂）：重譯成語典源 `translation` 三十六段，論述文章的白話色塊同步；
   成語、人物、事件三類譯文及夾註內的自稱與尊稱統一（臣、寡人、老夫→我；君侯→您；寡君→我們國君），
   並改去殘留的文言用語（如豈、有德者）。目前沒有待辦的今譯工作。
+
+## 網站結構（2026-10-04 重整）
+
+- 成語索引、大事、人物三個索引頁頂部有固定篩選欄：輸入框即時篩選，另有分組跳轉列
+  （大事按分期、人物按列國、成語按當前分組方式），大事可按類型及列國、人物可按身分篩選。共用腳本為 `INDEX_JS`。
+- 大事及人物索引只列精簡條目，全文在 `event/<id>/`、`person/<id>/` 獨立頁面；成語頁、搜尋及年表均連到這些頁面。
+- 人物頁不顯示 `timeline`、`notes` 及 `relations[].note`：這些屬編者筆記，文字半文言或含欄位術語，
+  若要公開須先改寫為白話。
+- 年表可按分期放大；同一泳道內圓點相距不足 20px 時自動改排下一行；圖下列出當前範圍的全部事件。
 
 ## 已知問題
 
