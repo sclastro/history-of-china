@@ -3,12 +3,14 @@
 
 生成：
     index.html      總覽格陣（全部成語，可篩選）
-    timeline.html   時間 × 列國 二維年表（手機退化為按分期收合的列表）
-    idioms.html     成語索引（可按分期／列國／類型／可信度／概念切換分組）
-    events.html     編年大事表
-    people.html     人物列表（按國分組）
+    timeline.html   時間 × 列國 二維年表（可按分期放大；手機退化為按分期收合的列表）
+    idioms.html     成語索引（可按分期／文獻／可信度／列國切換分組，可即時篩選）
+    events.html     編年大事索引（按分期，可按類型、列國篩選）
+    people.html     人物索引（按國分組，可按身分篩選）
     sources.html    文獻譜系（含各書貢獻成語數，由數據自動統計）
     idioms/<id>/index.html   成語詳頁（四層考據 + 論述文章）
+    event/<id>/index.html    事件頁（敘事、原文選段、所繫成語、相關人物）
+    person/<id>/index.html   人物頁（小傳、相關成語、事件與人物）
     404.html / robots.txt / sitemap.xml / .nojekyll
     assets/search-index.js   ⌘K 全站搜尋索引
 
@@ -470,8 +472,8 @@ def quote_block(c, data):
 
 
 
-def event_originals(ev, data):
-    """事件的原文選段：整組預設摺疊；每段白話在上、原文在下。"""
+def event_original_blocks(ev, data):
+    """事件的原文選段：每段白話在上、原文在下。"""
     items = ev.get("original") or []
     if not items:
         return ""
@@ -490,8 +492,16 @@ def event_originals(ev, data):
                    f'<div class="translation">{e(c.get("translation", ""))}</div>'
                    f'<details class="orig-wrap" open><summary>原文</summary>'
                    f'<div class="original">{e(c.get("quote", ""))}</div></details></div>')
-    return (f'<details class="ev-original"><summary>原文選段・白話對照（{len(items)} 段）</summary>'
-            f'{blocks}</details>')
+    return blocks
+
+
+def event_originals(ev, data):
+    """成語頁內的事件原文選段：整組預設摺疊。"""
+    n = len(ev.get("original") or [])
+    if not n:
+        return ""
+    return (f'<details class="ev-original"><summary>原文選段・白話對照（{n} 段）</summary>'
+            f'{event_original_blocks(ev, data)}</details>')
 
 # ────────────────────────── 各頁 ──────────────────────────
 
@@ -557,323 +567,698 @@ def build_index(data):
     return page(SITE_NAME, body, current="index.html", canonical="")
 
 
+# ────────────────────────── 索引頁共用：篩選欄、分組跳轉 ──────────────────────────
+
+def ev_url(eid, up=""):
+    return f"{up}event/{eid}/"
+
+
+def person_url(pid, up=""):
+    return f"{up}person/{pid}/"
+
+
+def ev_year_label(ev):
+    yl = year_label(ev.get("year"))
+    if ev.get("year_end"):
+        yl += f" – {year_label(ev['year_end'])}"
+    return yl
+
+
+def person_years(pr):
+    b = year_label(pr["birth"]) if pr.get("birth") is not None else "？"
+    d = year_label(pr["death"]) if pr.get("death") is not None else "？"
+    return f"{b} – {d}"
+
+
+def event_idioms(data):
+    out = {}
+    for d in data["idioms"].values():
+        ev = (d.get("benshi") or {}).get("event")
+        if ev:
+            out.setdefault(ev, []).append(d)
+    for v in out.values():
+        v.sort(key=sort_key_idiom)
+    return out
+
+
+def person_idioms(data):
+    out = {}
+    for d in data["idioms"].values():
+        for pid in d.get("people") or []:
+            out.setdefault(pid, []).append(d)
+    for v in out.values():
+        v.sort(key=sort_key_idiom)
+    return out
+
+
+def person_events(data):
+    out = {}
+    for ev in data["events"].values():
+        for pid in ev.get("people") or []:
+            out.setdefault(pid, []).append(ev)
+    for v in out.values():
+        v.sort(key=lambda x: year_num(x.get("year")) or 0)
+    return out
+
+
+def ordered_people(data):
+    """人物總次序：按年表泳道的列國次序，國內按生年（不可考者用 sort_year）。"""
+    lane = sorted([s for s in data["states"].values() if s.get("lane")],
+                  key=lambda s: s.get("lane_order", 99))
+    others = [s for s in data["states"].values() if not s.get("lane")]
+    groups = []
+    for st in lane + others:
+        ppl = sorted([p for p in data["people"].values() if p["state"] == st["id"]],
+                     key=lambda p: (year_num(p.get("birth")) if p.get("birth") is not None
+                                    else year_num(p.get("sort_year")) or 0))
+        if ppl:
+            groups.append((st, ppl))
+    return groups
+
+
+def ordered_events(data):
+    return sorted(data["events"].values(),
+                  key=lambda x: (year_num(x.get("year")) or 0, x["id"]))
+
+
+def jump_nav(items, group=None, hidden=False):
+    """分組跳轉列：items 為 (錨點, 標籤, 數目)。"""
+    attr = f' data-g="{group}"' if group else ""
+    attr += " hidden" if hidden else ""
+    links = "".join(f'<a href="#{e(a)}">{e(label)}<span class="n">{n}</span></a>'
+                    for a, label, n in items)
+    return f'<nav class="idx-jump" aria-label="跳至分組"{attr}>{links}</nav>'
+
+
+def idx_toolbar(navs, placeholder, controls=""):
+    return f"""<div class="idx-bar" id="idxBar">
+  <div class="idx-row">
+    <input type="search" id="idxQ" class="idx-q" placeholder="{e(placeholder)}" autocomplete="off" aria-label="篩選">
+    {controls}
+    <span class="idx-count" id="idxCount"></span>
+  </div>
+  {navs}
+</div>"""
+
+
+def idx_select(field, label, options):
+    opts = "".join(f'<option value="{e(v)}">{e(t)}</option>' for v, t in options)
+    return (f'<select class="idx-sel" data-f="{field}" aria-label="{e(label)}">'
+            f'<option value="">{e(label)}：全部</option>{opts}</select>')
+
+
+ON_CLS = ' class="on"'
+
+# 篩選、跳轉、分組切換的共用腳本（純 JS 字串，不經 f-string）
+INDEX_JS = """<script>
+(function () {
+  var root = document.documentElement, bar = document.getElementById('idxBar');
+  var q = document.getElementById('idxQ'), count = document.getElementById('idxCount');
+  var sels = [].slice.call(document.querySelectorAll('.idx-sel'));
+  var items = [].slice.call(document.querySelectorAll('.idx-item'));
+  var secs = [].slice.call(document.querySelectorAll('.idx-sec'));
+  function setVars() {
+    var h = document.querySelector('.site-header');
+    var sticky = h && getComputedStyle(h).position === 'sticky';
+    root.style.setProperty('--hdr', (sticky ? h.offsetHeight : 0) + 'px');
+    root.style.setProperty('--bar', bar.offsetHeight + 'px');
+  }
+  function scope() { return document.querySelector('[data-idx-scope]:not([hidden])') || document; }
+  function apply() {
+    var t = q.value.trim().toLowerCase(), filtered = !!t;
+    sels.forEach(function (s) { if (s.value) filtered = true; });
+    items.forEach(function (it) {
+      var ok = !t || it.getAttribute('data-k').toLowerCase().indexOf(t) >= 0;
+      sels.forEach(function (s) {
+        if (s.value && (' ' + (it.getAttribute('data-' + s.dataset.f) || '') + ' ').indexOf(' ' + s.value + ' ') < 0) ok = false;
+      });
+      it.hidden = !ok;
+    });
+    secs.forEach(function (s) {
+      var n = s.querySelectorAll('.idx-item:not([hidden])').length;
+      s.hidden = !n;
+      [].forEach.call(document.querySelectorAll('.idx-jump a[href="#' + s.id + '"]'), function (a) {
+        a.classList.toggle('empty', !n); a.querySelector('.n').textContent = n;
+      });
+    });
+    // 同一條目可在多個分組出現（如按列國），以 data-id 去重計數
+    function uniq(list) {
+      var s = {}, n = 0;
+      [].forEach.call(list, function (x) { var k = x.getAttribute('data-id') || Math.random(); if (!s[k]) { s[k] = 1; n++; } });
+      return n;
+    }
+    var sc = scope(), vis = uniq(sc.querySelectorAll('.idx-item:not([hidden])')),
+        tot = uniq(sc.querySelectorAll('.idx-item'));
+    count.textContent = filtered ? '顯示 ' + vis + ' / ' + tot : '共 ' + tot + ' 項';
+    var empty = document.getElementById('idxEmpty');
+    if (empty) empty.hidden = vis > 0;
+    spy();
+  }
+  // 捲動時標示目前所在分組
+  var ticking = false;
+  function spy() {
+    var off = bar.getBoundingClientRect().bottom + 24;
+    var cur = null;
+    secs.forEach(function (s) {
+      if (!s.hidden && s.offsetParent !== null && s.getBoundingClientRect().top <= off) cur = s.id;
+    });
+    [].forEach.call(document.querySelectorAll('.idx-jump:not([hidden]) a'), function (a) {
+      var on = a.getAttribute('href') === '#' + cur;
+      if (on && !a.classList.contains('on')) {
+        var nav = a.parentNode;
+        nav.scrollLeft = a.offsetLeft - nav.clientWidth / 2 + a.offsetWidth / 2;
+      }
+      a.classList.toggle('on', on);
+    });
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(spy); }
+  }, { passive: true });
+  window.addEventListener('resize', setVars);
+  q.addEventListener('input', apply);
+  sels.forEach(function (s) { s.addEventListener('change', apply); });
+  // 成語索引：切換分組方式
+  var groups = document.getElementById('idxGroups');
+  if (groups) groups.addEventListener('click', function (ev) {
+    var b = ev.target.closest('button'); if (!b) return;
+    var g = b.dataset.g;
+    [].forEach.call(groups.querySelectorAll('button'), function (x) {
+      x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b);
+    });
+    [].forEach.call(document.querySelectorAll('[data-idx-scope]'), function (c) { c.hidden = c.id !== 'g-' + g; });
+    [].forEach.call(document.querySelectorAll('.idx-jump[data-g]'), function (n) { n.hidden = n.dataset.g !== g; });
+    try { localStorage.setItem('idiomGroup', g); } catch (e) {}
+    setVars(); apply();
+  });
+  if (groups) {
+    var saved = null;
+    try { saved = localStorage.getItem('idiomGroup'); } catch (e) {}
+    var btn = saved && groups.querySelector('button[data-g="' + saved + '"]');
+    if (btn) btn.click();
+  }
+  setVars(); apply();
+})();
+</script>"""
+
+
+# ────────────────────────── 年表 ──────────────────────────
+
 def build_timeline(data):
     span = TL_END - TL_START
 
     def pct(y):
         return max(0, min(100, (y - TL_START) / span * 100))
 
-    # 事件 → 成語
-    ev_idioms = {}
-    for d in data["idioms"].values():
-        ev = (d.get("benshi") or {}).get("event")
-        if ev:
-            ev_idioms.setdefault(ev, []).append(d)
+    ev_idioms = event_idioms(data)
 
-    # 刻度：每 50 年
+    # 無 JS 時的預設位置（全覽）；有 JS 時由腳本按縮放範圍重排
     ticks = "".join(
         f'<span class="tick" style="left:{pct(y):.3f}%">前 {abs(y)}</span>'
         for y in range(-750, -200, 50)
     )
-    # 分期帶
     segs = ""
     for p in data["periods"]:
         left = pct(p["start"])
         width = pct(p["end"]) - left
-        segs += (f'<span class="seg" style="left:{left:.3f}%;width:{width:.3f}%" '
-                 f'title="{e(p["name"])}">{e(p["name"].split("・")[0])}</span>')
+        segs += (f'<button type="button" class="seg" data-p="{e(p["id"])}" '
+                 f'style="left:{left:.3f}%;width:{width:.3f}%" '
+                 f'title="放大：{e(p["name"])}">{e(p["name"].split("・")[0])}</button>')
 
     lanes = ""
-    lane_states = sorted(
-        [s for s in data["states"].values() if s.get("lane")],
-        key=lambda s: s.get("lane_order", 99),
-    )
+    lane_states = sorted([s for s in data["states"].values() if s.get("lane")],
+                         key=lambda s: s.get("lane_order", 99))
     for st in lane_states:
-        founded = st.get("founded") or TL_START
-        ended = st.get("ended") or TL_END
-        a, b = pct(max(founded, TL_START)), pct(min(ended, TL_END))
+        founded = max(st.get("founded") or TL_START, TL_START)
+        ended = min(st.get("ended") or TL_END, TL_END)
+        a, b = pct(founded), pct(ended)
         cls = "span succ" if st.get("successor_of") else "span"
         dots = ""
-        for ev in data["events"].values():
+        for ev in ordered_events(data):
             if st["id"] not in (ev.get("states") or []):
                 continue
             n = year_num(ev.get("year"))
             if n is None:
                 continue
-            dots += (f'<button class="tl-dot" data-ev="{e(ev["id"])}" '
-                     f'data-type="{e(ev["type"])}" '
-                     f'style="left:{pct(n):.3f}%" title="{e(ev["name"])}"></button>')
-        lanes += (f'<div class="tl-lane"><span class="name">{e(st["name"])}</span>'
+            dots += (f'<button type="button" class="tl-dot" data-ev="{e(ev["id"])}" data-y="{n}" '
+                     f'data-type="{e(ev["type"])}" style="left:{pct(n):.3f}%" '
+                     f'title="{e(year_label(n))}　{e(ev["name"])}" aria-label="{e(ev["name"])}"></button>')
+        lanes += (f'<div class="tl-lane" data-a="{founded}" data-b="{ended}">'
+                  f'<span class="name">{e(st["name"])}</span>'
                   f'<span class="{cls}" style="left:{a:.3f}%;width:{max(b - a, 0.4):.3f}%"></span>'
                   f'{dots}</div>')
 
     ev_json = {}
     for ev in data["events"].values():
-        yl = year_label(ev.get("year"))
-        if ev.get("year_end"):
-            yl += f"–{year_label(ev['year_end'])}"
         ev_json[ev["id"]] = {
             "name": ev["name"],
-            "yr": yl,
+            "y": year_num(ev.get("year")),
+            "yr": ev_year_label(ev),
             "type": ev["type"],
             "rel": ev["reliability"],
             "states": [data["states"][s]["name"] for s in ev.get("states", []) if s in data["states"]],
             "sig": rich(ev.get("significance", "")),
-            "idioms": [{"zh": d["idiom"]["zh"], "id": d["id"]}
-                       for d in sorted(ev_idioms.get(ev["id"], []), key=sort_key_idiom)],
+            "idioms": [{"zh": d["idiom"]["zh"], "id": d["id"]} for d in ev_idioms.get(ev["id"], [])],
         }
 
-    # 手機版：按分期收合
+    # 圓點以外的另一入口：當前範圍內的事件清單
+    ev_list = "".join(
+        f'<button type="button" class="tl-ev" data-ev="{e(ev["id"])}" data-y="{year_num(ev.get("year")) or 0}">'
+        f'<span class="y">{e(year_label(ev.get("year")))}</span>{e(ev["name"])}</button>'
+        for ev in ordered_events(data)
+    )
+
+    zoom = ('<button type="button" data-p="" class="on" aria-pressed="true">全覽</button>' + "".join(
+        f'<button type="button" data-p="{e(p["id"])}" aria-pressed="false" title="{e(p["name"])}">'
+        f'{e(p["name"].split("・")[0])}</button>'
+        for p in data["periods"]))
+    periods_json = {p["id"]: [p["start"], p["end"], p["name"]] for p in data["periods"]}
+
+    # 手機版：按分期收合，每事連到事件頁
     mobile = ""
     for p in data["periods"]:
-        evs = sorted(
-            [ev for ev in data["events"].values()
-             if p["start"] <= (year_num(ev.get("year")) or 0) <= p["end"]],
-            key=lambda x: year_num(x.get("year")) or 0,
-        )
+        evs = [ev for ev in ordered_events(data)
+               if p["start"] <= (year_num(ev.get("year")) or 0) <= p["end"]]
         if not evs:
             continue
         rows = ""
         for ev in evs:
             ids = "".join(
                 f'<a href="idioms/{e(d["id"])}/">{e(d["idiom"]["zh"])}</a>'
-                for d in sorted(ev_idioms.get(ev["id"], []), key=sort_key_idiom)
+                for d in ev_idioms.get(ev["id"], [])
             )
-            rows += (f'<div class="row"><span class="yr">{e(year_label(ev.get("year")))}</span>'
-                     f'<span class="main"><h3>{e(ev["name"])}</h3>'
-                     f'<span class="sub">{e(ev.get("significance", "").replace(chr(42), "")[:90])}…</span>'
+            rows += (f'<div class="tlm-row"><span class="yr">{e(year_label(ev.get("year")))}</span>'
+                     f'<span class="main"><a class="t" href="{ev_url(ev["id"])}">{e(ev["name"])}</a>'
                      f'<span class="tags">{ids}</span></span></div>')
         mobile += (f'<details><summary>{e(p["name"])}'
                    f'<span class="yr">前 {abs(p["start"])} – 前 {abs(p["end"])}・{len(evs)} 事</span></summary>'
-                   f'<div class="body"><div class="rows">{rows}</div></div></details>')
+                   f'<div class="body">{rows}</div></details>')
 
     body = f"""<main>
 <div class="page-head">
   <h1>時間 × 列國</h1>
-  <p class="lede">橫軸為公元前 770 至前 221 年，縱軸為列國。
-  晉在前 403 年分為趙、魏、韓（三條泳道由此開始），齊在前 386 年由田氏取代姜姓（綠色泳道）。
-  點擊圓點可看該事件及其所繫的成語（手機版改為按分期列出）。</p>
+  <p class="lede">橫軸為時間，縱軸為列國。晉在前 403 年分為趙、魏、韓，齊在前 386 年由田氏取代姜姓（綠色泳道）。
+  圓點太密時，可先選一個分期放大；圖下另列該段全部事件，點選即顯示說明。</p>
 </div>
-<div class="timeline-wrap"><div class="timeline">
+<div class="filters tl-zoom" id="tlZoom"><span class="label">範圍</span>{zoom}</div>
+<div class="timeline-wrap"><div class="timeline" id="tl">
   <div class="tl-periods">{segs}</div>
   <div class="tl-axis">{ticks}</div>
   {lanes}
 </div></div>
-<div class="tl-detail" id="tlDetail"><span class="placeholder">點擊上方任一圓點，這裡會顯示該事件的說明與相關成語。</span></div>
+<div class="tl-legend"><span><i data-type="戰役"></i>戰役</span><span><i data-type="會盟"></i>會盟・外交</span>
+  <span><i data-type="變法"></i>變法</span><span><i></i>其他</span></div>
+<div class="tl-evs" id="tlEvs">{ev_list}</div>
+<div class="tl-detail" id="tlDetail"><span class="placeholder">點選圓點或上方事件，這裡會顯示事件說明與相關成語。</span></div>
 <div class="tl-mobile">{mobile}</div>
 </main>
 <script>
 var EVENTS = {json.dumps(ev_json, ensure_ascii=False)};
+var PERIODS = {json.dumps(periods_json, ensure_ascii=False)};
+var TL_FULL = [{TL_START}, {TL_END}];
+</script>
+<script>
 (function () {{
-  var box = document.getElementById('tlDetail');
-  document.addEventListener('click', function (ev) {{
-    var dot = ev.target.closest('.tl-dot'); if (!dot) return;
-    var d = EVENTS[dot.dataset.ev]; if (!d) return;
-    box.innerHTML = '<h3>' + d.name + '</h3>' +
+  var tl = document.getElementById('tl'), box = document.getElementById('tlDetail');
+  var zoom = document.getElementById('tlZoom'), evs = document.getElementById('tlEvs');
+  var range = TL_FULL.slice(), selId = null;
+  var GAP = 20, ROW = 18;
+  function pct(y) {{ return (y - range[0]) / (range[1] - range[0]) * 100; }}
+  function step(span) {{ return span > 300 ? 50 : span > 140 ? 20 : span > 60 ? 10 : 5; }}
+  function layout() {{
+    var lo = range[0], hi = range[1], st = step(hi - lo), html = '';
+    for (var y = Math.ceil(lo / st) * st; y <= hi; y += st)
+      if (pct(y) <= 97) html += '<span class="tick" style="left:' + pct(y) + '%">前 ' + Math.abs(y) + '</span>';
+    tl.querySelector('.tl-axis').innerHTML = html;
+    [].forEach.call(tl.querySelectorAll('.tl-periods .seg'), function (s) {{
+      var p = PERIODS[s.dataset.p], a = Math.max(p[0], lo), b = Math.min(p[1], hi);
+      s.hidden = b <= a;
+      s.style.left = pct(a) + '%'; s.style.width = (pct(b) - pct(a)) + '%';
+      s.textContent = (pct(b) - pct(a) > 12 ? p[2] : p[2].split('・')[0]);
+    }});
+    var width = tl.querySelector('.tl-axis').clientWidth;
+    [].forEach.call(tl.querySelectorAll('.tl-lane'), function (lane) {{
+      var a = Math.max(+lane.dataset.a, lo), b = Math.min(+lane.dataset.b, hi);
+      lane.hidden = b <= a;
+      var sp = lane.querySelector('.span');
+      sp.style.left = pct(a) + '%'; sp.style.width = Math.max(pct(b) - pct(a), .4) + '%';
+      // 圓點相距太近時改排到下一行，免得重疊
+      var rows = [];
+      [].forEach.call(lane.querySelectorAll('.tl-dot'), function (d) {{
+        var y = +d.dataset.y, inside = y >= lo && y <= hi;
+        d.hidden = !inside; if (!inside) return;
+        var x = pct(y) / 100 * width, r = 0;
+        while (rows[r] !== undefined && x - rows[r] < GAP) r++;
+        rows[r] = x;
+        d.style.left = pct(y) + '%'; d.style.top = (6 + r * ROW) + 'px';
+      }});
+      lane.style.height = (30 + Math.max(rows.length - 1, 0) * ROW) + 'px';
+    }});
+    [].forEach.call(evs.querySelectorAll('.tl-ev'), function (b) {{
+      var y = +b.dataset.y; b.hidden = y < lo || y > hi;
+    }});
+  }}
+  function setRange(pid) {{
+    if (!pid) range = TL_FULL.slice();
+    else {{ var p = PERIODS[pid], pad = Math.max(3, (p[1] - p[0]) * .04); range = [p[0] - pad, p[1] + pad]; }}
+    [].forEach.call(zoom.querySelectorAll('button'), function (b) {{
+      var on = b.dataset.p === (pid || ''); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on);
+    }});
+    layout();
+  }}
+  function show(id) {{
+    var d = EVENTS[id]; if (!d) return;
+    selId = id;
+    [].forEach.call(document.querySelectorAll('.tl-dot, .tl-ev'), function (x) {{
+      x.classList.toggle('sel', x.dataset.ev === id);
+    }});
+    box.innerHTML = '<h3><a href="event/' + id + '/">' + d.name + '</a></h3>' +
       '<div class="ev-meta"><span>' + d.yr + '</span><span class="tag">' + d.type + '</span>' +
       '<span class="tag tag-rel" data-rel="' + d.rel + '">' + d.rel + '</span>' +
       d.states.map(function (s) {{ return '<span class="tag tag-state">' + s + '</span>'; }}).join('') +
       '</div><div class="ev-sig">' + d.sig + '</div>' +
       (d.idioms.length ? '<div class="ev-idioms">' + d.idioms.map(function (i) {{
         return '<a href="idioms/' + i.id + '/">' + i.zh + '</a>';
-      }}).join('') + '</div>' : '');
-    box.scrollIntoView({{ behavior: 'smooth', block: 'nearest' }});
+      }}).join('') + '</div>' : '') +
+      '<a class="ev-more" href="event/' + id + '/">閱讀事件全文 →</a>';
+  }}
+  zoom.addEventListener('click', function (ev) {{
+    var b = ev.target.closest('button'); if (b) setRange(b.dataset.p);
   }});
+  document.addEventListener('click', function (ev) {{
+    var seg = ev.target.closest('.tl-periods .seg');
+    if (seg) {{ setRange(seg.dataset.p); return; }}
+    var t = ev.target.closest('.tl-dot, .tl-ev'); if (!t) return;
+    show(t.dataset.ev);
+    if (t.classList.contains('tl-dot')) box.scrollIntoView({{ behavior: 'smooth', block: 'nearest' }});
+  }});
+  var rt; window.addEventListener('resize', function () {{ clearTimeout(rt); rt = setTimeout(layout, 120); }});
+  layout();
 }})();
 </script>"""
     return page("時間 × 列國 年表", body, current="timeline.html", canonical="timeline.html",
-                desc="以時間為橫軸、列國為縱軸的春秋戰國二維年表；晉分三家、田氏代齊皆在圖上可見。")
+                desc="以時間為橫軸、列國為縱軸的春秋戰國二維年表；可按分期放大，晉分三家、田氏代齊皆在圖上可見。")
 
+
+# ────────────────────────── 成語索引 ──────────────────────────
 
 def build_idioms_index(data):
     idioms = sorted(data["idioms"].values(), key=sort_key_idiom)
 
-    def group_block(title, sub, items):
-        cards = "".join(idiom_card(d, data) for d in items)
-        return (f'<h2 class="section-title">{e(title)}'
+    def idx_card(d):
+        k = " ".join([d["idiom"]["zh"], d["idiom"]["pinyin"], plain_pinyin(d["idiom"]["pinyin"]),
+                      d.get("meaning", "")])
+        return idiom_card(d, data).replace('<div class="card-wrap">',
+                                           f'<div class="card-wrap idx-item" data-id="{e(d["id"])}" data-k="{e(k)}">', 1)
+
+    def section(gid, key, title, sub, items):
+        anchor = f"{gid}-{key}"
+        cards = "".join(idx_card(d) for d in items)
+        return (anchor, title, len(items),
+                f'<section class="idx-sec" id="{e(anchor)}">'
+                f'<h2 class="section-title">{e(title)}'
                 f'<span class="count">{len(items)} 條</span>'
                 f'<span class="sub">{e(sub)}</span></h2>'
-                f'<div class="grid">{cards}</div>')
+                f'<div class="grid">{cards}</div></section>')
 
+    groups = {}
     # 按分期
-    by_period = ""
-    for p in data["periods"]:
-        items = [d for d in idioms if d.get("period") == p["id"]]
-        if items:
-            by_period += group_block(p["name"], f'前 {abs(p["start"])} – 前 {abs(p["end"])}', items)
-
+    groups["period"] = [section("p", p["id"], p["name"], f'前 {abs(p["start"])} – 前 {abs(p["end"])}',
+                                [d for d in idioms if d.get("period") == p["id"]])
+                        for p in data["periods"]
+                        if any(d.get("period") == p["id"] for d in idioms)]
     # 按文獻（以第一條典源為準）
-    by_source = ""
     src_groups = {}
     for d in idioms:
-        first = (d.get("dianyuan") or [{}])[0].get("source")
-        src_groups.setdefault(first, []).append(d)
-    for sid, items in sorted(src_groups.items(), key=lambda kv: -len(kv[1])):
-        src = data["sources"].get(sid, {})
-        by_source += group_block(f'《{src.get("name", sid)}》',
-                                 src.get("locus_format", ""), items)
-
+        src_groups.setdefault((d.get("dianyuan") or [{}])[0].get("source"), []).append(d)
+    groups["source"] = [section("s", sid, f'《{data["sources"].get(sid, {}).get("name", sid)}》',
+                                data["sources"].get(sid, {}).get("locus_format", ""), items)
+                        for sid, items in sorted(src_groups.items(), key=lambda kv: -len(kv[1]))]
     # 按可信度
-    by_rel = ""
-    for r in ["信史", "大體可信", "孤證", "後世附會", "寓言"]:
-        items = [d for d in idioms if d["reliability"] == r]
-        if items:
-            hint = {
-                "信史": "同期或近期文獻互證，可繫年繫人",
-                "大體可信": "主源可信，細節有後世增飾",
-                "孤證": "僅一書所載，別無旁證",
-                "後世附會": "晚出，或與早期文獻／出土材料相牴",
-                "寓言": "諸子所設之譬喻，本無其事",
-            }[r]
-            by_rel += group_block(r, hint, items)
-
+    hints = {
+        "信史": "同期或近期文獻互證，可繫年繫人",
+        "大體可信": "主源可信，細節有後世增飾",
+        "孤證": "僅一書所載，別無旁證",
+        "後世附會": "晚出，或與早期文獻／出土材料相牴",
+        "寓言": "諸子所設之譬喻，本無其事",
+    }
+    groups["rel"] = [section("r", str(i), r, hints[r], [d for d in idioms if d["reliability"] == r])
+                     for i, r in enumerate(hints) if any(d["reliability"] == r for d in idioms)]
     # 按列國
-    by_state = ""
     lane_states = sorted([s for s in data["states"].values() if s.get("lane")],
                          key=lambda s: s.get("lane_order", 99))
-    for st in lane_states:
-        items = [d for d in idioms if st["id"] in (d.get("states") or [])]
-        if items:
-            by_state += group_block(st["name"], st.get("note", "")[:60], items)
+    groups["state"] = [section("c", st["id"], st["name"], st.get("note", "")[:60],
+                               [d for d in idioms if st["id"] in (d.get("states") or [])])
+                       for st in lane_states
+                       if any(st["id"] in (d.get("states") or []) for d in idioms)]
+
+    def short(label):
+        return label.split("・")[0] if "・" in label else label
+
+    names = [("period", "按分期"), ("source", "按文獻"), ("rel", "按可信度"), ("state", "按列國")]
+    navs = "".join(jump_nav([(a, short(t), n) for a, t, n, _ in groups[g]], group=g, hidden=(g != "period"))
+                   for g, _ in names)
+    buttons = "".join(f'<button type="button" data-g="{g}" aria-pressed="{str(g == "period").lower()}"'
+                      f'{ON_CLS if g == "period" else ""}>{label}</button>' for g, label in names)
+    controls = f'<div class="idx-groups" id="idxGroups" role="group" aria-label="分組方式">{buttons}</div>'
+    containers = "".join(
+        f'<div id="g-{g}" data-idx-scope{"" if g == "period" else " hidden"}>'
+        f'{"".join(html_ for *_, html_ in groups[g])}</div>'
+        for g, _ in names)
 
     body = f"""<main>
 <div class="page-head">
   <h1>成語索引</h1>
-  <p class="lede">同一批條目，四種切法。按分期看的是歷史脈絡，按文獻看的是史料分佈，
-  按可信度看的是哪些可以當史實用、哪些只能當思想史材料用，按列國看的是地緣。</p>
+  <p class="lede">同一批條目，四種切法：按分期看歷史脈絡，按文獻看史料分佈，
+  按可信度看哪些可作史實、哪些只能作思想史材料，按列國看地緣。可輸入成語、拼音或釋義篩選。</p>
 </div>
-<div class="filters" id="groupBar">
-  <span class="label">分組方式</span>
-  <button data-g="period" class="on">按分期</button>
-  <button data-g="source">按文獻</button>
-  <button data-g="rel">按可信度</button>
-  <button data-g="state">按列國</button>
-</div>
-<div id="g-period">{by_period}</div>
-<div id="g-source" hidden>{by_source}</div>
-<div id="g-rel" hidden>{by_rel}</div>
-<div id="g-state" hidden>{by_state}</div>
+{idx_toolbar(navs, "篩選：成語、拼音或釋義", controls)}
+{containers}
+<p class="idx-empty" id="idxEmpty" hidden>沒有相符的成語。</p>
 </main>
-<script>
-document.getElementById('groupBar').addEventListener('click', function (ev) {{
-  var b = ev.target.closest('button'); if (!b) return;
-  ['period', 'source', 'rel', 'state'].forEach(function (g) {{
-    document.getElementById('g-' + g).hidden = (g !== b.dataset.g);
-  }});
-  [].forEach.call(this.querySelectorAll('button'), function (x) {{ x.classList.toggle('on', x === b); }});
-}});
-</script>"""
+{INDEX_JS}"""
     return page("成語索引", body, current="idioms.html", canonical="idioms.html",
-                desc="全部成語條目，可按分期、文獻、史料可信度、列國四種方式分組瀏覽。")
+                desc="全部成語條目，可按分期、文獻、史料可信度、列國四種方式分組瀏覽，並可即時篩選。")
 
+
+# ────────────────────────── 編年大事（索引） ──────────────────────────
 
 def build_events(data):
-    ev_idioms = {}
-    for d in data["idioms"].values():
-        ev = (d.get("benshi") or {}).get("event")
-        if ev:
-            ev_idioms.setdefault(ev, []).append(d)
-
-    out = ""
+    ev_idioms = event_idioms(data)
+    sections, nav = "", []
     for p in data["periods"]:
-        evs = sorted([ev for ev in data["events"].values()
-                      if p["start"] <= (year_num(ev.get("year")) or 0) <= p["end"]],
-                     key=lambda x: year_num(x.get("year")) or 0)
+        evs = [ev for ev in ordered_events(data)
+               if p["start"] <= (year_num(ev.get("year")) or 0) <= p["end"]]
         if not evs:
             continue
         rows = ""
         for ev in evs:
-            yl = year_label(ev.get("year"))
-            if ev.get("year_end"):
-                yl += f" – {year_label(ev['year_end'])}"
-            states = "".join(f'<span class="tag tag-state">{e(data["states"][s]["name"])}</span>'
-                             for s in ev.get("states", []) if s in data["states"])
-            ids = "".join(f'<a class="tag tag-type" href="idioms/{e(d["id"])}/">{e(d["idiom"]["zh"])}</a>'
-                          for d in sorted(ev_idioms.get(ev["id"], []), key=sort_key_idiom))
-            story = ""
-            if ev.get("narrative"):
-                story = (f'<details class="ev-story" id="{e(ev["id"])}">'
-                         f'<summary>讀故事</summary>'
-                         f'<div class="narrative">{paras(ev["narrative"])}</div>'
-                         f'{event_originals(ev, data)}</details>')
-            rows += f"""<div class="row">
-  <span class="yr">{e(yl)}</span>
+            states = [data["states"][s]["name"] for s in ev.get("states", []) if s in data["states"]]
+            ids = ev_idioms.get(ev["id"], [])
+            ppl = [data["people"][x]["name"]["zh"] for x in ev.get("people") or [] if x in data["people"]]
+            k = " ".join([ev["name"], ev["type"], ev_year_label(ev), *states, *ppl,
+                          *(d["idiom"]["zh"] for d in ids)])
+            id_links = "".join(f'<a class="tag tag-type" href="idioms/{e(d["id"])}/">{e(d["idiom"]["zh"])}</a>'
+                               for d in ids)
+            st_tags = "".join(f'<span class="tag tag-state">{e(s)}</span>' for s in states)
+            rows += f"""<div class="ev-item idx-item" data-k="{e(k)}" data-type="{e(ev['type'])}" data-st="{e(' '.join(ev.get('states') or []))}">
+  <span class="yr">{e(ev_year_label(ev))}</span>
   <span class="main">
-    <h3>{e(ev['name'])}</h3>
+    <h3><a class="stretch" href="{ev_url(ev['id'])}">{e(ev['name'])}</a></h3>
     <span class="sub">{rich(ev.get('significance', ''))}</span>
-    <span class="tags"><span class="tag">{e(ev['type'])}</span>{rel_tag(ev['reliability'])}{states}{ids}</span>
-    {story}
+    <span class="tags"><span class="tag">{e(ev['type'])}</span>{st_tags}{id_links}</span>
   </span>
 </div>"""
-        out += (f'<h2 class="section-title">{e(p["name"])}'
-                f'<span class="count">{len(evs)} 事</span>'
-                f'<span class="sub">{e(p["marker"])}</span></h2>'
-                f'<div class="rows">{rows}</div>')
+        anchor = f"p-{p['id']}"
+        nav.append((anchor, p["name"].split("・")[0], len(evs)))
+        sections += (f'<section class="idx-sec" id="{e(anchor)}">'
+                     f'<h2 class="section-title">{e(p["name"])}'
+                     f'<span class="count">{len(evs)} 事</span>'
+                     f'<span class="sub">前 {abs(p["start"])} – 前 {abs(p["end"])}</span></h2>'
+                     f'<div class="ev-list">{rows}</div></section>')
 
+    types = sorted({ev["type"] for ev in data["events"].values()})
+    used_states = {s for ev in data["events"].values() for s in ev.get("states") or []}
+    lane = sorted([s for s in data["states"].values() if s["id"] in used_states],
+                  key=lambda s: (0 if s.get("lane") else 1, s.get("lane_order", 99)))
+    controls = (idx_select("type", "類型", [(t, t) for t in types]) +
+                idx_select("st", "列國", [(s["id"], s["name"]) for s in lane]))
     body = f"""<main>
 <div class="page-head">
   <h1>編年大事</h1>
-  <p class="lede">按分期排列的事件骨幹。每個事件下方列出繫於其上的成語——
-  一個事件可以生出多條成語（城濮之戰生出退避三舍與表裡山河），
-  一條成語的本事也可能橫跨數年（退避三舍從許諾到兌現相隔五年）。</p>
+  <p class="lede">按分期排列的事件骨幹，點選事件名稱閱讀全文。每事列出所繫的成語——
+  一個事件可以生出多條成語（城濮之戰生出退避三舍與表裡山河）。</p>
 </div>
-{out}
-</main>"""
+{idx_toolbar(jump_nav(nav), "篩選：事件、人物或成語", controls)}
+<div data-idx-scope>{sections}</div>
+<p class="idx-empty" id="idxEmpty" hidden>沒有相符的事件。</p>
+</main>
+{INDEX_JS}"""
     return page("編年大事", body, current="events.html", canonical="events.html",
-                desc="春秋戰國編年大事表，按七個分期排列，每事列出所繫的成語。")
+                desc="春秋戰國編年大事表，按七個分期排列，可按類型、列國篩選；每事另有獨立頁面。")
 
+
+# ────────────────────────── 人物（索引） ──────────────────────────
 
 def build_people(data):
-    lane_states = sorted([s for s in data["states"].values() if s.get("lane")],
-                         key=lambda s: s.get("lane_order", 99))
-    others = [s for s in data["states"].values() if not s.get("lane")]
+    p_idioms = person_idioms(data)
+    sections, nav = "", []
+    for st, ppl in ordered_people(data):
+        cards = ""
+        for pr in ppl:
+            ids = [d["idiom"]["zh"] for d in p_idioms.get(pr["id"], [])]
+            k = " ".join([pr["name"]["zh"], pr["name"].get("en", ""), pr["name"].get("personal", "") or "",
+                          pr["role"], st["name"], *ids])
+            cards += (f'<a class="pp-card idx-item" href="{person_url(pr["id"])}" data-k="{e(k)}" '
+                      f'data-role="{e(pr["role"])}">'
+                      f'<span class="nm">{e(pr["name"]["zh"])}</span>'
+                      f'<span class="meta">{e(person_years(pr))}・{e(pr["role"])}</span>'
+                      f'<span class="ids">{e("・".join(ids))}</span></a>')
+        anchor = f"s-{st['id']}"
+        nav.append((anchor, st["name"], len(ppl)))
+        sections += (f'<section class="idx-sec" id="{e(anchor)}">'
+                     f'<h2 class="section-title">{e(st["name"])}'
+                     f'<span class="count">{len(ppl)} 人</span>'
+                     f'<span class="sub">{e((st.get("note") or "")[:60])}</span></h2>'
+                     f'<div class="pp-grid">{cards}</div></section>')
 
-    idiom_people = {}
-    for d in data["idioms"].values():
-        for pid in d.get("people") or []:
-            idiom_people.setdefault(pid, []).append(d)
-
-    def person_row(pr):
-        yrs = f'{year_label(pr.get("birth")) if pr.get("birth") is not None else "？"} – ' \
-              f'{year_label(pr.get("death")) if pr.get("death") is not None else "？"}'
-        ids = "".join(f'<a class="tag tag-type" href="idioms/{e(d["id"])}/">{e(d["idiom"]["zh"])}</a>'
-                      for d in sorted(idiom_people.get(pr["id"], []), key=sort_key_idiom))
-        phil = ""
-        if pr.get("philosophy_ref"):
-            phil = (f'<a class="tag" href="https://cc-philosophy.vercel.app/philosophers/'
-                    f'{e(pr["philosophy_ref"])}/" target="_blank" rel="noopener">哲學家知識庫 ↗</a>')
-        return f"""<div class="row" id="{e(pr['id'])}">
-  <span class="yr">{e(yrs)}</span>
-  <span class="main">
-    <h3>{e(pr['name']['zh'])} <span class="p-en">{e(pr['name'].get('en',''))}</span></h3>
-    <span class="sub bio">{rich(pr.get('bio') or '')}</span>
-    <span class="tags"><span class="tag">{e(pr['role'])}</span>{ids}{phil}</span>
-  </span>
-</div>"""
-
-    out = ""
-    for st in lane_states + others:
-        ppl = sorted([p for p in data["people"].values() if p["state"] == st["id"]],
-                     key=lambda p: (year_num(p.get("birth")) if p.get("birth") is not None
-                                    else year_num(p.get("sort_year")) or 0))
-        if not ppl:
-            continue
-        out += (f'<h2 class="section-title">{e(st["name"])}'
-                f'<span class="count">{len(ppl)} 人</span>'
-                f'<span class="sub">{e((st.get("note") or "")[:70])}</span></h2>'
-                f'<div class="rows">{"".join(person_row(p) for p in ppl)}</div>')
-
+    roles = [r for r, _ in sorted(
+        {p["role"]: 0 for p in data["people"].values()}.items())]
+    order = ["君主", "卿大夫", "將領", "策士", "思想家"]
+    roles.sort(key=lambda r: (order.index(r) if r in order else 99, r))
+    controls = idx_select("role", "身分", [(r, r) for r in roles])
     body = f"""<main>
 <div class="page-head">
   <h1>人物</h1>
-  <p class="lede">按所屬列國分組，國內按生年排序。生卒不可考者以「？」標示。
-  先秦思想家的思想部分不在本站重複撰寫，改以外連至<a href="https://cc-philosophy.vercel.app/" target="_blank" rel="noopener">哲學家知識庫</a>——
-  那邊講他們想了甚麼，這邊講他們身在甚麼局裡。</p>
+  <p class="lede">按所屬列國分組，國內按生年排序；點選人名閱讀小傳。生卒不可考者以「？」標示。
+  先秦思想家的思想部分外連至<a href="https://cc-philosophy.vercel.app/" target="_blank" rel="noopener">哲學家知識庫</a>。</p>
 </div>
-{out}
-</main>"""
+{idx_toolbar(jump_nav(nav), "篩選：人名、國名或成語", controls)}
+<div data-idx-scope>{sections}</div>
+<p class="idx-empty" id="idxEmpty" hidden>沒有相符的人物。</p>
+</main>
+{INDEX_JS}"""
     return page("人物", body, current="people.html", canonical="people.html",
-                desc="春秋戰國人物小傳，按列國分組；先秦思想家外連至哲學家知識庫。")
+                desc="春秋戰國人物索引，按列國分組，可按身分篩選；每人另有小傳頁面。")
+
+
+# ────────────────────────── 事件頁、人物頁 ──────────────────────────
+
+def crumbs(up, *parts):
+    links = "".join(f'<a href="{up}{href}">{e(label)}</a><span class="sep">›</span>' for href, label in parts)
+    return f'<nav class="crumbs">{links}</nav>'
+
+
+def build_event_page(ev, data, prev_ev, next_ev, ev_idioms):
+    up = "../../"
+    per = data["period_by_id"].get(ev.get("period"), {})
+    states = "".join(f'<span class="tag tag-state">{e(data["states"][s]["name"])}</span>'
+                     for s in ev.get("states", []) if s in data["states"])
+    year_note = f'・{e(ev["year_note"])}' if ev.get("year_note") else ""
+    blocks = event_original_blocks(ev, data)
+    ids = ev_idioms.get(ev["id"], [])
+    ppl = "".join(f'<a href="{person_url(pid, up)}">{e(data["people"][pid]["name"]["zh"])}</a>'
+                  for pid in ev.get("people") or [] if pid in data["people"])
+    variants = ""
+    for v in ev.get("variants") or []:
+        src = data["sources"].get(v.get("source"), {})
+        variants += (f'<div class="variant">{rich(v.get("claim"))}'
+                     f'<div class="src">——《{e(src.get("name", v.get("source")))}》{e(v.get("locus", ""))}</div></div>')
+    srcs = "".join(f"<li>{cite_line(c, data)}</li>" for c in ev.get("sources") or [])
+
+    prevnext = '<div class="prevnext">'
+    prevnext += (f'<a href="{ev_url(prev_ev["id"], up)}">← {e(prev_ev["name"])}</a>' if prev_ev else "<span></span>")
+    prevnext += (f'<a href="{ev_url(next_ev["id"], up)}">{e(next_ev["name"])} →</a>' if next_ev else "<span></span>")
+    prevnext += "</div>"
+
+    body = f"""<main class="narrow">
+{crumbs(up, ("events.html", "編年大事"), (f"events.html#p-{ev.get('period')}", per.get("name", "")))}
+<div class="idiom-hero ev-hero">
+  <h1>{e(ev['name'])}</h1>
+  <div class="romanisation">{e(ev_year_label(ev))}{year_note}</div>
+  <div class="meaning">{rich(ev.get('significance', ''))}</div>
+  <div class="tags"><span class="tag">{e(ev['type'])}</span>{rel_tag(ev['reliability'])}
+    <span class="tag">{e(per.get('name', ''))}</span>{states}</div>
+</div>
+<section class="layer"><h2>經過</h2><div class="narrative">{paras(ev.get('narrative'))}</div></section>
+{f'<section class="layer"><h2>原文選段<span class="hint">白話在上，原文在下</span></h2>{blocks}</section>' if blocks else ''}
+{f'<section class="layer"><h2>所繫成語</h2><div class="grid">{"".join(idiom_card(d, data, up) for d in ids)}</div></section>' if ids else ''}
+{f'<section class="layer"><h2>相關人物</h2><div class="rel-links">{ppl}</div></section>' if ppl else ''}
+{f'<section class="layer"><h2>異說</h2>{variants}</section>' if variants else ''}
+{f'<section class="layer"><h2>附註</h2><p class="notes-body">{rich(ev.get("notes"))}</p></section>' if ev.get('notes') else ''}
+{f'<section class="layer"><h2>出處</h2><ul class="refs src-list">{srcs}</ul></section>' if srcs else ''}
+{prevnext}
+</main>"""
+    return page(ev["name"], body, current="events.html", depth=2, canonical=ev_url(ev["id"]),
+                desc=f"{ev['name']}（{ev_year_label(ev)}）：{re.sub(r'[*]', '', ev.get('significance', ''))[:80]}")
+
+
+REL_KIND = {"ruler": "其君", "minister": "其臣", "kin": "親屬", "teacher": "師從",
+            "rival": "政敵", "ally": "盟友"}
+REL_REVERSE = {"ruler": "其臣", "minister": "其君", "kin": "親屬", "teacher": "弟子",
+               "rival": "政敵", "ally": "盟友"}
+
+
+def person_relations(data):
+    """正向關聯；對方未寫明者自動補上反向關聯。
+    relations.note 與 timeline、notes 屬編者筆記（半文言或含欄位術語），不在頁面顯示。"""
+    out = {pid: [] for pid in data["people"]}
+    for pr in data["people"].values():
+        for r in pr.get("relations") or []:
+            t = r.get("target")
+            if t not in data["people"]:
+                continue
+            out[pr["id"]].append((t, REL_KIND.get(r["kind"], r["kind"])))
+    for pr in data["people"].values():
+        for r in pr.get("relations") or []:
+            t = r.get("target")
+            if t in out and not any(x[0] == pr["id"] for x in out[t]):
+                out[t].append((pr["id"], REL_REVERSE.get(r["kind"], r["kind"])))
+    return out
+
+
+def build_person_page(pr, data, prev_p, next_p, p_idioms, p_events, relations):
+    up = "../../"
+    st = data["states"].get(pr["state"], {})
+    phil = ""
+    if pr.get("philosophy_ref"):
+        phil = (f'<section class="layer"><h2>思想</h2><p class="notes-body">本站不重寫先秦思想家的學說，'
+                f'請參閱<a href="https://cc-philosophy.vercel.app/philosophers/{e(pr["philosophy_ref"])}/" '
+                f'target="_blank" rel="noopener">哲學家知識庫的{e(pr["name"]["zh"])}條目 ↗</a>。</p></section>')
+    rels = "".join(f'<a href="{person_url(t, up)}">{e(data["people"][t]["name"]["zh"])}'
+                   f'<span class="kind">{e(kind)}</span></a>'
+                   for t, kind in relations.get(pr["id"], []))
+    evs = "".join(f'<a href="{ev_url(ev["id"], up)}">{e(ev["name"])}'
+                  f'<span class="kind">{e(year_label(ev.get("year")))}</span></a>'
+                  for ev in p_events.get(pr["id"], []))
+    ids = p_idioms.get(pr["id"], [])
+    srcs = "".join(f"<li>{cite_line(c, data)}</li>" for c in pr.get("sources") or [])
+    en = f'<span class="p-en">{e(pr["name"]["en"])}</span>' if pr["name"].get("en") else ""
+
+    prevnext = '<div class="prevnext">'
+    prevnext += (f'<a href="{person_url(prev_p["id"], up)}">← {e(prev_p["name"]["zh"])}</a>' if prev_p else "<span></span>")
+    prevnext += (f'<a href="{person_url(next_p["id"], up)}">{e(next_p["name"]["zh"])} →</a>' if next_p else "<span></span>")
+    prevnext += "</div>"
+
+    body = f"""<main class="narrow">
+{crumbs(up, ("people.html", "人物"), (f"people.html#s-{pr['state']}", st.get("name", "")))}
+<div class="idiom-hero ev-hero">
+  <h1>{e(pr['name']['zh'])}</h1>
+  <div class="romanisation">{en}</div>
+  <div class="tags"><span class="tag tag-state">{e(st.get('name', ''))}</span><span class="tag">{e(pr['role'])}</span>
+    <span class="tag">{e(person_years(pr))}</span></div>
+</div>
+<section class="layer"><h2>小傳</h2><div class="narrative bio">{paras(pr.get('bio'))}</div></section>
+{phil}
+{f'<section class="layer"><h2>相關成語</h2><div class="grid">{"".join(idiom_card(d, data, up) for d in ids)}</div></section>' if ids else ''}
+{f'<section class="layer"><h2>相關事件</h2><div class="rel-links">{evs}</div></section>' if evs else ''}
+{f'<section class="layer"><h2>相關人物</h2><div class="rel-links">{rels}</div></section>' if rels else ''}
+{f'<section class="layer"><h2>出處</h2><ul class="refs src-list">{srcs}</ul></section>' if srcs else ''}
+{prevnext}
+</main>"""
+    return page(pr["name"]["zh"], body, current="people.html", depth=2, canonical=person_url(pr["id"]),
+                desc=f"{pr['name']['zh']}（{st.get('name', '')}・{pr['role']}）小傳、相關事件與成語。")
+
 
 
 def build_sources(data):
@@ -966,7 +1351,7 @@ def build_idiom_page(d, data, prev_d, next_d):
                 yl += f" – {year_label(ev['year_end'])}"
             ev_html = f"""<div style="margin-top:13px;padding-top:13px;border-top:1px solid var(--line)">
   <div class="sub-label">所繫事件</div>
-  <div class="ev-name">{e(ev['name'])}
+  <div class="ev-name"><a href="{ev_url(ev['id'], up)}">{e(ev['name'])}</a>
     <span class="ev-year">（{e(yl)}）</span></div>
   <div class="narrative">{paras(ev.get('narrative'))}</div>{event_originals(ev, data)}
   <div class="significance"><b>意義：</b>{rich(ev.get('significance', ''))}</div>
@@ -1059,7 +1444,7 @@ def build_idiom_page(d, data, prev_d, next_d):
         rel_html += (f'<a href="{up}idioms/{e(t["id"])}/">{e(t["idiom"]["zh"])}'
                      f'<span class="kind">{e(kind_label.get(r["kind"], r["kind"]))}</span></a>')
     ppl_html = "".join(
-        f'<a href="{up}people.html#{e(pid)}">{e(data["people"][pid]["name"]["zh"])}</a>'
+        f'<a href="{person_url(pid, up)}">{e(data["people"][pid]["name"]["zh"])}</a>'
         for pid in d.get("people") or [] if pid in data["people"]
     )
     rel_section = f"""<section class="layer">
@@ -1139,13 +1524,13 @@ def build_search_index(data):
         })
     for ev in sorted(data["events"].values(), key=lambda x: year_num(x.get("year")) or 0):
         rows.append({
-            "t": ev["name"], "c": "事件", "u": f"events.html#{ev['id']}",
+            "t": ev["name"], "c": "事件", "u": ev_url(ev['id']),
             "s": year_label(ev.get("year")),
             "k": " ".join([ev["name"], ev.get("significance", "")]),
         })
     for pr in data["people"].values():
         rows.append({
-            "t": pr["name"]["zh"], "c": "人物", "u": f"people.html#{pr['id']}",
+            "t": pr["name"]["zh"], "c": "人物", "u": person_url(pr['id']),
             "s": f'{data["states"].get(pr["state"], {}).get("name", "")}・{pr["role"]}',
             "k": " ".join([pr["name"]["zh"], pr["name"].get("en", ""),
                            pr["name"].get("personal", "") or "", (pr.get("bio") or "")[:80]]),
@@ -1206,6 +1591,20 @@ def main():
         next_d = ordered[i + 1] if i < len(ordered) - 1 else None
         write(f"idioms/{d['id']}/index.html", build_idiom_page(d, data, prev_d, next_d))
 
+    # 事件頁（按年序前後翻頁）、人物頁（按列國、生年前後翻頁）
+    evs = ordered_events(data)
+    ev_ids = event_idioms(data)
+    for i, ev in enumerate(evs):
+        write(f"event/{ev['id']}/index.html",
+              build_event_page(ev, data, evs[i - 1] if i else None,
+                               evs[i + 1] if i < len(evs) - 1 else None, ev_ids))
+    ppl = [p for _, group in ordered_people(data) for p in group]
+    p_ids, p_evs, rels = person_idioms(data), person_events(data), person_relations(data)
+    for i, pr in enumerate(ppl):
+        write(f"person/{pr['id']}/index.html",
+              build_person_page(pr, data, ppl[i - 1] if i else None,
+                                ppl[i + 1] if i < len(ppl) - 1 else None, p_ids, p_evs, rels))
+
     # 404 / robots / sitemap / .nojekyll
     write("404.html", page("找不到頁面", """<main class="narrow">
 <div class="page-head"><h1>找不到這一頁</h1>
@@ -1215,6 +1614,7 @@ def main():
     today = date.today().isoformat()
     urls = ["", "timeline.html", "idioms.html", "events.html", "people.html", "sources.html"]
     urls += [f"idioms/{d['id']}/" for d in ordered]
+    urls += [ev_url(ev["id"]) for ev in evs] + [person_url(p["id"]) for p in ppl]
     sm = "\n".join(
         f"  <url><loc>{SITE_URL}/{u}</loc><lastmod>{today}</lastmod></url>" for u in urls)
     write("sitemap.xml",
@@ -1222,8 +1622,8 @@ def main():
           f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sm}\n</urlset>\n')
     (ROOT / ".nojekyll").touch()
 
-    print(f"生成完成：{counts['n_idioms']} 條成語詳頁 + 6 個索引頁"
-          f"（事件 {counts['n_events']}、人物 {counts['n_people']}）")
+    print(f"生成完成：成語頁 {counts['n_idioms']}、事件頁 {counts['n_events']}、"
+          f"人物頁 {counts['n_people']}，另 6 個索引頁")
 
 
 if __name__ == "__main__":
