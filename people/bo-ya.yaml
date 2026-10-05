@@ -18,4 +18,5 @@ sources:
 relations:
   - target: zhong-zi-qi
     kind: ally
-notes: 生卒與國屬俱不可考；state 欄填 chu 是根據後世傳說（一說晉大夫），非史有明文。
+notes: >-
+  伯牙的生卒和國籍都不可考。本站把他列入楚國，是根據後世傳說（一說他是晉國大夫），史書並無明文。

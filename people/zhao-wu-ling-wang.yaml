@@ -17,11 +17,11 @@ timeline:
   - year: -325
     event: 即位
   - year: -307
-    event: 下令胡服騎射，排眾議而行之
+    event: 力排眾議，下令推行胡服騎射
   - year: -296
-    event: 滅中山
+    event: 滅中山國
   - year: -295
-    event: 沙丘之亂，圍於行宮，餓死
+    event: 沙丘之亂，被圍困在行宮之中，活活餓死
 sources:
   - source: shiji
     locus: 趙世家

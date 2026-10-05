@@ -10,7 +10,7 @@
     sources.html    文獻譜系（含各書貢獻成語數，由數據自動統計）
     idioms/<id>/index.html   成語詳頁（四層考據 + 論述文章）
     event/<id>/index.html    事件頁（敘事、原文選段、所繫成語、相關人物）
-    person/<id>/index.html   人物頁（小傳、相關成語、事件與人物）
+    person/<id>/index.html   人物頁（小傳、生平、相關成語、事件與人物、附註）
     404.html / robots.txt / sitemap.xml / .nojekyll
     assets/search-index.js   ⌘K 全站搜尋索引
 
@@ -25,7 +25,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_URL = "https://history-of-china-hazel.vercel.app"
+SITE_URL = "https://cc-history-of-china.vercel.app"
 REPO_URL = "https://github.com/sclastro/history-of-china"
 REPO_BRANCH = "claude/spring-autumn-history-site-f4tzkd"
 SITE_NAME = "春秋戰國成語知識庫"
@@ -1201,7 +1201,7 @@ REL_REVERSE = {"ruler": "其臣", "minister": "其君", "kin": "親屬", "teache
 
 def person_relations(data):
     """正向關聯；對方未寫明者自動補上反向關聯。
-    relations.note 與 timeline、notes 屬編者筆記（半文言或含欄位術語），不在頁面顯示。"""
+    relations.note 屬編者筆記（半文言），不在頁面顯示；timeline、notes 已改寫為白話，照常顯示。"""
     out = {pid: [] for pid in data["people"]}
     for pr in data["people"].values():
         for r in pr.get("relations") or []:
@@ -1225,6 +1225,8 @@ def build_person_page(pr, data, prev_p, next_p, p_idioms, p_events, relations):
         phil = (f'<section class="layer"><h2>思想</h2><p class="notes-body">本站不重寫先秦思想家的學說，'
                 f'請參閱<a href="https://cc-philosophy.vercel.app/philosophers/{e(pr["philosophy_ref"])}/" '
                 f'target="_blank" rel="noopener">哲學家知識庫的{e(pr["name"]["zh"])}條目 ↗</a>。</p></section>')
+    tl = "".join(f'<div class="pt-row"><span class="yr">{e(year_label(t.get("year")))}</span>'
+                 f'<span>{rich(t.get("event", ""))}</span></div>' for t in pr.get("timeline") or [])
     rels = "".join(f'<a href="{person_url(t, up)}">{e(data["people"][t]["name"]["zh"])}'
                    f'<span class="kind">{e(kind)}</span></a>'
                    for t, kind in relations.get(pr["id"], []))
@@ -1249,10 +1251,12 @@ def build_person_page(pr, data, prev_p, next_p, p_idioms, p_events, relations):
     <span class="tag">{e(person_years(pr))}</span></div>
 </div>
 <section class="layer"><h2>小傳</h2><div class="narrative bio">{paras(pr.get('bio'))}</div></section>
+{f'<section class="layer"><h2>生平</h2><div class="pt-list">{tl}</div></section>' if tl else ''}
 {phil}
 {f'<section class="layer"><h2>相關成語</h2><div class="grid">{"".join(idiom_card(d, data, up) for d in ids)}</div></section>' if ids else ''}
 {f'<section class="layer"><h2>相關事件</h2><div class="rel-links">{evs}</div></section>' if evs else ''}
 {f'<section class="layer"><h2>相關人物</h2><div class="rel-links">{rels}</div></section>' if rels else ''}
+{f'<section class="layer"><h2>附註</h2><p class="notes-body">{rich(pr.get("notes"))}</p></section>' if pr.get('notes') else ''}
 {f'<section class="layer"><h2>出處</h2><ul class="refs src-list">{srcs}</ul></section>' if srcs else ''}
 {prevnext}
 </main>"""

@@ -13,4 +13,5 @@ sources:
   - source: zhuangzi
     locus: 養生主
     ctext_urn: ctp:zhuangzi/nourishing-the-lord-of-life
-notes: 寓言人物，非史有其人；state 欄取文惠君所在之魏，僅為索引之便。
+notes: >-
+  庖丁是寓言人物，歷史上未必真有其人。本站把他列入魏國，只因故事中的文惠君在魏，方便索引而已。

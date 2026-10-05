@@ -13,4 +13,6 @@ sources:
   - source: zuo-zhuan
     locus: 莊公十年
     ctext_urn: ctp:chun-qiu-zuo-zhuan/zhuang-gong-shi-nian
-notes: 《史記·刺客列傳》另有「曹沫」劫齊桓公事，或即一人而異名，然事跡與性格全然不類，本站不併。
+notes: >-
+  《史記·刺客列傳》另有曹沫劫持齊桓公的故事。曹沫或許就是曹劌，只是名字寫法不同；但兩人的事跡和性格完全不同，
+  本站不把兩者合併。

@@ -16,13 +16,13 @@ timeline:
   - year: -671
     event: 即位
   - year: -638
-    event: 泓水之戰敗宋襄公
+    event: 在泓水之戰打敗宋襄公
   - year: -637
-    event: 厚待流亡之晉公子重耳
+    event: 厚待流亡到楚國的晉公子重耳
   - year: -632
-    event: 城濮之戰楚師敗，子玉自殺
+    event: 楚軍在城濮之戰戰敗，主帥子玉自殺
   - year: -626
-    event: 太子商臣弒之
+    event: 太子商臣率兵包圍王宮，楚成王被逼自縊而死
 sources:
   - source: zuo-zhuan
     locus: 僖公二十三年

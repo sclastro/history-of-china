@@ -1,9 +1,9 @@
 # 春秋戰國成語知識庫
 
-**網站：<https://history-of-china-hazel.vercel.app/>**
-（[時間 × 列國年表](https://history-of-china-hazel.vercel.app/timeline.html)：一圖看盡五百五十年・
-[成語索引](https://history-of-china-hazel.vercel.app/idioms.html)：四種分組方式・
-[文獻譜系](https://history-of-china-hazel.vercel.app/sources.html)：這段歷史該查哪些書）
+**網站：<https://cc-history-of-china.vercel.app/>**
+（[時間 × 列國年表](https://cc-history-of-china.vercel.app/timeline.html)：一圖看盡五百五十年・
+[成語索引](https://cc-history-of-china.vercel.app/idioms.html)：四種分組方式・
+[文獻譜系](https://cc-history-of-china.vercel.app/sources.html)：這段歷史該查哪些書）
 
 以**四字成語**為主軸，重新組織公元前 770 至前 221 年的歷史事件、人物與概念。
 
@@ -57,7 +57,7 @@ data/{states,sources,periods}.yaml   列國譜系、文獻譜系、分期定義
 
 ## 部署
 
-網站由 **Vercel** 部署，網址：**<https://history-of-china-hazel.vercel.app/>**
+網站由 **Vercel** 部署，網址：**<https://cc-history-of-china.vercel.app/>**
 
 生成好的 HTML 已經連同資料一起 commit，所以 Vercel 不需要任何 build step：
 Framework Preset 選 **Other**、Root Directory 用 `./`、Build Command 留空即可。
