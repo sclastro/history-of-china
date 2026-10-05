@@ -11,7 +11,7 @@
 網站為純靜態 HTML，由 `scripts/build_site.py` 從 YAML／Markdown 生成，**生成結果連同資料一併 commit**。
 Vercel 直接發佈 repo 內已 commit 的檔案，不執行任何 build step。
 
-- 網站：<https://history-of-china-hazel.vercel.app/>
+- 網站：<https://cc-history-of-china.vercel.app/>（2026-10-05 由 history-of-china-hazel 改名，舊網址已失效）
 - 預設分支（Vercel 追蹤）：`claude/spring-autumn-history-site-f4tzkd`
 - 早期曾用 GitHub Actions 部署 GitHub Pages，`.github/workflows/pages.yml` 已刪除，現只用 Vercel。
 
@@ -147,8 +147,8 @@ ctext 篇章 slug 可用搜尋引擎核實（搜 `ctext.org <書 slug> <篇名>`
 - 成語索引、大事、人物三個索引頁頂部有固定篩選欄：輸入框即時篩選，另有分組跳轉列
   （大事按分期、人物按列國、成語按當前分組方式），大事可按類型及列國、人物可按身分篩選。共用腳本為 `INDEX_JS`。
 - 大事及人物索引只列精簡條目，全文在 `event/<id>/`、`person/<id>/` 獨立頁面；成語頁、搜尋及年表均連到這些頁面。
-- 人物頁不顯示 `timeline`、`notes` 及 `relations[].note`：這些屬編者筆記，文字半文言或含欄位術語，
-  若要公開須先改寫為白話。
+- 人物頁顯示 `timeline`（生平）及 `notes`（附註），兩者已於 2026-10-05 改寫為白話，新增或修改時同樣須用白話，
+  不可夾欄位術語（如 role 欄、type: parable）。`relations[].note` 仍屬編者筆記（半文言），不在頁面顯示。
 - 年表可按分期放大；同一泳道內圓點相距不足 20px 時自動改排下一行；圖下列出當前範圍的全部事件。
 
 ## 已知問題

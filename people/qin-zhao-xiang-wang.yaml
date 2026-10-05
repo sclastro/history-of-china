@@ -15,15 +15,15 @@ timeline:
   - year: -306
     event: 即位
   - year: -283
-    event: 索和氏璧於趙，藺相如完璧歸趙
+    event: 向趙國索取和氏璧，藺相如完璧歸趙
   - year: -279
-    event: 澠池之會
+    event: 與趙惠文王在澠池相會
   - year: -260
-    event: 長平之戰，白起坑趙降卒四十萬
+    event: 長平之戰，白起坑殺趙國降卒四十萬
   - year: -257
-    event: 邯鄲之圍，為魏楚聯軍所敗
+    event: 邯鄲之圍，秦軍被魏、楚援軍打敗
   - year: -256
-    event: 滅西周公，周祀絕
+    event: 滅掉西周國，周王室從此斷絕
 sources:
   - source: shiji
     locus: 秦本紀

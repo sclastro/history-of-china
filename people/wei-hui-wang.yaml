@@ -16,15 +16,15 @@ timeline:
   - year: -369
     event: 即位
   - year: -361
-    event: 公叔痤薦商鞅而不用，亦不殺
+    event: 公叔痤推薦商鞅，魏惠王既不任用，也不殺他
   - year: -353
-    event: 桂陵之戰敗於齊（圍魏救趙）
+    event: 在桂陵之戰被齊軍打敗（圍魏救趙）
   - year: -341
-    event: 馬陵之戰大敗於齊，太子申被虜、龐涓死
+    event: 在馬陵之戰大敗於齊，太子申被俘，龐涓自殺
   - year: -334
-    event: 徐州相王，與齊威王互尊為王
+    event: 在徐州與齊威王互相承認對方為王
   - year: -319
-    event: 卒
+    event: 去世
 sources:
   - source: shiji
     locus: 魏世家
@@ -37,4 +37,5 @@ relations:
     kind: rival
   - target: pang-juan
     kind: minister
-notes: 「文惠君」（《莊子·養生主》庖丁解牛之聽者）舊注多以為即梁惠王，然無確證。
+notes: >-
+  《莊子·養生主》庖丁解牛故事裡聽庖丁講道的文惠君，舊注多認為就是梁惠王，但沒有確證。

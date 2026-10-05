@@ -16,13 +16,17 @@ timeline:
   - year: -676
     event: 即位
   - year: -658
-    event: 以屈產之乘、垂棘之璧假道於虞，伐虢取下陽
+    event: 用屈地的良馬和垂棘的美玉向虞國借路，攻打虢國，奪取下陽
+  - year: -656
+    event: 驪姬誣陷太子申生，申生自縊而死
   - year: -655
-    event: 再假道於虞滅虢，還師襲滅虞，執虞公
+    event: 派兵攻打蒲城，公子重耳逃往翟國
   - year: -655
-    event: 驪姬之難，太子申生自縊，重耳奔翟、夷吾奔梁
+    event: 再次向虞國借路，滅掉虢國；回師途中襲滅虞國，俘虜虞公
+  - year: -654
+    event: 派兵攻打屈城，公子夷吾逃往梁國
   - year: -651
-    event: 卒，晉大亂
+    event: 去世，晉國隨即大亂
 sources:
   - source: zuo-zhuan
     locus: 僖公五年

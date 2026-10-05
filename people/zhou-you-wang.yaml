@@ -15,13 +15,14 @@ timeline:
   - year: -781
     event: 即位
   - year: -774
-    event: 廢申后及太子宜臼，立褒姒為后、伯服為太子
+    event: 廢黜申后和太子宜臼，改立褒姒為王后、伯服為太子
   - year: -771
-    event: 申侯聯繒與西戎攻宗周，幽王死於驪山，西周亡
+    event: 申侯聯合繒國和西戎攻打宗周，幽王死於驪山下，西周滅亡
 sources:
   - source: shiji
     locus: 周本紀
     ctext_urn: ctp:shiji/zhou-ben-ji
   - source: qinghua-xinian
     locus: 第二章
-notes: 死年前 771 為傳世文獻與出土材料所共認；生年僅為推算。
+notes: >-
+  周幽王死於前 771 年，傳世文獻與出土材料在這一點上一致；他的生年只是推算。

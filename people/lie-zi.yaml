@@ -18,4 +18,5 @@ sources:
   - source: zhuangzi
     locus: 逍遙遊
     ctext_urn: ctp:zhuangzi/enjoyment-in-untroubled-ease
-notes: 今本《列子》為魏晉偽書；凡本站引《列子》而無他書旁證者，reliability 一律標「寓言」。
+notes: >-
+  今本《列子》是魏晉時人的偽作。本站引用《列子》而沒有其他書旁證的條目，可信度一律列為寓言。
